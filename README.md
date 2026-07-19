@@ -17,7 +17,7 @@ Given a decision or task that is increasingly delegable to AI or agent collectiv
 
 - **Philosophy of mind and AI welfare research** (Nagel 1974; Chalmers; Block; Parfit 1984; Butlin, Long et al. 2023; Long, Sebo, Butlin, Plunkett et al. 2026) supplies the grounding for why the existential-gap question is a poor foundation for policy, and why a weaker claim — causal/psychological continuity of a mind-stream, not a metaphysical self — is defensible and sufficient for the accountability-continuity criterion.
 - **Organizational behavior and management science treatments of agentic AI** (Liu 2026; Stanford HAI / Google DeepMind's Organizational AI Research program) supply empirical and theoretical groundwork on how agent collectives coordinate and where human accountability is currently assumed to sit — often as an unexamined premise this project treats as the central object of study, not a background fact.
-- **Applied microeconometrics for policy evaluation** supplies the identification strategy: staggered-adoption panel methods, extended from the author's prior work on South Korea's 1987 democratic transition and the Compute Gatekeeping project, used here to test whether accountability continuity (or its absence) is associated with measurable downstream outcomes.
+- **Applied microeconometrics for policy evaluation** supplies the identification strategy: staggered-adoption panel methods, extended from the author's prior work on South Korea's 1987 democratic transition project, used here to test whether accountability continuity (or its absence) is associated with measurable downstream outcomes.
 
 The philosophy and organizational-behavior literatures currently do not cite each other on this question. The contribution of this project is treating that gap as the thing to be filled, using the economics toolkit as the bridge — not developing a purely philosophical or purely qualitative argument.
 
@@ -31,9 +31,7 @@ The philosophy and organizational-behavior literatures currently do not cite eac
 /expert-conversations/     -- summarized notes from conversations with researchers across both literatures
 ```
 
-## Relationship to the Compute Gatekeeping project
-
-This project developed out of the Compute Gatekeeping research log and is best understood as a zoom-out from it, not a separate direction. Whether tiered chip export controls broaden or entrench global AI capacity is one concrete instance of the more general institutional question this project studies: who should hold authority and bear responsibility when capacity or decision rights are reallocated, whether by trade policy or by automation. Both projects use the same staggered-adoption panel methodology, originally developed in an earlier project on South Korea's 1987 democratic transition and sectoral state coordination legacies. See that repository ("State Coordination Reproducibility Demo") for the shared methodological lineage.
+This project uses the same staggered-adoption panel methodology developed in an earlier applied economics project on South Korea's 1987 democratic transition and sectoral state coordination legacies. See that repository ("State Coordination Reproducibility Demo") for the shared methodological lineage.
 
 ## A note on scope and confidence
 

@@ -68,26 +68,45 @@ Began outreach to researchers spanning both literatures (AI welfare: Eleos AI; o
 
 ---
 
-## Week 5 — [DATE]
+## Week 5 — July 31 (note: both Week 5 and Week 6 tasks were completed in one sitting on 7/31, not spread across their nominal weeks — logged honestly rather than backdated)
 **Focus:** Formal identification strategy for the Accountability Continuity Index
-- [ ] Draft candidate unit of analysis (decision-type × organization × year)
-- [ ] Draft candidate treatment definition (staggered AI/agentic-tool adoption for a given decision type)
-- [ ] Draft candidate outcome variables (error/reversal rates, correction speed, dispute rates)
-- [ ] Draft AC-score coding criteria from the three operational indicators (primary-evidence engagement, real discretion, repeated exposure)
-- [ ] Identify 2–3 candidate data sources or organizational partners for a pilot
 
 **Notes:**
 
-**Next:** Week 6 — literature review, Track 1 (philosophy of mind / AI welfare)
+Worked through all five checklist items as a single connected design, not five independent choices.
+
+*Unit of analysis:* decision-type × organization × time period (quarter or year), not organization alone. "Decision-type" = a recurring class of decisions sharing the same underlying judgment domain within an org (e.g., loan-approval decisions at a bank, triage decisions in an ED, code-merge decisions in an eng org). This matters because accountability continuity is a property of who bears responsibility for a *kind* of decision over time, not a property of the organization as a whole — the same company can have high AC in one decision-type and near-zero in another.
+
+*Treatment definition:* staggered adoption of an AI/agentic tool for a given decision-type, with the treatment threshold set at the point the tool moves from advisory-only to executing/finalizing without required human sign-off for that decision-type. Decided to code this as an ordinal intensity variable (advisory → co-pilot-with-signoff → autonomous) rather than a binary, since the project's actual interest is in how much discretion transfers, not whether AI is merely present — a binary would throw away the variation that matters most.
+
+*Outcome variables:* error/reversal rates (decisions later overturned or corrected), correction speed (time between decision and correction), dispute rates (formal complaints/appeals tied to the decision-type). Flagged explicitly: these are behavioral-gap proxies, not existential-gap measures — the AC Index cannot observe whether anyone "bears" the decision in the sense Week 2 cared about, only whether the accountability structure produces measurably different downstream outcomes. This is consistent with treating AC(O,t) as a hard constraint (Week 4) rather than something these variables are meant to prove or disprove — they test what happens when the constraint is relaxed, not whether the constraint is "real."
+
+*AC-score coding criteria:* operationalized the three indicators as a 0–2 rubric per decision-type × org × year cell — primary-evidence engagement (does the decision-maker engage the raw case-specific evidence, or only a summary/recommendation?), real discretion (is override of the AI recommendation observed at non-trivial rates and without penalty, not just formally permitted?), repeated exposure (does the same decision-maker handle repeat instances of this decision-type over time, allowing feedback to accumulate on one continuous "mind-stream" — the causal-continuity concept from Week 2, applied institutionally rather than metaphysically). Noted this rubric is structurally the same shape as the State Support Index rubric on the China/WTO project (dimension scores × sources, coder_id, review_status) — worth keeping that consistency deliberate rather than coincidental.
+
+*Candidate data sources:* no organizational partners are actually secured yet, so logging categories rather than named partnerships to avoid overstating progress — (1) public court/regulatory records where AI-assisted decisions are being formally challenged (EEOC/CFPB-adjacent algorithmic hiring or lending complaints), (2) published clinical-decision-support override-rate audits (several hospital systems publish these), (3) the Week 4 outreach contacts (Eleos AI; UCL/DeepMind organizational-AI researchers) as possible access points, though that outreach is about framework feedback, not data access, and shouldn't be conflated with the two.
+
+**Decision:** Treatment is ordinal (advisory/co-pilot/autonomous), not binary. Outcome variables are explicitly scoped as behavioral-gap proxies only — the log should not later describe them as measuring the existential gap.
+
+**Next:** Pressure-test whether the three AC-score indicators are actually separable in real data, or whether primary-evidence engagement and real discretion collapse into the same underlying thing in practice — that's an open risk, not yet resolved.
 
 ---
 
-## Week 6 — [DATE]
+## Week 6 — July 31
 **Focus:** Literature review — Track 1 (philosophy of mind / AI welfare)
-- [ ]
-- [ ]
 
 **Notes:**
+
+Followed up directly on the Week 4 concern — whether markers-based AI consciousness research can ever be evidentially decisive, given AI lacks the evolutionary/anatomical anchor that licenses behavior-to-inner-state inference in animal welfare science (the "anchor problem").
+
+Read Butlin, Long, Bayne, Bengio, Birch, Chalmers, Constant, Deane, Elmoznino, Fleming, Ji, Kanai, Klein, Lindsay, Michel, Mudrik, Peters, Schwitzgebel, Simon & VanRullen, "Identifying indicators of consciousness in AI systems" (*Trends in Cognitive Sciences*, 2025/2026) — this is the direct methodological ancestor of the Long/Sebo/Butlin/Plunkett welfare-empirics paper already cited in Week 4: derives indicator properties from multiple competing theories of consciousness (global workspace, IIT, recurrent processing, higher-order, predictive processing, attention schema) rather than committing to one, producing a probabilistic rather than binary assessment tool.
+
+Found Koch (2026), "From indicators to biology: the calibration problem in artificial consciousness" (arXiv:2603.27597) — this essentially formalizes the same anchor-problem worry independently: argues the indicator-based program is "epistemically under-calibrated" because indicators lack independent validation and no ground truth of artificial phenomenality exists, making probabilistic consciousness attribution to current AI systems premature. Koch's own proposed fix — redirect effort toward biologically-grounded engineering (biohybrid, neuromorphic, connectome-scale systems) that stays anchored to the one domain where consciousness is empirically anchored (living systems) — doesn't resolve this project's problem, since the project isn't trying to build biologically-anchored AI. But the critique itself is useful: it's independent confirmation that the anchor-problem worry isn't just this project's own skepticism, it's a live, named problem in the indicators literature itself.
+
+Read Schwitzgebel (2026), "AI and Consciousness" (arXiv:2510.09858, skeptical overview; Cambridge Elements monograph forthcoming August 2026) — central verdict: "none of the standard arguments either for or against AI consciousness takes us far," and we may soon have systems judged conscious under some mainstream theories and not others, with no way to adjudicate between the theories. Chapter Seven, "The Mimicry Argument Against AI Consciousness," is directly relevant — reinforces the project's existing worry that behavioral markers may be systematically confoundable by mimicry rather than genuine indicators.
+
+**Decision:** These three sources converge on a reading that *strengthens* rather than undermines Week 4's institutional-design move. If the calibration problem is real and durable (Koch) and the standard arguments don't resolve it (Schwitzgebel), then a research program that tries to wait for consciousness science to settle the existential-gap question before designing institutions is choosing a strategy that may never pay off. That's an argument *for* treating AC(O,t) as a hard institutional constraint decided on grounds other than resolving the metaphysics — not a workaround, but the actual right response to persistent epistemic uncertainty.
+
+**Next:** Consider whether Koch or Schwitzgebel are worth adding to the Week 4 outreach list (Eleos AI; UCL/DeepMind) — their critiques are close enough to this project's own open concern that direct engagement could sharpen it further. Track 2 (organizational-behavior literature) still needs its own dedicated pass — Week 4 only went deep on Liu (2026).
 
 **Next:** Week 7 — literature review, Track 2 (organizational behavior / management science)
 

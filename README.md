@@ -24,14 +24,15 @@ The philosophy and organizational-behavior literatures currently do not cite eac
 ## Repository structure
 
 ```
-/research-log.md          -- weekly dated entries (primary record)
-/proposal/                -- formal model, identification strategy, index construction plan
+## Repository structure
 
-Planned, not yet populated:
-/lit-review/              -- two tracks: (1) philosophy of mind / AI welfare,
-                                         (2) organizational behavior/management science
-/framework-drafts/        -- working drafts of the two-axis framework and formal model
-/expert-conversations/    -- summarized notes from conversations with researchers
+/research-log.md          -- weekly dated entries (primary record)
+/proposal/                -- formal model, identification strategy, index construction
+
+Planned:
+/lit-review/              -- two tracks: philosophy of mind; organizational behavior
+/framework-drafts/
+/expert-conversations/
 ```
 
 This project uses the same staggered-adoption panel methodology developed in an earlier applied economics project on South Korea's 1987 democratic transition and sectoral state coordination legacies. See that repository ("State Coordination Reproducibility Demo") for the shared methodological lineage.

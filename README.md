@@ -24,8 +24,6 @@ The philosophy and organizational-behavior literatures currently do not cite eac
 ## Repository structure
 
 ```
-## Repository structure
-
 /research-log.md          -- weekly dated entries (primary record)
 /proposal/                -- formal model, identification strategy, index construction
 
@@ -34,8 +32,17 @@ Planned:
 /framework-drafts/
 /expert-conversations/
 ```
+## Relationship to other projects
 
-This project uses the same staggered-adoption panel methodology developed in an earlier applied economics project on South Korea's 1987 democratic transition and sectoral state coordination legacies. See that repository ("State Coordination Reproducibility Demo") for the shared methodological lineage.
+This project developed alongside a parallel line of work on institutional resource allocation under capacity constraints (not public). It is best understood as a zoom-out from that work rather than a separate direction: who should hold authority and bear responsibility when capacity or decision rights are reallocated — whether by policy or
+by automation — is the general question, and both projects are instances of it.
+
+The measurement approach comes from an earlier applied-economics project on state coordination and sectoral policy legacies, publicly documented here:
+**[state-coordination](https://github.com/wzhang109/state-coordination)** — source-traceable policy-text measurement, rubric-based coding with human review, index construction, and an event-study workflow.
+
+The shared inheritance is the measurement design — dimensions fixed before outcomes are examined, every score traceable to a primary passage, ambiguous cases routed to human review rather than machine finalization, and a rubric schema (`coder_id`, `confidence`, `review_status`) kept deliberately consistent across projects.
+
+The identification strategies differ and should not be conflated. The earlier project uses a common event date with units differing in exposure intensity. This project faces staggered adoption timing and an ordinal treatment, which is why it requires estimators built for non-binary, potentially non-absorbing treatments rather than the standard binary staggered-DiD toolkit.
 
 ## A note on scope and confidence
 

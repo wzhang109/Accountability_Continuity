@@ -3,15 +3,59 @@
 **Project:** Accountability Continuity — An Institutional Framework for Human-Agentic Task Allocation
 **Status:** Independent research, in progress — developed alongside a parallel project on compute governance (not public)
 
-## Purpose
+## The problem
 
-This repository documents ongoing development of a research program studying a specific institutional design question: as AI systems and agent collectives become more capable, which decisions require a continuous, accountable human subject to remain in the decision loop — and which do not?
+When an organization starts using AI for a task, the person who signs off
+usually stays the same. What changes is what signing off consists of.
 
-The project deliberately does not try to resolve whether AI systems have consciousness, moral status, or subjective experience. That question (the "existential gap") faces a well-documented explanatory barrier in philosophy of mind — evidence can narrow uncertainty but cannot, even in principle, resolve it with the kind of confidence institutional policy requires. Instead, this project develops and tests an alternative, empirically tractable criterion: **accountability continuity** — whether the same subject who errs also bears the consequence and carries it into the next decision. This question does not depend on resolving consciousness, and it can be operationalized, measured, and tested using standard applied-economics methods.
+A concrete version: a hospital adopts AI-assisted imaging. The rule is that the
+model produces a reading and a radiologist confirms it. In month one the
+radiologist looks at the scan and occasionally overrides. A year later the
+radiologist reads the model's summary and confirms. The signature is the same.
+The liability is the same. The judgment has moved.
 
-## Core research question
+The measurement problem is that these two states are hard to tell apart from
+the outside. The reviewer's disagreement rate with the model drifts toward zero
+in both — once because the model got better, once because the reviewer stopped
+checking. `simulations/` contains a demonstration that the two are, under a
+plausible generative model, exactly observationally equivalent.
 
-Given a decision or task that is increasingly delegable to AI or agent collectives: which decisions require a continuous human subject who bears the consequences of error and carries them forward into future judgment — and which do not? Can this requirement be operationalized precisely enough to construct a measurable **Accountability Continuity Index**, and tested empirically against organizational and policy outcomes (error rates, correction speed, dispute/litigation rates)?
+## The question
+
+Which decisions require a human who could have decided otherwise and who bears
+the consequence — and how would you know whether a given process still has one?
+
+The second half is the harder half, and it is what this project is mainly about.
+
+## What "could have decided otherwise" requires
+
+Three conditions, each necessary and none sufficient on its own:
+
+| Condition | What it requires | Observable proxy |
+|---|---|---|
+| **Grounds** | an independent basis for disagreeing | does the reviewer open the primary record, or only the summary? |
+| **Standing** | disagreement is affordable | override rate is not near zero; overrides do not trigger penalty or delay |
+| **Discrimination** | the ability to tell when to disagree | volume of same-class cases seen, with feedback |
+
+These are an adaptation of a long-standing decomposition of responsible agency —
+roughly, an act is blameworthy unless done in ignorance or under compulsion
+(Aristotle, *NE* III), with competence added as the modern third condition.
+
+They are claimed as **necessary, not sufficient**: someone can satisfy all three
+and still rubber-stamp. The claim is only that failing any one of them means the
+sign-off is not a judgment.
+
+## Why not go through consciousness
+
+An obvious alternative framing asks whether AI systems have moral status or
+subjective experience. This project deliberately does not go that way. That
+question faces an explanatory barrier that evidence can narrow but not close
+(Nagel 1974; Chalmers; Block; Butlin, Long et al. 2023), which makes it a poor
+foundation for institutional policy that has to be written now.
+
+Accountability continuity is a weaker and more tractable criterion: whether the
+same subject who errs also bears the consequence and carries it into the next
+decision. It does not require resolving the harder question.
 
 ## Why this sits across three literatures
 

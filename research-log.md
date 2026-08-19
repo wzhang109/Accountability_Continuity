@@ -107,7 +107,8 @@ Read Schwitzgebel (2026), "AI and Consciousness" (arXiv:2510.09858, skeptical ov
 **Decision:** These three sources converge on a reading that *strengthens* rather than undermines Week 4's institutional-design move. If the calibration problem is real and durable (Koch) and the standard arguments don't resolve it (Schwitzgebel), then a research program that tries to wait for consciousness science to settle the existential-gap question before designing institutions is choosing a strategy that may never pay off. That's an argument *for* treating AC(O,t) as a hard institutional constraint decided on grounds other than resolving the metaphysics — not a workaround, but the actual right response to persistent epistemic uncertainty.
 
 
-## Week 7 — 2026-08-18
+## Week 7 — Aug 18
+
 
 **Focus:** Formalized the identification problem that motivates the index.
 

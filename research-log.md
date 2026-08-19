@@ -106,19 +106,33 @@ Read Schwitzgebel (2026), "AI and Consciousness" (arXiv:2510.09858, skeptical ov
 
 **Decision:** These three sources converge on a reading that *strengthens* rather than undermines Week 4's institutional-design move. If the calibration problem is real and durable (Koch) and the standard arguments don't resolve it (Schwitzgebel), then a research program that tries to wait for consciousness science to settle the existential-gap question before designing institutions is choosing a strategy that may never pay off. That's an argument *for* treating AC(O,t) as a hard institutional constraint decided on grounds other than resolving the metaphysics — not a workaround, but the actual right response to persistent epistemic uncertainty.
 
-**Next:** Consider whether Koch or Schwitzgebel are worth adding to the Week 4 outreach list (Eleos AI; UCL/DeepMind) — their critiques are close enough to this project's own open concern that direct engagement could sharpen it further. Track 2 (organizational-behavior literature) still needs its own dedicated pass — Week 4 only went deep on Liu (2026).
 
-**Next:** Week 7 — literature review, Track 2 (organizational behavior / management science)
+## Week 7 — 2026-08-18
 
----
-
-## Template for future weekly entries (copy below as needed)
-
-## Week N — [DATE]
-**Focus:**
-- [ ]
-- [ ]
+**Focus:** Formalized the identification problem that motivates the index.
 
 **Notes:**
+Built a two-world simulation (`simulations/sim_identification.py`) in which a
+model-improvement process and a reviewer-disengagement process produce an
+identical override-rate path. Engagement in the disengagement world is solved
+analytically so the two paths match exactly rather than approximately, which
+makes the non-identification a construction rather than a coincidence of
+parameters.
 
-**Next:**
+Three additional observables separate them: model accuracy on a held-out gold
+set, whether the reviewer opened the primary record, and the precision of the
+overrides that still occur.
+
+**Unexpected result:** override precision falls further in the world where oversight is
+working, because as the model improves a growing share of remaining overrides
+are reviewer error rather than model error. This means low override precision is
+not on its own a warning sign — it has to be read against model accuracy.
+
+**Open:** the direction of that result depends on the false-alarm rate F. A sweep
+over F to locate the flip point has not been run. Until it is, panel 4 is
+suggestive only.
+
+**Why this matters for the framework:** the three index components were
+previously stated without a derivation. They are now answerable to a specific
+question — what second signal do you need — rather than asserted.
+

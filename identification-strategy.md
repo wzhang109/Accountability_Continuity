@@ -45,7 +45,7 @@ No organizational partners are secured yet — listing categories, not named par
 
 1. Public court/regulatory records where AI-assisted decisions are being formally challenged (EEOC/CFPB-adjacent algorithmic hiring or lending complaints).
 2. Published clinical-decision-support override-rate audits (several hospital systems publish these).
-3. Outreach contacts from Week 4 (Eleos AI; UCL/DeepMind organizational-AI researchers) as possible access points — though that outreach was originally about framework feedback, not data access, and the two purposes shouldn't be conflated.
+3. Outreach contacts from Week 4 (researchers in the organizational-AI space) as possible access points — though that outreach was originally about framework feedback, not data access, and the two purposes shouldn't be conflated.
 
 ## Decisions log
 

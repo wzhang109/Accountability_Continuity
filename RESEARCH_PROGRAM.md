@@ -4,122 +4,79 @@
 **Status:** Research program under revision  
 **Research areas:** Organizational behavior × human–AI decision-making × organizational learning
 
-## One-Sentence Research Agenda
+## Research Agenda
 
-I study when AI assistance improves immediate decision performance while weakening people’s ability to detect errors, learn from outcomes, and exercise independent judgment over time.
+I study when AI advice helps people make better decisions now—and whether it helps them become better decision-makers later.
 
 ## Central Puzzle
 
-AI assistance can improve the accuracy of a decision in the moment while also reshaping who examines the underlying evidence, exercises judgment, receives feedback, and learns from the outcome.
+AI advice can improve the decision in front of us. It does not follow that the person using it learns from making that decision.
 
-This creates a potential tension among three objectives:
+The order in which advice arrives may be part of the reason. If someone forms and records a judgment before seeing an AI recommendation, later feedback can speak separately to the person’s reasoning and to the AI’s. If the AI speaks first, the final answer may be just as accurate, or more accurate, but the person may never form a clearly distinguishable judgment for the feedback to confirm or correct.
 
-- **Immediate performance:** whether AI assistance improves the current decision;
-- **Human learning:** whether the human decision-maker becomes better calibrated through repeated experience;
-- **Independent judgment:** whether the human remains able to detect AI errors and make effective decisions when the system changes, fails, or is no longer available.
+The effect could also run the other way. Early AI advice may direct attention to relevant evidence and reveal patterns that people would otherwise miss. Advice timing may make little difference once both groups receive clear outcome feedback. The question is therefore not whether Human-First workflows are inherently better. It is what people gain or lose when AI advice arrives before they have formed a view of their own.
 
-This research program examines when these objectives reinforce one another and when they diverge.
+The broader research program asks when AI assistance supports three goals at once: good decisions now, human learning across repeated decisions, and the retention of independent judgment when the system changes or is no longer available.
 
 ## Primary Research Question
 
-When people make repeated decisions with AI assistance, how do the sequencing of AI advice and the routing of outcome feedback shape the development and retention of independent human judgment?
+When people receive the same case-level outcome feedback, does asking them to form and record a judgment before seeing AI advice change what they learn and retain?
 
-### RQ1: Advice Sequencing
+The first study asks three related questions:
 
-Does requiring decision-makers to record an initial independent judgment before viewing AI advice affect immediate decision performance, reliance on AI, and learning over repeated decisions?
+1. How does advice timing affect immediate accuracy and reliance on correct and incorrect AI recommendations?
+2. Does a recorded pre-advice judgment change learning and confidence calibration across repeated decisions?
+3. Do any differences persist when the AI becomes systematically unreliable or is removed?
 
-### RQ2: Feedback Routing
+## First Study: Judgment Before Advice
 
-Does routing case-level outcome feedback to the decision-maker who handled the case improve learning, confidence calibration, and the ability to distinguish correct from incorrect AI advice?
+*AI Advice Timing and Learning from Feedback*
 
-### RQ3: Retention and Transfer
+Participants will make a series of case-based decisions with imperfect AI advice. They will be randomly assigned to one of two workflows:
 
-Do any resulting learning effects persist when the AI system develops a systematic bias or is no longer available, and do they transfer to novel or shifted cases?
+- **Human-First:** Examine the evidence, record an initial judgment and confidence rating, view the AI recommendation, and then make a final decision.
+- **AI-First:** Examine the evidence with the AI recommendation already available, and then make a final decision.
 
-## First Study
+Both groups will receive the same case-level outcome feedback after each decision. The evidence, AI recommendations, incentives, and response format will otherwise remain the same.
 
-### Who Learns When AI Decides?
+The AI will be useful but imperfect. This allows us to look separately at cases in which its recommendation is correct and cases in which it is wrong. The point is not simply to ask whether people follow the AI more or less. It is to ask whether they become better at knowing when to follow it.
 
-**Subtitle:** Feedback Routing and Human Expertise in AI-Assisted Work
+After the learning phase, both groups will complete the same assessment tasks. These may include novel cases, cases with systematically misleading AI advice, and cases in which the AI is no longer available.
 
-The first study will use a repeated-decision experiment. During the learning phase, it will vary:
+The main outcomes will include:
 
-- whether participants make and record an independent judgment before viewing AI advice;
-- whether case-level outcome feedback is returned to the same participant.
+- immediate decision accuracy and responses to correct and incorrect AI advice;
+- learning and confidence calibration across repeated decisions;
+- performance on novel cases and unaided performance after AI withdrawal.
 
-During a subsequent transfer phase, the study will vary whether the AI system remains reliable, develops a systematic bias, or is no longer available.
+## Why Timing Might Matter
 
-This design will distinguish effects on immediate decision performance from effects on human learning over time.
+A pre-advice judgment gives feedback a separate target. It allows a person to ask not only whether the final answer was right, but also whether their own initial reasoning was right and whether the AI helped or misled them.
 
-## Candidate Experimental Conditions
+When AI advice appears first, the person’s reasoning and the recommendation may be harder to separate. The same feedback still reveals whether the final answer was correct, but it may reveal less about what the person understood independently.
 
-During the learning phase, a 2 × 2 factorial design will cross two dimensions:
+This is a proposed explanation, not an assumption. Asking for an initial judgment may also change how much effort or attention people give a case. The first experiment will therefore estimate the overall effect of the Human-First workflow. Later studies will be needed to understand exactly why the workflow does or does not matter.
 
-1. **Advice sequencing**
-   - **Human-first:** Participants record an initial judgment before viewing AI advice.
-   - **AI-first:** Participants view AI advice before making a judgment.
+## Why Organizations Should Care
 
-2. **Feedback routing**
-   - **Case-level feedback:** Participants receive outcome feedback for each case.
-   - **No case-level feedback:** Feedback is absent or provided only in aggregate form.
+Organizations choose more than whether employees use AI. They also choose when AI enters the decision process and what employees must do before seeing its recommendation.
 
-After the learning phase, participants will enter a transfer phase in which the AI system:
+That choice may affect both current performance and the expertise available later, especially when the system encounters a failure, a distribution shift, or a case that still requires human judgment. The first study treats individual learning as one possible foundation of organizational learning; it does not assume that individual learning automatically becomes an organizational capability.
 
-- remains reliable;
-- develops a systematic bias;
-- is no longer available.
+## Future Research: Feedback Routing
 
-## Primary Outcomes
+A later study will ask a separate question: what happens when the outcome of a decision does not return to the person who helped make it?
 
-- immediate decision accuracy;
-- detection of incorrect AI advice;
-- appropriate reliance on correct versus incorrect AI advice;
-- confidence calibration;
-- improvement over repeated decisions;
-- performance on novel or shifted cases;
-- unaided performance when the AI system is no longer available.
-
-## Proposed Mechanisms
-
-The project does not assume that AI assistance necessarily weakens human judgment.
-
-Instead, it examines whether workflow design affects:
-
-1. decision-makers’ independent cognitive engagement;
-2. the routing of informative feedback to the person who made the earlier judgment;
-3. that person’s ability to connect an outcome to the earlier judgment;
-4. the transfer of learning to subsequent decisions.
-
-These pathways may help explain why similar levels of immediate decision performance can coexist with different long-run trajectories of human expertise.
-
-## Scope and Non-Claims
-
-This research program does not:
-
-- seek to determine whether AI systems are conscious;
-- treat human judgment as inherently superior to AI judgment;
-- assume that AI assistance necessarily causes deskilling;
-- interpret behavioral outcomes as evidence of an existential difference between humans and AI;
-- currently propose an Accountability Continuity Index;
-- yet make causal claims based on observational adoption data;
-- conflate human learning, substantive oversight, and institutional responsibility.
+That study can compare feedback returned to the original decision-maker with feedback sent to another reviewer, stored in a team-level system, or reported only in aggregate. Keeping this question separate from advice timing allows us to distinguish two issues: whether a person formed a judgment that feedback could update, and whether the feedback ever reached that person.
 
 ## Relationship to the Earlier Accountability Continuity Project
 
-This program grew out of the earlier Accountability Continuity project and the essay *The Gap That Can’t Close*.
+This program grew out of the earlier Accountability Continuity research and the essay *The Gap That Can’t Close*.
 
-The earlier work asked whether the same subject who experiences a decision’s consequences carries that experience into the next judgment. The new research program preserves the temporal structure of that question while shifting the focus to an empirically tractable counterpart:
+The earlier work asked whether the same subject who experiences the consequences of one decision carries that experience into the next. The present study takes one smaller, observable part of that question: whether a person forms an independent judgment before seeing AI advice and whether later feedback changes how that person decides.
 
-> Does feedback from one decision reach—and change—the same human who participates in the next decision?
-
-The earlier philosophical work remains the intellectual starting point of the program, but the proposed experiment is not intended to prove or measure its central philosophical claim.
+The experiment does not measure experiential continuity or establish the earlier philosophical claim. It preserves the temporal structure that made the original question important: judgment, consequence, change, and judgment again.
 
 ## Current Stage
 
-The immediate priorities are to:
-
-1. map the relevant theoretical and empirical literatures;
-2. define the experimental task;
-3. specify the feedback and AI reliability manipulations;
-4. validate the outcome measures;
-5. conduct a small pilot before advancing broader claims about organizations.
+The next step is to identify a repeated-decision task with a learnable structure, reliable outcome feedback, and enough variation in AI accuracy to make learning observable. A small pilot can then determine whether the task and measures capture the distinction the study is designed to test.

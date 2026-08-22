@@ -61,11 +61,11 @@ This is a proposed explanation, not an assumption. Asking for an initial judgmen
 
 Organizations choose more than whether employees use AI. They also choose when AI enters the decision process and what employees must do before seeing its recommendation.
 
-That choice may affect both current performance and the expertise available later, especially when the system encounters a failure, a distribution shift, or a case that still requires human judgment. The first study treats individual learning as one possible foundation of organizational learning; it does not assume that individual learning automatically becomes an organizational capability.
+That choice may affect both current performance and the expertise available later, especially when the system encounters a failure, a distribution shift, or a case that still requires human judgment. The first study treats individual learning as one possible foundation of organizational learning; But it does not assume that individual learning automatically becomes an organizational capability.
 
 ## Future Research: Feedback Routing
 
-A later study will ask a separate question: what happens when the outcome of a decision does not return to the person who helped make it?
+A possible future direction will ask a separate question: what happens when the outcome of a decision does not return to the person who helped make it?
 
 That study can compare feedback returned to the original decision-maker with feedback sent to another reviewer, stored in a team-level system, or reported only in aggregate. Keeping this question separate from advice timing allows us to distinguish two issues: whether a person formed a judgment that feedback could update, and whether the feedback ever reached that person.
 

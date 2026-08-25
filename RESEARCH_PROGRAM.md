@@ -77,6 +77,14 @@ The earlier work asked whether the same subject who experiences the consequences
 
 The experiment does not measure experiential continuity or establish the earlier philosophical claim. It preserves the temporal structure that made the original question important: judgment, consequence, change, and judgment again.
 
+
+## Evidence Base
+
+A focused scoping review examines the closest studies, identifies the remaining contribution, and records the design implications:
+
+- [AI Advice Timing and Human Learning](lit-review/ai-advice-timing-and-human-learning.md)
+
+  
 ## Current Stage
 
 The next step is to identify a repeated-decision task with a learnable structure, reliable outcome feedback, and enough variation in AI accuracy to make learning observable. A small pilot can then determine whether the task and measures capture the distinction the study is designed to test.

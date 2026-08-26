@@ -61,7 +61,7 @@ This is a proposed explanation, not an assumption. Asking for an initial judgmen
 
 Organizations choose more than whether employees use AI. They also choose when AI enters the decision process and what employees must do before seeing its recommendation.
 
-That choice may affect both current performance and the expertise available later, especially when the system encounters a failure, a distribution shift, or a case that still requires human judgment. The first study treats individual learning as one possible foundation of organizational learning; But it does not assume that individual learning automatically becomes an organizational capability.
+That choice may affect both current performance and the expertise available later, especially when the system encounters a failure, a distribution shift, or a case that still requires human judgment. The first study treats individual learning as one possible foundation of organizational learning, but it does not assume that individual learning automatically becomes an organizational capability.
 
 ## Future Research: Feedback Routing
 
@@ -84,7 +84,6 @@ A focused scoping review examines the closest studies, identifies the remaining 
 
 - [AI Advice Timing and Human Learning](lit-review/ai-advice-timing-and-human-learning.md)
 
-  
 ## Current Stage
 
 The next step is to identify a repeated-decision task with a learnable structure, reliable outcome feedback, and enough variation in AI accuracy to make learning observable. A small pilot can then determine whether the task and measures capture the distinction the study is designed to test.

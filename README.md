@@ -1,9 +1,23 @@
-# Accountability Continuity Research Log
+/opt/homebrew/Library/Homebrew/cmd/shellenv.sh: line 18: /bin/ps: Operation not permitted
+# Human Judgment and Organizational Learning with AI Assistance
+
+This repository documents the current research program on how AI-assisted workflows
+affect human judgment, learning, and the retention of expertise. It grew out of
+the Accountability Continuity project documented below.
+
+## Start Here
+
+- **Current research agenda:** [Research Program](RESEARCH_PROGRAM.md)
+- **Evidence base:** [Focused Review of AI Advice Timing and Human Learning](lit-review/ai-advice-timing-and-human-learning.md)
+- **Dated development record:** [Research Log](research-log.md)
+
+## Earlier Foundation: Accountability Continuity
+
 **Researcher:** Wenwen (Celine) Zhang
 **Project:** Accountability Continuity — An Institutional Framework for Human-Agentic Task Allocation
 **Status:** Independent research, in progress — developed alongside a parallel project on compute governance (not public)
 
-## The problem
+### The problem
 
 When an organization starts using AI for a task, the person who signs off
 usually stays the same. What changes is what signing off consists of.
@@ -20,14 +34,14 @@ in both — once because the model got better, once because the reviewer stopped
 checking. `simulations/` contains a demonstration that the two are, under a
 plausible generative model, exactly observationally equivalent.
 
-## The question
+### The question
 
 Which decisions require a human who could have decided otherwise and who bears
 the consequence — and how would you know whether a given process still has one?
 
 The second half is the harder half, and it is what this project is mainly about.
 
-## What "could have decided otherwise" requires
+### What "could have decided otherwise" requires
 
 Three conditions, each necessary and none sufficient on its own:
 
@@ -45,7 +59,7 @@ They are claimed as **necessary, not sufficient**: someone can satisfy all three
 and still rubber-stamp. The claim is only that failing any one of them means the
 sign-off is not a judgment.
 
-## Why not go through consciousness
+### Why not go through consciousness
 
 An obvious alternative framing asks whether AI systems have moral status or
 subjective experience. This project deliberately does not go that way. That
@@ -57,7 +71,7 @@ Accountability continuity is a weaker and more tractable criterion: whether the
 same subject who errs also bears the consequence and carries it into the next
 decision. It does not require resolving the harder question.
 
-## Why this sits across three literatures
+### Why this sits across three literatures
 
 - **Philosophy of mind and AI welfare research** (Nagel 1974; Chalmers; Block; Parfit 1984; Butlin, Long et al. 2023; Long, Sebo, Butlin, Plunkett et al. 2026) supplies the grounding for why the existential-gap question is a poor foundation for policy, and why a weaker claim — causal/psychological continuity of a mind-stream, not a metaphysical self — is defensible and sufficient for the accountability-continuity criterion.
 - **Organizational behavior and management science treatments of agentic AI** (Liu 2026; Stanford HAI / Google DeepMind's Organizational AI Research program) supply empirical and theoretical groundwork on how agent collectives coordinate and where human accountability is currently assumed to sit — often as an unexamined premise this project treats as the central object of study, not a background fact.
@@ -65,18 +79,16 @@ decision. It does not require resolving the harder question.
 
 The philosophy and organizational-behavior literatures currently do not cite each other on this question. The contribution of this project is treating that gap as the thing to be filled, using the economics toolkit as the bridge — not developing a purely philosophical or purely qualitative argument.
 
-## Repository structure
+### Repository structure
 
 ```
-/research-log.md          -- weekly dated entries (primary record)
-/proposal/                -- formal model, identification strategy, index construction
-
-Planned:
-/lit-review/              -- two tracks: philosophy of mind; organizational behavior
-/framework-drafts/
-/expert-conversations/
+/RESEARCH_PROGRAM.md                               -- current research agenda
+/lit-review/ai-advice-timing-and-human-learning.md -- focused evidence review
+/research-log.md                                   -- dated development record
+/proposal/                                          -- earlier formal model and identification work
+/simulations/                                       -- accountability-continuity simulation
 ```
-## Relationship to other projects
+### Relationship to other projects
 
 This project developed alongside a parallel line of work on institutional resource allocation under capacity constraints (not public). It is best understood as a zoom-out from that work rather than a separate direction: who should hold authority and bear responsibility when capacity or decision rights are reallocated — whether by policy or
 by automation — is the general question, and both projects are instances of it.
@@ -88,6 +100,6 @@ The shared inheritance is the measurement design — dimensions fixed before out
 
 The identification strategies differ and should not be conflated. The earlier project uses a common event date with units differing in exposure intensity. This project faces staggered adoption timing and an ordinal treatment, which is why it requires estimators built for non-binary, potentially non-absorbing treatments rather than the standard binary staggered-DiD toolkit.
 
-## A note on scope and confidence
+### A note on scope and confidence
 
 This log records real-time research judgment, including reversals and open disagreements — for example, an active internal debate (documented in the log) about whether markers-based AI consciousness research can ever produce evidence that tracks the underlying property it targets, given the absence of an evolutionary anchor that licenses this kind of inference in animal welfare research. Claims in early entries should be read as working hypotheses, not settled conclusions, unless a later entry states they have been tested.

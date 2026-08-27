@@ -1,0 +1,3 @@
+__pycache__/
+*.pyc
+outputs/monte_carlo_replications.csv

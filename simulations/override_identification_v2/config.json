@@ -1,0 +1,16 @@
+{
+  "periods": 24,
+  "cases_per_period": 4000,
+  "detection": 0.75,
+  "false_alarm": 0.05,
+  "disengaged_override": 0.04,
+  "proxy_sensitivity": 0.90,
+  "proxy_false_positive": 0.10,
+  "proxy_sample_share": 0.25,
+  "master_seed": 20260827,
+  "sweep_draws": 60000,
+  "sweep_tolerance": 0.005,
+  "monte_carlo_replications": 1000,
+  "sample_sizes": [250, 1000, 4000],
+  "audit_shares": [0.10, 0.25]
+}

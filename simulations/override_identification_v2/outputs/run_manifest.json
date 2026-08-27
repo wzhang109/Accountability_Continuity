@@ -1,0 +1,48 @@
+{
+  "config": {
+    "periods": 24,
+    "cases_per_period": 4000,
+    "detection": 0.75,
+    "false_alarm": 0.05,
+    "disengaged_override": 0.04,
+    "proxy_sensitivity": 0.9,
+    "proxy_false_positive": 0.1,
+    "proxy_sample_share": 0.25,
+    "master_seed": 20260827,
+    "sweep_draws": 60000,
+    "sweep_tolerance": 0.005,
+    "monte_carlo_replications": 1000,
+    "sample_sizes": [
+      250,
+      1000,
+      4000
+    ],
+    "audit_shares": [
+      0.1,
+      0.25
+    ]
+  },
+  "checks": {
+    "exact_expected_paths_equal": true,
+    "equivalent_engagement_in_unit_interval": true,
+    "proxy_inversion_exact_at_population_values": true,
+    "equivalent_engagement_end": 0.2917241379310344,
+    "delta_loglik_near_improvement_endpoint": 0.0,
+    "delta_loglik_near_disengagement_endpoint": 0.0769696897477842
+  },
+  "accepted_equivalence_paths": 4345,
+  "monte_carlo_rows": 36000,
+  "software_versions": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2",
+    "scipy": "1.13.1"
+  },
+  "all_fits_converged": true,
+  "maximum_boundary_rate": {
+    "audit_override_any_cell": 0.402,
+    "audit_proxy_any_cell": 0.001
+  },
+  "prohibited_interpretation": "These illustrative simulations do not estimate the prevalence of reviewer disengagement in any real deployment."
+}

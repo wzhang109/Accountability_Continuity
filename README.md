@@ -17,8 +17,13 @@ The liability is the same. The judgment has moved.
 The measurement problem is that these two states are hard to tell apart from
 the outside. The reviewer's disagreement rate with the model drifts toward zero
 in both — once because the model got better, once because the reviewer stopped
-checking. `simulations/` contains a demonstration that the two are, under a
-plausible generative model, exactly observationally equivalent.
+checking. `simulations/` first contained a constructive counterexample showing
+that the two can be exactly observationally equivalent under a stated,
+illustrative model. The current
+[`override_identification_v2`](simulations/override_identification_v2/) study
+makes the analytic identification result primary, adds constrained likelihood
+estimation, independent measurement channels, repeated Monte Carlo evaluation,
+and explicit calibration-drift checks.
 
 ## The question
 
@@ -70,6 +75,11 @@ The philosophy and organizational-behavior literatures currently do not cite eac
 ```
 /research-log.md          -- weekly dated entries (primary record)
 /proposal/                -- formal model, identification strategy, index construction
+/simulations/sim_identification.py
+                           -- initial constructive counterexample
+/simulations/override_identification_v2/
+                           -- current identification study, results, tests,
+                              figures, and plain-language guide
 
 Planned:
 /lit-review/              -- two tracks: philosophy of mind; organizational behavior

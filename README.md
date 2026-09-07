@@ -3,6 +3,17 @@
 **Project:** Accountability Continuity — An Institutional Framework for Human-Agentic Task Allocation
 **Status:** Independent research, in progress — developed alongside a parallel project on compute governance (not public)
 
+## Current extension: human judgment and learning with AI
+
+This repository also documents a related research program on whether AI helps
+people make better decisions now and whether it helps them become better
+decision-makers later.
+
+- [Research program: Human Judgment and Organizational Learning with AI Assistance](RESEARCH_PROGRAM.md)
+- [Working proposal: Preserving Independent Judgment in Youth AI Use](preserving-independent-judgment-in-youth-ai-use.md)
+- [Focused review: AI Advice Timing and Human Learning](ai-advice-timing-and-human-learning.md)
+- [Plain-language guide to the override-rate simulation](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md)
+
 ## The problem
 
 When an organization starts using AI for a task, the person who signs off
@@ -74,6 +85,11 @@ The philosophy and organizational-behavior literatures currently do not cite eac
 
 ```
 /research-log.md          -- weekly dated entries (primary record)
+/RESEARCH_PROGRAM.md      -- current human-judgment research agenda
+/preserving-independent-judgment-in-youth-ai-use.md
+                           -- youth AI study proposal and downloadable PDF
+/ai-advice-timing-and-human-learning.md
+                           -- focused review of advice timing and human learning
 /proposal/                -- formal model, identification strategy, index construction
 /simulations/sim_identification.py
                            -- initial constructive counterexample
@@ -82,7 +98,6 @@ The philosophy and organizational-behavior literatures currently do not cite eac
                               figures, and plain-language guide
 
 Planned:
-/lit-review/              -- two tracks: philosophy of mind; organizational behavior
 /framework-drafts/
 /expert-conversations/
 ```

@@ -10,7 +10,7 @@ people make better decisions now and whether it helps them become better
 decision-makers later.
 
 - [Research program: Human Judgment and Organizational Learning with AI Assistance](RESEARCH_PROGRAM.md)
-- [Working proposal: Preserving Independent Judgment in Youth AI Use](preserving-independent-judgment-in-youth-ai-use.md)
+- [Working proposal: AI Advice Timing and Independent Judgment in Youth](preserving-independent-judgment-in-youth-ai-use.md)
 - [Focused review: AI Advice Timing and Human Learning](ai-advice-timing-and-human-learning.md)
 - [Plain-language guide to the override-rate simulation](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md)
 

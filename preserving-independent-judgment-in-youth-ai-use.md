@@ -1,6 +1,6 @@
-# Preserving Independent Judgment in Youth AI Use
+# AI Advice Timing and Independent Judgment in Youth
 
-*A study proposal comparing Human First, AI First, and Human Only workflows*
+*A study proposal comparing Initial Judgment First, AI Advice First, and No AI workflows*
 
 **Wenwen (Celine) Zhang**
 
@@ -28,7 +28,11 @@ Evidence on ordering is mixed, and most of it comes from adults. In a study of 1
 
 In three separate nutrition experiments, simulated, always-correct AI recommendations improved immediate decisions when shown before a choice and when shown after an initial choice, but neither design produced measurable incidental learning on subsequent questions in the same session. Among the AI designs tested, learning gains appeared only when the system supplied an explanation without an explicit recommendation. Because the two orders were tested in separate experiments, these results do not show that either sequence is generally better ([Gajos and Mamykina, 2022](https://doi.org/10.1145/3490099.3511138)). Timing matters, but so do the quality of the advice and the thinking the interface still requires from the user.
 
-That leaves two live possibilities. AI First may improve an immediate answer by supplying useful information, but it may also pull a user toward a plausible mistake. Human First may preserve an independent starting point, but committing to an initial answer may make later revision less likely. These are hypotheses, not findings about young people. Neither tells us what young people can later do without AI. The proposed study is designed to test those questions rather than assume the answer.
+A June 2026 practice essay by Tamara Tate and Mark Warschauer proposes a Human-First AI framework. Its "Think First" habit asks learners to form a brief idea or plan before consulting AI, while later habits emphasize checking outputs and reflecting on the learning process. The framework offers a practical rationale, not causal evidence that this sequence improves learning. The proposed study would test one part of that rationale by holding AI advice constant and measuring later unaided performance and responses to misleading advice ([Tate and Warschauer, 2026](https://digitallearninglab.substack.com/p/human-first-ai)).
+
+That leaves two live possibilities. Seeing AI advice first may support a novice by supplying useful information, but it may also anchor the learner to a plausible mistake. Recording an initial judgment first may create a reference point for evaluating the advice, but it may also anchor the learner to an early error. These are competing hypotheses, not findings about young people. Existing evidence does not tell us which sequence better supports later unaided performance. The proposed study is designed to test that question rather than assume the answer.
+
+These questions fit a broader emerging effort to measure whether AI strengthens learning and durable human capability across settings. OpenAI's Learning Lab is bringing researchers, educators, students, and builders together to develop shared questions and measures across contexts. This proposal takes on one narrower question: whether the timing of AI advice changes what learners can later do without AI and how they respond when AI is wrong ([Devani and Leiva, 2026](https://edunewsletter.openai.com/p/learning-lab-launch)).
 
 ## A practical test
 
@@ -36,9 +40,9 @@ I would begin with a small feasibility study run through an institution experien
 
 | Workflow | What the participant does |
 | --- | --- |
-| **Human First** | Sees the task, records an initial answer, confidence, and brief reason, then sees prepared AI advice and may revise. |
-| **AI First** | Sees the task with the same prepared AI advice before recording an answer, confidence, and brief reason. |
-| **Human Only** | Sees the task without AI, records an answer, confidence, and brief reason, and may review it independently. |
+| **Initial Judgment First** | Sees the task, records an initial answer, confidence, and brief reason, then sees prepared AI advice and may revise. |
+| **AI Advice First** | Sees the task with the same prepared AI advice before recording an answer, confidence, and brief reason. |
+| **No AI** | Sees the task without AI, records an answer, confidence, and brief reason, and may review it independently. |
 
 The assisted groups would receive the same cases, advice, interface, and verified feedback. Some prepared advice would be correct and some would be plausible but wrong, with versions rotated across participants. Participants would know that the AI may be wrong. Using prepared advice would make the comparison clearer, although it would not reproduce a full conversation with a chatbot.
 
@@ -54,9 +58,9 @@ Because the participants would be minors, this should not be a solo study. It wo
 
 The value of the study would not be a verdict that one workflow is always safer. It would separate three questions that are often collapsed: Does AI improve today's answer? What remains when AI is gone? What happens when AI is confidently wrong?
 
-If Human First improves later unaided performance or decisions under misleading advice, a larger study could test whether products should ask users to think before showing assistance. If AI First performs as well or better, the initial answer may add effort or anchor an early mistake. If the results are similar, sequence may not be the most useful design lever. A product or school program may do well on one outcome and poorly on another, so the outcomes should be reported separately.
+If Initial Judgment First improves later unaided performance or decisions under misleading advice, a larger study could test whether products should ask users to think before showing assistance. If AI Advice First performs as well or better, the initial answer may add effort or anchor an early mistake. If the results are similar, sequence may not be the most useful design lever. A product or school program may do well on one outcome and poorly on another, so the outcomes should be reported separately.
 
-The study would test a whole workflow, not isolate a single psychological mechanism. Human First changes timing, effort, and commitment together. Prepared, single-turn advice is not a full chatbot experience. A result after one week would not establish long-term development, and one task, age group, or setting could not represent all youth AI use. The narrower aim is to learn whether a larger study is warranted and which outcomes it should measure.
+The study would test a whole workflow, not isolate a single psychological mechanism. Initial Judgment First changes timing, effort, and commitment together. Prepared, single-turn advice is not a full chatbot experience. A result after one week would not establish long-term development, and one task, age group, or setting could not represent all youth AI use. The narrower aim is to learn whether a larger study is warranted and which outcomes it should measure.
 
 My contribution would be evidence review, task and survey design, implementation planning, data checks, analysis, and clear documentation. The research itself should be built with partners who understand young people and the settings in which they actually use AI.
 
@@ -64,7 +68,9 @@ My contribution would be evidence review, task and survey design, implementation
 
 - Asirvatham, H., et al. (2026). [*Training novices to think, or giving them LLMs? Evidence from an RCT*](https://cdn.openai.com/pdf/novices-and-llm-august-2026.pdf). CEPR Discussion Paper No. 21882.
 - Bastani, H., et al. (2025). [Generative AI without guardrails can harm learning: Evidence from high school mathematics](https://doi.org/10.1073/pnas.2422633122). *Proceedings of the National Academy of Sciences, 122*(26), e2422633122.
+- Devani, J., and Leiva, B. (2026, September 2). [Strengthening the evidence base for AI in education research: Launching the Learning Lab](https://edunewsletter.openai.com/p/learning-lab-launch). *ChatGPT for Education*.
 - Fogliato, R., et al. (2022). [Who Goes First? Influences of Human-AI Workflow on Decision Making in Clinical Imaging](https://doi.org/10.1145/3531146.3533193). *Proceedings of the 2022 ACM Conference on Fairness, Accountability, and Transparency*.
 - Gajos, K. Z., and Mamykina, L. (2022). [Do People Engage Cognitively with AI? Impact of AI Assistance on Incidental Learning](https://doi.org/10.1145/3490099.3511138). *Proceedings of the 27th International Conference on Intelligent User Interfaces*.
 - Kreijkes, P., et al. (2026). [Effects of LLM use and note-taking on reading comprehension and memory: A randomised experiment in secondary schools](https://doi.org/10.1016/j.compedu.2025.105514). *Computers & Education, 243*, 105514.
 - Soderstrom, N. C., and Bjork, R. A. (2015). [Learning versus performance: An integrative review](https://doi.org/10.1177/1745691615569000). *Perspectives on Psychological Science, 10*(2), 176–199.
+- Tate, T. P., and Warschauer, M. (2026, June 30). [Human-First AI: Five habits for staying in charge of your thinking, judgment, and learning](https://digitallearninglab.substack.com/p/human-first-ai). *Digital Learning Lab*.

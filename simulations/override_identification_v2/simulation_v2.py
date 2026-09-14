@@ -12,7 +12,8 @@ The script has four jobs:
 4. Stress-test the result across sample sizes, parameter values, and a
    misspecified world in which detection ability changes over time.
 
-Author: Wenwen (Celine) Zhang
+Researcher: Wenwen (Celine) Zhang. Design and implementation received substantial
+AI assistance; see ../../RESEARCH_STATUS.md for contribution and evidence limits.
 """
 
 from __future__ import annotations
@@ -392,8 +393,30 @@ def _best_bounded_fit(
 
 
 def _safe_inverse(matrix: np.ndarray) -> np.ndarray:
-    """Moore-Penrose inverse keeps weak-identification cases explicit."""
+    """Numerical pseudoinverse; not evidence that all parameters are identified."""
     return np.linalg.pinv(matrix, rcond=1e-10)
+
+
+def _identified_covariance(information: np.ndarray) -> np.ndarray:
+    """Refuse finite Wald uncertainty when information has an unresolved direction.
+
+    A pseudoinverse maps a zero-information direction to zero variance. That
+    would mistake non-identification for perfect precision. Use the same
+    numerical cutoff as the inverse and fail explicitly instead. Passing this
+    check is not a guarantee of reliable Wald intervals near a boundary.
+    """
+    eigenvalues = np.linalg.eigvalsh((information + information.T) / 2.0)
+    if (
+        not np.all(np.isfinite(eigenvalues))
+        or eigenvalues[-1] <= 0.0
+        or eigenvalues[0] <= 1e-10 * eigenvalues[-1]
+    ):
+        raise ValueError(
+            "Parameters are not separately identified at this fit's numerical "
+            "precision; finite Wald standard errors are not available. "
+            "Check measurement separation and the number of distinct periods."
+        )
+    return _safe_inverse(information)
 
 
 def fit_audit_override(
@@ -481,7 +504,7 @@ def fit_audit_override(
         j_p.T @ ((n_audit / np.clip(p * (1.0 - p), 1e-9, None))[:, None] * j_p)
         + j_r.T @ ((n_operational / np.clip(r * (1.0 - r), 1e-9, None))[:, None] * j_r)
     )
-    covariance = _safe_inverse(info)
+    covariance = _identified_covariance(info)
     contrast_p = np.array([-1.0, 1.0, 0.0, 0.0])
     contrast_e = np.array([0.0, 0.0, -1.0, 1.0])
     return {
@@ -549,7 +572,7 @@ def fit_audit_proxy(
         j_p.T @ ((n_audit / np.clip(p * (1.0 - p), 1e-9, None))[:, None] * j_p)
         + j_z.T @ ((n_proxy / np.clip(z * (1.0 - z), 1e-9, None))[:, None] * j_z)
     )
-    covariance = _safe_inverse(info)
+    covariance = _identified_covariance(info)
     contrast_p = np.array([-1.0, 1.0, 0.0, 0.0])
     contrast_e = np.array([0.0, 0.0, -1.0, 1.0])
     return {

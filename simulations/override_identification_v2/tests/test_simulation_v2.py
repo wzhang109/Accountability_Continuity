@@ -1,4 +1,5 @@
 import unittest
+from dataclasses import replace
 
 import numpy as np
 
@@ -23,6 +24,43 @@ from simulation_v2 import (
 class IdentificationTests(unittest.TestCase):
     def setUp(self):
         self.config = StudyConfig(monte_carlo_replications=5, sweep_draws=100)
+
+    def test_uninformative_proxy_does_not_report_zero_uncertainty(self):
+        config = replace(self.config, proxy_sensitivity=0.5, proxy_false_positive=0.5)
+        with self.assertRaisesRegex(ValueError, "not separately identified"):
+            fit_audit_proxy(np.full(24, 700), 1000, np.full(24, 500), 1000, config)
+
+    def test_uninformative_overrides_do_not_report_zero_uncertainty(self):
+        # Engaged and disengaged people override equally, at every accuracy.
+        config = replace(self.config, detection=0.25, false_alarm=0.25,
+                         disengaged_override=0.25)
+        with self.assertRaisesRegex(ValueError, "not separately identified"):
+            fit_audit_override(np.full(24, 700), 1000, np.full(24, 250), 1000, config)
+
+    def test_single_period_cannot_identify_two_endpoints(self):
+        with self.assertRaisesRegex(ValueError, "not separately identified"):
+            fit_audit_proxy(np.array([700]), 1000, np.array([700]), 1000, self.config)
+
+    def test_weaker_proxy_separation_increases_uncertainty(self):
+        # At e=.5 both proxies have rate .5, so binomial noise is the same.
+        strong = replace(self.config, proxy_sensitivity=0.9, proxy_false_positive=0.1)
+        weak = replace(self.config, proxy_sensitivity=0.6, proxy_false_positive=0.4)
+        args = (np.full(24, 700), 1000, np.full(24, 500), 1000)
+        strong_fit = fit_audit_proxy(*args, strong)
+        weak_fit = fit_audit_proxy(*args, weak)
+        self.assertAlmostEqual(weak_fit["se_delta_e"] / strong_fit["se_delta_e"],
+                               4.0, places=3)
+
+    def test_population_consistent_independent_channels_do_not_flag_drift(self):
+        scenario = build_scenarios(self.config)["stable_negative_control"]
+        n = 100_000
+        fit = fit_audit_proxy(scenario["model_accuracy"].to_numpy() * n, n,
+                              scenario["expected_proxy_rate"].to_numpy() * n, n,
+                              self.config)
+        statistic, p_value = override_predictive_check(
+            fit, scenario["expected_override_rate"].to_numpy() * n, n, self.config)
+        self.assertLess(statistic, 1e-6)
+        self.assertGreater(p_value, 0.99)
 
     def test_exact_equivalent_expected_paths(self):
         scenarios = build_scenarios(self.config)

@@ -1,118 +1,78 @@
-# Accountability Continuity Research Log
-**Researcher:** Wenwen (Celine) Zhang
-**Project:** Accountability Continuity — An Institutional Framework for Human-Agentic Task Allocation
-**Status:** Independent research, in progress — developed alongside a parallel project on compute governance (not public)
+# Accountability Continuity
 
-## Current extension: human judgment and learning with AI
+**Wenwen (Celine) Zhang · Independent research in progress**
 
-This repository also documents a related research program on whether AI helps
-people make better decisions now and whether it helps them become better
-decision-makers later.
+When a person still signs off on an AI-assisted decision, what can we learn
+about the review and judgment behind that signature?
 
-- [Research program: Human Judgment and Organizational Learning with AI Assistance](RESEARCH_PROGRAM.md)
-- [Working proposal: AI Advice Timing and Independent Judgment in Youth](preserving-independent-judgment-in-youth-ai-use.md)
-- [Focused review: AI Advice Timing and Human Learning](ai-advice-timing-and-human-learning.md)
-- [Plain-language guide to the override-rate simulation](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md)
+This project examines that measurement question and a related learning
+question: how does the order of AI advice affect what people can later do on
+their own? The repository contains a mathematical example, synthetic-data
+simulations, exploratory essays, and study proposals. It contains no evidence
+collected from people or organizations for these studies.
 
-## The problem
+## Start here
 
-When an organization starts using AI for a task, the person who signs off
-usually stays the same. What changes is what signing off consists of.
+| Material | What it provides |
+|---|---|
+| [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
+| [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |
+| [Simulation methods and results](simulations/override_identification_v2/README.md) | Model specification, code, uncertainty checks, and synthetic results |
+| [Methods verification, September 2026](simulations/override_identification_v2/VERIFICATION_2026-09-14.md) | Checks performed, a numerical correction, and remaining limitations |
+| [Research program](RESEARCH_PROGRAM.md) | How the measurement and learning questions fit together |
+| [Operational study draft](studies/ai-advice-timing/DRAFT_PROTOCOL.md) | Three workflows, common assessments, outcomes, and analysis decisions |
+| [Illustrative task examples](studies/ai-advice-timing/TASK_EXAMPLES.md) | Fictional evidence-review cases for discussing task suitability |
+| [Youth study proposal](preserving-independent-judgment-in-youth-ai-use.md) | A separate application that requires appropriate research partners |
+| [Focused literature review](ai-advice-timing-and-human-learning.md) | Earlier reading on advice timing and learning; not a systematic review |
 
-A concrete version: a hospital adopts AI-assisted imaging. The rule is that the
-model produces a reading and a radiologist confirms it. In month one the
-radiologist looks at the scan and occasionally overrides. A year later the
-radiologist reads the model's summary and confirms. The signature is the same.
-The liability is the same. The judgment has moved.
+## What the simulation establishes
 
-The measurement problem is that these two states are hard to tell apart from
-the outside. The reviewer's disagreement rate with the model drifts toward zero
-in both — once because the model got better, once because the reviewer stopped
-checking. `simulations/` first contained a constructive counterexample showing
-that the two can be exactly observationally equivalent under a stated,
-illustrative model. The current
-[`override_identification_v2`](simulations/override_identification_v2/) study
-makes the analytic identification result primary, adds constrained likelihood
-estimation, independent measurement channels, repeated Monte Carlo evaluation,
-and explicit calibration-drift checks.
+Under the stated model, improving AI accuracy and declining human review can
+produce exactly the same expected override path. The equality is constructed
+algebraically. Repeated simulations then examine estimation error after adding
+an accuracy audit and a calibrated process measure.
 
-## The question
+That does not show that people in real organizations are disengaging. The
+additional measurements help only under assumptions about reviewer behavior,
+sampling, and calibration. Opening a record, disagreeing with AI, or recording
+an initial answer is not itself proof of careful judgment.
 
-Which decisions require a human who could have decided otherwise and who bears
-the consequence — and how would you know whether a given process still has one?
+The proposed experiment asks a different question. It compares **Initial
+Judgment First**, **AI Advice First**, and **No AI**, with the same outcome
+feedback, followed by common unaided assessments. Neither assisted workflow
+is assumed to be better. No participants have been recruited, and this is not
+a registered or completed experiment.
 
-The second half is the harder half, and it is what this project is mainly about.
+## Research context
 
-## What "could have decided otherwise" requires
+My background is in development economics and public policy. A recurring
+interest is how people's environments shape their opportunities to learn and
+develop. Field research, institutional questions, and AI-assisted work led me
+to explore different parts of that problem; this was not a single plan fixed
+from the beginning.
 
-Three conditions, each necessary and none sufficient on its own:
+State Coordination is a separate, ongoing line of work on constructing
+source-based coordination measures from Chinese policy texts. It is not a
+validated theory, and it should not be conflated with my Korean economic
+research experience. Neither project validates the other.
 
-| Condition | What it requires | Observable proxy |
-|---|---|---|
-| **Grounds** | an independent basis for disagreeing | does the reviewer open the primary record, or only the summary? |
-| **Standing** | disagreement is affordable | override rate is not near zero; overrides do not trigger penalty or delay |
-| **Discrimination** | the ability to tell when to disagree | volume of same-class cases seen, with feedback |
+## Earlier exploratory writing
 
-These are an adaptation of a long-standing decomposition of responsible agency —
-roughly, an act is blameworthy unless done in ignorance or under compulsion
-(Aristotle, *NE* III), with competence added as the modern third condition.
+The [research log](research-log.md), [philosophical essay](the-gap-that-cant-close.md),
+and earlier framework and identification notes preserve the development of the
+ideas. They include conceptual claims and proposed methods that have not been
+empirically established. The current [status note](RESEARCH_STATUS.md) governs
+how the work should be described today. In particular, this repository does
+not establish a new theory of responsibility, an uncited gap between whole
+literatures, or a completed organizational causal study.
 
-They are claimed as **necessary, not sufficient**: someone can satisfy all three
-and still rubber-stamp. The claim is only that failing any one of them means the
-sign-off is not a judgment.
+## Contributions and collaboration
 
-## Why not go through consciousness
+The problem selection and research motivation are mine. AI tools contributed
+substantially to the design, Python implementation, debugging, and writing. I
+am still learning the technical details; automated checks do not substitute
+for independent methodological review. See the [contribution statement](RESEARCH_STATUS.md#contributions-and-review).
 
-An obvious alternative framing asks whether AI systems have moral status or
-subjective experience. This project deliberately does not go that way. That
-question faces an explanatory barrier that evidence can narrow but not close
-(Nagel 1974; Chalmers; Block; Butlin, Long et al. 2023), which makes it a poor
-foundation for institutional policy that has to be written now.
-
-Accountability continuity is a weaker and more tractable criterion: whether the
-same subject who errs also bears the consequence and carries it into the next
-decision. It does not require resolving the harder question.
-
-## Why this sits across three literatures
-
-- **Philosophy of mind and AI welfare research** (Nagel 1974; Chalmers; Block; Parfit 1984; Butlin, Long et al. 2023; Long, Sebo, Butlin, Plunkett et al. 2026) supplies the grounding for why the existential-gap question is a poor foundation for policy, and why a weaker claim — causal/psychological continuity of a mind-stream, not a metaphysical self — is defensible and sufficient for the accountability-continuity criterion.
-- **Organizational behavior and management science treatments of agentic AI** (Liu 2026; Stanford HAI / Google DeepMind's Organizational AI Research program) supply empirical and theoretical groundwork on how agent collectives coordinate and where human accountability is currently assumed to sit — often as an unexamined premise this project treats as the central object of study, not a background fact.
-- **Applied microeconometrics for policy evaluation** supplies the identification strategy. The author's prior work uses event-study panel designs with differential treatment exposure — a common event date, with units differing in exposure intensity — applied to South Korea's 1987 democratic transition and sectoral state coordination legacies. This project extends that lineage to a harder setting: staggered adoption, where organizations adopt at different times, combined with an ordinal rather than binary treatment. That combination requires estimators built for non-binary and potentially non-absorbing treatments (de Chaisemartin & D'Haultfœuille) rather than the standard binary staggered-DiD toolkit.
-
-The philosophy and organizational-behavior literatures currently do not cite each other on this question. The contribution of this project is treating that gap as the thing to be filled, using the economics toolkit as the bridge — not developing a purely philosophical or purely qualitative argument.
-
-## Repository structure
-
-```
-/research-log.md          -- weekly dated entries (primary record)
-/RESEARCH_PROGRAM.md      -- current human-judgment research agenda
-/preserving-independent-judgment-in-youth-ai-use.md
-                           -- youth AI study proposal and downloadable PDF
-/ai-advice-timing-and-human-learning.md
-                           -- focused review of advice timing and human learning
-/proposal/                -- formal model, identification strategy, index construction
-/simulations/sim_identification.py
-                           -- initial constructive counterexample
-/simulations/override_identification_v2/
-                           -- current identification study, results, tests,
-                              figures, and plain-language guide
-
-Planned:
-/framework-drafts/
-/expert-conversations/
-```
-## Relationship to other projects
-
-This project developed alongside a parallel line of work on institutional resource allocation under capacity constraints (not public). It is best understood as a zoom-out from that work rather than a separate direction: who should hold authority and bear responsibility when capacity or decision rights are reallocated — whether by policy or
-by automation — is the general question, and both projects are instances of it.
-
-The measurement approach comes from an earlier applied-economics project on state coordination and sectoral policy legacies, publicly documented here:
-**[state-coordination](https://github.com/wzhang109/state-coordination)** — source-traceable policy-text measurement, rubric-based coding with human review, index construction, and an event-study workflow.
-
-The shared inheritance is the measurement design — dimensions fixed before outcomes are examined, every score traceable to a primary passage, ambiguous cases routed to human review rather than machine finalization, and a rubric schema (`coder_id`, `confidence`, `review_status`) kept deliberately consistent across projects.
-
-The identification strategies differ and should not be conflated. The earlier project uses a common event date with units differing in exposure intensity. This project faces staggered adoption timing and an ordinal treatment, which is why it requires estimators built for non-binary, potentially non-absorbing treatments rather than the standard binary staggered-DiD toolkit.
-
-## A note on scope and confidence
-
-This log records real-time research judgment, including reversals and open disagreements — for example, an active internal debate (documented in the log) about whether markers-based AI consciousness research can ever produce evidence that tracks the underlying property it targets, given the absence of an evolutionary anchor that licenses this kind of inference in animal welfare research. Claims in early entries should be read as working hypotheses, not settled conclusions, unless a later entry states they have been tested.
+I welcome discussion of measurement validity, feasible learning tasks, and
+research partnerships. The current materials are research tools and working
+proposals.

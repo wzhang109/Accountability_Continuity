@@ -1,6 +1,12 @@
 # Accountability Continuity Index: Formal Model and Identification Strategy
 *Working proposal draft — v0.1*
 
+**Historical exploratory proposal.** The index, organizational study, and
+estimator choices below have not been implemented or validated as an empirical
+design. They are not evidence about State Coordination or the Korean research
+experience. For current scope, the separate synthetic model, and AI assistance,
+see the [research status](../RESEARCH_STATUS.md) and [research program](../RESEARCH_PROGRAM.md).
+
 ## 1. Motivation
 
 Whether an AI system possesses consciousness, sentience, or moral status is, on current evidence, not resolvable with the confidence institutional policy requires — the explanatory gap between third-person evidence and first-person experience (Nagel, 1974; Chalmers, 1996) is a structural barrier, not a data limitation. Waiting for this question to resolve before designing institutions for human-AI task allocation is not a viable policy strategy.

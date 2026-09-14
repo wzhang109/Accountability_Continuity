@@ -1,0 +1,151 @@
+{
+  "scope": "Full default synthetic run compared with checked-in outputs; no human data.",
+  "reference_repository_commit": "11f80d772966ad1f4f58ddc88af5ec1211fbf963",
+  "simulation_sha256": "6ff0c39a065411f4f9fb4d97818e9aff9be88379c741269ad24fde054ad0fd94",
+  "verification_script_sha256": "7bb503f74a48e53e601b93c95a26eae514c36064e40b8be8167e647552438d17",
+  "numeric_tolerance": {
+    "relative": 1e-08,
+    "absolute": 1e-10
+  },
+  "config": {
+    "periods": 24,
+    "cases_per_period": 4000,
+    "detection": 0.75,
+    "false_alarm": 0.05,
+    "disengaged_override": 0.04,
+    "proxy_sensitivity": 0.9,
+    "proxy_false_positive": 0.1,
+    "proxy_sample_share": 0.25,
+    "master_seed": 20260827,
+    "sweep_draws": 60000,
+    "sweep_tolerance": 0.005,
+    "monte_carlo_replications": 1000,
+    "sample_sizes": [
+      250,
+      1000,
+      4000
+    ],
+    "audit_shares": [
+      0.1,
+      0.25
+    ]
+  },
+  "software_versions": {
+    "python": "3.12.7",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "matplotlib": "3.9.2",
+    "scipy": "1.13.1"
+  },
+  "replication_rows": 36000,
+  "fitted_models": 72000,
+  "design_cells": 36,
+  "accepted_equivalence_paths": 4345,
+  "all_fits_converged": true,
+  "maximum_boundary_rate": {
+    "audit_override_any_cell": 0.402,
+    "audit_proxy_any_cell": 0.001
+  },
+  "csv_comparisons": [
+    {
+      "file": "assumption_check_summary.csv",
+      "rows": 36,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 1.1102230246251565e-16,
+      "reference_sha256": "c0118dfc32e31465f1b80bfc1da463da7544135ed7ffc328e44257df2e024caa",
+      "rerun_sha256": "420a6afc7993b29eb6c2070349e93c3ce18e2ebadbc5a87565156ee563c142a1"
+    },
+    {
+      "file": "equivalence_sweep.csv",
+      "rows": 4345,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "268a544da70f753f13269de94c103ea348fbe13c339b99ddff69bd39e6b88e04",
+      "rerun_sha256": "268a544da70f753f13269de94c103ea348fbe13c339b99ddff69bd39e6b88e04"
+    },
+    {
+      "file": "identification_curves.csv",
+      "rows": 1259,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "998cf255f9ffe97379955b5317684afe5f6e98a4c07d2a0b2e59e8d1f15c94b3",
+      "rerun_sha256": "998cf255f9ffe97379955b5317684afe5f6e98a4c07d2a0b2e59e8d1f15c94b3"
+    },
+    {
+      "file": "override_only_likelihood_surface.csv",
+      "rows": 14641,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "5652529bf8dd0e80b56bf2c6b5a997a723ec54af3ae26760f1e00e460bb54220",
+      "rerun_sha256": "5652529bf8dd0e80b56bf2c6b5a997a723ec54af3ae26760f1e00e460bb54220"
+    },
+    {
+      "file": "proxy_calibration_sensitivity.csv",
+      "rows": 9,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "b24399589899e802be973047889244d16f514c1a7d457a53dc32996ee256fcfb",
+      "rerun_sha256": "b24399589899e802be973047889244d16f514c1a7d457a53dc32996ee256fcfb"
+    },
+    {
+      "file": "recovery_summary.csv",
+      "rows": 180,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 1.6653345369377348e-16,
+      "reference_sha256": "41b8737ce915d56c2a7d881641c63089c867e8fe4721dfd82957d3c5b83f83fb",
+      "rerun_sha256": "9b405ab22cbc6283bdc5edaa91552e66f9e6fdd468620da3e3db6659f1700e33"
+    },
+    {
+      "file": "scenario_paths.csv",
+      "rows": 144,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "a27ceb39d8ccf9b3d983cf6f897d6f032b85e7e9439023130675c365b7b8f7f1",
+      "rerun_sha256": "a27ceb39d8ccf9b3d983cf6f897d6f032b85e7e9439023130675c365b7b8f7f1"
+    },
+    {
+      "file": "sensitivity_summary.csv",
+      "rows": 27,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "11e5a136544300c19a1a6cc18da0054bbad66b2c748c4ac3f7700219785eb093",
+      "rerun_sha256": "11e5a136544300c19a1a6cc18da0054bbad66b2c748c4ac3f7700219785eb093"
+    },
+    {
+      "file": "trend_regime_summary.csv",
+      "rows": 72,
+      "matches_within_tolerance": true,
+      "maximum_absolute_numeric_difference": 0.0,
+      "reference_sha256": "ff2e76145378f967f351340c688a99b601484349f7d48c4b951742f18afe337d",
+      "rerun_sha256": "ff2e76145378f967f351340c688a99b601484349f7d48c4b951742f18afe337d"
+    }
+  ],
+  "regenerated_figures": [
+    {
+      "file": "figure_1_scenarios.png",
+      "same_file_hash": true
+    },
+    {
+      "file": "figure_2_equivalence.png",
+      "same_file_hash": true
+    },
+    {
+      "file": "figure_3_likelihood_ridge.png",
+      "same_file_hash": true
+    },
+    {
+      "file": "figure_4_recovery.png",
+      "same_file_hash": true
+    },
+    {
+      "file": "figure_5_sensitivity.png",
+      "same_file_hash": true
+    },
+    {
+      "file": "figure_6_proxy_calibration.png",
+      "same_file_hash": true
+    }
+  ],
+  "replication_data_sha256": "24d650fc6066f3041581b998c1d2a258bd46aa18e667b86a5734fe54fb7a0776",
+  "result": "All numerical comparisons and replication integrity checks passed."
+}

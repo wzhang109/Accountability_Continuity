@@ -1,5 +1,11 @@
 # Accountability Continuity: Override-Rate Identification Study
 
+**September 14, 2026 update:** the full default study has been rerun and checked
+against the saved summaries. A numerical guard now rejects unidentified fits
+instead of reporting misleading finite Wald uncertainty. See the
+[verification record](VERIFICATION_2026-09-14.md) and the expanded
+[English and Chinese walkthrough](PLAIN_LANGUAGE_GUIDE.md).
+
 ## Research question
 
 Can a falling override rate distinguish improving model accuracy from weakening
@@ -61,6 +67,12 @@ The expected override rate is:
 ```text
 R_t = e_t [d_t(1 - p_t) + f p_t] + (1 - e_t) q
 ```
+
+This expression assumes engaged cases have the same AI correctness probability
+as the overall case population. The aggregate simulator generates the audit,
+proxy, and override channels independently; it does not model overlapping
+samples or selective review of difficult cases. The code's `detection`
+parameter includes both detecting an error and acting on it.
 
 The reference values `d=.75`, `f=.05`, and `q=.04` are illustrative. They are
 not claimed to be calibrated to any deployment.
@@ -158,6 +170,13 @@ e = (R - q) / [d(1 - p) + f p - q]
 is observationally equivalent under the model. Model accuracy and engagement
 are not jointly point identified whenever more than one feasible pair exists.
 
+The displayed inverse requires a nonzero denominator. If the denominator is
+zero, all engagement values are compatible when `R=q`, and none are compatible
+when `R` differs from `q`. Similarly, a proxy with `s=g` contains no information
+about engagement. A rank-deficient fitted information matrix now raises an
+explicit error; a pseudoinverse alone must not turn missing information into
+zero uncertainty.
+
 Even after model accuracy is independently measured, engagement is only
 identified under assumptions about `d`, `f`, and `q`. When
 
@@ -232,15 +251,20 @@ Not supported:
 
 ## Separate future experiment
 
-A Human First versus AI First study is a different project. Human First is an
-experimentally assigned interface condition, engagement is a latent mechanism,
-and override is an observed transition. They should not be treated as the same
-variable.
+A three-arm Initial Judgment First, AI Advice First, and No AI study is a
+different project. A workflow is an experimentally assigned condition,
+engagement is a latent mechanism, and override is an observed transition. They
+should not be treated as the same variable.
 
 A credible future experiment would randomize workflow order, require an
 initial unaided commitment, insert controlled wrong-AI trials, measure decision
 revisions and calibration, and test later AI-absent performance. The current
 repository does not claim to have run that experiment.
+
+The [operational draft](../../studies/ai-advice-timing/DRAFT_PROTOCOL.md) specifies
+the proposed three-arm comparison and common later assessments. Initial
+commitment is required only in the judgment-first intervention, not silently
+added to the advice-first arm. Task examples remain unvalidated.
 
 ## Methodological grounding
 

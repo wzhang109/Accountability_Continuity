@@ -1,0 +1,87 @@
+# Research status and contributions
+
+**Updated September 14, 2026 · Wenwen (Celine) Zhang**
+
+This note distinguishes work present in the repository from assumptions and
+future studies. It takes precedence over stronger wording in earlier essays
+or research-log entries.
+
+## What has been done
+
+| Work | Evidence available | Limit |
+|---|---|---|
+| Override-rate identification example | Equation and two feasible paths with the same expected override rate | A constructive mathematical example under a binary model; no observed organizational trend |
+| Estimation and sensitivity simulations | Python, tests, configuration, CSV summaries, and figures | Synthetic data with specified truth and selected parameter values |
+| Literature and conceptual work | Reading notes, an exploratory framework, and proposals | Not a systematic review, proof of novelty, or validated theory |
+| Advice-timing study design | Three-arm operational draft and fictional task examples | No participants, ethics approval, registration, pilot, or empirical results |
+
+The simulation models a latent probability of substantive review. It does not
+directly measure reasoning, legal responsibility, expertise, incentives,
+children's development, or organizational learning. The label *Accountability
+Continuity* expresses a research concern; the code does not operationalize all
+of that concern.
+
+## What is assumed
+
+The main simulation specifies AI accuracy, review probability, and conditional
+override behavior. Its estimators assume linear probability paths, independent
+measurement channels, and known calibration parameters. The reference values
+were chosen for illustration; they were not estimated from an organization.
+
+An engaged person can miss an error or decline to intervene. A person can open
+evidence without reading it carefully. A correct final answer can follow from
+careful review, luck, or unexamined agreement. These distinctions are reasons
+to collect additional evidence, not quantities the current code already
+resolves.
+
+## What remains a hypothesis or plan
+
+- Recording a judgment before AI advice might support later learning, increase
+  commitment to an early mistake, or have little effect. Early AI advice might
+  help orient attention or anchor a person to an error. The direction is open.
+- A delayed unaided assessment can measure performance on the selected task.
+  It cannot by itself establish broad independence of thought or long-term
+  human development.
+- Individual learning may contribute to organizational knowledge, but feedback
+  routing, team interaction, retention, and transfer require separate studies.
+- The operational draft proposes an initial feasibility study with adults.
+  This is a practical design option developed with AI assistance, not an
+  already agreed recruitment plan. The youth proposal remains a separate
+  application requiring suitable institutional partners.
+- State Coordination remains an ongoing attempt to construct source-based
+  indicators from Chinese policy texts. It is not evidence that a particular
+  political sequence is necessary for development.
+
+## Contributions and review
+
+The researcher's problem selection and motivation grew from her economics,
+public-policy, field-research, and research-evaluation experience. The project
+received substantial AI assistance in conceptual refinement, simulation design,
+Python coding, debugging, documentation, and preparation of study materials.
+It should not be represented as software independently engineered by the
+researcher or as a method she has already independently validated in full.
+
+The September 14 update includes an AI-assisted code review, a correction to
+uncertainty reporting for uninformative measurements, a reproducibility check,
+and a more operational study draft. The [verification record](simulations/override_identification_v2/VERIFICATION_2026-09-14.md)
+states exactly what was run. Passing tests or rerunning a simulation checks
+specified implementation behavior. It is not independent peer review and does
+not establish that the model is appropriate for a real setting.
+
+The researcher is still learning the implementation and methods. These
+materials are intended to support review with a statistician or research
+partner. Encouragement from a reader or potential contact should not be
+presented as formal methodological validation, supervision, or a collaboration
+commitment.
+
+## Next decisions that require people or evidence
+
+1. Review the model assumptions and inference with a qualified methodological
+   collaborator, especially proxy calibration and correlated measurements.
+2. Assess whether the proposed task captures a learnable skill and is suitable
+   for the intended participants. The example cases are discussion materials.
+3. Secure a setting and the required research review before recruiting anyone.
+4. Use feasibility evidence to finalize the item bank, timing, sample size,
+   analysis plan, and any registration for a later confirmatory study.
+
+None of these steps is recorded as completed.

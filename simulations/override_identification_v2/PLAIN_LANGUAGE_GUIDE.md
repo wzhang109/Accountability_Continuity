@@ -1,175 +1,207 @@
-# Plain-language guide
+# Understanding the override-rate model
 
-## The study in one sentence
+**Illustrative model, not data from an organization.**
 
-A falling human override rate does not tell us, by itself, whether an AI system
-has improved or whether people have stopped checking it carefully.
+## The question in plain language
 
-## A simple example
+If people change fewer AI recommendations, has the AI improved, or are people
+checking less? This project constructs two different processes with exactly
+the same expected override rate. It then tests estimation methods on synthetic
+data whose underlying process is known.
 
-Imagine that reviewers initially override 30 out of every 100 AI decisions.
-A year later, they override only 12.
+## What the symbols mean
 
-That might be good news. The AI may now make fewer mistakes, so there is less to
-correct.
+| Symbol | Meaning in this model | What it does not establish |
+|---|---|---|
+| p | Probability the AI answer is correct | The quality of the eventual human decision |
+| e | Probability of substantive human review | An observed or validated measure of independent thought |
+| d | Probability an engaged person overrides an incorrect AI answer | Detection alone; acting on an error is also required |
+| f | Probability an engaged person overrides a correct AI answer | The reason for the intervention |
+| q | Probability of override without substantive review | Whether the resulting answer is correct |
+| R | Overall probability of override | The quality of oversight or final accuracy |
+| s, g | Sensitivity and false-positive rate of a review proxy | Known properties of a real process log |
 
-It might also be bad news. Reviewers may have learned to trust the system too
-much and may no longer examine the underlying evidence.
+The code retains the name `detection` for d. Its operational meaning combines
+noticing an error and acting on it. The simulation does not model whether the
+replacement answer after an override is correct.
 
-The observed number is the same in both stories. What happened underneath is
-not.
+## Build the equation one part at a time
 
-This is the measurement problem the study examines.
+Under the model, an engaged reviewer encounters an incorrect AI answer with
+probability (1-p), and a correct answer with probability p. This uses the same
+accuracy distribution for engaged cases as for all cases; selective review of
+hard cases would require a different specification.
 
-## What the study actually does
+Among engaged cases, the override probability is:
 
-The study does not use data from a real company or hospital. It creates
-synthetic review processes whose underlying conditions are known. That makes it
-possible to test what an observer could and could not infer from the recorded
-metrics.
+```text
+A(p) = d × (1-p) + f × p
+```
 
-The design has four parts.
+Weight this by the proportion reviewed, then add overrides without substantive
+review:
 
-### 1. Describe how an override can happen
+```text
+R = e × A(p) + (1-e) × q
+  = q + e × [A(p)-q]
+```
 
-The model separates four things:
+The expression separates possible sources of the recorded action. It does not
+tell us why any particular person acted.
 
-* how often the AI is correct;
-* whether the reviewer genuinely examines the case;
-* whether an engaged reviewer notices and acts on an AI error;
-* whether someone overrides for another reason even without substantive review.
+## A worked example using the actual reference values
 
-This separation matters. A reviewer can be engaged but fail to detect an
-error. Detection ability and engagement are not the same thing.
+Set d=.75, f=.05, and q=.04. These are illustrative choices.
 
-### 2. Ask what override rate alone can reveal
+At the start, p=.60 and e=.90. Out of 1,000 cases **in expectation**:
 
-For any observed override rate, there can be many combinations of AI accuracy
-and reviewer engagement that produce it. The study maps this full set instead
-of presenting only one hand-picked example.
+- 900 receive substantive review;
+- of those, 360 contain incorrect AI answers, and 270 are overridden;
+- the remaining 540 contain correct AI answers, and 27 are overridden;
+- among 100 cases without substantive review, 4 are overridden.
 
-The first finding is therefore mathematical: override rate alone cannot
-identify both quantities.
+The total is 301 overrides: **30.10%**. Actual sampled counts fluctuate.
 
-### 3. Add independent evidence
+Now compare two endpoints:
 
-The simulation then adds two possible sources of information:
+| Quantity | Starting point | AI improves | Review declines |
+|---|---:|---:|---:|
+| AI accuracy p | .60 | .88 | .60 |
+| Review probability e | .90 | .90 | .291724… |
+| Expected override rate R | .3010 | .1246 | .1246 |
 
-* an independently adjudicated sample that estimates AI accuracy;
-* a process measure, such as whether the reviewer opened the primary evidence.
+For the improving-AI endpoint:
 
-The process measure is deliberately treated as imperfect. Opening a record is
-not proof of thoughtful review. It is only a proxy whose sensitivity and
-false-positive rate would need to be validated.
+```text
+R = .90 × [.75 × .12 + .05 × .88] + .10 × .04
+  = .1246
+```
 
-### 4. Test what happens when those assumptions drift
+If accuracy stays at .60, the same rate is obtained by solving:
 
-Two stress tests are included:
+```text
+e = (.1246-.04) / [.75 × .40 + .05 × .60-.04]
+  = .291724…
+```
 
-* reviewers remain engaged, but their ability to detect and act on errors
-  declines;
-* true engagement remains stable, but the process proxy becomes less reliable.
+The corresponding paths match at every modeled period, not just at these
+endpoints. This equality is constructed by algebra. It is not a discovered
+behavior of real people, and the paths are not the only possible explanations.
 
-When the independent data channels no longer agree, the study reports that the
-measurement model is incompatible with the observations. It does not claim to
-know which omitted real-world mechanism caused the conflict.
+## Why extra data help only under assumptions
 
-## Initial findings
+If p is measured independently and d, f, q are known, then:
 
-Under the illustrative assumptions:
+```text
+e = (R-q) / [d(1-p)+fp-q]
+```
 
-* thousands of different accuracy and engagement paths can closely reproduce
-  the same override trend;
-* independent measurements reduce the ambiguity when their calibration is
-  valid;
-* more data reduce random error but cannot repair a wrong measurement model;
-* with detection drift, a model that assumes detection is constant produces a
-  precise but false engagement decline;
-* an independent predictive check can flag this incompatibility;
-* small samples can still push constrained estimates to probability boundaries,
-  so boundary diagnostics must be reported alongside interval coverage.
+This inverse only applies when the denominator is nonzero and the implied e
+lies between 0 and 1.
 
-These are findings about the behavior of a stated model. They are not estimates
-of what is happening in any real organization.
+If the denominator is zero, engaged and unengaged cases have the same override
+probability. When R=q, every e is compatible. When R differs from q, none is
+compatible under those exact population assumptions. Very small denominators
+make estimates sensitive to small errors.
 
-## A 60-second spoken explanation
+A second channel is a proxy, such as a record-opening event:
 
-> My research asks what organizations can really learn from human oversight
-> metrics after adopting AI. I focus on override rate, meaning how often a
-> reviewer changes the AI's recommendation. A decline in that rate looks
-> reassuring, but it can come from two very different processes: the AI may be
-> getting more accurate, or reviewers may be checking less carefully. I first
-> show mathematically that override rate alone cannot distinguish those
-> explanations. I then use repeated synthetic data to test what additional
-> evidence helps, such as an independent accuracy audit and a calibrated
-> process measure. Finally, I introduce calibration drift to see whether the
-> method can recognize when its assumptions no longer fit. The main lesson is
-> not that override rate is useless. It is that a single clean metric can create
-> false confidence unless it is interpreted alongside independent evidence and
-> explicit assumption checks.
+```text
+P(proxy=1) = g + (s-g)e
+```
 
-## Questions you should be ready to answer
+Recovering e requires externally justified s and g. If s=g, the proxy contains
+no information about e. Opening a record is not proof that someone read it.
 
-### Did the study prove that reviewers disengage in practice?
+The revised estimator refuses to return finite Wald uncertainty when its
+information matrix has an unresolved direction. A numerical optimizer can
+converge even when a parameter cannot be learned from the measurements.
 
-No. It proves that an observed override trend is compatible with more than one
-underlying process under the stated model.
+## Assumptions a real study would have to revisit
 
-### Why use simulation rather than real data?
+| Current choice | Why it matters outside the simulation |
+|---|---|
+| A binary state of substantive review | Actual review varies in depth, skill, and opportunity |
+| Engaged cases have the same AI accuracy p | People may selectively review difficult or suspicious cases |
+| Known d, f, q for one estimator | Incentives, reviewer skill, and permission to intervene can change |
+| Known, stable s and g for the proxy estimator | Interface changes can alter logging without altering thought |
+| Independent binomial measurement channels | Auditing the same cases creates dependence; reviewers and teams also cluster |
+| Linear paths across 24 periods | Abrupt or nonlinear change is outside the fitted trend model |
+| Model-based approximate Wald intervals | Small samples, weak information, and boundaries can distort uncertainty |
 
-The first question is whether the quantities are identifiable at all. In
-synthetic data, the true process is known, so we can test whether a method
-recovers it and how it fails. A real pilot is the next stage, not a substitute
-for this identification check.
+An audit of a fixed test set and an audit of current operational cases answer
+different questions. A real design must define its target population and track
+case mix rather than assuming that either sample represents the other.
 
-### Does opening primary evidence measure engagement?
+## What the simulation contributes
 
-Not directly. It is an example of an imperfect behavioral proxy. It would need
-manual validation, and the study explicitly shows that proxy drift can produce
-false conclusions.
+Repeated synthetic draws test recovery, sampling error, approximate coverage,
+and failure under selected calibration changes. An independent-channel check
+compares predicted overrides with observed overrides. A rejection indicates
+incompatibility with the specified measurement model. It does not diagnose
+the cause; non-rejection does not prove the model is correct.
 
-### What if detection ability or intervention incentives change?
+The full setup is in [methods](README.md), historical summaries in
+[results](RESULTS.md), and the latest checks in
+[verification](VERIFICATION_2026-09-14.md). This is a methods exercise with
+substantial AI assistance, not independent external validation.
 
-Then an override decline should not automatically be interpreted as falling
-engagement. The independent-channel check may reveal that the model is
-incompatible with the observations, but additional evidence is needed to
-diagnose the cause.
+## Relation to the learning study
 
-### What would make this an empirical study?
-
-A real study would need a stable held-out accuracy set, validated process
-measures, sentinel cases with known errors, information about reviewer and case
-clustering, and a plan for changes in case mix and organizational incentives.
+The simulation contains no learning process or participants. The proposed
+experiment assigns a workflow and measures later performance. A pre-advice
+answer is part of an intervention, not a measurement of the simulation's e.
+Results from one cannot be used as evidence that the other mechanism occurs.
 
 # 中文讲解
 
-## 一句话版本
+## 先把结论说准
 
-人工推翻 AI 建议的比例下降，并不能单独告诉我们，是 AI 变准确了，还是人越来越不认真检查了。
+这项研究说明：在指定模型下，同样的人工推翻率下降，可以由“AI 更准确”
+或“人工检查减少”产生。它没有发现现实中的人正在失去判断力，也没有验证
+一种完整的责任理论。
 
-## 这项研究到底研究什么
+## 式子究竟在算什么
 
-假设一个机构原来每 100 个 AI 建议会修改 30 个，一年后只修改 12 个。这个变化有两种完全不同的解释：
+p 是 AI 答对的概率；e 是进行实质检查的概率。
+d 是认真检查的人遇到错误 AI 答案后，发现问题并实际推翻的概率。
+它同时包含“发现”和“行动”，不能直接当成认知能力。
+f 是认真检查时推翻正确建议的概率；q 是没有实质检查时仍然推翻的概率。
 
-* AI 的错误变少了，所以人不需要修改那么多；
-* AI 没有变好，但人逐渐形成依赖，不再认真查看原始证据。
+```text
+总体推翻率 = e × [d × (1-p) + f × p] + (1-e) × q
+```
 
-机构表面上看到的数字相同，但背后的 oversight quality 完全不同。研究的问题就是：只看 override rate，我们到底能知道什么，又不能知道什么？
+这里还假定，认真检查的案例和所有案例有相同的 AI 准确率。
+如果人专门检查更难的案例，这个写法就需要调整。
 
-## 研究怎么设计
+## 用仓库里的数字算一次
 
-第一步，把模型准确率、reviewer 是否认真参与、认真参与后能否发现错误，以及没有认真参与时偶尔修改建议的概率分开。
+设 d=.75、f=.05、q=.04。开始时 AI 准确率是 .60，检查概率是 .90。
+每 1,000 个案例，期望有 301 个被推翻，即 30.10%。
 
-第二步，在数学上计算：同一个 override rate 可以由哪些不同的模型准确率和 engagement 组合产生。结论是它对应的是一整组可能性，不是一个唯一答案。
+之后，AI 准确率升到 .88、检查概率仍是 .90，推翻率变为 12.46%。
+另一种情况是，AI 准确率仍为 .60，检查概率降到约 .2917，
+推翻率同样是 12.46%。
 
-第三步，反复生成我们知道真实答案的模拟数据，再加入两类额外证据：独立的模型准确率 audit，以及 reviewer 是否打开原始材料之类的 process proxy。
+第二条路径是用公式构造出来的。它说明“仅凭这个数字不能唯一判断”，
+不是证明第二种情况在现实中确实发生了。模拟也没有记录推翻后的最终答案
+是否正确，因此不能用它声称最终决策质量提高或下降。
 
-第四步，故意让 detection ability 或 proxy 的可靠性发生变化。如果不同数据通道互相矛盾，研究应该报告“当前测量模型不成立”，而不是强行得出“人 disengage 了”。
+## 最重要的限制
 
-## 初步发现
+- 有了独立的 AI 准确率审计，仍然需要对 d、f、q 作出假设，才能估计 e。
+- 打开原始材料只是可能有用的行为记录。它和实质检查的对应关系需要另外验证。
+- 如果认真检查和没有检查时产生相同的观测概率，数据就无法区分两者。
+  此时“标准误为零”不是非常确定，而是错误的数值表达。代码已加入检查。
+- 更大的样本可以减少随机误差，但不能自动修复错误假设。
+- 数据通道不一致，提示当前模型解释不了观测；它不会自动告诉我们到底哪里变了。
+- 目前没有真实受试者、组织数据或学习效果。三组 AI 学习研究仍是下一项设计。
 
-在这组说明性的参数下，许多不同路径都可以产生近似相同的 override trend。独立 audit 和经过校准的 proxy 在假设正确时能够减少歧义；但如果 detection 或 proxy calibration 发生变化，更多数据只会让错误结论显得更精确。独立预测检查的价值，是提醒我们现有解释框架与数据不相容，而不是自动诊断真正原因。
+## 一段可用于研究交流的说明
 
-## 不能说什么
-
-不能说这项研究证明现实中的 reviewer 正在 disengage，也不能说打开原始材料就证明进行了有意义的审查。它目前证明的是一个 measurement problem，并展示未来的真实研究还需要收集哪些额外证据。
+我想了解，组织采用 AI 以后，记录下来的人工审查指标究竟能告诉我们什么。
+目前我做的是一个有大量 AI 协助的模拟研究：在指定假设下，AI 更准确和人工
+检查减少，可以产生相同的人工推翻率下降。我再用合成数据检查，增加独立
+准确率审计和行为记录后，估计会怎样变化，以及假设出错时会发生什么。
+它是帮助澄清测量问题的研究工具，还不是现实组织中的实证发现。

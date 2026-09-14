@@ -1,5 +1,31 @@
 # Research Log — Accountability Continuity Project
 
+**Current-status note, September 14, 2026:** earlier entries preserve exploratory
+reasoning and proposed methods, including claims that remain untested. Use the
+[research status](RESEARCH_STATUS.md) and current [research program](RESEARCH_PROGRAM.md)
+for present descriptions. The current study has no human-subject or organizational
+data. Design, implementation, and writing received substantial AI assistance.
+
+## September 14, 2026 — Methods review and operational study draft
+
+An AI-assisted review expanded the model walkthrough, made the assumptions
+and contribution limits explicit, and identified a numerical failure: an
+uninformative measurement could yield a zero standard error through a
+pseudoinverse. An information-rank guard now reports that the parameters cannot
+be separately identified at the fitted numerical precision. Seventeen tests
+passed, and the full default simulation was rerun: 36,000 replication records
+and 72,000 fits, with all nine CSV summaries reproduced within tolerance.
+Details are in the [verification record](simulations/override_identification_v2/VERIFICATION_2026-09-14.md).
+
+The related learning study now has a [three-arm operational draft](studies/ai-advice-timing/DRAFT_PROTOCOL.md)
+and eight fictional task examples. An adult feasibility study is proposed as
+one starting option; it has not been arranged or run. Task validation,
+statistical review, a research setting, and any required ethics process remain
+future work. This update does not establish an empirical finding or independent
+methodological validation.
+
+---
+
 Each entry should take 15–20 minutes to write. Short is fine. The point is a continuous, dated, verifiable record — not polish.
 
 **How to fill each entry:**
@@ -136,4 +162,3 @@ suggestive only.
 **Why this matters for the framework:** the three index components were
 previously stated without a derivation. They are now answerable to a specific
 question — what second signal do you need — rather than asserted.
-

@@ -1,5 +1,10 @@
 # Results note
 
+The full default configuration was rerun on September 14, 2026 after adding an
+identification guard. All nine checked-in CSVs were reproduced within the
+documented numerical tolerance; these default-setting results remain unchanged.
+See [verification](VERIFICATION_2026-09-14.md). These are synthetic results.
+
 ## What the study establishes
 
 The primary result is analytic, not empirical. Under the stated binary model,
@@ -17,6 +22,9 @@ e = (R - q) / [d(1 - p) + fp - q]
 ```
 
 is observationally equivalent.
+
+This inverse assumes a nonzero denominator. When it is zero, `R=q` is compatible
+with every engagement value; any other exact population rate is incompatible.
 
 The exact improvement and disengagement paths therefore serve as a constructive
 proof. Their equality is true by construction and should not be described as a

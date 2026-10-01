@@ -1,10 +1,45 @@
 # Research Log — Accountability Continuity Project
 
-**Current-status note, September 14, 2026:** earlier entries preserve exploratory
+**Current-status note, October 1, 2026:** earlier entries preserve exploratory
 reasoning and proposed methods, including claims that remain untested. Use the
 [research status](RESEARCH_STATUS.md) and current [research program](RESEARCH_PROGRAM.md)
-for present descriptions. The current study has no human-subject or organizational
-data. Design, implementation, and writing received substantial AI assistance.
+for present descriptions. There are no participant or private organizational
+data; an initial public-document coding pilot has now been added. Design,
+implementation, coding, and writing received substantial AI assistance.
+
+## October 1, 2026 — Purpose and revisable judgment
+
+Later in the day's discussion, Celine connected AC to a question about the good
+life: without active reflection on what matters, available measures can begin
+to define it for us. The organizational extension asks who defines a good
+outcome, whose experience is heard, and whether consequences can lead people to
+reconsider their goals as well as their procedures.
+
+Added a [working reflection](docs/purpose-judgment-and-accountability.md), retaining
+“心” as an expression of care, judgment, and willingness to learn, rather than a
+new psychological score. This is conceptual development, not an empirical finding.
+The earlier simulation, learning-study design, and public-document coding retain
+their separate scopes. No new claim has been imposed on the five coded entries.
+
+## October 1, 2026 — First public-document pilot of organizational responses
+
+Reviewed the September 29 audit and checked the remote repository against commit
+`c9f8d29634203035cf153507dc82ddd57298d93e`. The organizational branch now has five
+source-linked entries from two public-sector programs, drawn from five primary
+publications, plus a coding guide and selection log. Multiple entries from one
+program are not independent observations. The coding distinguishes implemented
+changes, plans, local adjustments, and expressed needs.
+
+The methodological takeaway is that a person's review, an organizational response,
+and demonstrated improvement require separate evidence. Missing details in public
+reports remain unknown. No causal effect, prevalence estimate, validated AC score,
+or independent inter-coder reliability is claimed.
+
+Added current clarifications to the early index and framework notes while keeping
+their historical text. The previous simulation and advice-timing protocol remain
+unchanged. Next: independent review and one issue-level record connecting a report,
+response decision, action or justified refusal, later assessment, and feedback.
+See the [pilot](studies/organizational-feedback/README.md).
 
 ## September 14, 2026 — Methods review and operational study draft
 

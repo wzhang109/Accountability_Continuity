@@ -2,20 +2,29 @@
 
 **Wenwen (Celine) Zhang · Independent research in progress**
 
-When a person still signs off on an AI-assisted decision, what can we learn
-about the review and judgment behind that signature?
+As more work is delegated to AI, do the people making or reviewing decisions
+learn what happened afterward, have the ability to respond, and carry that
+experience into later decisions and organizational practice?
 
-This project examines that measurement question and a related learning
-question: how does the order of AI advice affect what people can later do on
-their own? The repository contains a mathematical example, synthetic-data
-simulations, exploratory essays, and study proposals. It contains no evidence
-collected from people or organizations for these studies.
+The project approaches this concern through a synthetic measurement model,
+an unimplemented human-learning study design, and an initial public-document
+pilot tracing reported issues and organizational responses. It also preserves
+earlier philosophical exploration. There are no recruited participants, private
+organizational records, or original field-study results.
+
+A related question comes before measurement: who defines what a good outcome
+means, whose experience counts, and can that definition change in light of its
+consequences? The [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md)
+explains this motivation without treating it as an established result.
 
 ## Start here
 
 | Material | What it provides |
 |---|---|
 | [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
+| [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
+| [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
+| [Research progress in plain Chinese](docs/progress-2026-10-01.zh-CN.md) | The current question, this update, and what can and cannot be concluded |
 | [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |
 | [Simulation methods and results](simulations/override_identification_v2/README.md) | Model specification, code, uncertainty checks, and synthetic results |
 | [Methods verification, September 2026](simulations/override_identification_v2/VERIFICATION_2026-09-14.md) | Checks performed, a numerical correction, and remaining limitations |
@@ -42,6 +51,13 @@ Judgment First**, **AI Advice First**, and **No AI**, with the same outcome
 feedback, followed by common unaided assessments. Neither assisted workflow
 is assumed to be better. No participants have been recruited, and this is not
 a registered or completed experiment.
+
+The organizational pilot asks what published records establish about the route
+from an issue to a response. Public reporting is selective; entries are not
+independent cases, missing links are not absent practices, and no causal effect
+or organizational accountability score is estimated. The
+[measurement clarification](studies/organizational-feedback/MEASUREMENT_NOTES.md)
+also explains which early assumptions have been revised.
 
 ## Research context
 

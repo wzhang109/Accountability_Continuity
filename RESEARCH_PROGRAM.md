@@ -1,10 +1,21 @@
-# Human Judgment and Learning with AI Assistance
+# Human Judgment Feedback and Learning with AI Assistance
 
-**Wenwen (Celine) Zhang · Working research program · September 2026**
+**Wenwen (Celine) Zhang · Working research program · Updated October 1, 2026**
 
-I want to understand when AI helps people make a better decision now and when
-it helps them become better at making later decisions. My broader interest is
-how learning and working environments support people's development.
+I want to understand whether judgment, feedback, and responsibility remain
+connected as more work is delegated to AI. Do people encounter the consequences
+of decisions, have the ability to respond, and use what they learn in later work?
+This includes both individual development and the conditions for organizations
+to retain experience. The branches below examine different parts of that concern.
+
+## Purpose and evaluation
+
+This concern also asks who defines a good outcome and whether experience can
+change the aim itself. Organizations may pursue different purposes, and people
+within one organization may disagree. A single metric cannot settle these
+choices. The [October 1 reflection](docs/purpose-judgment-and-accountability.md)
+develops this philosophical motivation. It adds questions for future study, not
+new findings or a new score imposed on the existing cases.
 
 ## Two related questions
 
@@ -59,19 +70,26 @@ and agreement from appropriate use of advice. They do not establish that
 judgment first is always preferable. See the [focused review](ai-advice-timing-and-human-learning.md)
 and the narrower source-to-design links in the [operational draft](studies/ai-advice-timing/DRAFT_PROTOCOL.md#evidence-informing-this-draft).
 
-## Organizational learning is a later question
+## An initial organizational evidence branch
 
-Even if a person learns, an organization may not retain that knowledge. A
-separate study could examine whether case feedback reaches the original
-decision-maker, another reviewer, or a shared team resource, and whether people
-use it in later work. That would require measures of communication and shared
-practice. The current study does not establish effects on team capability,
-institutional accountability, or professional performance.
+Even if a person learns, an organization may not retain that knowledge. The
+[October 1 public-document pilot](studies/organizational-feedback/README.md)
+asks which steps from a reported problem to an organizational response can be
+documented. It records local adjustments, implemented shared changes, plans,
+requests, and unresolved evidence links separately.
+
+This descriptive branch does not estimate effects on team capability,
+institutional accountability, or professional performance. Studying whether
+feedback reaches the original decision-maker, another reviewer, or a shared
+resource and improves later work still requires linked process and outcome data.
+Neither the advice-timing study nor this first coding exercise tests the entire
+AC framework.
 
 ## Current status
 
-The available work is an illustrative simulation and a set of study designs.
-There are no participants or experimental results. AI assistance contributed
+The available work is an illustrative simulation, a set of study designs, and
+an exploratory coding pilot using public institutional reports. There are no
+participants or experimental results from this project. AI assistance contributed
 substantially to the design and implementation; the [status and contribution
 note](RESEARCH_STATUS.md) describes the division between completed work,
 hypotheses, and future plans.

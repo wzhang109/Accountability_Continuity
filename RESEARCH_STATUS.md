@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Updated September 14, 2026 · Wenwen (Celine) Zhang**
+**Updated October 1, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -14,6 +14,8 @@ or research-log entries.
 | Estimation and sensitivity simulations | Python, tests, configuration, CSV summaries, and figures | Synthetic data with specified truth and selected parameter values |
 | Literature and conceptual work | Reading notes, an exploratory framework, and proposals | Not a systematic review, proof of novelty, or validated theory |
 | Advice-timing study design | Three-arm operational draft and fictional task examples | No participants, ethics approval, registration, pilot, or empirical results |
+| Organizational public-document pilot | Five source-linked entries from two programs, a codebook, selection log, and reproducible file checks | Exploratory AI-assisted coding of first-party publications; no independent coding, private process records, causal effect, or AC score |
+| Reflection on purposes and measures | A dated philosophical note connecting values, participation, consequences, and revisable judgment | A research motivation; no universal metric, new empirical result, or demonstrated claim about human or AI consciousness |
 
 The simulation models a latent probability of substantive review. It does not
 directly measure reasoning, legal responsibility, expertise, incentives,
@@ -42,8 +44,9 @@ resolves.
 - A delayed unaided assessment can measure performance on the selected task.
   It cannot by itself establish broad independence of thought or long-term
   human development.
-- Individual learning may contribute to organizational knowledge, but feedback
-  routing, team interaction, retention, and transfer require separate studies.
+- Individual learning may contribute to organizational knowledge. The October 1
+  document pilot begins describing reported responses, but does not establish
+  feedback routing for specific people, retention, transfer, or learning effects.
 - The operational draft proposes an initial feasibility study with adults.
   This is a practical design option developed with AI assistance, not an
   already agreed recruitment plan. The youth proposal remains a separate
@@ -74,6 +77,13 @@ partner. Encouragement from a reader or potential contact should not be
 presented as formal methodological validation, supervision, or a collaboration
 commitment.
 
+The October 1 update adds AI-assisted public-source extraction and coding.
+The researcher has not yet independently reviewed every source or coding choice.
+File checks establish reference and status consistency, not the truth of an
+organization's account. No networking conversation has been converted into
+research data. Earlier index and hard-constraint claims are clarified in the
+[measurement notes](studies/organizational-feedback/MEASUREMENT_NOTES.md).
+
 ## Next decisions that require people or evidence
 
 1. Review the model assumptions and inference with a qualified methodological
@@ -83,5 +93,8 @@ commitment.
 3. Secure a setting and the required research review before recruiting anyone.
 4. Use feasibility evidence to finalize the item bank, timing, sample size,
    analysis plan, and any registration for a later confirmatory study.
+5. Independently review the public-document coding and obtain a linked record
+   of one issue, its response decision, any implementation, and later assessment
+   before expanding the organizational branch.
 
 None of these steps is recorded as completed.

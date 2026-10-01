@@ -1,0 +1,31 @@
+{
+  "status": "structural_checks_passed",
+  "dataset_date": "2026-10-01",
+  "source_count": 5,
+  "episode_count": 5,
+  "program_count": 2,
+  "episodes_by_program": {
+    "DWP_COPILOT": 2,
+    "GDS_CHAT": 3
+  },
+  "action_status_counts": {
+    "implemented_reported": 2,
+    "local_adjustment_reported": 1,
+    "planned_reported": 1,
+    "requested_only": 1
+  },
+  "evaluation_status_counts": {
+    "no_episode_linked_assessment_established": 5
+  },
+  "authorization_evidence_counts": {
+    "approval_right_not_reported": 5
+  },
+  "reporter_feedback_evidence_counts": {
+    "not_reported": 5
+  },
+  "input_sha256": {
+    "sources.json": "dcfcb72098bba42a84bd6911c13c2a1c04f84829c4f8801389525550db4c940b",
+    "episodes.json": "f5389d8dfbe773c47821101dabcddb547f94df32d7a0488e7f2e97a59ff91701"
+  },
+  "interpretation": "Counts of coded public records only. Unknown links are not absent practices. Episodes are clustered within programs. No effect, prevalence, AC score, or independent coding reliability is estimated."
+}

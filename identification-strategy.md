@@ -1,5 +1,15 @@
 # Accountability Continuity Index — Identification Strategy
 
+**Historical July 31 design; current clarification added October 1, 2026.**
+The rubric and treatment threshold below are preserved as an early proposal,
+not used as validated measures. Override frequency does not directly identify
+practical authority; automatic execution does not by itself remove organizational
+responsibility; repeated service in a role is not the same as one person's learning.
+The current [measurement notes](studies/organizational-feedback/MEASUREMENT_NOTES.md)
+separate these constructs. The [public-document pilot](studies/organizational-feedback/README.md)
+uses source-linked issue-response records, not the proposed 0–2 index or an
+adoption-based causal design. Where they differ, these current notes take precedence.
+
 Status: first formal pass, drafted Week 5 (2026-07-31). Not yet tested against real data.
 This document consolidates the design decisions from the Week 5 log entry into a standalone reference, so `/research-log.md` stays a dated narrative and this stays the thing that gets revised as the design changes.
 

@@ -1,5 +1,12 @@
 # Literature Review — Track 2: Organizational Behavior / Management Science
 
+**October 1, 2026 update:** the historical reading notes below remain incomplete.
+The [organizational public-document pilot](studies/organizational-feedback/README.md)
+adds a separate, source-linked descriptive exercise. Its
+[measurement notes](studies/organizational-feedback/MEASUREMENT_NOTES.md) also
+record abstract-only review of Raji et al. (2020) and the NIST Playbook overview.
+These do not constitute a full literature review or establish the project's novelty.
+
 Status: stub. Only one source has had a full, dedicated pass (Week 4); a proper Track 2 review is scheduled for Week 7 and has not happened yet. Logging this honestly as incomplete rather than padding it out.
 
 ## Purpose in this project

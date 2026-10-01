@@ -1,5 +1,12 @@
 # The Two-Axis Framework
 
+**Historical framework; clarification added October 1, 2026.** The hard AC
+constraint below is a normative modeling proposal, not a logical consequence of
+requiring accountability or an empirically validated threshold. The project does
+not assume one natural person must occupy every step. See the current
+[measurement distinctions](studies/organizational-feedback/MEASUREMENT_NOTES.md).
+The public-document pilot does not score or validate these quadrants.
+
 Status: first formal pass, drafted Week 4 (2026-07-16/17). Consolidated from the research log into a standalone reference.
 
 ## Starting point: Liu (2026)

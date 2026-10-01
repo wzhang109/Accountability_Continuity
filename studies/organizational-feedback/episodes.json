@@ -1,0 +1,153 @@
+[
+  {
+    "episode_id": "E01",
+    "program_id": "GDS_CHAT",
+    "record_kind": "reported_change_episode",
+    "issue_type": "unanswered_ambiguous_query",
+    "report_cutoff": "2026-03-16",
+    "event_period": "web pilot preceding publication; exact change date not reported",
+    "signal_origin": "public_pilot_interactions",
+    "recipient": "GDS_team_account_precise_route_not_reported",
+    "authorization": "approval_right_not_reported",
+    "action_status": "implemented_reported",
+    "action_scope": "shared_system",
+    "claims": [
+      {
+        "claim_id": "E01-C1",
+        "statement": "The team reports adding clarifying questions after ambiguous queries went unanswered during the web pilot.",
+        "source_id": "S02",
+        "locator": "Fourth finding, first paragraph; local P015"
+      }
+    ],
+    "implementation_basis": [
+      "E01-C1"
+    ],
+    "evaluation_status": "no_episode_linked_assessment_established",
+    "evaluation_basis": [],
+    "reporter_feedback": "not_reported",
+    "interpretation": "Reported implementation is supported. A current answer-rate figure does not isolate this change’s effect or establish feedback to an original reporter.",
+    "coding_date": "2026-10-01",
+    "coder": "AI-assisted extraction; no independent human coding",
+    "review_status": "source-checked by same AI assistant; external review pending"
+  },
+  {
+    "episode_id": "E02",
+    "program_id": "GDS_CHAT",
+    "record_kind": "reported_plan",
+    "issue_type": "unmet_personal_support_need",
+    "report_cutoff": "2026-03-16",
+    "event_period": "pilot finding; handoff described as future work at publication",
+    "signal_origin": "public_pilot_interactions",
+    "recipient": "GDS_team_account_precise_route_not_reported",
+    "authorization": "approval_right_not_reported",
+    "action_status": "planned_reported",
+    "action_scope": "shared_system",
+    "claims": [
+      {
+        "claim_id": "E02-C1",
+        "statement": "Some users sought personalized human support; the team described an integrated departmental handoff as future work.",
+        "source_id": "S02",
+        "locator": "Fourth finding, second paragraph; local P016"
+      }
+    ],
+    "implementation_basis": [],
+    "evaluation_status": "no_episode_linked_assessment_established",
+    "evaluation_basis": [],
+    "reporter_feedback": "not_reported",
+    "interpretation": "This is a dated plan, not completed escalation or proof that the feature remains unavailable today.",
+    "coding_date": "2026-10-01",
+    "coder": "AI-assisted extraction; no independent human coding",
+    "review_status": "source-checked by same AI assistant; external review pending"
+  },
+  {
+    "episode_id": "E03",
+    "program_id": "GDS_CHAT",
+    "record_kind": "reported_change_episode",
+    "issue_type": "user_expectation_design",
+    "report_cutoff": "2026-08-19",
+    "event_period": "app design before publication; exact revision date not reported",
+    "signal_origin": "user_research_insights",
+    "recipient": "GDS_design_team_account_precise_route_not_reported",
+    "authorization": "approval_right_not_reported",
+    "action_status": "implemented_reported",
+    "action_scope": "shared_system",
+    "claims": [
+      {
+        "claim_id": "E03-C1",
+        "statement": "Designers report using user insights to focus onboarding on scope, checking answers, and conversation-data use.",
+        "source_id": "S04",
+        "locator": "A new way to interact with government; local P014–P019"
+      }
+    ],
+    "implementation_basis": [
+      "E03-C1"
+    ],
+    "evaluation_status": "no_episode_linked_assessment_established",
+    "evaluation_basis": [],
+    "reporter_feedback": "not_reported",
+    "interpretation": "A design revision does not by itself establish better comprehension or checking. The specific initiating report and approval role remain unestablished.",
+    "coding_date": "2026-10-01",
+    "coder": "AI-assisted extraction; no independent human coding",
+    "review_status": "source-checked by same AI assistant; external review pending"
+  },
+  {
+    "episode_id": "E04",
+    "program_id": "DWP_COPILOT",
+    "record_kind": "aggregate_user_account",
+    "issue_type": "output_review",
+    "report_cutoff": "2026-01-29",
+    "event_period": "October 2024–March 2025 trial; interviews March 2025",
+    "signal_origin": "staff_interview_accounts",
+    "recipient": "evaluation_researchers_not_a_documented_remediation_channel",
+    "authorization": "approval_right_not_reported",
+    "action_status": "local_adjustment_reported",
+    "action_scope": "local_output",
+    "claims": [
+      {
+        "claim_id": "E04-C1",
+        "statement": "Interview-based findings describe staff checking and editing Copilot outputs before use.",
+        "source_id": "S05",
+        "locator": "Usability, accuracy, and accessibility; local P210; Human Judgement and Oversight, P293"
+      }
+    ],
+    "implementation_basis": [
+      "E04-C1"
+    ],
+    "evaluation_status": "no_episode_linked_assessment_established",
+    "evaluation_basis": [],
+    "reporter_feedback": "not_reported",
+    "interpretation": "Reported editing is not independently measured correctness. This aggregate account does not link a recurring issue to a shared system or process revision.",
+    "coding_date": "2026-10-01",
+    "coder": "AI-assisted extraction; no independent human coding",
+    "review_status": "source-checked by same AI assistant; external review pending"
+  },
+  {
+    "episode_id": "E05",
+    "program_id": "DWP_COPILOT",
+    "record_kind": "aggregate_user_account",
+    "issue_type": "training_need",
+    "report_cutoff": "2026-01-29",
+    "event_period": "October 2024–March 2025 trial; interviews March 2025",
+    "signal_origin": "staff_interview_accounts",
+    "recipient": "evaluation_researchers_not_a_documented_remediation_channel",
+    "authorization": "approval_right_not_reported",
+    "action_status": "requested_only",
+    "action_scope": "training",
+    "claims": [
+      {
+        "claim_id": "E05-C1",
+        "statement": "Staff requested role-specific training and practical prompt guidance.",
+        "source_id": "S05",
+        "locator": "Perceptions of future training requirements; local P149"
+      }
+    ],
+    "implementation_basis": [],
+    "evaluation_status": "no_episode_linked_assessment_established",
+    "evaluation_basis": [],
+    "reporter_feedback": "not_reported",
+    "interpretation": "An expressed need is not a documented management decision or implemented training change. The report’s purpose was broader than tracing individual requests.",
+    "coding_date": "2026-10-01",
+    "coder": "AI-assisted extraction; no independent human coding",
+    "review_status": "source-checked by same AI assistant; external review pending"
+  }
+]

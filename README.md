@@ -21,6 +21,7 @@ explains this motivation without treating it as an established result.
 
 | Material | What it provides |
 |---|---|
+| [Youth feasibility materials October 7](studies/youth-advice-workflow/README.md) | A separate proposed 15–17 study protocol, eight fictional tasks, measure limits and minimal data structure; no participants |
 | [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
 | [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
 | [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
@@ -46,11 +47,13 @@ additional measurements help only under assumptions about reviewer behavior,
 sampling, and calibration. Opening a record, disagreeing with AI, or recording
 an initial answer is not itself proof of careful judgment.
 
-The proposed experiment asks a different question. It compares **Initial
-Judgment First**, **AI Advice First**, and **No AI**, with the same outcome
-feedback, followed by common unaided assessments. Neither assisted workflow
-is assumed to be better. No participants have been recruited, and this is not
-a registered or completed experiment.
+The proposed learning studies ask a different question. The existing adult
+operational draft compares **Initial Judgment First**, **AI Advice First**, and
+**No AI** with common assessments. The separate youth feasibility version uses
+6 baseline and 12 practice items, 8 delayed unaided items and 4 later challenge
+items. No-AI remains unaided in that challenge, so it is not a common-current-
+interface comparison of all three arms. Neither workflow is assumed to be
+better. There are no recruited participants or registered or completed study.
 
 The organizational pilot asks what published records establish about the route
 from an issue to a response. Public reporting is selective; entries are not

@@ -1,0 +1,59 @@
+{
+  "version": "youth-feasibility-v0.1-2026-10-07",
+  "state": "proposed; no recruitment or ethics approval",
+  "population_age_band": [
+    15,
+    17
+  ],
+  "pretest_max_n": 12,
+  "randomized_target_n": 90,
+  "planned_n_per_arm": 30,
+  "arms": [
+    "judgment_first",
+    "advice_first",
+    "no_ai"
+  ],
+  "phases": [
+    {
+      "id": "baseline",
+      "count": 6,
+      "assistance": "none",
+      "feedback_policy": "after baseline block, identical across arms; provisional clarification for review"
+    },
+    {
+      "id": "practice",
+      "count": 12,
+      "assistance": "assigned workflow",
+      "feedback_policy": "same verified feedback after every final response"
+    },
+    {
+      "id": "delayed_unaided",
+      "count": 8,
+      "assistance": "none for every arm",
+      "feedback_policy": "only after all delayed outcomes are recorded"
+    },
+    {
+      "id": "challenge",
+      "count": 4,
+      "assistance": "only original assisted arms; no_ai remains unaided",
+      "feedback_policy": "same verified corrective feedback after every final response"
+    }
+  ],
+  "first_session_minutes": [
+    45,
+    60
+  ],
+  "followup_session_minutes": [
+    20,
+    30
+  ],
+  "target_followup_days": 7,
+  "provisional_followup_completion_target": 0.8,
+  "primary_contrast": [
+    "judgment_first",
+    "advice_first"
+  ],
+  "primary_measure": "accuracy on eight new related delayed unaided items",
+  "item_bank_complete": false,
+  "registration": "pending final protocol and partner/statistical review before randomized pilot"
+}

@@ -7,6 +7,27 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 7, 2026 — Youth feasibility materials prepared
+
+Converted the adolescent proposal into a distinct workflow protocol, eight
+fictional school-project records with keyed advice, a measure-to-claim map and
+a minimal data dictionary. Added explicit baseline and delayed feedback timing
+for review. The local helper separates pre-advice, post-advice and unaided
+responses and prevents advice or keys from leaking into the delayed assessment.
+
+Checked arithmetic keys, missing responses, confidence calculations, advice
+visibility and public-file privacy boundaries. These are AI-assisted structural
+checks, not participant evidence, age suitability or independent methodological
+validation. Twenty-two further items, balanced lists, partner/ethics arrangements
+and expert review remain pending. The assigned workflow includes commitment and
+effort; it does not identify a pure order mechanism.
+
+Close primary-source precedents were located; the three-arm design is not new.
+One source's complete delayed section remains incompletely retrieved. The
+GitHub baseline was subsequently verified through Git before integration;
+publication is traceable in the repository history. Independent review is still
+pending. Next: one source-linked organizational issue-response pathway.
+
 ## October 1, 2026 — Purpose and revisable judgment
 
 Later in the day's discussion, Celine connected AC to a question about the good

@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Updated October 1, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 7, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -98,3 +98,30 @@ research data. Earlier index and hard-constraint claims are clarified in the
    before expanding the organizational branch.
 
 None of these steps is recorded as completed.
+
+## October 7 youth materials prepared for review
+
+The [youth feasibility folder](studies/youth-advice-workflow/README.md) contains
+a proposed protocol aligned to the adolescent submission, eight fictional
+school-record tasks, explicit answer and advice variants, measure-to-claim
+limits and a minimal data dictionary. It is a separate version from the adult
+operational draft. Only four practice and four delayed examples exist; the
+complete 30-item bank, human review and counterbalanced lists remain pending.
+
+Local arithmetic, response-scoring and information-exposure checks were run.
+They check implementation consistency, not child suitability, theoretical
+validity, task equivalence or expert approval. The study still has no partner,
+ethics approval, participants or original outcomes. AI assisted the material
+design, source reading, coding and documentation.
+
+An October grant proposal was submitted, not awarded. Baseline and delayed
+block-end feedback are newly explicit provisional details for review. Current
+primary-source reading identifies a close three-arm precedent, so novelty of
+the sequence or design is not claimed. The organizational branch remains
+separate; its next task is a traceable public issue-response pathway.
+
+These materials were prepared against remote main commit
+`9bd17c67282c40a24bd85ad24ba095545aa91923`, verified again through Git on
+October 7 before integration. Source versions and publication are traceable in
+the repository history. Independent researcher and specialist review remain
+pending.

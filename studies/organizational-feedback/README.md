@@ -62,3 +62,18 @@ The checks inspect source references, dated status, required distinctions, and t
 For one concrete issue, seek a linked issue report, response decision, implemented change or recorded decision not to change, and later evaluation. Then have a second reader independently assess the coding. Only after this should a broader sample or causal design be chosen.
 
 A useful practitioner question is: “When someone notices a recurring problem with an AI tool, what usually happens next? Could you walk me through an example you can share?” A normal networking conversation is not automatically research participation; no private chat content has been included here.
+
+## October 8 follow-up of an existing issue
+
+The [human-support pathway](pathways/govuk-human-handoff-2026-10-08/README.md)
+adds six source reading records around E02, including a dated official public
+reply and a program-responsibility record. It is an extension of this issue,
+not a sixth independent episode. The original five entries, source register
+and generated pilot counts remain unchanged.
+
+The new pathway records purpose, general measures and the limits of ownership
+labels, then preserves the unestablished approval, implementation and assessment
+links. Its search cutoff is October 8; it does not claim the feature never
+launched. No human learning outcome is measured. Source coding and structural
+checks are AI-assisted; researcher and independent second-reader review remain
+pending.

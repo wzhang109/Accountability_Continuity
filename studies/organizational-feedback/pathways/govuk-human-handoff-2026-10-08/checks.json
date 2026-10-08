@@ -1,0 +1,12 @@
+{
+  "status": "structural_checks_passed",
+  "source_count": 6,
+  "claim_count": 9,
+  "timeline_statement_count": 4,
+  "linked_pathway_count": 1,
+  "additional_independent_organizations": 0,
+  "implementation": "not_established_in_reviewed_sources",
+  "change_linked_assessment": "not_established_in_reviewed_sources",
+  "human_review": "pending",
+  "meaning": "Reference, date and scope checks only; no effect, source-truth or independent-review validation."
+}

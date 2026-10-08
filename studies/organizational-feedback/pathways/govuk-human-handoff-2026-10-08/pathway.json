@@ -1,0 +1,220 @@
+{
+  "pathway_id": "GDS_CHAT_HANDOFF_2026_10_08",
+  "program_id": "GDS_CHAT",
+  "baseline_episode_id": "E02",
+  "unit": "feature_level_public_need_and_response_history",
+  "coding_date": "2026-10-08",
+  "search_cutoff": "2026-10-08",
+  "source_count": 6,
+  "scope": "Extends the existing E02 need. No identified internal issue ticket or original reporter chain. A later public suggestion is related evidence, not the origin of the earlier plan.",
+  "question": "What can public records establish about providing human help when Chat cannot meet a personal support need?",
+  "claims": [
+    {
+      "claim_id": "H-C01",
+      "source_id": "S02",
+      "statement_date": "2026-03-16",
+      "evidence_scope": "feature_need_and_plan",
+      "evidence_kind": "need_and_future_work",
+      "statement": "The team reports a need for personalized human support and describes integrated departmental handoff as longer-term work.",
+      "locator": "Fourth finding, second paragraph about an advisor with personal-information access; web rendering L38"
+    },
+    {
+      "claim_id": "H-C02",
+      "source_id": "S03",
+      "statement_date": "2026-06-02",
+      "evidence_scope": "related_public_suggestion",
+      "evidence_kind": "exploration_reply",
+      "statement": "An official public reply says departmental human escalation is being explored through discovery work.",
+      "locator": "Sharing and comments: GDS communications reply dated June 2; web rendering L101–L113"
+    },
+    {
+      "claim_id": "H-C03",
+      "source_id": "S07",
+      "statement_date": "2026-05-14",
+      "evidence_scope": "program_context",
+      "evidence_kind": "program_launch",
+      "statement": "The app launch is announced; better onward contact with departments remains future work.",
+      "locator": "Opening launch announcement and What’s next; web rendering L19 and L67"
+    },
+    {
+      "claim_id": "H-C04",
+      "source_id": "S04",
+      "statement_date": "2026-08-19",
+      "evidence_scope": "other_feature_context",
+      "evidence_kind": "other_design_change",
+      "statement": "Designers describe app-interface and onboarding revisions informed by user research.",
+      "locator": "Designing for the GOV.UK app; A new way to interact with government; What’s next"
+    },
+    {
+      "claim_id": "H-C05",
+      "source_id": "S06",
+      "statement_date": null,
+      "evidence_scope": "program_context",
+      "evidence_kind": "program_owner_label",
+      "statement": "The transparency record names the Products & Services AI Team and Director of Products and Services as senior responsible owner.",
+      "locator": "Tier 2 Owner and Responsibility, 1.2–1.3",
+      "date_note": "Record dated October 7, 2025; retrieved October 8, 2026. Current applicability and feature-level approval powers are not established."
+    },
+    {
+      "claim_id": "H-C06",
+      "source_id": "S06",
+      "statement_date": null,
+      "evidence_scope": "program_context",
+      "evidence_kind": "stated_purpose",
+      "statement": "The record frames Chat as easier access to government information, with source verification encouraged and no actions or decisions on users’ behalf.",
+      "locator": "2.2 Benefits; 3.1 Integration; 3.2 Human review",
+      "date_note": "Dated record context, not an observed individual outcome or a current authority map."
+    },
+    {
+      "claim_id": "H-C07",
+      "source_id": "S03",
+      "statement_date": "2026-05-15",
+      "evidence_scope": "program_context",
+      "evidence_kind": "program_quality_framework",
+      "statement": "The team describes quality criteria spanning grounding, relevance, accuracy, completeness, reliability and reputational safety.",
+      "locator": "Turning insights into iterations, six criteria"
+    },
+    {
+      "claim_id": "H-C08",
+      "source_id": "S02",
+      "statement_date": "2026-03-16",
+      "evidence_scope": "program_context",
+      "evidence_kind": "program_metric",
+      "statement": "The reported in-scope answer rate is 88%.",
+      "locator": "Fourth finding, first paragraph; web rendering L37"
+    },
+    {
+      "claim_id": "H-C09",
+      "source_id": "S08",
+      "statement_date": null,
+      "evidence_scope": "technical_support_context",
+      "evidence_kind": "technical_escalation",
+      "statement": "The developer manual describes technical-support escalation routes for the Chat application.",
+      "locator": "How it is supported; web rendering L37–L41",
+      "date_note": "Last updated August 17, 2026; no user-handoff implementation event inferred."
+    }
+  ],
+  "timeline": [
+    {
+      "record_date": "2026-03-16",
+      "date_kind": "publication_statement",
+      "stage": "need_and_plan_reported",
+      "claim_ids": [
+        "H-C01"
+      ]
+    },
+    {
+      "record_date": "2026-05-14",
+      "date_kind": "publication_statement",
+      "stage": "program_launch_context_only",
+      "claim_ids": [
+        "H-C03"
+      ]
+    },
+    {
+      "record_date": "2026-06-02",
+      "date_kind": "dated_official_public_reply",
+      "stage": "related_suggestion_answered_with_exploration_status",
+      "claim_ids": [
+        "H-C02"
+      ]
+    },
+    {
+      "record_date": "2026-08-19",
+      "date_kind": "publication_statement",
+      "stage": "later_design_context_not_handoff_assessment",
+      "claim_ids": [
+        "H-C04"
+      ]
+    }
+  ],
+  "purpose": {
+    "status": "stated_at_program_level",
+    "basis": [
+      "H-C06"
+    ],
+    "interpretation": "Helping people navigate information is the reported service aim; whether human handoff fulfils it needs separate evidence."
+  },
+  "used_measures": {
+    "status": "general_program_measures_only",
+    "basis": [
+      "H-C07",
+      "H-C08"
+    ],
+    "applicability": "Quality criteria and answer rate do not measure successful human contact, case resolution or this feature’s effect. No handoff-specific measure identified."
+  },
+  "response_decision": {
+    "status": "exploration_publicly_reported",
+    "basis": [
+      "H-C01",
+      "H-C02"
+    ],
+    "limits": "No formal approval, deferral decision, refusal reason or implementation date is reported in these claims. Exploration is not a documented decision to postpone."
+  },
+  "program_owner": {
+    "status": "role_named_in_dated_record",
+    "basis": [
+      "H-C05"
+    ],
+    "limits": "A responsibility label is separate from demonstrated operational authority."
+  },
+  "change_authorization": {
+    "status": "not_reported",
+    "basis": []
+  },
+  "authority_to_revise_goal": {
+    "status": "not_reported",
+    "basis": []
+  },
+  "implementation": {
+    "status": "not_established_in_reviewed_sources",
+    "basis": []
+  },
+  "later_assessment": {
+    "status": "no_handoff_linked_assessment_established",
+    "basis": []
+  },
+  "public_suggestion_response": {
+    "status": "public_reply_available",
+    "basis": [
+      "H-C02"
+    ],
+    "limits": "The reply was public; reader receipt, satisfaction and subsequent action are not established."
+  },
+  "feedback_to_original_pilot_users": {
+    "status": "not_reported",
+    "basis": []
+  },
+  "goal_or_metric_revision": {
+    "status": "not_reported",
+    "basis": []
+  },
+  "individual_judgment_or_learning": {
+    "status": "not_measured",
+    "basis": []
+  },
+  "scope_exclusion": {
+    "basis": [
+      "H-C09"
+    ],
+    "rule": "Technical on-call escalation is not evidence of user transfer to a departmental advisor."
+  },
+  "candidate_followup_measures": {
+    "status": "analyst_proposals_not_reported_as_used",
+    "items": [
+      "Successful contact with the appropriate service",
+      "Time and repeated explanation required to obtain help",
+      "Resolution or justified next step",
+      "Understanding of what the user should do next",
+      "Privacy and accessibility costs"
+    ]
+  },
+  "conclusion": "Partial public response pathway. A need and a public exploration response are documented; episode-level approval, implementation and feature-linked assessment remain unestablished. This is not evidence that no action occurred or that the organization failed.",
+  "review_status": {
+    "researcher_review": "pending",
+    "second_human_coder": "pending",
+    "source_truth": "first-party accounts not independently verified",
+    "ai_assistance": "Source selection, extraction, coding, documentation and implementation substantially AI-assisted"
+  },
+  "publication_status": "research_materials_for_review"
+}

@@ -56,3 +56,27 @@ they have not been inferred or scored for the current five entries.
 Before adding outcomes, define the eligible population of issues, the period of follow-up, and how repeated reports of one underlying problem are merged. Include unresolved, declined, and successful responses. Severity, complexity, visibility, and available resources can affect both response and outcomes; a comparison of “high” and “low” feedback continuity would not by itself identify a causal effect.
 
 The next review should test whether two readers can identify the same issue, distinguish a plan from implementation, and locate the same evidence. If not, revise the rules before expanding the dataset.
+
+## Linked-pathway extension, October 8
+
+An extension can follow an existing need across publications without adding an
+independent episode or organization. Preserve the original entry and use a
+separate file for the new chronology and scopes.
+
+| Additional field | Evidence rule |
+|---|---|
+| `statement_date` | Use a dated official reply's date separately from its host article's date; do not invent an event or release date. |
+| `purpose` | Record the organization's stated aim, not the analyst's preferred outcome. |
+| `used_measures` | Separate general program metrics from a feature-linked assessment; proposed measures remain proposals. |
+| `program_owner` | A published responsibility role is context, not a feature-level approval power. |
+| `change_authorization` | A decision or delegation must establish the relevant change power. |
+| `authority_to_revise_goal` | Do not infer power to redefine success from a developer's participation or owner title. |
+| `public_suggestion_response` | A public reply can be available without a read receipt or action; it is separate from feedback to original pilot users. |
+| `goal_or_metric_revision` | Require a documented revision; introducing a feature does not itself establish a changed goal. |
+| `evidence_scope` | Keep feature evidence, other-feature changes, program context and technical support distinct. |
+
+The [worked extension](pathways/govuk-human-handoff-2026-10-08/README.md)
+has no documented feature-level approval or outcome assessment. Discovery is
+not a formal deferral, publication silence is not nonimplementation, and a
+later related suggestion is not the cause of an earlier plan. These fields
+support a source map; no closed-loop score or causal inference is added.

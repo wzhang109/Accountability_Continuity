@@ -24,6 +24,7 @@ explains this motivation without treating it as an established result.
 | [Youth feasibility materials October 7](studies/youth-advice-workflow/README.md) | A separate proposed 15–17 study protocol, eight fictional tasks, measure limits and minimal data structure; no participants |
 | [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
 | [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
+| [October 8 human-support response pathway](studies/organizational-feedback/pathways/govuk-human-handoff-2026-10-08/README.md) | One existing issue followed through public records; purpose, approval and outcome evidence kept separate, with unresolved links |
 | [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
 | [Research progress in plain Chinese](docs/progress-2026-10-01.zh-CN.md) | The current question, this update, and what can and cannot be concluded |
 | [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |

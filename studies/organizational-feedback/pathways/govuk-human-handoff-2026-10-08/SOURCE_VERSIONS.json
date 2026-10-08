@@ -1,0 +1,96 @@
+[
+  {
+    "source_id": "S02",
+    "url": "https://insidegovuk.blog.gov.uk/2026/03/16/5-things-we-learned-testing-gov-uk-chat-an-ai-assistant-for-government/",
+    "title": "5 things we learned testing GOV.UK Chat: an AI assistant for government",
+    "publication_date": "2026-03-16",
+    "source_type": "primary_organization_publication",
+    "retrieved_at_utc": "2026-10-08T03:51:17.913851+00:00",
+    "reading_scope": "Fourth finding and methods; publication reports, not identified incident records",
+    "dated_addenda": [],
+    "snapshot_sha256": "84f427fbf092032c176e00b635baf416317113ce23ff97b2af73443bda265414",
+    "snapshot_kind": "selected_web_tool_rendering",
+    "archive_status": "Local selected reading record only; not raw HTML or an independent web archive",
+    "relationship_to_october_1_register": "Refreshed reading scope of existing source; original pilot unchanged"
+  },
+  {
+    "source_id": "S03",
+    "url": "https://insidegovuk.blog.gov.uk/2026/05/15/developing-gov-uk-chat-our-data-science-and-ai-engineering-journey/",
+    "title": "Developing GOV.UK Chat: Our data science and AI engineering journey",
+    "publication_date": "2026-05-15",
+    "source_type": "primary_organization_publication",
+    "retrieved_at_utc": "2026-10-08T03:51:17.913851+00:00",
+    "reading_scope": "Evaluation criteria and question handling in main article; June 2 official reply in public comments",
+    "dated_addenda": [
+      {
+        "date": "2026-06-02",
+        "kind": "official_public_reply",
+        "locator": "Sharing and comments: GDS communications reply on June 2"
+      }
+    ],
+    "snapshot_sha256": "c20b99d7024294ba0edd3e97d6b0b00d67c317b2dd4c47103d3a2475091c26c9",
+    "snapshot_kind": "selected_web_tool_rendering",
+    "archive_status": "Local selected reading record only; not raw HTML or an independent web archive",
+    "relationship_to_october_1_register": "Refreshed reading scope of existing source; original pilot unchanged",
+    "editor_note": "Main article separately notes June 2 style-guide clarification. The June 2 official comment is a distinct dated statement, not a May 15 decision."
+  },
+  {
+    "source_id": "S04",
+    "url": "https://insidegovuk.blog.gov.uk/2026/08/19/designing-gov-uk-chat-for-the-gov-uk-app/",
+    "title": "Designing GOV.UK Chat for the GOV.UK app",
+    "publication_date": "2026-08-19",
+    "source_type": "primary_organization_publication",
+    "retrieved_at_utc": "2026-10-08T03:51:17.913851+00:00",
+    "reading_scope": "Main design/onboarding account; checked for an explicit human-handoff completion or outcome statement",
+    "dated_addenda": [],
+    "snapshot_sha256": "80840c769d8bdeec0dc03770f757d94995205953ad875ce64ad0c3ebcae1a454",
+    "snapshot_kind": "selected_web_tool_rendering",
+    "archive_status": "Local selected reading record only; not raw HTML or an independent web archive",
+    "relationship_to_october_1_register": "Refreshed reading scope of existing source; original pilot unchanged"
+  },
+  {
+    "source_id": "S06",
+    "url": "https://www.gov.uk/algorithmic-transparency-records/dsit-gov-dot-uk-chat",
+    "title": "DSIT: GOV.UK Chat",
+    "publication_date": "2025-10-07",
+    "source_type": "primary_organization_publication",
+    "retrieved_at_utc": "2026-10-08T03:51:17.913851+00:00",
+    "reading_scope": "ATRS owner/responsibility, stated benefits, deployment context and performance sections; record metadata remains Private Beta, not a current deployment-status assertion",
+    "dated_addenda": [],
+    "snapshot_sha256": "25dcbb54c2e9d3484a27826b45e48c0bd88172e1ba123195ffe2cbd4b2dadb5b",
+    "snapshot_kind": "selected_web_tool_rendering",
+    "archive_status": "Local selected reading record only; not raw HTML or an independent web archive",
+    "relationship_to_october_1_register": "New source for this pathway; not a new independent organization",
+    "version_limit": "Original publication metadata date does not prove every sentence was unchanged since 2025. No archived historical copy or current episode-level approval record verified."
+  },
+  {
+    "source_id": "S07",
+    "url": "https://gds.blog.gov.uk/2026/05/14/gov-uk-chat-launches/",
+    "title": "Answers in seconds, 24/7: GOV.UK Chat launches in the GOV.UK app",
+    "publication_date": "2026-05-14",
+    "source_type": "primary_organization_publication",
+    "retrieved_at_utc": "2026-10-08T03:51:17.913851+00:00",
+    "reading_scope": "Main launch announcement and future onward-contact work; public comments excluded",
+    "dated_addenda": [],
+    "snapshot_sha256": "c358b97c1065fecdb7fc6e2a51ae6c5d87d5b645210dc2ae6527890d7a6f9edf",
+    "snapshot_kind": "selected_web_tool_rendering",
+    "archive_status": "Local selected reading record only; not raw HTML or an independent web archive",
+    "relationship_to_october_1_register": "New source for this pathway; not a new independent organization"
+  },
+  {
+    "source_id": "S08",
+    "url": "https://docs.publishing.service.gov.uk/manual/govuk-chat.html",
+    "title": "Support GOV.UK Chat",
+    "publication_date": null,
+    "source_type": "primary_organization_publication",
+    "retrieved_at_utc": "2026-10-08T03:51:17.913851+00:00",
+    "reading_scope": "Public technical-support manual; linked support Google Document not read",
+    "dated_addenda": [],
+    "snapshot_sha256": "fd2e497206be72496ee0afee7f9a51d7c5f6a089a4d9dbd1366791ab5d8e96cf",
+    "snapshot_kind": "selected_web_tool_rendering",
+    "archive_status": "Local selected reading record only; not raw HTML or an independent web archive",
+    "relationship_to_october_1_register": "New source for this pathway; not a new independent organization",
+    "last_updated_date": "2026-08-17",
+    "date_limit": "Last-updated metadata, not a dated user-handoff implementation event"
+  }
+]

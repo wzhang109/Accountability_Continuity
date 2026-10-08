@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 7, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 8, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -125,3 +125,29 @@ These materials were prepared against remote main commit
 October 7 before integration. Source versions and publication are traceable in
 the repository history. Independent researcher and specialist review remain
 pending.
+
+## October 8 organizational pathway prepared for review
+
+The [human-support pathway](studies/organizational-feedback/pathways/govuk-human-handoff-2026-10-08/README.md)
+extends the existing E02 through six public publications: three refreshed
+reading scopes and three additional sources. The original five pilot entries
+remain a dated baseline, not six independent organizations or newly recruited
+people. One dated official public reply is included with its own reading scope.
+
+The new record separates stated purpose, program measures, a published owner
+role, feature-specific approval, implementation and reassessment. A public
+exploration reply supplies response evidence; a complete issue-to-outcome chain
+is not established. Technical-support escalation and citizen handoff are kept
+separate. Proposed contact/resolution measures are not presented as measures
+used by the organization. No goal revision or human learning effect is claimed.
+
+Source extraction, coding, writing and file checks received substantial AI
+assistance. Researcher and second-human-reader review remain pending. These
+are preparation against verified remote main commit
+`2c15be4258e7b3585274276ce50449ae6ecd213a`; preparation is not publication.
+The [plain Chinese note](docs/progress-2026-10-08.zh-CN.md) explains the practical
+question and the evidence limits.
+
+The working long-term framing is AI, Human Judgment, and Capability Development.
+It connects questions about learning and organizational conditions without
+replacing either study protocol or asserting that cross-setting effects exist.

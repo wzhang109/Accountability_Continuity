@@ -1,9 +1,10 @@
 # Measures and the claims they can support
 
-**October 7, 2026 · provisional specification**
+**October 10, 2026 · provisional specification**
 
 | Measure | Stage and rule | Can support | Cannot establish |
 |---|---|---|---|
+| Baseline accuracy | Six new starting examples, all unaided before allocation and feedback | Descriptive starting performance; possible prespecified covariate after review | A validated ability trait, reliable family subscales, or a causal learning estimate from raw pre/post change |
 | Delayed accuracy | Eight new related items; all arms unaided; primary judgment-first versus advice-first comparison | Performance on the selected rules about one week later | General agency, lifelong development, pure timing effect or organizational accountability |
 | Practice final accuracy | Same keyed rules after assigned workflow, before common feedback | Current task performance under that workflow | Independent learning from a correct assisted answer |
 | Correct-advice use | Assisted items with verified correct advice; final keyed answer reported separately | Appropriate agreement on the selected task | Deep understanding from agreement alone |

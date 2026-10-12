@@ -1,15 +1,16 @@
 # Human review and remaining development
 
-**All review gates below are pending October 7, 2026**
+**All review gates below are pending October 12, 2026**
 
 | Gate | What is needed before it can be complete |
 |---|---|
 | Researcher understanding | Explain task rules, workflow differences, denominator choices and measure limits in ordinary language |
 | Educator and adolescent specialist | Check wording, relevance, difficulty, accessibility, feedback and misleading-advice plausibility |
 | Independent key review | Recompute every answer and identify the exact misconception; do not treat an AI check as a second coder |
-| Complete item bank | Add 22 items and freeze distinct baseline, practice, delayed and challenge forms |
+| Complete item bank | Review six new baseline drafts; review Y02/Y09/Y10 as a rates family; add 14 further items (6 practice, 4 delayed, 4 challenge) and freeze distinct forms |
+| Cue and burden review | Inspect missing-data cues, count/rate shortcuts, advice persuasiveness, arithmetic burden and possible within-family learning; no timings or acceptability data exist |
 | Advice lists and exposure | Build balanced complementary lists; review UI that never shows keys or delayed advice before outcomes |
-| Feedback policy | Review the explicit baseline and delayed block-end clarifications before registration |
+| Feedback policy | Review baseline feedback as shared instruction and delayed block-end timing before registration; assess practice/testing effects |
 | Statistical review | Check randomization, estimand, baseline adjustment, item structure, missingness, intervals and feasibility denominators |
 | Rater training | Pilot the 0–2 rubric; blind raters; record separate scores before adjudication |
 | Partner and ethics | Agree setting, responsibilities, required review, permissions, assent and response to participant discomfort |

@@ -302,4 +302,14 @@ The four delayed examples are new related records, not psychometrically matched 
 
 ## What is still missing
 
-These examples contain three Supported, three Contradicted and two Not enough information keys. A complete study requires 30 distinct items: six baseline, twelve practice, eight delayed and four challenge. Twenty-two items and the actual counterbalanced lists remain to be developed. Keys, challenge difficulty, wording and advice plausibility need educator review and pretesting. Passing structural checks is not validation with adolescents.
+These examples contain three Supported, three Contradicted and two Not enough information keys. A complete study requires 30 distinct items: six baseline, twelve practice, eight delayed and four challenge. Six baseline examples are now available separately in [BASELINE_WORKSHEET.md](BASELINE_WORKSHEET.md), with [answer bases and review limits](BASELINE_REVIEW.md). At the October 10 checkpoint, sixteen items (eight practice, four delayed and four challenge) and the actual counterbalanced lists remained to be developed. See the October 12 section below for the current count. Keys, challenge difficulty, wording and advice plausibility need educator review and pretesting. Passing structural checks is not validation with adolescents.
+
+## October 12 rates practice development
+
+Two new practice-only records, Y09 and Y10, are documented with the preserved
+Y02 in [PRACTICE_RATES_REVIEW.md](PRACTICE_RATES_REVIEW.md). That three-item
+family has one key in each answer category. The new tasks are in task_bank.json;
+the original eight records and six separate baseline records are preserved.
+There are now six baseline, six practice and four delayed drafts: sixteen of
+thirty planned items. Six practice, four delayed and four challenge items remain.
+The whole practice bank is not yet balanced, reviewed, frozen or ready to use.

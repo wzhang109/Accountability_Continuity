@@ -17,6 +17,11 @@ def load_items():
     return json.loads((HERE / 'task_bank.json').read_text())['tasks']
 
 
+def load_baseline_items():
+    """Load baseline-only development examples, separate from advice materials."""
+    return json.loads((HERE / 'baseline_items.json').read_text())['tasks']
+
+
 def visible_trial(item, arm, phase, stage, advice_quality=None,
                   first_response_recorded=False, final_response_recorded=False,
                   phase_complete=False):
@@ -28,6 +33,8 @@ def visible_trial(item, arm, phase, stage, advice_quality=None,
     """
     if arm not in ARMS or phase not in PHASES or stage not in STAGES:
         raise ValueError('Unknown arm, phase or stage')
+    if 'allowed_phases' in item and phase not in item['allowed_phases']:
+        raise ValueError('This development item is not assigned to that phase')
     assisted = arm != 'no_ai' and phase in {'practice', 'challenge'}
     if assisted and advice_quality not in {'correct', 'misleading'}:
         raise ValueError('An assisted trial needs one frozen advice version')

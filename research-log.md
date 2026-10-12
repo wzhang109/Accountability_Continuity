@@ -7,6 +7,13 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 12, 2026 — Rates practice materials
+
+Added Y09/Y10 alongside preserved Y02, covering three answer categories.
+Documented paired advice, missing-denominator counterexamples and cue/burden
+limits. Computed and exposure checks passed; human review remains pending.
+The bank has 16 fictional drafts and 14 missing items, with no participant data.
+
 ## October 8, 2026 — A partial human-support response pathway
 
 Followed existing organizational entry E02 across three refreshed publications
@@ -235,3 +242,22 @@ suggestive only.
 **Why this matters for the framework:** the three index components were
 previously stated without a derivation. They are now answerable to a specific
 question — what second signal do you need — rather than asserted.
+
+
+## 2026-10-10 — Six baseline examples prepared
+
+Added six fictional unaided starting tasks, an answer-free review worksheet,
+answer justifications and explanation anchors. Covered constraints, denominators,
+pooling and limits of before/after causal claims. Preserved the existing eight
+examples, giving fourteen of thirty planned items; sixteen remain. Added checks
+of arithmetic, missing denominators admitting opposite conclusions, missingness,
+block-end feedback and rejection of baseline item reuse in assisted phases.
+
+This makes the starting assessment reviewable, not validated. The review guide
+flags arithmetic/language burden, answer-label cues, unequal family coverage,
+feedback reactivity and non-equivalent forms. No participants, approvals or
+partner were added. Independent human review is pending; work received AI
+assistance. October 10 preparation uses the verified October 8 main commit;
+publication is tracked separately. Next bounded unit: review these six items with
+the researcher, then develop one balanced practice-family set rather than expand
+the entire study without reviewing burden.

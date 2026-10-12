@@ -25,11 +25,11 @@ def rejects(name, action):
 
 items = load_items()
 plan = json.loads((HERE/'plan.json').read_text())
-check('Eight development examples, not a full bank', len(items)==8 and not plan['item_bank_complete'])
-check('Unique item IDs', len({i['item_id'] for i in items})==8)
+check('Ten practice/delayed development examples, not a full bank', len(items)==10 and not plan['item_bank_complete'])
+check('Unique item IDs', len({i['item_id'] for i in items})==10)
 check('Youth and adult counts not mixed', [p['count'] for p in plan['phases']]==[6,12,8,4])
 check('Population and planning sample', plan['population_age_band']==[15,17] and plan['randomized_target_n']==90 and plan['pretest_max_n']==12)
-check('Exactly four illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==4 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
+check('Six illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==6 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
 
 lengths=[]
 for i in items:
@@ -46,6 +46,17 @@ for i in items:
     elif b['kind']=='pooled_rate':
         actual=100*Fraction(sum(x['completed'] for x in r['groups']),sum(x['total'] for x in r['groups']))
         computed='Supported' if actual==Fraction(b['claimed_percentage']) else 'Contradicted'
+    elif b['kind']=='missing_invitation_total':
+        g={x['name']:x for x in r['groups']}
+        check(i['item_id']+' one stated missing denominator', g[b['missing_group']]['invited'] is None)
+        rankings=[]
+        for example in b['counterexamples']:
+            for name,group in g.items():
+                n=example['invited_'+name]
+                check(i['item_id']+' feasible total '+name, n>=group['completed'] and (group['invited'] is None or n==group['invited']))
+            rankings.append(Fraction(g[b['left']]['completed'],example['invited_'+b['left']])>Fraction(g[b['right']]['completed'],example['invited_'+b['right']]))
+        check(i['item_id']+' compatible opposite rankings', set(rankings)=={True,False})
+        computed='Not enough information'
     else:
         check(i['item_id']+' documented causal gap', b['kind']=='causal_missing' and r['comparison_group'] is False and r['other_changes_recorded'] is False)
         computed='Not enough information' # bounded rule only, not expert semantic validation
@@ -54,8 +65,11 @@ for i in items:
     lengths.append({'item':i['item_id'], **{k:len(v['reason'].split()) for k,v in i['advice_variants'].items()}})
     for arm in plan['arms']:
         for phase in ['baseline','delayed_unaided']:
-            view=visible_trial(i,arm,phase,'first')
-            check(i['item_id']+f' {arm} {phase} no advice or key', not ({'advice','answer_key','feedback'} & set(view)))
+            if 'allowed_phases' in i and phase not in i['allowed_phases']:
+                rejects(i['item_id']+f' {arm} reject reuse in {phase}', lambda:visible_trial(i,arm,phase,'first'))
+            else:
+                view=visible_trial(i,arm,phase,'first')
+                check(i['item_id']+f' {arm} {phase} no advice or key', not ({'advice','answer_key','feedback'} & set(view)))
         check(i['item_id']+' no-AI practice no advice', 'advice' not in visible_trial(i,'no_ai','practice','first'))
     q='misleading'
     check(i['item_id']+' judgment-first initial no advice', 'advice' not in visible_trial(i,'judgment_first','practice','first',q))

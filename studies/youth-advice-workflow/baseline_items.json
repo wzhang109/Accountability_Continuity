@@ -1,0 +1,283 @@
+{
+  "version": "youth-baseline-draft-v0.1-2026-10-10",
+  "material_status": "Six fictional researcher-review examples; not administered, piloted or independently validated. AI-assisted drafting.",
+  "complete_item_bank": false,
+  "participant_data_present": false,
+  "tasks": [
+    {
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "illustrative_phase": "baseline",
+      "allowed_phases": [
+        "baseline"
+      ],
+      "advice_variants": null,
+      "independent_review": "pending",
+      "item_id": "B01",
+      "parallel_family": "constraints",
+      "title": "A school film afternoon",
+      "record": {
+        "requirements": {
+          "budget_max": 80,
+          "seats_min": 24,
+          "priority": "Choose the largest number of seats among plans meeting BOTH requirements."
+        },
+        "plans": [
+          {
+            "name": "A",
+            "cost": 76,
+            "seats": 26
+          },
+          {
+            "name": "B",
+            "cost": 72,
+            "seats": 22
+          },
+          {
+            "name": "C",
+            "cost": 84,
+            "seats": 30
+          }
+        ]
+      },
+      "claim": "Plan C is the plan to choose under this rule.",
+      "answer_key": "Contradicted",
+      "answer_basis": {
+        "kind": "constraints",
+        "expected_choice": "A",
+        "claimed_choice": "C"
+      },
+      "shared_feedback": "Contradicted. C costs 84, above the limit of 80. B has only 22 seats, below 24. A is the only plan meeting both requirements.",
+      "learning_skill": "Check every constraint before ranking eligible options.",
+      "explanation_anchor": "C exceeds the stated budget, so it is ineligible even though it has more seats. Identifying A is helpful but not required to refute C.",
+      "development_concern": "Requires tracking two conditions. The rule describes this invented task, not the values all schools should adopt."
+    },
+    {
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "illustrative_phase": "baseline",
+      "allowed_phases": [
+        "baseline"
+      ],
+      "advice_variants": null,
+      "independent_review": "pending",
+      "item_id": "B02",
+      "parallel_family": "rates",
+      "title": "Two school craft sessions",
+      "record": {
+        "groups": [
+          {
+            "name": "A",
+            "invited": 40,
+            "completed": 20
+          },
+          {
+            "name": "B",
+            "invited": 80,
+            "completed": 32
+          }
+        ]
+      },
+      "claim": "A larger proportion of invited students completed the session in Group A than in Group B.",
+      "answer_key": "Supported",
+      "answer_basis": {
+        "kind": "rate_comparison",
+        "left": "A",
+        "right": "B",
+        "operator": ">"
+      },
+      "shared_feedback": "Supported. A has 20/40 = 50%, while B has 32/80 = 40%. B has more completers but the smaller proportion of invited students.",
+      "learning_skill": "Use the denominator stated in the claim.",
+      "explanation_anchor": "Compare 20 out of 40 with 32 out of 80, or half with less than half; A has the higher proportion. Equivalent fraction reasoning is sufficient.",
+      "development_concern": "May measure prior fraction knowledge rather than learning potential. Check comprehension of proportion and burden without teaching the keyed comparison during baseline."
+    },
+    {
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "illustrative_phase": "baseline",
+      "allowed_phases": [
+        "baseline"
+      ],
+      "advice_variants": null,
+      "independent_review": "pending",
+      "item_id": "B03",
+      "parallel_family": "pooling",
+      "title": "Two groups visiting a school exhibit",
+      "record": {
+        "counting_rule": "The two groups contain different students; no student is counted twice. Completed means finishing all stations.",
+        "groups": [
+          {
+            "name": "Small group",
+            "total": 20,
+            "completed": 12
+          },
+          {
+            "name": "Large group",
+            "total": 60,
+            "completed": 12
+          }
+        ]
+      },
+      "claim": "Across all students in both groups together, 40% completed all stations.",
+      "answer_key": "Contradicted",
+      "answer_basis": {
+        "kind": "pooled_rate",
+        "claimed_percentage": 40
+      },
+      "shared_feedback": "Contradicted. There are 12 + 12 = 24 completers among 20 + 60 = 80 different students: 24/80 = 30%. Averaging the group percentages, 60% and 20%, gives 40% but weights the unequal groups equally.",
+      "learning_skill": "Combine participant counts before calculating a pooled percentage.",
+      "explanation_anchor": "Use 24/80 rather than an equal average of the two group percentages; 30% is not 40%. A correct unequal-group argument linked to these counts can suffice without the exact decimal.",
+      "development_concern": "Highest expected arithmetic burden in this small block, an untested expectation. Check calculator policy, overlapping-count comprehension and possible floor effects."
+    },
+    {
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "illustrative_phase": "baseline",
+      "allowed_phases": [
+        "baseline"
+      ],
+      "advice_variants": null,
+      "independent_review": "pending",
+      "item_id": "B04",
+      "parallel_family": "rates",
+      "title": "A school newsletter comparison",
+      "record": {
+        "groups": [
+          {
+            "name": "A",
+            "completed": 18,
+            "invited": null
+          },
+          {
+            "name": "B",
+            "completed": 24,
+            "invited": null
+          }
+        ],
+        "note": "The record gives completion counts only. The numbers invited to the two sessions are not recorded; they need not be equal."
+      },
+      "claim": "A larger proportion of invited students completed the session in Group B than in Group A.",
+      "answer_key": "Not enough information",
+      "answer_basis": {
+        "kind": "missing_denominators",
+        "counterexamples": [
+          {
+            "invited_A": 30,
+            "invited_B": 30,
+            "implies": "B_higher"
+          },
+          {
+            "invited_A": 20,
+            "invited_B": 60,
+            "implies": "A_higher"
+          }
+        ]
+      },
+      "shared_feedback": "Not enough information. B has more completers, but we do not know either invitation total. If each group invited 30 students, B would have the higher proportion; if A invited 20 and B invited 60, A would have the higher proportion. Both possibilities fit the recorded counts.",
+      "learning_skill": "Recognize when a comparison needs information that is missing.",
+      "explanation_anchor": "The invitation totals are missing; completion counts alone do not determine proportions. The learner need not invent the numerical counterexamples.",
+      "development_concern": "Missing-value wording may make the answer too obvious. This is one denominator-family item, not a new broad uncertainty skill scale."
+    },
+    {
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "illustrative_phase": "baseline",
+      "allowed_phases": [
+        "baseline"
+      ],
+      "advice_variants": null,
+      "independent_review": "pending",
+      "item_id": "B05",
+      "parallel_family": "constraints",
+      "title": "Choosing a school puzzle-room plan",
+      "record": {
+        "requirements": {
+          "budget_max": 60,
+          "seats_min": 15,
+          "priority": "Choose the largest number of seats among plans meeting BOTH requirements."
+        },
+        "plans": [
+          {
+            "name": "A",
+            "cost": 54,
+            "seats": 16
+          },
+          {
+            "name": "B",
+            "cost": 60,
+            "seats": 20
+          },
+          {
+            "name": "C",
+            "cost": 58,
+            "seats": 14
+          }
+        ]
+      },
+      "claim": "Plan B is the plan to choose under this rule.",
+      "answer_key": "Supported",
+      "answer_basis": {
+        "kind": "constraints",
+        "expected_choice": "B",
+        "claimed_choice": "B"
+      },
+      "shared_feedback": "Supported. Both A and B meet the budget and minimum seating requirements, but B has more seats. A cost of exactly 60 is within a maximum budget of 60. C has fewer than 15 seats.",
+      "learning_skill": "Rank all eligible options using the specified objective.",
+      "explanation_anchor": "A and B are eligible and B has more seats. Showing only that B is eligible is incomplete because another eligible plan must be compared.",
+      "development_concern": "Differs from B01 by having two eligible options and an inclusive boundary. This variation is deliberate but does not establish equal difficulty."
+    },
+    {
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "illustrative_phase": "baseline",
+      "allowed_phases": [
+        "baseline"
+      ],
+      "advice_variants": null,
+      "independent_review": "pending",
+      "item_id": "B06",
+      "parallel_family": "causal_evidence",
+      "title": "A new reminder sign in the reading room",
+      "record": {
+        "before_week": {
+          "late_returns": 16
+        },
+        "after_week": {
+          "late_returns": 10
+        },
+        "change": "A reminder sign was added between the two weeks.",
+        "same_room": true,
+        "comparison_group": false,
+        "other_changes_recorded": false
+      },
+      "claim": "The new sign caused the entire decrease in late returns.",
+      "answer_key": "Not enough information",
+      "answer_basis": {
+        "kind": "causal_missing",
+        "explanation": "A before/after count does not isolate what caused the change; no information excludes other influences."
+      },
+      "shared_feedback": "Not enough information. Late returns decreased from 16 to 10, but this record does not tell us what would have happened without the sign or rule out other changes. It establishes the decrease, not that the sign caused all of it. It also does not establish that the sign had no effect.",
+      "learning_skill": "Separate a recorded change from a claim about its cause.",
+      "explanation_anchor": "Recognize the decrease while explaining that other influences or a different no-sign outcome remain possible. Technical causal-inference terms or a specific comparison-group design are not required.",
+      "development_concern": "All existing before/after causal examples have the same answer category. Review a larger bank for label cues and include supported descriptive claims before freezing forms."
+    }
+  ]
+}

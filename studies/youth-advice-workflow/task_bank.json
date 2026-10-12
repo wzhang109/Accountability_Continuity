@@ -1,5 +1,5 @@
 {
-  "version": "youth-example-v0.1-2026-10-07",
+  "version": "youth-example-v0.2-2026-10-12",
   "material_status": "fictional AI-assisted development examples; not administered or independently validated",
   "complete_item_bank": false,
   "tasks": [
@@ -382,6 +382,124 @@
       },
       "independent_review": "pending",
       "development_concern": "Same answer category as its practice counterpart could cue memorization; expand and balance the full bank."
+    },
+    {
+      "item_id": "Y09",
+      "parallel_family": "rates",
+      "illustrative_phase": "practice",
+      "allowed_phases": [
+        "practice"
+      ],
+      "title": "School poster workshops",
+      "record": {
+        "groups": [
+          {
+            "name": "A",
+            "invited": 40,
+            "completed": 20
+          },
+          {
+            "name": "B",
+            "invited": 60,
+            "completed": 36
+          }
+        ]
+      },
+      "claim": "A larger proportion of invited students completed the workshop in Group A.",
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "answer_key": "Contradicted",
+      "advice_variants": {
+        "correct": {
+          "recommendation": "Contradicted",
+          "reason": "Contradicted. Group A has 20 completions among 40 invited students, while Group B has 36 among 60. The question asks about completion proportions. Dividing each completion count by its invitation total gives B the higher proportion."
+        },
+        "misleading": {
+          "recommendation": "Supported",
+          "reason": "Supported. Group A has 20 invited students who did not complete, while Group B has 24. The question compares workshop completion. Because A has fewer students who did not complete, it has the higher completion proportion among invited students."
+        }
+      },
+      "shared_feedback": "Contradicted. A has 20/40 = 50%; B has 36/60 = 60%. A has fewer non-completers (20 versus 24), but those counts have different invitation totals. Fewer non-completers does not establish a higher completion proportion.",
+      "learning_skill": "Choose the denominator corresponding to the claim",
+      "answer_basis": {
+        "kind": "rate_comparison",
+        "left": "A",
+        "right": "B",
+        "operator": ">"
+      },
+      "misleading_error": "Compares non-completion counts without their invitation totals.",
+      "explanation_anchor": "A: 20/40 = 50%; B: 36/60 = 60%; A is not the larger proportion. Equivalent fractions or a valid cross-product are acceptable.",
+      "independent_review": "pending",
+      "development_concern": "This uses non-completion counts, unlike Y02. Similar length does not establish equal difficulty or advice plausibility."
+    },
+    {
+      "item_id": "Y10",
+      "parallel_family": "rates",
+      "illustrative_phase": "practice",
+      "allowed_phases": [
+        "practice"
+      ],
+      "title": "School bookmark workshops",
+      "record": {
+        "groups": [
+          {
+            "name": "A",
+            "invited": null,
+            "completed": 24
+          },
+          {
+            "name": "B",
+            "invited": 60,
+            "completed": 30
+          }
+        ],
+        "note": "Every completer was invited. Group A's invitation total was not recorded; unknown is not zero."
+      },
+      "claim": "A larger proportion of invited students completed the workshop in Group A.",
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "answer_key": "Not enough information",
+      "advice_variants": {
+        "correct": {
+          "recommendation": "Not enough information",
+          "reason": "Not enough information. Group B has 30 completions among 60 invited students, but Group A has 24 completions with no invitation total recorded. The question asks about proportions among invitees. Without that total, the record cannot establish which proportion is larger."
+        },
+        "misleading": {
+          "recommendation": "Contradicted",
+          "reason": "Contradicted. Group A has 24 completions while Group B has 30 completions. The question compares workshop completion. Group B achieved the larger completion count, so its completion proportion is higher. The recorded counts therefore contradict the claim about Group A."
+        }
+      },
+      "shared_feedback": "Not enough information. B has 30/60 = 50%, but A's invitation total is unknown. If A had 40 invitees, 24/40 = 60%; if it had 80, 24/80 = 30%. Both hypothetical totals fit the record and imply opposite rankings. These are examples, not extra observed facts.",
+      "learning_skill": "Identify when the denominator required by a claim is unavailable",
+      "answer_basis": {
+        "kind": "missing_invitation_total",
+        "left": "A",
+        "right": "B",
+        "operator": ">",
+        "missing_group": "A",
+        "counterexamples": [
+          {
+            "invited_A": 40,
+            "invited_B": 60,
+            "claim_supported": true
+          },
+          {
+            "invited_A": 80,
+            "invited_B": 60,
+            "claim_supported": false
+          }
+        ]
+      },
+      "misleading_error": "Infers a proportion ordering from completion counts when one denominator is absent.",
+      "explanation_anchor": "B is 50%, but A cannot be compared without its invitation total. A correct explanation identifies the missing denominator and its consequence; it need not invent numerical scenarios.",
+      "independent_review": "pending",
+      "development_concern": "The visibly missing value may cue the answer. Only one rates practice item has missing data; the full bank must avoid a universal surface rule."
     }
   ]
 }

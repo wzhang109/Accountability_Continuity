@@ -1,0 +1,20 @@
+{
+  "version": "practice-rates-review-2026-10-12",
+  "status": "fictional development set; no administration or human validation",
+  "family": "rates",
+  "phase": "practice",
+  "item_ids": [
+    "Y02",
+    "Y09",
+    "Y10"
+  ],
+  "answer_category_counts": {
+    "Supported": 1,
+    "Contradicted": 1,
+    "Not enough information": 1
+  },
+  "frozen_advice_lists": null,
+  "advice_balance_note": "Answer-category balance is not advice-quality balance. Three family items cannot supply equal correct/misleading advice counts per learner; full 12-item complementary lists remain pending.",
+  "order": "pending; do not administer these three as a predictable block",
+  "human_review": "pending"
+}

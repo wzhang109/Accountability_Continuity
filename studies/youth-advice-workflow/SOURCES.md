@@ -33,3 +33,35 @@ main baseline `9bd17c67282c40a24bd85ad24ba095545aa91923` and all three root
 documents before integration. The web-reader failure does not imply that
 the repository is unavailable. No restricted/private source was
 used as participant data, and no networking conversation supplies evidence.
+
+
+## October 10 baseline development check
+
+Re-read the [Gajos and Mamykina primary abstract](https://arxiv.org/abs/2202.05402)
+on October 10. Its distinction between assisted decisions and learning motivates
+keeping starting and later unaided measures separate; it does not validate these
+school-record items. No new effect estimate or novelty claim is derived here.
+The PMC Bastani page returned a browser challenge today, so its full methods were
+not freshly reviewed. The earlier source notes remain dated as such.
+
+The six new baseline records are invented materials, not copied instruments or
+extracted observations. Their answer bases follow explicitly supplied counts and
+rules; B04 includes two compatible denominator scenarios with opposite rankings,
+and B06 leaves the cause unidentified by the supplied record. Semantic, age and
+measurement judgments require human review; arithmetic checks cannot provide it.
+The feedback-reactivity and unequal-form issues in BASELINE_REVIEW.md are design
+risks to examine, not empirical findings about these tasks.
+
+## October 12 practice-family source check
+
+Re-read the authors' [Gajos and Mamykina abstract](https://arxiv.org/abs/2202.05402):
+the studied initial-choice condition improved assisted decisions without
+establishing learning gains. Re-read the authors' [Buçinca et al abstract](https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml):
+reduced overreliance came with less favorable subjective ratings and differing
+benefits by motivation. These abstracts motivate separate learning and burden
+measures; they do not validate these new records or prescribe their wording.
+This is a focused source refresh, not a new systematic literature search.
+
+The rate examples and counterexamples are invented, not adapted published
+instruments. Answer balance and simple computations are development decisions;
+they are not a demonstrated novelty, psychological mechanism or validated scale.

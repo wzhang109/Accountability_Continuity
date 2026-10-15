@@ -42,3 +42,12 @@ The helper requires the expected number of answered items for a stage summary;
 it does not silently change the denominator or impute zero. A statistician and
 partner must settle partial-assessment and sensitivity rules before the pilot.
 This conservative development convention is not a final missing-data analysis.
+
+
+## Constraint explanation anchors
+
+For Y11, a relevant reason connects the known budget failure to the irrelevance
+of the missing seats, then compares the eligible plans. For Y12, it connects
+unknown cost to eligibility and the possibility of different winners. Repeating
+that a value is missing is insufficient on its own. Numerical scenarios are
+optional; the rubric and rater agreement still need human review.

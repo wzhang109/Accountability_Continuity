@@ -112,9 +112,9 @@ are produced by this update, and learners must never see both variants.
 
 ## What this adds and what is still needed
 
-There are now sixteen distinct drafts: six baseline, six practice and four
-delayed. Fourteen items are missing: six practice, four delayed, four challenge.
-The practice bank overall has one Supported, three Contradicted and two Not
+At the October 12 checkpoint there were sixteen distinct drafts: six baseline, six practice and four
+delayed. Fourteen items were missing: six practice, four delayed, four challenge.
+At that checkpoint the practice bank overall had one Supported, three Contradicted and two Not
 enough information keys. Family balance does not establish full-bank balance.
 Other skill families and delayed forms still need development, including examples
 that break irrelevant-missingness shortcuts without adding excessive burden.
@@ -123,3 +123,13 @@ Automated computations and display guards are implementation checks. They do
 not constitute independent key review, a feasibility pilot, age suitability or
 evidence that judgment-first improves learning. No participants, confirmed
 partner, ethics approval, funding or empirical effect are claimed.
+
+
+## October 14 status
+
+Two constraints practice records were added without changing this rates family.
+There are now six baseline, eight practice and four delayed drafts: eighteen
+of thirty planned slots. Four practice, four delayed and four challenge slots
+remain. Y11 provides an omission that does not prevent choosing a plan; it
+breaks a blanket missing-means-unknown shortcut but not all missing-field cues.
+See [constraints review](PRACTICE_CONSTRAINTS_REVIEW.md).

@@ -6,6 +6,7 @@ import re
 from fractions import Fraction
 from pathlib import Path
 from materials import load_items, visible_trial, score_response, complete_stage_accuracy
+from validate_practice_constraints import constraint_summary
 
 HERE = Path(__file__).resolve().parent
 checks = []
@@ -25,11 +26,11 @@ def rejects(name, action):
 
 items = load_items()
 plan = json.loads((HERE/'plan.json').read_text())
-check('Ten practice/delayed development examples, not a full bank', len(items)==10 and not plan['item_bank_complete'])
-check('Unique item IDs', len({i['item_id'] for i in items})==10)
+check('Twelve practice/delayed development examples, not a full bank', len(items)==12 and not plan['item_bank_complete'])
+check('Unique item IDs', len({i['item_id'] for i in items})==12)
 check('Youth and adult counts not mixed', [p['count'] for p in plan['phases']]==[6,12,8,4])
 check('Population and planning sample', plan['population_age_band']==[15,17] and plan['randomized_target_n']==90 and plan['pretest_max_n']==12)
-check('Six illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==6 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
+check('Eight illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==8 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
 
 lengths=[]
 for i in items:
@@ -40,6 +41,8 @@ for i in items:
         winners=[x['name'] for x in eligible if x['seats']==max_seats]
         check(i['item_id']+' unique feasible winner', winners==[b['expected_choice']])
         computed='Supported' if b['claimed_choice'] in winners else 'Contradicted'
+    elif b['kind']=='constraints_partial':
+        computed=constraint_summary(i)['computed_key']
     elif b['kind']=='rate_comparison':
         g={x['name']:x for x in r['groups']};left=g[b['left']];right=g[b['right']]
         computed='Supported' if Fraction(left['completed'],left['invited'])>Fraction(right['completed'],right['invited']) else 'Contradicted'

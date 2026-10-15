@@ -7,6 +7,13 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 14, 2026 — Constraints and missing information
+
+Added Y11/Y12 beside preserved Y01, including an unknown value that cannot
+change the choice and one that can. Kept paired advice, shared feedback and
+phase boundaries; checked compatible logical outcomes. There are 18 fictional
+drafts and 12 remaining slots. Human review remains pending; no participant data.
+
 ## October 12, 2026 — Rates practice materials
 
 Added Y09/Y10 alongside preserved Y02, covering three answer categories.

@@ -1,5 +1,5 @@
 {
-  "version": "youth-example-v0.2-2026-10-12",
+  "version": "youth-example-v0.3-2026-10-14",
   "material_status": "fictional AI-assisted development examples; not administered or independently validated",
   "complete_item_bank": false,
   "tasks": [
@@ -500,6 +500,165 @@
       "explanation_anchor": "B is 50%, but A cannot be compared without its invitation total. A correct explanation identifies the missing denominator and its consequence; it need not invent numerical scenarios.",
       "independent_review": "pending",
       "development_concern": "The visibly missing value may cue the answer. Only one rates practice item has missing data; the full bank must avoid a universal surface rule."
+    },
+    {
+      "parallel_family": "constraints",
+      "illustrative_phase": "practice",
+      "allowed_phases": [
+        "practice"
+      ],
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "learning_skill": "Check whether missing information can change the choice under the supplied constraints",
+      "independent_review": "pending",
+      "item_id": "Y11",
+      "title": "School science display plans",
+      "record": {
+        "requirements": {
+          "budget_max": 100,
+          "seats_min": 20,
+          "priority": "Largest seat count among plans meeting both constraints"
+        },
+        "plans": [
+          {
+            "name": "A",
+            "cost": 94,
+            "seats": 26
+          },
+          {
+            "name": "B",
+            "cost": 128,
+            "seats": null
+          },
+          {
+            "name": "C",
+            "cost": 82,
+            "seats": 22
+          }
+        ],
+        "note": "B's seat count was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero."
+      },
+      "claim": "Plan A is the plan to choose under the stated rule.",
+      "answer_key": "Supported",
+      "advice_variants": {
+        "correct": {
+          "recommendation": "Supported",
+          "reason": "Supported. Plan B costs more than the budget, so it is excluded whatever its missing seat count might be. Plans A and C meet both requirements. A has 26 seats and C has 22, so A is the eligible choice with more seats."
+        },
+        "misleading": {
+          "recommendation": "Not enough information",
+          "reason": "Not enough information. Plan B's seat count was not recorded, and the priority is to select the plan with the most seats. Without knowing B's seat count, we cannot compare all three plans or establish that A has the largest number of seats."
+        }
+      },
+      "shared_feedback": "Supported. B costs 128, above the budget of 100, so its missing seat count cannot make it eligible. A costs 94 and has 26 seats; C costs 82 and has 22 seats. Both meet the requirements, and A has more seats. The missing value cannot change this choice.",
+      "answer_basis": {
+        "kind": "constraints_partial",
+        "claimed_choice": "A",
+        "missing_plan": "B",
+        "missing_field": "seats",
+        "missing_domain": "non-negative integers",
+        "invariant_exclusion": {
+          "field": "cost",
+          "recorded_value": 128,
+          "budget_max": 100
+        },
+        "examples": [
+          {
+            "missing_value": 0,
+            "eligible_winner": "A",
+            "claim_supported": true
+          },
+          {
+            "missing_value": 40,
+            "eligible_winner": "A",
+            "claim_supported": true
+          }
+        ],
+        "logical_reason": "B is ineligible because its known cost exceeds the budget; varying its seats cannot change that exclusion."
+      },
+      "misleading_error": "Treats an unknown seat count as relevant despite the known budget exclusion.",
+      "explanation_anchor": "B already fails the budget, so its unknown seats cannot affect eligibility. A and C qualify; A's 26 seats exceed C's 22. A numerical guess for B is neither required nor justified.",
+      "development_concern": "Missingness appears in B's seat count and the answer remains Supported. One case breaks a blanket missing-means-unknown shortcut but does not remove field-position or variable-type cues."
+    },
+    {
+      "parallel_family": "constraints",
+      "illustrative_phase": "practice",
+      "allowed_phases": [
+        "practice"
+      ],
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "learning_skill": "Check whether missing information can change the choice under the supplied constraints",
+      "independent_review": "pending",
+      "item_id": "Y12",
+      "title": "School history display plans",
+      "record": {
+        "requirements": {
+          "budget_max": 100,
+          "seats_min": 20,
+          "priority": "Largest seat count among plans meeting both constraints"
+        },
+        "plans": [
+          {
+            "name": "A",
+            "cost": 94,
+            "seats": 26
+          },
+          {
+            "name": "B",
+            "cost": null,
+            "seats": 30
+          },
+          {
+            "name": "C",
+            "cost": 82,
+            "seats": 22
+          }
+        ],
+        "note": "B's cost was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero."
+      },
+      "claim": "Plan B is the plan to choose under the stated rule.",
+      "answer_key": "Not enough information",
+      "advice_variants": {
+        "correct": {
+          "recommendation": "Not enough information",
+          "reason": "Not enough information. B has more seats than A or C, but its cost was not recorded. The choice must meet the budget as well as the seat requirement. If B is within budget it wins; if it exceeds budget it is excluded and A wins."
+        },
+        "misleading": {
+          "recommendation": "Supported",
+          "reason": "Supported. Plan B has 30 seats, compared with 26 for A and 22 for C. The priority is to choose the plan with the largest seat count. B also exceeds the required minimum of 20 seats, so its highest seating total makes it the plan to choose."
+        }
+      },
+      "shared_feedback": "Not enough information. If B costs 96, it meets the budget and its 30 seats make it the choice. If B costs 108, it exceeds the budget and A is the choice with 26 seats. Both hypothetical costs fit the supplied record. They show why B's missing cost matters; neither is an observed value.",
+      "answer_basis": {
+        "kind": "constraints_partial",
+        "claimed_choice": "B",
+        "missing_plan": "B",
+        "missing_field": "cost",
+        "missing_domain": "non-negative integers",
+        "counterexamples": [
+          {
+            "missing_value": 96,
+            "eligible_winner": "B",
+            "claim_supported": true
+          },
+          {
+            "missing_value": 108,
+            "eligible_winner": "A",
+            "claim_supported": false
+          }
+        ],
+        "logical_reason": "Compatible values of B's unreported cost lead to different eligible winners and opposite truth values for the claim."
+      },
+      "misleading_error": "Uses the largest seat count without establishing that B satisfies the budget constraint.",
+      "explanation_anchor": "B's unknown cost could lie within or above the budget. That changes its eligibility and whether it beats A. Identifying the decisive cost uncertainty is sufficient; numeric counterexamples are optional.",
+      "development_concern": "The unknown cost matters here, whereas unknown seats do not matter in Y11. Cost-versus-seats, B's position and repeated tables can themselves become cues; current three-item family does not establish equal difficulty."
     }
   ]
 }

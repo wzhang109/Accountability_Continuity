@@ -1,0 +1,12 @@
+{
+  "version": "practice-constraints-review-2026-10-14",
+  "status": "fictional development set; no administration or human validation",
+  "family": "constraints",
+  "phase": "practice",
+  "item_ids": ["Y01", "Y11", "Y12"],
+  "answer_category_counts": {"Supported": 1, "Contradicted": 1, "Not enough information": 1},
+  "frozen_advice_lists": null,
+  "order": "pending; do not administer as a predictable category block",
+  "human_review": "pending",
+  "missingness_check": "Y11 and Y12 each omit one numeric entry but have different answer keys. Variable type, table position and question targets remain confounded."
+}

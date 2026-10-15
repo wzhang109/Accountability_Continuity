@@ -1,11 +1,11 @@
 # Youth advice workflow feasibility materials
 
-**Development version October 12, 2026**
+**Development version October 14, 2026**
 
 This folder makes one practical question reviewable: does requiring an initial
 answer before prepared AI advice change what 15–17-year-old learners can do on
 new related tasks without advice about a week later? It develops an earlier
-proposal into a protocol, sixteen fictional examples, explicit scoring boundaries,
+proposal into a protocol, eighteen fictional examples, explicit scoring boundaries,
 and a data structure. It contains no participants, pilot data or results.
 
 The study tests a workflow package. Initial judgment adds effort and commitment
@@ -20,6 +20,8 @@ and from the organizational [public-document pilot](../organizational-feedback/R
 | [Baseline records](baseline_items.json) and [checks](validate_baseline.py) | Separate baseline-only examples, arithmetic and feedback-boundary checks |
 | [Rates practice review](PRACTICE_RATES_REVIEW.md) and [answer-free worksheet](PRACTICE_RATES_WORKSHEET.md) | One label-balanced family: Y02, Y09, Y10; paired advice and cue/burden limits |
 | [Rates set](practice_rates_set.json) and [checks](validate_practice_rates.py) | Development references, computed counterexamples, exposure checks and shortcut risks |
+| [Constraints practice review](PRACTICE_CONSTRAINTS_REVIEW.md) and [worksheet](PRACTICE_CONSTRAINTS_WORKSHEET.md) | Eligibility rules, relevant versus irrelevant missingness, and short-reason anchors |
+| [Constraints set](practice_constraints_set.json) and [checks](validate_practice_constraints.py) | Compatible outcome classes, shared advice/feedback and narrow cue checks |
 | [Example tasks](TASK_EXAMPLES.md) | Fictional school records, answer bases and paired advice for human review |
 | [Measure to claim map](MEASURES_AND_CLAIMS.md) | What each response can support and what it cannot |
 | [Minimal data dictionary](DATA_DICTIONARY.md) | Stage-specific fields, missingness and privacy boundaries |
@@ -29,10 +31,10 @@ and from the organizational [public-document pilot](../organizational-feedback/R
 | [Display and scoring helpers](materials.py) | A local review prototype, not a deployed participant interface |
 | [Structural checks](validate_materials.py) | Arithmetic keys, advice access, response scoring and privacy checks |
 
-Six baseline, six practice and four new related assessment examples are present.
+Six baseline, eight practice and four new related assessment examples are present.
 The complete six-baseline, twelve-practice, eight-delayed and four-challenge bank
-still lacks fourteen items (six practice, four delayed and four challenge).
-The rates practice family has one key per answer category, but full-bank labels
+still lacks twelve items (four practice, four delayed and four challenge).
+The rates and constraints families each have one key per answer category, but full-bank labels
 and correct/misleading advice lists are not yet balanced or frozen.
 The six baseline slots have draft examples, not reviewed or frozen instruments. All answers and advice remain pending educator and methodological
 review. AI-assisted drafting and automated checks do not establish age

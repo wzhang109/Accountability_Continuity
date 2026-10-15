@@ -11,15 +11,11 @@ They do not establish the outcome of this proposed adolescent workflow.
 | [Gajos and Mamykina 2022](https://arxiv.org/abs/2202.05402) | In adult nutrition tasks, improved assisted decisions did not automatically produce learning. Their judgment-before-recommendation condition did not itself establish learning gains. This cautions against assuming that recording a first answer is sufficient. |
 | [Buçinca et al 2021](https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml) | Cognitive forcing reduced overreliance in the studied decision task but introduced usability and motivation trade-offs. Its result is not adolescent delayed learning evidence; burden belongs in this pilot. |
 | [Shen and Tamkin 2026](https://www.anthropic.com/research/AI-assistance-coding-skills) | Coding study distinguishes task performance from comprehension. Associations between interaction styles and learning are not randomized style effects, and short follow-up cannot establish lasting skill formation. Adult coding is different from school-record reasoning. |
-| [Yan 2026](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1936522/full) | Published September 28. The current primary-source search extract confirms a three-arm preservice-teacher scenario study comparing judgment-first and advice-first; the manipulation includes commitment and review procedure. This is a close precedent, so the three-arm design is not claimed as new. |
+| [Yan 2026](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1936522/full) | Published September 28. The adult preservice-teacher study is a close three-arm sequence precedent, including commitment and review procedures. Full Methods section 3.1 was directly read October 14; sequence alone is not claimed as new. |
 
-The current Yan full-page fetch timed out. The retrieved primary-source excerpt
-contains the abstract and parts of methods, not the entire delayed assessment
-section. Its delayed findings are therefore not independently reverified in
-this update. The earlier submitted proposal's description of an exploratory,
-inconclusive delayed contrast is preserved as prior reading, not repeated here
-as a freshly verified numerical result. Full methods and supplements should be
-reviewed before claiming a specific methodological difference.
+The October 7 Yan retrieval was limited to an abstract and method excerpts.
+That access limitation was resolved for the full article on October 14. No
+supplementary instruments or independent replication were reviewed.
 
 The proposed focus is feasibility with adolescents, identical verified feedback
 and a delayed unaided primary outcome. This is a possible extension, not an
@@ -65,3 +61,15 @@ This is a focused source refresh, not a new systematic literature search.
 The rate examples and counterexamples are invented, not adapted published
 instruments. Answer balance and simple computations are development decisions;
 they are not a demonstrated novelty, psychological mechanism or validated scale.
+
+
+## October 14 constraints development and precedent
+
+Directly read Yan’s full Methods section 3.1. Its two assisted sequences include
+initial commitment and a neutral review; it uses fixed item order and an
+approximately two-week unaided exploratory assessment. This reinforces keeping
+workflow effects, order cues and later unaided performance separate. It does
+not validate the present adolescent task family or establish a new design.
+The constraint examples are invented records whose answers follow their stated
+rules; their relevance, difficulty and misleading-advice plausibility require
+human review.

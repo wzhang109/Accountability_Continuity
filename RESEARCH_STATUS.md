@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 12, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 14, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -156,8 +156,8 @@ replacing either study protocol or asserting that cross-setting effects exist.
 ## October 10–12 youth materials
 
 Added six baseline-only drafts and two practice-only rate-comparison records.
-The rates practice family covers all three answer categories. There are now
-16 fictional items; 14 of the planned 30 remain undeveloped. Original records,
+The rates practice family covers all three answer categories. At that checkpoint there were
+16 fictional items; 14 of the planned 30 were undeveloped. Original records,
 youth planning counts and adult/organizational materials are preserved.
 
 Answer bases, paired advice, worksheets and computed checks are available in
@@ -165,3 +165,11 @@ the [youth materials](studies/youth-advice-workflow/README.md). Human review,
 complete advice lists and feasibility testing remain pending. These materials
 do not establish age suitability, a validated measure or a learning effect.
 There are no participants, confirmed partners or ethics approval.
+
+
+## October 14 constraints practice materials
+
+Added two fictional practice records that distinguish decisive from irrelevant
+missing information under a supplied choice rule. The bank now has 18 drafts
+and 12 missing slots. Logical outcomes, paired advice and display boundaries
+are available for review; human review and feasibility testing remain pending.

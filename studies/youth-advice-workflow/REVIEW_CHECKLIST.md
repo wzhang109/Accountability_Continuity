@@ -7,8 +7,8 @@
 | Researcher understanding | Explain task rules, workflow differences, denominator choices and measure limits in ordinary language |
 | Educator and adolescent specialist | Check wording, relevance, difficulty, accessibility, feedback and misleading-advice plausibility |
 | Independent key review | Recompute every answer and identify the exact misconception; do not treat an AI check as a second coder |
-| Complete item bank | Review six new baseline drafts; review the rates and constraints families; add 12 further items (4 practice, 4 delayed, 4 challenge) and freeze distinct forms |
-| Cue and burden review | Inspect missing-data and field-position cues, including the difference between irrelevant and decisive omissions; inspect count/rate shortcuts, advice persuasiveness, arithmetic burden and possible within-family learning; no timings or acceptability data exist |
+| Complete item bank | Review six new baseline drafts; review the rates and constraints families; add 10 further items (2 practice, 4 delayed, 4 challenge) and freeze distinct forms |
+| Cue and burden review | Inspect missing-data and field-position cues, including irrelevant/decisive omissions, the Y13/Y14 tie rule and position/target cues; inspect count/rate shortcuts, advice persuasiveness, arithmetic burden and possible within-family learning; no timings or acceptability data exist |
 | Advice lists and exposure | Build balanced complementary lists; review UI that never shows keys or delayed advice before outcomes |
 | Feedback policy | Review baseline feedback as shared instruction and delayed block-end timing before registration; assess practice/testing effects |
 | Statistical review | Check randomization, estimand, baseline adjustment, item structure, missingness, intervals and feasibility denominators |

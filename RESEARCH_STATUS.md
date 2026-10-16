@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 14, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 16, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -173,3 +173,11 @@ Added two fictional practice records that distinguish decisive from irrelevant
 missing information under a supplied choice rule. The bank now has 18 drafts
 and 12 missing slots. Logical outcomes, paired advice and display boundaries
 are available for review; human review and feasibility testing remain pending.
+
+## October 16 reverse missing-information examples
+
+Added Y13/Y14 so missing seats and missing cost can each be decisive or
+irrelevant in this small family. The new records state how seat ties are
+resolved. Twenty fictional drafts are present; ten slots, human review and
+feasibility testing remain pending. Rule consistency is not evidence of a
+learner's understanding or of transfer to real-world judgment.

@@ -133,3 +133,10 @@ of thirty planned slots. Four practice, four delayed and four challenge slots
 remain. Y11 provides an omission that does not prevent choosing a plan; it
 breaks a blanket missing-means-unknown shortcut but not all missing-field cues.
 See [constraints review](PRACTICE_CONSTRAINTS_REVIEW.md).
+
+## October 16 status
+
+The rates records are unchanged. Y13/Y14 extend the separate constraints family,
+giving twenty drafts overall: six baseline, ten practice, four delayed. Ten
+slots remain: two practice, four delayed, four challenge. Complete forms, advice
+allocation and independent review remain unfinished.

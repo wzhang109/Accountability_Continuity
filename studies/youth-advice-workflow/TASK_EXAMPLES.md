@@ -302,7 +302,7 @@ The four delayed examples are new related records, not psychometrically matched 
 
 ## What is still missing
 
-These examples contain three Supported, three Contradicted and two Not enough information keys. A complete study requires 30 distinct items: six baseline, twelve practice, eight delayed and four challenge. Six baseline examples are now available separately in [BASELINE_WORKSHEET.md](BASELINE_WORKSHEET.md), with [answer bases and review limits](BASELINE_REVIEW.md). At the October 10 checkpoint, sixteen items (eight practice, four delayed and four challenge) and the actual counterbalanced lists remained to be developed. See the October 14 section below for the current count. Keys, challenge difficulty, wording and advice plausibility need educator review and pretesting. Passing structural checks is not validation with adolescents.
+These examples contain three Supported, three Contradicted and two Not enough information keys. A complete study requires 30 distinct items: six baseline, twelve practice, eight delayed and four challenge. Six baseline examples are now available separately in [BASELINE_WORKSHEET.md](BASELINE_WORKSHEET.md), with [answer bases and review limits](BASELINE_REVIEW.md). At the October 10 checkpoint, sixteen items (eight practice, four delayed and four challenge) and the actual counterbalanced lists remained to be developed. See the October 16 section below for the current count. Keys, challenge difficulty, wording and advice plausibility need educator review and pretesting. Passing structural checks is not validation with adolescents.
 
 ## October 12 rates practice development
 
@@ -328,3 +328,95 @@ Twelve are still missing: four practice, four delayed and four challenge.
 The current eight practice keys are two Supported, three Contradicted and
 three Not enough information; full advice allocation and comparable forms
 remain pending. No participant data or human validation are added.
+
+## October 16 reverse missing-information development
+
+Y13/Y14 are fictional practice-only extensions. Earlier records are unchanged.
+The bank has twenty drafts (six baseline, ten practice, four delayed); ten
+slots remain. Human review and full advice lists are pending.
+
+### Y13 School language display plans
+
+```json
+{
+  "requirements": {
+    "budget_max": 100,
+    "seats_min": 20,
+    "priority": "Largest seat count among plans meeting both constraints",
+    "tie_break": "Lower cost when seat counts tie"
+  },
+  "plans": [
+    {
+      "name": "A",
+      "cost": 96,
+      "seats": 24
+    },
+    {
+      "name": "B",
+      "cost": 82,
+      "seats": 22
+    },
+    {
+      "name": "C",
+      "cost": 90,
+      "seats": null
+    }
+  ],
+  "note": "C's seat count was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero. If eligible plans have the same seat count, choose the lower-cost plan."
+}
+```
+
+**Claim:** Plan C is the plan to choose under the stated rule.
+
+**Key:** Not enough information
+
+**Correct prepared advice:** Not enough information. C is within budget, but its seat count is unknown. It could fail the minimum or seat fewer people than A; it could also seat more. The stated tie rule settles an equal count, but it cannot supply C's unrecorded count.
+
+**Misleading prepared advice:** Supported. C costs 90, within the budget of 100, and costs less than A. The rule favors the lower-cost plan when comparing equal seating, so C offers the better choice. Its missing seat count does not change its known cost advantage over A.
+
+**Common verified feedback:** Not enough information. If C has 18 seats, it fails the minimum and A wins with 24. If C has 28 seats, C qualifies and wins. At 24 seats, C wins the tie because it costs less than A. These are possible completions, not recorded seat counts; C's missing seats can change the answer.
+
+**Review issue:** A decisive missing-seat case reverses the Y11 field-type shortcut. C position, target wording, an explicit tie rule and label patterns remain potential cues; no matched difficulty or age suitability is established.
+
+### Y14 School music display plans
+
+```json
+{
+  "requirements": {
+    "budget_max": 100,
+    "seats_min": 20,
+    "priority": "Largest seat count among plans meeting both constraints",
+    "tie_break": "Lower cost when seat counts tie"
+  },
+  "plans": [
+    {
+      "name": "A",
+      "cost": 96,
+      "seats": 24
+    },
+    {
+      "name": "B",
+      "cost": 82,
+      "seats": 22
+    },
+    {
+      "name": "C",
+      "cost": null,
+      "seats": 18
+    }
+  ],
+  "note": "C's cost was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero. If eligible plans have the same seat count, choose the lower-cost plan."
+}
+```
+
+**Claim:** Plan A is the plan to choose under the stated rule.
+
+**Key:** Supported
+
+**Correct prepared advice:** Supported. C has only 18 seats, below the required minimum, so its missing cost cannot make it eligible. A and B both meet the budget and seat requirements. A has 24 seats compared with B's 22, making A the choice under the stated rule.
+
+**Misleading prepared advice:** Not enough information. C's cost is unknown, and the rule includes a budget limit and a preference for lower cost when seats tie. Without this cost, the comparison is incomplete. C could be cheaper than A, so the record cannot establish that A is the plan to choose.
+
+**Common verified feedback:** Supported. C has 18 seats, below the minimum of 20, whatever its cost might be. A costs 96 and has 24 seats; B costs 82 and has 22 seats. Both qualify, and A has more seats. There is no tie between them. The unrecorded cost cannot change C's seat shortfall.
+
+**Review issue:** An irrelevant missing-cost case reverses the Y12 field-type shortcut. Matched A/B figures, C position, target wording, extra rule burden and misleading-advice plausibility remain untested.

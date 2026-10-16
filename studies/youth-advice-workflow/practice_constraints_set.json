@@ -1,12 +1,23 @@
 {
-  "version": "practice-constraints-review-2026-10-14",
+  "version": "practice-constraints-review-2026-10-16",
   "status": "fictional development set; no administration or human validation",
   "family": "constraints",
   "phase": "practice",
-  "item_ids": ["Y01", "Y11", "Y12"],
-  "answer_category_counts": {"Supported": 1, "Contradicted": 1, "Not enough information": 1},
+  "item_ids": [
+    "Y01",
+    "Y11",
+    "Y12",
+    "Y13",
+    "Y14"
+  ],
+  "answer_category_counts": {
+    "Supported": 2,
+    "Contradicted": 1,
+    "Not enough information": 2
+  },
   "frozen_advice_lists": null,
   "order": "pending; do not administer as a predictable category block",
   "human_review": "pending",
-  "missingness_check": "Y11 and Y12 each omit one numeric entry but have different answer keys. Variable type, table position and question targets remain confounded."
+  "missingness_check": "Y11/Y13 cross irrelevant/decisive missing seats; Y12/Y14 cross decisive/irrelevant missing cost. This is coverage, not a matched factorial experiment.",
+  "rule_variant": "Y13/Y14 explicitly add lower-cost tie resolution; earlier records remain unchanged. Rule burden and position are not controlled."
 }

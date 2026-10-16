@@ -73,3 +73,15 @@ not validate the present adolescent task family or establish a new design.
 The constraint examples are invented records whose answers follow their stated
 rules; their relevance, difficulty and misleading-advice plausibility require
 human review.
+
+## October 16 reverse-case development check
+
+Freshly re-read the Gajos and Mamykina primary abstract and the authors'
+Buçinca abstract linked above. They motivate distinguishing supported answers,
+learning and burden; neither supplies these fictional constraint tasks nor
+validates the new tie rule. No full methods or supplements were freshly
+reviewed today, and no new effect or novelty claim is made.
+
+The missing-field cross-coverage and tie rule are local design decisions.
+They permit checking a narrower shortcut but do not form a matched factorial
+experiment, establish reliable measurement or show how people learn.

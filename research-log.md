@@ -7,6 +7,14 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 16, 2026 — Reverse missing-information cases
+
+Added two practice-only drafts reversing the earlier missing-field shortcut,
+with an explicit tie rule, paired advice and common feedback. Checked outcome
+classes and exposure boundaries; preserved earlier task records and planning
+counts. Twenty drafts, ten slots missing. Independent review is pending; there
+are no participant data. AI assisted the design, coding and documentation.
+
 ## October 14, 2026 — Constraints and missing information
 
 Added Y11/Y12 beside preserved Y01, including an unknown value that cannot

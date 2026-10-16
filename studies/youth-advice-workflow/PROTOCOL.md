@@ -1,6 +1,6 @@
 # Proposed youth feasibility protocol
 
-**Version 0.4 October 14, 2026 · proposed and not preregistered**
+**Version 0.5 October 16, 2026 · proposed and not preregistered**
 
 ## Question and status
 
@@ -34,11 +34,12 @@ bounded answer rule. Learners choose Supported, Contradicted or Not enough
 information and give a short reason. Example skills are checking declared
 constraints, choosing a denominator, pooling groups and distinguishing an
 observed change from a causal claim. The full bank and comparable forms do not
-exist yet. Eighteen examples support review: six baseline, eight practice and four
-delayed. Twelve further items and reviewed forms are still needed. The
-[rates practice review](PRACTICE_RATES_REVIEW.md) and
-[constraints review](PRACTICE_CONSTRAINTS_REVIEW.md) each group three examples
-with one key per answer category; that is not advice-quality balance. These are
+exist yet. Twenty examples support review: six baseline, ten practice and four
+delayed. Ten further items and reviewed forms are still needed. The
+[rates practice review](PRACTICE_RATES_REVIEW.md) has three examples; the
+[constraints review](PRACTICE_CONSTRAINTS_REVIEW.md) has five, including
+reverse missing-information cases and an explicit tie rule in the two new drafts.
+Neither family coverage nor key counts establish advice-quality balance. These are
 not ready to administer. The separate [baseline guide](BASELINE_REVIEW.md)
 documents starting-score interpretation, burden and feedback reactivity.
 
@@ -92,7 +93,7 @@ claiming those checks establish equal psychological difficulty.
 Use two complementary practice lists: each assigned learner would receive six
 correct and six misleading items, with each item appearing in both conditions
 across learners within each assisted arm. Challenge lists would similarly have
-two correct and two misleading items. The full lists cannot be built from the existing eight practice and four delayed
+two correct and two misleading items. The full lists cannot be built from the existing ten practice and four delayed
 examples; the six baseline items have no advice and cannot fill practice slots. Learners must never see both versions of the same item.
 
 The same item-level advice mapping and feedback policy apply in both assisted

@@ -31,7 +31,7 @@ check('All references are rates practice drafts', all(i['parallel_family'] == 'r
 check('No full advice lists fabricated', spec['frozen_advice_lists'] is None)
 check('Original planning counts retained', [p['count'] for p in plan['phases']] == [6, 12, 8, 4])
 check('Six separate baseline records retained', len(load_baseline_items()) == 6)
-check('Eighteen total drafts leave twelve missing', len(bank) + len(load_baseline_items()) == 18 and sum(p['count'] for p in plan['phases']) - 18 == 12)
+check('Twenty total drafts leave ten missing', len(bank) + len(load_baseline_items()) == 20 and sum(p['count'] for p in plan['phases']) - 20 == 10)
 check('No duplicate baseline/practice IDs', not ({i['item_id'] for i in load_baseline_items()} & set(bank)))
 
 word_counts = []
@@ -101,9 +101,9 @@ check('Worksheet includes all family items', all('## ' + i['item_id'] + ' ' in w
 check('Worksheet omits answer/coaching fields', not any(x in worksheet for x in ['**Key:**', 'answer_key', '**Correct prepared advice', '**Common verified feedback', 'counterexamples']))
 
 print(json.dumps({
-    'date': '2026-10-14', 'checks_passed': len(checks), 'checks_failed': 0,
+    'date': '2026-10-16', 'checks_passed': len(checks), 'checks_failed': 0,
     'family_ids': spec['item_ids'], 'family_extension_ids': ['Y09', 'Y10'], 'items_added_this_update': [],
-    'total_drafts': 18, 'missing_items': 12, 'computed_answer_bases': computed,
+    'total_drafts': 20, 'missing_items': 10, 'computed_answer_bases': computed,
     'advice_word_counts': word_counts, 'shortcut_audit': heuristic,
     'unresolved_cue': 'Only Y10 has a missing invitation total; this is not an unbiased/validated set.',
     'human_review': 'pending', 'participants': 0,

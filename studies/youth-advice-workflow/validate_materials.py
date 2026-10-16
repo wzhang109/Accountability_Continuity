@@ -26,11 +26,11 @@ def rejects(name, action):
 
 items = load_items()
 plan = json.loads((HERE/'plan.json').read_text())
-check('Twelve practice/delayed development examples, not a full bank', len(items)==12 and not plan['item_bank_complete'])
-check('Unique item IDs', len({i['item_id'] for i in items})==12)
+check('Fourteen practice/delayed development examples, not a full bank', len(items)==14 and not plan['item_bank_complete'])
+check('Unique item IDs', len({i['item_id'] for i in items})==14)
 check('Youth and adult counts not mixed', [p['count'] for p in plan['phases']]==[6,12,8,4])
 check('Population and planning sample', plan['population_age_band']==[15,17] and plan['randomized_target_n']==90 and plan['pretest_max_n']==12)
-check('Eight illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==8 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
+check('Ten illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==10 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
 
 lengths=[]
 for i in items:

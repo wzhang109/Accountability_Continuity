@@ -1,11 +1,11 @@
 # Youth advice workflow feasibility materials
 
-**Development version October 14, 2026**
+**Development version October 16, 2026**
 
 This folder makes one practical question reviewable: does requiring an initial
 answer before prepared AI advice change what 15–17-year-old learners can do on
 new related tasks without advice about a week later? It develops an earlier
-proposal into a protocol, eighteen fictional examples, explicit scoring boundaries,
+proposal into a protocol, twenty fictional examples, explicit scoring boundaries,
 and a data structure. It contains no participants, pilot data or results.
 
 The study tests a workflow package. Initial judgment adds effort and commitment
@@ -31,11 +31,12 @@ and from the organizational [public-document pilot](../organizational-feedback/R
 | [Display and scoring helpers](materials.py) | A local review prototype, not a deployed participant interface |
 | [Structural checks](validate_materials.py) | Arithmetic keys, advice access, response scoring and privacy checks |
 
-Six baseline, eight practice and four new related assessment examples are present.
+Six baseline, ten practice and four new related assessment examples are present.
 The complete six-baseline, twelve-practice, eight-delayed and four-challenge bank
-still lacks twelve items (four practice, four delayed and four challenge).
-The rates and constraints families each have one key per answer category, but full-bank labels
-and correct/misleading advice lists are not yet balanced or frozen.
+still lacks ten items (two practice, four delayed and four challenge).
+The rates family has one key per category; the five constraint examples have
+two Supported, one Contradicted and two Not enough information keys. Full-bank
+labels and correct/misleading advice lists are not yet balanced or frozen.
 The six baseline slots have draft examples, not reviewed or frozen instruments. All answers and advice remain pending educator and methodological
 review. AI-assisted drafting and automated checks do not establish age
 suitability, plausible misleading advice, equal difficulty or rater agreement.

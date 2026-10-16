@@ -1,6 +1,6 @@
 # Measures and the claims they can support
 
-**October 10, 2026 · provisional specification**
+**Updated October 16, 2026 · provisional specification**
 
 | Measure | Stage and rule | Can support | Cannot establish |
 |---|---|---|---|
@@ -51,3 +51,11 @@ of the missing seats, then compares the eligible plans. For Y12, it connects
 unknown cost to eligibility and the possibility of different winners. Repeating
 that a value is missing is insufficient on its own. Numerical scenarios are
 optional; the rubric and rater agreement still need human review.
+
+For Y13, a relevant explanation connects the unrecorded seats to eligibility
+or ranking; the lower-cost tie rule cannot replace the missing count. For Y14,
+the known seat shortfall excludes C at every possible cost. These anchors
+concern use of a stated rule. Accepting prepared advice is not the correctness
+standard: the fictional evidence and rule supply a separately inspectable key.
+Real-world judgment may lack such a settled rule. No claim about transfer to
+real-life self-correction follows from passing these items.

@@ -1,11 +1,11 @@
 # Youth advice workflow feasibility materials
 
-**Development version October 16, 2026**
+**Development version October 19, 2026**
 
 This folder makes one practical question reviewable: does requiring an initial
 answer before prepared AI advice change what 15–17-year-old learners can do on
 new related tasks without advice about a week later? It develops an earlier
-proposal into a protocol, twenty fictional examples, explicit scoring boundaries,
+proposal into a protocol, twenty-two fictional examples, explicit scoring boundaries,
 and a data structure. It contains no participants, pilot data or results.
 
 The study tests a workflow package. Initial judgment adds effort and commitment
@@ -22,6 +22,8 @@ and from the organizational [public-document pilot](../organizational-feedback/R
 | [Rates set](practice_rates_set.json) and [checks](validate_practice_rates.py) | Development references, computed counterexamples, exposure checks and shortcut risks |
 | [Constraints practice review](PRACTICE_CONSTRAINTS_REVIEW.md) and [worksheet](PRACTICE_CONSTRAINTS_WORKSHEET.md) | Eligibility rules, relevant versus irrelevant missingness, and short-reason anchors |
 | [Constraints set](practice_constraints_set.json) and [checks](validate_practice_constraints.py) | Compatible outcome classes, shared advice/feedback and narrow cue checks |
+| [Delayed constraints review](DELAYED_CONSTRAINTS_REVIEW.md) and [answer-free worksheet](DELAYED_CONSTRAINTS_WORKSHEET.md) | Two delayed-only drafts, no advice, keys and unresolved cues |
+| [Delayed constraints set](delayed_constraints_set.json) and [checks](validate_delayed_constraints.py) | Separate rule calculation, phase separation and block-end feedback checks |
 | [Example tasks](TASK_EXAMPLES.md) | Fictional school records, answer bases and paired advice for human review |
 | [Measure to claim map](MEASURES_AND_CLAIMS.md) | What each response can support and what it cannot |
 | [Minimal data dictionary](DATA_DICTIONARY.md) | Stage-specific fields, missingness and privacy boundaries |
@@ -31,10 +33,12 @@ and from the organizational [public-document pilot](../organizational-feedback/R
 | [Display and scoring helpers](materials.py) | A local review prototype, not a deployed participant interface |
 | [Structural checks](validate_materials.py) | Arithmetic keys, advice access, response scoring and privacy checks |
 
-Six baseline, ten practice and four new related assessment examples are present.
+Six baseline, ten practice and six new related assessment examples are present.
 The complete six-baseline, twelve-practice, eight-delayed and four-challenge bank
-still lacks ten items (two practice, four delayed and four challenge).
-The rates family has one key per category; the five constraint examples have
+still lacks eight items (two practice, two delayed and four challenge).
+Y15/Y16 have no advice variants and are restricted to delayed assessment.
+The delayed set is not a frozen form; key balance does not settle family weights.
+The rates practice family has one key per category; the five constraint practice examples have
 two Supported, one Contradicted and two Not enough information keys. Full-bank
 labels and correct/misleading advice lists are not yet balanced or frozen.
 The six baseline slots have draft examples, not reviewed or frozen instruments. All answers and advice remain pending educator and methodological

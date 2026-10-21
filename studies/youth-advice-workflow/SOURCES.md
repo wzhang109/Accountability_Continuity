@@ -85,3 +85,16 @@ reviewed today, and no new effect or novelty claim is made.
 The missing-field cross-coverage and tie rule are local design decisions.
 They permit checking a narrower shortcut but do not form a matched factorial
 experiment, establish reliable measurement or show how people learn.
+
+## October 19 delayed-assessment development check
+
+Freshly read the Gajos and Mamykina primary abstract and the authors'
+Buçinca abstract linked above. Their distinctions between assisted decisions,
+learning and burden support keeping the delayed task unaided, but they do not
+validate these new fictional records. No full methods, supplements or new
+effect estimates were reviewed today. This is a targeted refresh, not a
+systematic or exhaustive literature update.
+
+Y15/Y16 are original development examples with supplied rules. Separate
+compatible-completion checks establish their proposed logical keys under
+those rules; they do not supply human or psychometric validation.

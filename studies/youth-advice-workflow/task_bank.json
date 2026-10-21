@@ -1,5 +1,5 @@
 {
-  "version": "development-2026-10-16",
+  "version": "development-2026-10-19",
   "material_status": "fictional AI-assisted development examples; not administered or independently validated",
   "complete_item_bank": false,
   "tasks": [
@@ -825,6 +825,152 @@
       "misleading_error": "Treats an unknown cost as decisive despite the known seat shortfall and invokes a tie rule when the remaining eligible seats differ.",
       "explanation_anchor": "C already fails the seat minimum, so its unknown cost cannot change eligibility. A and B qualify, and A's 24 seats exceed B's 22. A guessed cost is not needed.",
       "development_concern": "An irrelevant missing-cost case reverses the Y12 field-type shortcut. Matched A/B figures, C position, target wording, extra rule burden and misleading-advice plausibility remain untested."
+    },
+    {
+      "parallel_family": "constraints",
+      "illustrative_phase": "delayed_unaided",
+      "allowed_phases": [
+        "delayed_unaided"
+      ],
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "advice_variants": null,
+      "learning_skill": "Apply a supplied eligibility and ranking rule while distinguishing decisive from irrelevant missing information",
+      "independent_review": "pending",
+      "item_id": "Y15",
+      "title": "School poetry event plans",
+      "record": {
+        "requirements": {
+          "budget_max": 84,
+          "seats_min": 12,
+          "priority": "Largest seat count among plans meeting both constraints",
+          "tie_break": "Lower cost when seat counts tie"
+        },
+        "plans": [
+          {
+            "name": "C",
+            "cost": 74,
+            "seats": 18
+          },
+          {
+            "name": "A",
+            "cost": 68,
+            "seats": null
+          },
+          {
+            "name": "B",
+            "cost": 80,
+            "seats": 16
+          }
+        ],
+        "note": "A's seat count was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero. If eligible plans have the same seat count, choose the lower-cost plan."
+      },
+      "claim": "Plan C is the plan to choose under the stated rule.",
+      "answer_key": "Not enough information",
+      "shared_feedback": "Not enough information. If A has 10 seats, it fails the minimum and C wins with 18 seats. If A has 22 seats, A qualifies and wins. At 18 seats, A wins the tie because 68 is less than C's cost of 74. These are possible completions, not observed counts; C's known seat count does not settle whether C is the choice.",
+      "answer_basis": {
+        "kind": "constraints_partial",
+        "claimed_choice": "C",
+        "missing_plan": "A",
+        "missing_field": "seats",
+        "missing_domain": "non-negative integers",
+        "counterexamples": [
+          {
+            "missing_value": 10,
+            "eligible_winner": "C",
+            "claim_supported": true
+          },
+          {
+            "missing_value": 22,
+            "eligible_winner": "A",
+            "claim_supported": false
+          }
+        ],
+        "tie_example": {
+          "missing_value": 18,
+          "eligible_winner": "A",
+          "claim_supported": false
+        },
+        "logical_reason": "Compatible values of A's missing seats can preserve or overturn C's selection. At equal seats, the explicit lower-cost rule selects A."
+      },
+      "explanation_anchor": "A's unreported seats can change eligibility or the ranking against C. Both a C-winning and an A-winning completion fit the record. The tie rule resolves equal seats but cannot supply the missing count; numerical examples are optional.",
+      "development_concern": "New figures, context, row order and target differ from practice, but this is near transfer under the same rule. Missing seats, item position, claim target and label may remain cues; no age or difficulty equivalence established."
+    },
+    {
+      "parallel_family": "constraints",
+      "illustrative_phase": "delayed_unaided",
+      "allowed_phases": [
+        "delayed_unaided"
+      ],
+      "choices": [
+        "Supported",
+        "Contradicted",
+        "Not enough information"
+      ],
+      "advice_variants": null,
+      "learning_skill": "Apply a supplied eligibility and ranking rule while distinguishing decisive from irrelevant missing information",
+      "independent_review": "pending",
+      "item_id": "Y16",
+      "title": "School craft demonstration plans",
+      "record": {
+        "requirements": {
+          "budget_max": 84,
+          "seats_min": 12,
+          "priority": "Largest seat count among plans meeting both constraints",
+          "tie_break": "Lower cost when seat counts tie"
+        },
+        "plans": [
+          {
+            "name": "B",
+            "cost": 82,
+            "seats": 20
+          },
+          {
+            "name": "C",
+            "cost": null,
+            "seats": 10
+          },
+          {
+            "name": "A",
+            "cost": 70,
+            "seats": 16
+          }
+        ],
+        "note": "C's cost was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero. If eligible plans have the same seat count, choose the lower-cost plan."
+      },
+      "claim": "Plan A is the plan to choose under the stated rule.",
+      "answer_key": "Contradicted",
+      "shared_feedback": "Contradicted. C has 10 seats, below the minimum of 12, at every possible cost. A and B both qualify, but B has 20 seats and A has 16. B is the choice, so the claim about A is contradicted. A costs less, but lower cost is a tie rule, and their seat counts do not tie.",
+      "answer_basis": {
+        "kind": "constraints_partial",
+        "claimed_choice": "A",
+        "missing_plan": "C",
+        "missing_field": "cost",
+        "missing_domain": "non-negative integers",
+        "invariant_exclusion": {
+          "field": "seats",
+          "recorded_value": 10,
+          "seats_min": 12
+        },
+        "examples": [
+          {
+            "missing_value": 0,
+            "eligible_winner": "B",
+            "claim_supported": false
+          },
+          {
+            "missing_value": 100,
+            "eligible_winner": "B",
+            "claim_supported": false
+          }
+        ],
+        "logical_reason": "C's known seat shortfall excludes it at every non-negative cost. B beats A on eligible seats; lower cost cannot displace the primary priority when seats differ."
+      },
+      "explanation_anchor": "C cannot qualify because it has fewer than 12 seats, whatever its cost. B and A qualify; B has more seats, so A is not the choice. Mentioning only C's exclusion is incomplete because the claim concerns A versus B.",
+      "development_concern": "An irrelevant omission yields Contradicted rather than Supported. Within these two new items, missing field and answer label are still correlated. This is not a matched factorial set or evidence that a shortcut has been eliminated."
     }
   ]
 }

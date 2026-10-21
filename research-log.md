@@ -7,6 +7,14 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 19, 2026 — Delayed unaided missing-information examples
+
+Added two delayed-only fictional records with no advice: one omission can
+change the answer, while the other cannot prevent rejecting the stated claim.
+Kept block-end feedback and earlier materials separate. Twenty-two drafts,
+eight missing slots. Keys, exposure and preservation checked; human review and
+feasibility testing remain pending. AI assisted design, coding and documentation.
+
 ## October 16, 2026 — Reverse missing-information cases
 
 Added two practice-only drafts reversing the earlier missing-field shortcut,

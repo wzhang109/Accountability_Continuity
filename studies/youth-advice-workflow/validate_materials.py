@@ -26,11 +26,11 @@ def rejects(name, action):
 
 items = load_items()
 plan = json.loads((HERE/'plan.json').read_text())
-check('Fourteen practice/delayed development examples, not a full bank', len(items)==14 and not plan['item_bank_complete'])
-check('Unique item IDs', len({i['item_id'] for i in items})==14)
+check('Sixteen practice/delayed development examples, not a full bank', len(items)==16 and not plan['item_bank_complete'])
+check('Unique item IDs', len({i['item_id'] for i in items})==16)
 check('Youth and adult counts not mixed', [p['count'] for p in plan['phases']]==[6,12,8,4])
 check('Population and planning sample', plan['population_age_band']==[15,17] and plan['randomized_target_n']==90 and plan['pretest_max_n']==12)
-check('Ten illustrative practice and four delayed items', sum(i['illustrative_phase']=='practice' for i in items)==10 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==4)
+check('Ten illustrative practice and six delayed items', sum(i['illustrative_phase']=='practice' for i in items)==10 and sum(i['illustrative_phase']=='delayed_unaided' for i in items)==6)
 
 lengths=[]
 for i in items:
@@ -64,6 +64,22 @@ for i in items:
         check(i['item_id']+' documented causal gap', b['kind']=='causal_missing' and r['comparison_group'] is False and r['other_changes_recorded'] is False)
         computed='Not enough information' # bounded rule only, not expert semantic validation
     check(i['item_id']+' key consistency', computed==key)
+    if i.get('advice_variants') is None:
+        check(i['item_id']+' delayed-only record has no advice', i['allowed_phases']==['delayed_unaided'] and i['illustrative_phase']=='delayed_unaided')
+        for arm in plan['arms']:
+            for stage in ['first','review']:
+                view=visible_trial(i,arm,'delayed_unaided',stage,first_response_recorded=stage=='review')
+                check(i['item_id']+' '+arm+' '+stage+' no advice or key', set(view)=={'item_id','title','fictional','record','claim','choices'})
+            rejects(i['item_id']+' no per-item delayed feedback '+arm, lambda:visible_trial(i,arm,'delayed_unaided','feedback',final_response_recorded=True))
+            feedback=visible_trial(i,arm,'delayed_unaided','feedback',final_response_recorded=True,phase_complete=True)
+            check(i['item_id']+' common block-end feedback '+arm, feedback['feedback']==i['shared_feedback'])
+            for phase in ['baseline','practice','challenge']:
+                rejects(i['item_id']+' no reuse '+arm+' '+phase, lambda:visible_trial(i,arm,phase,'first'))
+            rejects(i['item_id']+' no delayed quality '+arm, lambda:visible_trial(i,arm,'delayed_unaided','first','correct'))
+        check(i['item_id']+' exact answer scored',score_response(i,key,80)=={'final_correct':1,'brier_error':(0.8-1)**2})
+        check(i['item_id']+' missing follow-up not zero',score_response(i,None,response_status='not_presented')=={'final_correct':None,'brier_error':None})
+        check(i['item_id']+' no missing confidence imputation',score_response(i,key)['brier_error'] is None)
+        continue
     check(i['item_id']+' correct and misleading recommendations', i['advice_variants']['correct']['recommendation']==key and i['advice_variants']['misleading']['recommendation']!=key)
     lengths.append({'item':i['item_id'], **{k:len(v['reason'].split()) for k,v in i['advice_variants'].items()}})
     for arm in plan['arms']:

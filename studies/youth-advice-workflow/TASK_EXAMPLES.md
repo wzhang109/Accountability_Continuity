@@ -420,3 +420,89 @@ slots remain. Human review and full advice lists are pending.
 **Common verified feedback:** Supported. C has 18 seats, below the minimum of 20, whatever its cost might be. A costs 96 and has 24 seats; B costs 82 and has 22 seats. Both qualify, and A has more seats. There is no tie between them. The unrecorded cost cannot change C's seat shortfall.
 
 **Review issue:** An irrelevant missing-cost case reverses the Y12 field-type shortcut. Matched A/B figures, C position, target wording, extra rule burden and misleading-advice plausibility remain untested.
+
+## October 19 extension: delayed-only Y15/Y16
+
+Two new unaided records are documented in the [delayed review](DELAYED_CONSTRAINTS_REVIEW.md)
+and [answer-free worksheet](DELAYED_CONSTRAINTS_WORKSHEET.md). They have no
+advice variants and cannot be used in practice or the later challenge. Earlier
+Y01–Y14 records are unchanged. There are now 22 drafts and 8 missing slots.
+
+### Y15 School poetry event plans
+
+```json
+{
+  "requirements": {
+    "budget_max": 84,
+    "seats_min": 12,
+    "priority": "Largest seat count among plans meeting both constraints",
+    "tie_break": "Lower cost when seat counts tie"
+  },
+  "plans": [
+    {
+      "name": "C",
+      "cost": 74,
+      "seats": 18
+    },
+    {
+      "name": "A",
+      "cost": 68,
+      "seats": null
+    },
+    {
+      "name": "B",
+      "cost": 80,
+      "seats": 16
+    }
+  ],
+  "note": "A's seat count was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero. If eligible plans have the same seat count, choose the lower-cost plan."
+}
+```
+
+**Claim:** Plan C is the plan to choose under the stated rule.
+
+**Key:** Not enough information
+
+**Block-end feedback only:** Not enough information. If A has 10 seats, it fails the minimum and C wins with 18 seats. If A has 22 seats, A qualifies and wins. At 18 seats, A wins the tie because 68 is less than C's cost of 74. These are possible completions, not observed counts; C's known seat count does not settle whether C is the choice.
+
+**Explanation anchor:** A's unreported seats can change eligibility or the ranking against C. Both a C-winning and an A-winning completion fit the record. The tie rule resolves equal seats but cannot supply the missing count; numerical examples are optional.
+
+### Y16 School craft demonstration plans
+
+```json
+{
+  "requirements": {
+    "budget_max": 84,
+    "seats_min": 12,
+    "priority": "Largest seat count among plans meeting both constraints",
+    "tie_break": "Lower cost when seat counts tie"
+  },
+  "plans": [
+    {
+      "name": "B",
+      "cost": 82,
+      "seats": 20
+    },
+    {
+      "name": "C",
+      "cost": null,
+      "seats": 10
+    },
+    {
+      "name": "A",
+      "cost": 70,
+      "seats": 16
+    }
+  ],
+  "note": "C's cost was not recorded. All costs and seat counts are non-negative whole numbers; an unknown value is not zero. If eligible plans have the same seat count, choose the lower-cost plan."
+}
+```
+
+**Claim:** Plan A is the plan to choose under the stated rule.
+
+**Key:** Contradicted
+
+**Block-end feedback only:** Contradicted. C has 10 seats, below the minimum of 12, at every possible cost. A and B both qualify, but B has 20 seats and A has 16. B is the choice, so the claim about A is contradicted. A costs less, but lower cost is a tie rule, and their seat counts do not tie.
+
+**Explanation anchor:** C cannot qualify because it has fewer than 12 seats, whatever its cost. B and A qualify; B has more seats, so A is not the choice. Mentioning only C's exclusion is incomplete because the claim concerns A versus B.
+

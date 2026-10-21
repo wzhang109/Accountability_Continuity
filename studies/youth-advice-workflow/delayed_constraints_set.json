@@ -1,0 +1,37 @@
+{
+  "version": "delayed-constraints-review-2026-10-19",
+  "status": "fictional unaided development examples; not administered or independently validated",
+  "phase": "delayed_unaided",
+  "item_ids": [
+    "Y15",
+    "Y16"
+  ],
+  "related_existing_item_ids": [
+    "Y05"
+  ],
+  "related_practice_item_ids": [
+    "Y11",
+    "Y12",
+    "Y13",
+    "Y14"
+  ],
+  "answer_category_counts": {
+    "Contradicted": 1,
+    "Not enough information": 1
+  },
+  "new_item_advice_variants": null,
+  "feedback_policy": "Same block-end feedback for every original arm, only after all delayed outcomes are fixed; not after each item",
+  "order": "Not frozen; do not administer as a predictable missing-field block",
+  "human_review": "pending",
+  "coverage_limit": "Decisive missing seats and irrelevant missing cost only; field/label/position cues and unequal family weighting remain",
+  "bank_progress": {
+    "baseline": 6,
+    "practice": 10,
+    "delayed_unaided": 6,
+    "challenge": 0,
+    "total": 22,
+    "planned_total": 30,
+    "missing": 8,
+    "complete": false
+  }
+}

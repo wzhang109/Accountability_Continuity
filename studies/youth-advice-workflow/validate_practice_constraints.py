@@ -96,7 +96,7 @@ def run_checks():
     check('Recorded family key counts, not balanced forms', Counter(i['answer_key'] for i in items) == spec['answer_category_counts'])
     check('Planned counts unchanged', [p['count'] for p in plan['phases']] == [6, 12, 8, 4])
     check('No frozen advice allocation fabricated', spec['frozen_advice_lists'] is None)
-    check('Twenty draft slots, ten missing', len(bank) + len(load_baseline_items()) == 20 and sum(p['count'] for p in plan['phases']) - 20 == 10)
+    check('Twenty-two draft slots, eight missing', len(bank) + len(load_baseline_items()) == 22 and sum(p['count'] for p in plan['phases']) - 22 == 8)
     summaries = {}; lengths = []
     for item in items:
         ident = item['item_id']; summary = constraint_summary(item)
@@ -170,9 +170,9 @@ def run_checks():
     worksheet = (HERE / 'PRACTICE_CONSTRAINTS_WORKSHEET.md').read_text()
     check('Worksheet includes all family references', all('## ' + i['item_id'] + ' ' in worksheet for i in items))
     check('Worksheet omits answer and coaching fields', not any(s in worksheet for s in ['**Key:**', 'answer_key', '**Correct prepared advice', '**Common verified feedback', 'counterexamples', 'invariant_exclusion']))
-    return {'date': '2026-10-16', 'checks_passed': len(checks), 'checks_failed': 0,
-            'family_ids': spec['item_ids'], 'new_items': ['Y13', 'Y14'],
-            'total_drafts': 20, 'missing_items': 10, 'computed_answer_bases': summaries,
+    return {'date': '2026-10-19', 'checks_passed': len(checks), 'checks_failed': 0,
+            'family_ids': spec['item_ids'], 'family_extension_ids': ['Y13', 'Y14'], 'items_added_this_update': [],
+            'total_drafts': 22, 'missing_items': 8, 'computed_answer_bases': summaries,
             'advice_word_counts': lengths, 'human_review': 'pending', 'participants': 0,
             'scope': 'Supplied-rule logical outcomes, exposure, feedback and narrow missingness cue; not age suitability, form equivalence, security or empirical validation.',
             'checks': checks}

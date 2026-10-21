@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 16, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 19, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -181,3 +181,12 @@ irrelevant in this small family. The new records state how seat ties are
 resolved. Twenty fictional drafts are present; ten slots, human review and
 feasibility testing remain pending. Rule consistency is not evidence of a
 learner's understanding or of transfer to real-world judgment.
+
+## October 19 delayed unaided examples
+
+Added two fictional delayed-only records with no advice variants: decisive
+missing seats, and irrelevant missing cost that still permits a Contradicted
+answer. The bank contains 22 drafts: six baseline, ten practice, six delayed;
+eight slots remain (two practice, two delayed, four challenge). Supplied-rule
+checks and block-end feedback guards do not establish understanding, age
+suitability or equal difficulty. Independent human review remains pending.

@@ -1,6 +1,6 @@
 # Measures and the claims they can support
 
-**Updated October 16, 2026 · provisional specification**
+**Updated October 19, 2026 · provisional specification**
 
 | Measure | Stage and rule | Can support | Cannot establish |
 |---|---|---|---|
@@ -59,3 +59,12 @@ concern use of a stated rule. Accepting prepared advice is not the correctness
 standard: the fictional evidence and rule supply a separately inspectable key.
 Real-world judgment may lack such a settled rule. No claim about transfer to
 real-life self-correction follows from passing these items.
+
+## Delayed missing-information anchors (October 19)
+
+For Y15, connect A's unknown seats to compatible completions that preserve
+or overturn C's selection. For Y16, exclude C using its known seat shortfall,
+then compare B and A. Missing information alone is not a reason to select
+Not enough information. The new records have no advice, so advice agreement
+or rejection is not defined for them. Six delayed drafts do not replace the
+planned eight-item primary outcome or establish general judgment ability.

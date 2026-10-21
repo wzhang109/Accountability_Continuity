@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-10-21",
+  "unit": "One published study; versions are not independent replications",
+  "sources": [
+    {
+      "id": "S01",
+      "kind": "Published author-reported field experiment",
+      "title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+      "authors": "Dell’Acqua et al.",
+      "venue": "Organization Science 37(4),1217–1242",
+      "published_online": "2026-06-12",
+      "url": "https://doi.org/10.1287/orsc.2025.20702",
+      "pdf_url": "https://pubsonline.informs.org/doi/pdf/10.1287/orsc.2025.20702",
+      "access": "Publisher HTML and26-pagePDF accessible",
+      "reading_scope": "Abstract/introduction, experimental design, measurement definitions, selected expertise/interpretation sections, limitations, endnotes8,9,11,23,24 and funding/contribution disclosure; not a complete appendix/data/code audit",
+      "printed_pages_used": [
+        1217,
+        1218,
+        1222,
+        1223,
+        1224,
+        1225,
+        1226,
+        1227,
+        1231,
+        1232,
+        1233,
+        1234,
+        1235,
+        1236,
+        1237,
+        1238
+      ],
+      "figures": "Text/captions consulted; no independent digitization or visual verification of estimates",
+      "license": "CC BY4.0, copyright2026TheAuthors; seePDFfirstpage",
+      "independent_replication": false,
+      "disclosure_scope": "Includes company coauthors and company gifts/consultancy disclosures; author account is not an independent operational audit",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "S02",
+      "kind": "Earlier working-paper landing/abstract",
+      "title": "The Cybernetic Teammate: A Field Experiment on Generative AI Reshaping Teamwork and Expertise",
+      "url": "https://www.nber.org/papers/w33641",
+      "doi": "10.3386/w33641",
+      "issue_date": "2025-04",
+      "access": "Official indexed landing/abstract read; direct landing open returned403",
+      "reading_scope": "Title,versionlink and abstract denominator776 only",
+      "not_separate_case": true,
+      "human_review_status": "pending"
+    },
+    {
+      "id": "S03",
+      "kind": "Registration record attempt",
+      "url": "https://www.socialscienceregistry.org/trials/13603",
+      "access": "403 on direct attempts",
+      "reading_scope": "None; main article reports registration but original time-stamped record not independently read",
+      "supports_claims": false,
+      "next_action": "Review accessible historical registration and compare with appendix before any protocol/analysis audit"
+    }
+  ],
+  "no_full_paper_mirror_in_package": true,
+  "review_limits": [
+    "No raw data or reanalysis",
+    "No independent coder or domain-expert approval",
+    "No contact with authors, company or participants",
+    "Not systematic review or novelty claim"
+  ]
+}

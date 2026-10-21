@@ -1,6 +1,6 @@
 # Human Judgment Feedback and Learning with AI Assistance
 
-**Wenwen (Celine) Zhang · Working research program · Updated October 1, 2026**
+**Wenwen (Celine) Zhang · Working research program · Updated October 21, 2026**
 
 I want to understand whether judgment, feedback, and responsibility remain
 connected as more work is delegated to AI. Do people encounter the consequences
@@ -17,7 +17,17 @@ choices. The [October 1 reflection](docs/purpose-judgment-and-accountability.md)
 develops this philosophical motivation. It adds questions for future study, not
 new findings or a new score imposed on the existing cases.
 
-## Two related questions
+## Current organizational question
+
+How is work allocated and integrated, and who can make the decisions needed to
+move it forward? AI may change these dependencies or leave some constraints in
+place. The [coordination reading](studies/organizational-coordination/README.md)
+begins with one published experimental workflow and the process evidence it
+does not establish. It proposes observation fields, not a finding about lasting
+organizational patterns. Earlier human-learning questions remain documented
+without determining the current organizational research objective.
+
+## Existing measurement and learning questions
 
 The AC simulation asks a measurement question: can an organization distinguish
 better AI from reduced human review using the rate at which people override
@@ -29,7 +39,7 @@ initial judgment before AI advice affect later unaided performance? This
 cannot be answered by the simulation. A randomly assigned workflow, a latent
 review process, and an observed disagreement are different variables.
 
-## Proposed first study
+## Preserved learning-study designs
 
 Compare three workflows on repeated cases with verified feedback:
 
@@ -70,7 +80,7 @@ and agreement from appropriate use of advice. They do not establish that
 judgment first is always preferable. See the [focused review](ai-advice-timing-and-human-learning.md)
 and the narrower source-to-design links in the [operational draft](studies/ai-advice-timing/DRAFT_PROTOCOL.md#evidence-informing-this-draft).
 
-## An initial organizational evidence branch
+## Earlier public-document evidence branch
 
 Even if a person learns, an organization may not retain that knowledge. The
 [October 1 public-document pilot](studies/organizational-feedback/README.md)

@@ -1,5 +1,12 @@
 # Literature Review — Track 2: Organizational Behavior / Management Science
 
+**October 21, 2026:** the [coordination source-reading unit](studies/organizational-coordination/README.md)
+adds a focused pass through selected published design, measurement, interpretation
+and limitation sections of Dell'Acqua et al. (2026), with exact scope/version
+records. It does not audit the appendix, registration history, data or code.
+This is not a complete literature review or a claim to novelty; historical
+reading statements below are retained with their original dates and scopes.
+
 **October 1, 2026 update:** the historical reading notes below remain incomplete.
 The [organizational public-document pilot](studies/organizational-feedback/README.md)
 adds a separate, source-linked descriptive exercise. Its

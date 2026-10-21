@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "record_id": "pg-product-workshop-reading-2026-10-21",
+  "status": "AI-assisted secondary reading of primary publication; not original field data",
+  "study_count": 1,
+  "source_version_id": "S01",
+  "claims": [
+    {
+      "id": "C01",
+      "source_id": "S01",
+      "evidence_kind": "author_reported_context",
+      "statement": "Company leaders described scheduling and functional frictions in early product work.",
+      "locator": "3.1",
+      "printed_pages": [
+        1222
+      ],
+      "limits": "Reported motivation, not a measured causal coordination outcome.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C02",
+      "source_id": "S01",
+      "evidence_kind": "reported_experimental_assignment",
+      "statement": "One-day virtual product-work conditions crossed individual/R&D-commercial pairs with AI access.",
+      "locator": "3.2",
+      "printed_pages": [
+        1223,
+        1224
+      ],
+      "limits": "Temporary experimental configuration, not ordinary staffing policy.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C03",
+      "source_id": "S01",
+      "evidence_kind": "reported_protocol_role",
+      "statement": "A randomly designated pair member shared the screen and submitted.",
+      "locator": "3.2",
+      "printed_pages": [
+        1223,
+        1224
+      ],
+      "limits": "Submission role does not establish investment/launch authority.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C04",
+      "source_id": "S01",
+      "evidence_kind": "reported_treatment_component",
+      "statement": "AI arms additionally received one-hour prompting training.",
+      "locator": "3.2",
+      "printed_pages": [
+        1224
+      ],
+      "limits": "Not a pure access-only contrast.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C05",
+      "source_id": "S01",
+      "evidence_kind": "reported_measurement",
+      "statement": "Blinded experts rated proposal quality and technical/commercial orientation.",
+      "locator": "4.2",
+      "printed_pages": [
+        1225
+      ],
+      "limits": "Output ratings do not directly measure interpersonal coordination.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C06",
+      "source_id": "S01",
+      "evidence_kind": "authors_result_interpretation",
+      "statement": "AI-assisted outputs were more balanced across specialties.",
+      "locator": "5.2;5.5.2;discussion",
+      "printed_pages": [
+        1226,
+        1227,
+        1232,
+        1233,
+        1234
+      ],
+      "limits": "Not direct evidence of equal participation or reduced dominance.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C07",
+      "source_id": "S01",
+      "evidence_kind": "explicit_scope_limit",
+      "statement": "The one-day design did not fully capture extended coordination/rework; downstream commercialization decisions were not directly observed.",
+      "locator": "6;endnote23",
+      "printed_pages": [
+        1236,
+        1238
+      ],
+      "limits": "Reading does not establish approval, launch, revenue or total coordination savings.",
+      "human_review_status": "pending"
+    },
+    {
+      "id": "C08",
+      "source_id": "S01",
+      "evidence_kind": "reported_sample_denominators",
+      "statement": "826 attended;791 randomized completers;776 complete records including post-task surveys;35 were not randomized.",
+      "locator": "3.2;endnotes8,9",
+      "printed_pages": [
+        1223,
+        1238
+      ],
+      "limits": "Different denominators within one study; not independent replications.",
+      "human_review_status": "pending"
+    }
+  ],
+  "stages": [
+    {
+      "id": "P01",
+      "stage": "Problem and assignment",
+      "actor_scope": "Company/research workshop design",
+      "evidence_ids": [
+        "C01",
+        "C02"
+      ],
+      "event_status": "reported_experimental_design",
+      "approval_authority": "unknown"
+    },
+    {
+      "id": "P02",
+      "stage": "Develop proposal",
+      "actor_scope": "Assigned individual or R&D-commercial pair; AI access/training according to assignment",
+      "evidence_ids": [
+        "C02",
+        "C04"
+      ],
+      "event_status": "reported_experimental_activity",
+      "internal_task_allocation": "unknown"
+    },
+    {
+      "id": "P03",
+      "stage": "Submit",
+      "actor_scope": "Designated submitter in pair condition",
+      "evidence_ids": [
+        "C03"
+      ],
+      "event_status": "reported_protocol_role",
+      "commercial_approval_authority": "unknown"
+    },
+    {
+      "id": "P04",
+      "stage": "Evaluate",
+      "actor_scope": "Expert evaluators",
+      "evidence_ids": [
+        "C05",
+        "C06"
+      ],
+      "event_status": "reported_evaluation",
+      "final_investment_authority": "unknown"
+    },
+    {
+      "id": "P05",
+      "stage": "Downstream development/commercialization",
+      "actor_scope": "unknown",
+      "evidence_ids": [
+        "C07"
+      ],
+      "event_status": "not_established_in_reading_scope",
+      "implementation_outcome": "unknown"
+    }
+  ],
+  "links": [
+    {
+      "from": "P01",
+      "to": "P02",
+      "kind": "reported_protocol_order_not_timestamped_log",
+      "evidence_ids": [
+        "C02"
+      ]
+    },
+    {
+      "from": "P02",
+      "to": "P03",
+      "kind": "reported_protocol_order_not_timestamped_log",
+      "evidence_ids": [
+        "C03"
+      ]
+    },
+    {
+      "from": "P03",
+      "to": "P04",
+      "kind": "reported_protocol_order_not_timestamped_log",
+      "evidence_ids": [
+        "C05"
+      ]
+    }
+  ],
+  "unestablished_link": {
+    "from": "P04",
+    "to": "P05",
+    "status": "unknown",
+    "evidence_ids": [
+      "C07"
+    ]
+  },
+  "unknowns": [
+    {
+      "id": "U01",
+      "field": "Waiting and active coordination labor",
+      "status": "unknown",
+      "reason": "No transition-level timing established in the selected reading; do not code zero."
+    },
+    {
+      "id": "U02",
+      "field": "Who integrated which contribution",
+      "status": "unknown",
+      "reason": "Output orientation cannot identify individual contributions or negotiation."
+    },
+    {
+      "id": "U03",
+      "field": "Authority to allocate resources or approve launch",
+      "status": "unknown",
+      "reason": "Submitting and evaluating do not establish these rights."
+    },
+    {
+      "id": "U04",
+      "field": "Actual downstream handoff and iterative rework",
+      "status": "unknown",
+      "reason": "C07 bounds the study; no linked implementation log reviewed."
+    },
+    {
+      "id": "U05",
+      "field": "Persistence of changed work roles and knowledge dependencies",
+      "status": "unknown",
+      "reason": "One-day output evidence does not establish durable role or dependency changes; individual growth is not the current branch objective."
+    },
+    {
+      "id": "U06",
+      "field": "Original preregistration wording/timestamp",
+      "status": "unknown",
+      "reason": "Registry access failed; no independent preregistration audit."
+    },
+    {
+      "id": "U07",
+      "field": "Assignment versus attendance handling",
+      "status": "pending_methodological_review",
+      "reason": "Main design and endnotes describe attendance/reassignment; inspect appendix and original registration before causal reanalysis."
+    }
+  ],
+  "proposed_inferences": [
+    {
+      "id": "I01",
+      "status": "reviewer_inference_not_study_finding",
+      "basis": [
+        "C03",
+        "C05",
+        "C07"
+      ],
+      "statement": "Access to perspectives, integration effort and approval authority require different evidence."
+    },
+    {
+      "id": "I02",
+      "status": "candidate_question_not_result",
+      "basis": [
+        "C05",
+        "C07"
+      ],
+      "statement": "If production becomes easier, does integration/decision work shrink, move or increase?"
+    }
+  ],
+  "review_status": {
+    "researcher_understanding": "pending",
+    "second_human_source_coding": "pending",
+    "statistical_review": "pending",
+    "method_validation": "not_claimed"
+  },
+  "no_public_private_data": true,
+  "no_universal_coordination_score": true
+}

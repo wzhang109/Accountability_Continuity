@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 19, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 21, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -14,6 +14,7 @@ or research-log entries.
 | Estimation and sensitivity simulations | Python, tests, configuration, CSV summaries, and figures | Synthetic data with specified truth and selected parameter values |
 | Literature and conceptual work | Reading notes, an exploratory framework, and proposals | Not a systematic review, proof of novelty, or validated theory |
 | Advice-timing study design | Three-arm operational draft and fictional task examples | No participants, ethics approval, registration, pilot, or empirical results |
+| Organizational coordination source reading | One published-study workflow, source versions and unknown process links; proposed observation template | AI-assisted reading of another study, not original fieldwork, replication or evidence of reduced total coordination burden; human review pending |
 | Organizational public-document pilot | Five source-linked entries from two programs, a codebook, selection log, and reproducible file checks | Exploratory AI-assisted coding of first-party publications; no independent coding, private process records, causal effect, or AC score |
 | Reflection on purposes and measures | A dated philosophical note connecting values, participation, consequences, and revisable judgment | A research motivation; no universal metric, new empirical result, or demonstrated claim about human or AI consciousness |
 
@@ -22,6 +23,16 @@ directly measure reasoning, legal responsibility, expertise, incentives,
 children's development, or organizational learning. The label *Accountability
 Continuity* expresses a research concern; the code does not operationalize all
 of that concern.
+
+## Current organizational focus
+
+The current branch concerns actual work allocation, interdependence, integration
+and decision rights. Individual growth is not a required objective or outcome
+for this branch; earlier human-learning studies remain preserved as prior work.
+The [source-reading unit](studies/organizational-coordination/README.md) separates
+reported experimental roles, output measures and unobserved process links. The
+older issue-response pilot remains a historical exercise rather than the current
+preferred organizational question. Existing learning protocols are unchanged.
 
 ## What is assumed
 
@@ -93,9 +104,10 @@ research data. Earlier index and hard-constraint claims are clarified in the
 3. Secure a setting and the required research review before recruiting anyone.
 4. Use feasibility evidence to finalize the item bank, timing, sample size,
    analysis plan, and any registration for a later confirmatory study.
-5. Independently review the public-document coding and obtain a linked record
-   of one issue, its response decision, any implementation, and later assessment
-   before expanding the organizational branch.
+5. Independently review the coordination source records and obtain permissible
+   evidence linking one work transition, its requirements, actual coordination
+   and relevant decision rights. Historical public-document coding also remains
+   pending independent review.
 
 None of these steps is recorded as completed.
 
@@ -190,3 +202,12 @@ answer. The bank contains 22 drafts: six baseline, ten practice, six delayed;
 eight slots remain (two practice, two delayed, four challenge). Supplied-rule
 checks and block-end feedback guards do not establish understanding, age
 suitability or equal difficulty. Independent human review remains pending.
+
+
+## October 21 coordination reading
+
+Added one published-study workflow and an observation template. Source facts,
+author interpretations and this project's questions are distinguished; waiting,
+rework, downstream approval and development are not inferred from output quality.
+Researcher and independent human review remain pending. AI assisted retrieval,
+extraction, interpretation and writing; structural checks are not source validation.

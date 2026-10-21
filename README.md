@@ -2,14 +2,16 @@
 
 **Wenwen (Celine) Zhang · Independent research in progress**
 
-As more work is delegated to AI, do the people making or reviewing decisions
-learn what happened afterward, have the ability to respond, and carry that
-experience into later decisions and organizational practice?
+How do organizations divide work, connect specialized contributions and make
+decisions when AI changes what individuals can produce? The current organizational
+branch examines task dependencies, coordination, bottlenecks and decision rights.
+Earlier human-learning studies remain documented as prior work, rather than the
+current organizational branch's central objective.
 
-The project approaches this concern through a synthetic measurement model,
-an unimplemented human-learning study design, and an initial public-document
-pilot tracing reported issues and organizational responses. It also preserves
-earlier philosophical exploration. There are no recruited participants, private
+A new source-reading unit maps a bounded experimental workflow and its missing
+process evidence. Earlier work remains a synthetic measurement model, unimplemented
+learning-study designs and a public-document issue-response pilot, alongside
+philosophical exploration. There are no recruited participants, private
 organizational records, or original field-study results.
 
 A related question comes before measurement: who defines what a good outcome
@@ -21,12 +23,13 @@ explains this motivation without treating it as an established result.
 
 | Material | What it provides |
 |---|---|
+| [Organizational coordination starting point](studies/organizational-coordination/README.md) | One published-study workflow, evidence boundaries and a proposed observation template; no original process data |
 | [Youth feasibility materials October 19](studies/youth-advice-workflow/README.md) | A separate proposed 15–17 study protocol, 22 fictional task drafts, scoring boundaries and a proposed workflow; no participants |
 | [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
 | [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
 | [October 8 human-support response pathway](studies/organizational-feedback/pathways/govuk-human-handoff-2026-10-08/README.md) | One existing issue followed through public records; purpose, approval and outcome evidence kept separate, with unresolved links |
 | [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
-| [Latest research progress in plain Chinese](docs/progress-2026-10-19.zh-CN.md) | The current question, this update, and what can and cannot be concluded |
+| [Latest research progress in plain Chinese](docs/progress-2026-10-21.zh-CN.md) | The current question, this update, and what can and cannot be concluded |
 | [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |
 | [Simulation methods and results](simulations/override_identification_v2/README.md) | Model specification, code, uncertainty checks, and synthetic results |
 | [Methods verification, September 2026](simulations/override_identification_v2/VERIFICATION_2026-09-14.md) | Checks performed, a numerical correction, and remaining limitations |
@@ -56,7 +59,7 @@ items. No-AI remains unaided in that challenge, so it is not a common-current-
 interface comparison of all three arms. Neither workflow is assumed to be
 better. There are no recruited participants or registered or completed study.
 
-The organizational pilot asks what published records establish about the route
+The earlier organizational pilot asks what published records establish about the route
 from an issue to a response. Public reporting is selective; entries are not
 independent cases, missing links are not absent practices, and no causal effect
 or organizational accountability score is estimated. The
@@ -66,7 +69,7 @@ also explains which early assumptions have been revised.
 ## Research context
 
 My background is in development economics and public policy. A recurring
-interest is how people's environments shape their opportunities to learn and
+earlier interest was how people's environments shape opportunities to learn and
 develop. Field research, institutional questions, and AI-assisted work led me
 to explore different parts of that problem; this was not a single plan fixed
 from the beginning.

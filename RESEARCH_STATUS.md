@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 21, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 23, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -24,9 +24,18 @@ children's development, or organizational learning. The label *Accountability
 Continuity* expresses a research concern; the code does not operationalize all
 of that concern.
 
-## Current organizational focus
+## Current reading exploration
 
-The current branch concerns actual work allocation, interdependence, integration
+The next focus remains open across questions about people, education and
+organizations. The [October 23 reading](readings/novice-risk-work-2026-10-23.md)
+adds a bounded check of what a published study can establish, with source and
+interpretation limits. This is AI-assisted source work; researcher reading,
+independent source review and methodological judgment remain pending. It adds
+no original data, adoption claim or change to existing protocols.
+
+## Existing organizational branch
+
+The existing branch concerns actual work allocation, interdependence, integration
 and decision rights. Individual growth is not a required objective or outcome
 for this branch; earlier human-learning studies remain preserved as prior work.
 The [source-reading unit](studies/organizational-coordination/README.md) separates
@@ -160,9 +169,9 @@ are preparation against verified remote main commit
 The [plain Chinese note](docs/progress-2026-10-08.zh-CN.md) explains the practical
 question and the evidence limits.
 
-The working long-term framing is AI, Human Judgment, and Capability Development.
-It connects questions about learning and organizational conditions without
-replacing either study protocol or asserting that cross-setting effects exist.
+An earlier working framing was AI, Human Judgment, and Capability Development.
+It is preserved as part of the project history; the current reading exploration
+does not require every new question to fit that framing.
 
 
 ## October 10–12 youth materials

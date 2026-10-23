@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-23",
+  "status": "AI-assisted bounded reading; human review pending",
+  "sources": [
+    {
+      "id": "kellogg2025-novice-risk-work",
+      "title": "Novice risk work: How juniors coaching seniors on emerging technologies such as generative AI can lead to learning failures",
+      "authors": [
+        "Katherine C. Kellogg",
+        "Hila Lifshitz",
+        "Steven Randazzo",
+        "Ethan Mollick",
+        "Fabrizio Dell’Acqua",
+        "Edward McFowland III",
+        "François Candelon",
+        "Karim R. Lakhani"
+      ],
+      "doi": "10.1016/j.infoandorg.2025.100559",
+      "version": "Published Information and Organization 35 (2025) 100559, author-hosted publisher PDF",
+      "url": "https://www.hbs.edu/ris/Publication%20Files/Novice-risk-work--How-juniors-coaching-seniors-on-emerging_2025_Information-_390902d0-017e-4111-9824-71e4eab5bef0.pdf",
+      "publication_online_date": "2025-02-21",
+      "pdf_pages": 21,
+      "reading_scope": [
+        "Title/abstract and Table 1",
+        "Section 4, printed p.6",
+        "Selected Sections 6.1–6.2 and Appendix D examples",
+        "Section 7.1.5, printed pp.12–13",
+        "Appendix A, printed pp.15–16",
+        "Selected Appendices B–D, printed pp.16–18",
+        "Shavit reference entry, printed p.21"
+      ],
+      "not_completed": [
+        "Full statistical or qualitative reanalysis",
+        "All cited expert papers",
+        "Full reference-version/corpus reconstruction",
+        "Independent human source checking"
+      ],
+      "reading_mode": "Web PDF text with page locators. Screenshot requests did not surface inspectable pixels in this tool; no visual page inspection claimed.",
+      "original_participant_data_added_here": false
+    },
+    {
+      "id": "beane2019-abstract",
+      "url": "https://journals.sagepub.com/doi/10.1177/0001839217751692",
+      "doi": "10.1177/0001839217751692",
+      "scope": "Publisher abstract and bibliographic record only; restricted full text",
+      "first_online": "2018-01-09",
+      "issue": "March 2019, 64(1), 87–123",
+      "case_coding_from_fulltext": false
+    },
+    {
+      "id": "beane2017-record",
+      "url": "https://dspace.mit.edu/entities/publication/b888f508-d6c2-4324-818e-45211402158a",
+      "scope": "MIT thesis catalog/abstract and version metadata only; PDF retrieval unsuccessful",
+      "relationship": "Earlier thesis, not the later article full text or an independent replication"
+    },
+    {
+      "id": "shavit2023-publication-date",
+      "url": "https://openai.com/index/practices-for-governing-agentic-ai-systems/",
+      "scope": "Official publication page, title/authors and displayed date only; no full white-paper reading",
+      "displayed_date": "2023-12-14",
+      "use": "A reference-timing review flag, not a technical audit or claim that no earlier version existed"
+    }
+  ],
+  "interpretive_review_flags": [
+    "Anticipation versus observed teaching and outcomes",
+    "Formal authority versus task knowledge",
+    "Expert-literature source selection and date cutoff",
+    "Transfer across tools, settings and historical periods"
+  ],
+  "researcher_endorsement": "Not established",
+  "publication": "Reading record; publication traceable in repository history"
+}

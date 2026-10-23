@@ -7,6 +7,16 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 23, 2026 — Reading before selecting the next question
+
+Added a bounded published-source reading, separating expectations and
+recommendations from observed interaction and learning effects. Retained
+access and source-version limits and an unresolved reference-timing check.
+Questions remain candidates for researcher evaluation. No new empirical data,
+final agenda, protocol changes or independent review is claimed. AI assisted
+retrieval, interpretation, writing and consistency checks. Publication is
+tracked separately from preparation.
+
 ## October 21, 2026 — Work allocation and coordination
 
 Added a source-linked reading of a published product-workshop experiment, with

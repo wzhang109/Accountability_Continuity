@@ -1,12 +1,16 @@
-# Human Judgment Feedback and Learning with AI Assistance
+# Working research questions
 
-**Wenwen (Celine) Zhang · Working research program · Updated October 21, 2026**
+**Wenwen (Celine) Zhang · Updated October 23, 2026**
 
-I want to understand whether judgment, feedback, and responsibility remain
-connected as more work is delegated to AI. Do people encounter the consequences
-of decisions, have the ability to respond, and use what they learn in later work?
-This includes both individual development and the conditions for organizations
-to retain experience. The branches below examine different parts of that concern.
+The current step is exploratory reading about human life, education and
+organizations as technologies change. A concrete question should emerge from
+the problems and evidence encountered. Judgment, learning, autonomy and
+coordination remain possible concerns, rather than a required umbrella or a
+fixed list of outcomes.
+
+The [reading folder](readings/README.md) records the present bounded unit and
+its unresolved questions. The existing branches below retain their original
+scope; they are not a complete framework for every new question.
 
 ## Purpose and evaluation
 
@@ -17,7 +21,7 @@ choices. The [October 1 reflection](docs/purpose-judgment-and-accountability.md)
 develops this philosophical motivation. It adds questions for future study, not
 new findings or a new score imposed on the existing cases.
 
-## Current organizational question
+## Existing organizational question
 
 How is work allocated and integrated, and who can make the decisions needed to
 move it forward? AI may change these dependencies or leave some constraints in
@@ -25,7 +29,7 @@ place. The [coordination reading](studies/organizational-coordination/README.md)
 begins with one published experimental workflow and the process evidence it
 does not establish. It proposes observation fields, not a finding about lasting
 organizational patterns. Earlier human-learning questions remain documented
-without determining the current organizational research objective.
+without determining the next question selected through reading.
 
 ## Existing measurement and learning questions
 

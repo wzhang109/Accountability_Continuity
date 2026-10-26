@@ -2,15 +2,18 @@
 
 **Wenwen (Celine) Zhang · Independent research in progress**
 
-This project explores questions about people, education and organizations as
-technologies change. The next research question is being developed through
-reading; no single theme or setting has been selected as the final focus.
+This project currently explores recurring problems of organizing: how
+interdependent work is divided, communicated and brought together as
+technologies change. Organizations are the present primary setting; a final
+research question and claims about stable mechanisms remain open. Earlier
+educational concerns and study designs are preserved.
 
-The latest [reading note](readings/novice-risk-work-2026-10-23.md) separates
-anticipated teaching, reported advice and evidence of actual learning. Existing
-coordination readings, learning-study designs, public-document coding and
-synthetic measurement work remain distinct branches. There are no recruited
-participants, private organizational records or original field-study results.
+The latest [reading note](readings/coordination-work-context-2026-10-25.md)
+examines a published work-handoff episode and the limits of treating information
+delivery as sufficient for coordination. Existing learning-study designs,
+public-document coding and synthetic measurement work remain distinct branches.
+There are no recruited participants, private organizational records or original
+field-study results.
 
 A related question comes before measurement: who defines what a good outcome
 means, whose experience counts, and can that definition change in light of its
@@ -21,18 +24,18 @@ explains this motivation without treating it as an established result.
 
 | Material | What it provides |
 |---|---|
-| [Current reading exploration](readings/README.md) | A bounded source reading and open questions; no settled agenda or original participant data |
+| [Current reading exploration](readings/README.md) | Bounded organizational source readings and open questions; no original field data or established invariant mechanism |
 | [Organizational coordination starting point](studies/organizational-coordination/README.md) | One published-study workflow, evidence boundaries and a proposed observation template; no original process data |
 | [Youth feasibility materials October 19](studies/youth-advice-workflow/README.md) | A separate proposed 15–17 study protocol, 22 fictional task drafts, scoring boundaries and a proposed workflow; no participants |
 | [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
 | [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
 | [October 8 human-support response pathway](studies/organizational-feedback/pathways/govuk-human-handoff-2026-10-08/README.md) | One existing issue followed through public records; purpose, approval and outcome evidence kept separate, with unresolved links |
 | [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
-| [Latest research progress in plain Chinese](docs/progress-2026-10-23.zh-CN.md) | This reading update, its limits and the next evidence question |
+| [Latest research progress in plain Chinese](docs/progress-2026-10-25.zh-CN.md) | This reading update, its limits and the next evidence question |
 | [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |
 | [Simulation methods and results](simulations/override_identification_v2/README.md) | Model specification, code, uncertainty checks, and synthetic results |
 | [Methods verification, September 2026](simulations/override_identification_v2/VERIFICATION_2026-09-14.md) | Checks performed, a numerical correction, and remaining limitations |
-| [Research program](RESEARCH_PROGRAM.md) | How the measurement and learning questions fit together |
+| [Research program](RESEARCH_PROGRAM.md) | Current organizational exploration and preserved earlier branches |
 | [Operational study draft](studies/ai-advice-timing/DRAFT_PROTOCOL.md) | Three workflows, common assessments, outcomes, and analysis decisions |
 | [Illustrative task examples](studies/ai-advice-timing/TASK_EXAMPLES.md) | Fictional evidence-review cases for discussing task suitability |
 | [Youth study proposal](preserving-independent-judgment-in-youth-ai-use.md) | A separate application that requires appropriate research partners |

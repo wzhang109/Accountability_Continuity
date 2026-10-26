@@ -1,16 +1,17 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated October 23, 2026**
+**Wenwen (Celine) Zhang · Updated October 25, 2026**
 
-The current step is exploratory reading about human life, education and
-organizations as technologies change. A concrete question should emerge from
-the problems and evidence encountered. Judgment, learning, autonomy and
-coordination remain possible concerns, rather than a required umbrella or a
-fixed list of outcomes.
+The current step is to investigate recurring problems of organizing through
+concrete work processes. Organizations are the primary setting for this
+exploration; a particular mechanism, final question or claim of invariance has
+not been established. Educational interests remain open, and individual growth
+is not a required outcome of this organizational line.
 
-The [reading folder](readings/README.md) records the present bounded unit and
-its unresolved questions. The existing branches below retain their original
-scope; they are not a complete framework for every new question.
+The [reading folder](readings/README.md) separates source observations,
+interpretations and questions. The latest unit adds an episode index with
+unknown fields and a comparison still to be sought. Existing branches below
+retain their original scope; they do not determine every new question.
 
 ## Purpose and evaluation
 

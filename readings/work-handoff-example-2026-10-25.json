@@ -1,0 +1,24 @@
+{
+  "record_type": "AI-assisted literature episode index, not original organizational data",
+  "source_id": "bechky2003",
+  "source_episode": "Table 2, example 1; narrative on printed pp.321 and324",
+  "source_pdf_pages_one_based": [10, 11, 13],
+  "roles_reported": ["engineer", "assembler", "lead assembler"],
+  "task": "Clarify assembly requirements for a fixture",
+  "reported_information_gap": "Installation sequence and hand clearance",
+  "reported_next_action": "Demonstration followed by joint measurement",
+  "formal_approval_authority": "unknown",
+  "elapsed_time_and_waiting": "unknown",
+  "individual_costs_and_incentives": "unknown",
+  "completed_design_change_and_long_term_result": "unknown in the selected episode evidence",
+  "interpretation_status": "Candidate interpretation of a published interaction; not independently coded",
+  "alternative_explanations_to_check": [
+    "Additional information and interaction occur together; their separate contributions are not identified",
+    "Attention, credibility, familiarity and status may matter; this record does not identify their effects",
+    "A clarified requirement is not evidence of lower total coordination cost"
+  ],
+  "boundary_evidence_locator": "Printed p.318; contextual description, not a second independent event",
+  "proposed_countercase_status": "Still to locate; do not count a discussion illustration as an observed negative case",
+  "researcher_understanding": "pending",
+  "independent_human_review": "pending"
+}

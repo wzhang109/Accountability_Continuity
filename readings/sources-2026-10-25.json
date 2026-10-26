@@ -1,0 +1,34 @@
+{
+  "prepared_date": "2026-10-25",
+  "publication_status": "Preparation and publication are recorded separately; publication does not establish independent source or methodological review",
+  "reading_actor": "AI assistant; researcher reading is not established",
+  "sources": [
+    {
+      "id": "bechky2003",
+      "author": "Beth A. Bechky",
+      "year": 2003,
+      "title": "Sharing Meaning Across Occupational Communities: The Transformation of Understanding on a Production Floor",
+      "journal": "Organization Science",
+      "volume": 14,
+      "issue": 3,
+      "printed_pages": "312–330",
+      "doi": "10.1287/orsc.14.3.312.15162",
+      "publisher_url": "https://pubsonline.informs.org/doi/10.1287/orsc.14.3.312.15162",
+      "read_copy_url": "https://www.dourish.com/classes/ics235aw05/readings/Bechky-SharingMeaning-OrgSci.pdf",
+      "copy_type": "Published article hosted in an academic course reading directory",
+      "pdf_pages": 19,
+      "reading_scope": "Methods pp.314–317; selected findings pp.318–325; selected discussion pp.326–328. Not all main text or cited studies read.",
+      "locator_rule": "Printed page equals one-based PDF page plus311; Table2 spans printed322–323. Narrative accompanies the selected episode on321and324.",
+      "evidence_type": "Published ethnographic account, distinct from this project's original data",
+      "primary_episode_record": "work-handoff-example-2026-10-25.json",
+      "methodological_review": "pending",
+      "independent_source_review": "pending"
+    }
+  ],
+  "scope_limits": [
+    "One workplace, selected passages; no systematic review or independent raw-data access",
+    "No generative-AI intervention or AI effect is established by this source",
+    "A discussion illustration is not a verified observed countercase",
+    "No new invariant law or original causal result is claimed"
+  ]
+}

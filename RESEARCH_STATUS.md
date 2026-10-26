@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 23, 2026 · Wenwen (Celine) Zhang**
+**Prepared update October 25, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -14,7 +14,7 @@ or research-log entries.
 | Estimation and sensitivity simulations | Python, tests, configuration, CSV summaries, and figures | Synthetic data with specified truth and selected parameter values |
 | Literature and conceptual work | Reading notes, an exploratory framework, and proposals | Not a systematic review, proof of novelty, or validated theory |
 | Advice-timing study design | Three-arm operational draft and fictional task examples | No participants, ethics approval, registration, pilot, or empirical results |
-| Organizational coordination source reading | One published-study workflow, source versions and unknown process links; proposed observation template | AI-assisted reading of another study, not original fieldwork, replication or evidence of reduced total coordination burden; human review pending |
+| Organizational coordination source reading | A published experimental workflow and bounded observational readings; source versions, episode locators and unknown process links | AI-assisted source work, not original fieldwork, replication or evidence of reduced total coordination burden; human review pending |
 | Organizational public-document pilot | Five source-linked entries from two programs, a codebook, selection log, and reproducible file checks | Exploratory AI-assisted coding of first-party publications; no independent coding, private process records, causal effect, or AC score |
 | Reflection on purposes and measures | A dated philosophical note connecting values, participation, consequences, and revisable judgment | A research motivation; no universal metric, new empirical result, or demonstrated claim about human or AI consciousness |
 
@@ -26,12 +26,18 @@ of that concern.
 
 ## Current reading exploration
 
-The next focus remains open across questions about people, education and
-organizations. The [October 23 reading](readings/novice-risk-work-2026-10-23.md)
-adds a bounded check of what a published study can establish, with source and
-interpretation limits. This is AI-assisted source work; researcher reading,
-independent source review and methodological judgment remain pending. It adds
-no original data, adoption claim or change to existing protocols.
+Organizations are the current primary setting for exploring recurring problems
+of organizing. This is a provisional direction, not a final theory or a claim
+that coordination problems are invariant. The [October 25 reading](readings/coordination-work-context-2026-10-25.md)
+and [episode index](readings/work-handoff-example-2026-10-25.json) add a bounded
+published-source example and unreported process fields. An independent
+contrasting case remains to be located. The [October 23 reading](readings/novice-risk-work-2026-10-23.md)
+and earlier education work are preserved.
+
+This is AI-assisted source work; researcher understanding, independent source
+review and methodological judgment remain pending. It adds no original data,
+AI effect, adoption claim or change to existing protocols. Preparation and
+publication are recorded separately.
 
 ## Existing organizational branch
 

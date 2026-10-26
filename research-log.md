@@ -7,6 +7,17 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## October 25, 2026 — A bounded work-handoff reading
+
+Continued the current organizational direction through one published-source
+episode index, explicit unknowns and a comparison still to be sought. The
+reading separates source observations, interpretations and potential AI
+questions. No independent countercase, original field data, causal AI effect
+or invariant mechanism is established. Earlier protocols and source files are
+preserved. AI assisted retrieval, interpretation, writing and file checks;
+researcher and independent review remain pending. This batch is prepared for
+review; publication is recorded separately.
+
 ## October 23, 2026 — Reading before selecting the next question
 
 Added a bounded published-source reading, separating expectations and

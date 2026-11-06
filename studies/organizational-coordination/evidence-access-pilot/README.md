@@ -17,3 +17,10 @@ The primary contrast is the difference between arms in the proportion of incorre
 - **Work transferred downstream:** first reviewers finish sooner, but recipients must reopen cases. Testing this requires an actual second reviewer and linked rework records; the single-reviewer comparison cannot answer it.
 
 Do not count an automatically visible passage as a source check, or a click as comprehension. Collect the decision first, then ask for the decisive fact in both arms; score it without seeing interface assignment. This is a proposed comparison, not a registered or completed study.
+
+## Reproducible design checks
+
+The [assignment check](DESIGN_CHECK.md) and [Python generator](assignment.py) turn
+this proposal into a checkable fictional manifest. They do not run an experiment
+or collect responses. See the [matched walkthrough pair](case-pair.md) for the
+original wording and scoring problem.

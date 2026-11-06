@@ -50,3 +50,9 @@ interviews, institutional partnership or research approval is implied here.
 AI assisted source discovery, extraction, interpretation and drafting. The
 researcher and a second human reader still need to check the source-to-record
 mapping and decide whether this is a useful observation unit.
+
+## Evidence-access design branch · November 2026
+
+The [evidence-access pilot](evidence-access-pilot/README.md) specifies a proposed
+review-interface contrast. Its [assignment check](evidence-access-pilot/DESIGN_CHECK.md)
+uses fictional slots and records to check balance before any data collection.

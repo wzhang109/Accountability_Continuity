@@ -24,6 +24,7 @@ explains this motivation without treating it as an established result.
 
 | Material | What it provides |
 |---|---|
+| [Evidence-access design and reproducible checks](studies/organizational-coordination/evidence-access-pilot/README.md) | Proposed review-interface contrast, balanced fictional task allocation and synthetic analysis checks; no participant results |
 | [Current reading exploration](readings/README.md) | Bounded organizational source readings and open questions; no original field data or established invariant mechanism |
 | [Organizational coordination starting point](studies/organizational-coordination/README.md) | One published-study workflow, evidence boundaries and a proposed observation template; no original process data |
 | [Youth feasibility materials October 19](studies/youth-advice-workflow/README.md) | A separate proposed 15–17 study protocol, 22 fictional task drafts, scoring boundaries and a proposed workflow; no participants |

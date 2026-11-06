@@ -24,3 +24,8 @@ The [assignment check](DESIGN_CHECK.md) and [Python generator](assignment.py) tu
 this proposal into a checkable fictional manifest. They do not run an experiment
 or collect responses. See the [matched walkthrough pair](case-pair.md) for the
 original wording and scoring problem.
+
+The [synthetic analysis check](ANALYSIS_CHECK.md) supplies a hand-worked example
+of detection, unnecessary returns and missing decisions. Run [analysis.py](analysis.py)
+and the [checks](test_design_analysis.py) to reproduce the arithmetic. These are
+design and software artifacts, not findings from human participants.

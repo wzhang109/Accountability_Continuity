@@ -32,5 +32,5 @@ These three sources (Long/Sebo/Butlin/Plunkett, Koch, Schwitzgebel) converge on 
 
 ## Still open
 
-- Whether to add Koch or Schwitzgebel to the outreach list alongside Eleos AI and UCL/DeepMind (see `/expert-conversations/README.md`).
+- Whether to add Koch or Schwitzgebel to the outreach list alongside Eleos AI and UCL/DeepMind (see the [early outreach record](research-log.md#early-outreach-record)).
 - No claims in this document should be treated as settled; several (especially the causal-continuity resolution to the Parfit/anatta objection) are working positions, not established conclusions.

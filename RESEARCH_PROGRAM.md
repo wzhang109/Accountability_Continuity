@@ -1,12 +1,19 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated November 7, 2026**
+**Wenwen (Celine) Zhang · Updated November 8, 2026**
 
-The current step is to investigate recurring problems of organizing through
-concrete work processes. Organizations are the primary setting for this
-exploration; a particular mechanism, final question or claim of invariance has
-not been established. Educational interests remain open, and individual growth
-is not a required outcome of this organizational line.
+## From human value to a research question
+
+The project began with a question about the difference between a person and an AI:
+if a machine can do a task well, what about doing that task might still matter to a person?
+The [philosophical essay](the-gap-that-cant-close.md) records an early response.
+The question remains open. It motivates an interest in environments where people can
+form judgments, learn from consequences, and help decide which goals are worth pursuing.
+
+Organizations are my current setting. When AI prepares work for someone else to
+approve, how is the work divided, who defines success, and can the person
+responsible actually question or change the decision? The studies below address
+different parts of this problem. None establishes a universal mechanism.
 
 The [reading folder](readings/README.md) separates source observations,
 interpretations and questions. The latest unit links a public review request,
@@ -48,7 +55,7 @@ better AI from reduced human review using the rate at which people override
 AI? Under a stated model, the same rate can arise from different processes.
 Additional information helps only with explicit assumptions.
 
-The proposed experiment asks an intervention question: does recording an
+The separate three-group learning design asks an intervention question: does recording an
 initial judgment before AI advice affect later unaided performance? This
 cannot be answered by the simulation. A randomly assigned workflow, a latent
 review process, and an observed disagreement are different variables.
@@ -108,6 +115,8 @@ feedback reaches the original decision-maker, another reviewer, or a shared
 resource and improves later work still requires linked process and outcome data.
 Neither the advice-timing study nor this first coding exercise tests the entire
 AC framework.
+
+My earlier Korean economic research and my separate State Coordination work on Chinese policy texts inform my interest in institutions. They are distinct projects; neither validates the mechanisms proposed here.
 
 ## Current status
 

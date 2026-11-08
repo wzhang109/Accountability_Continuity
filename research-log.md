@@ -7,6 +7,24 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## November 8, 2026 — Clarifying the research starting point
+
+The philosophical question about human value remains the starting point.
+The homepage now distinguishes that motivation from the organizational question
+and the proposed evidence-access comparison. This update adds no study data.
+
+### Early outreach record
+
+The Week 4 entry below records outreach in July. At the time of the July note,
+no conversations had taken place. In Week 6, Koch and Schwitzgebel were identified
+as possible contacts about the anchor problem; neither had been contacted at
+that point. The background reading is in [philosophy of mind and AI welfare](track-1-philosophy-of-mind-ai-welfare.md)
+and [organizational behavior](track-2-organizational-behavior.md).
+
+For any future conversation, record the date, person and affiliation; the
+question discussed and feedback received; what changed or stayed the same;
+and any follow-up. An outreach entry is not an interview finding.
+
 ## November 8, 2026 — Publication of cumulative reading updates
 
 Published the October 27, October 29, November 3, November 5 and November 7

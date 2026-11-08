@@ -2,104 +2,35 @@
 
 **Wenwen (Celine) Zhang · Independent research in progress**
 
-This project currently explores recurring problems of organizing: how
-interdependent work is divided, communicated and brought together as
-technologies change. Organizations are the present primary setting; a final
-research question and claims about stable mechanisms remain open. Earlier
-educational concerns and study designs are preserved.
+## Why I started
 
-The latest [reading note](readings/review-to-implementation-2026-11-07.md)
-links a public review request, a reply, a specific artifact change and release
-documentation. It separates implementation evidence from user outcomes and
-checking a rule from choosing that rule. Existing learning-study designs,
-public-document coding and synthetic measurement work remain distinct branches.
-There are no recruited participants, private organizational records or original
-field-study results.
+As AI takes on more tasks we once thought only people could do, **what does it mean to be human, and what do we value about being human?** This question led me to study human flourishing: what kinds of environments give people room to think, learn, and decide what matters to them?
 
-A related question comes before measurement: who defines what a good outcome
-means, whose experience counts, and can that definition change in light of its
-consequences? The [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md)
-explains this motivation without treating it as an established result.
+Consider a student who finishes an assignment faster with AI. The time saved may be real. Whether the student learned to solve the next problem is a different question. Which outcome matters depends on why we gave the assignment in the first place. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) explain where this question came from. It still guides the project.
+
+## Where I am looking now
+
+I study how teams divide work when AI drafts a recommendation and a person must decide what happens next. Who decides what a good outcome is? Does the person responsible have the evidence, time, and authority to act?
+
+Imagine a team building a dataset. Its goal is to produce reliable classifications, but its workflow requires a code for every entry. When a source is ambiguous, even a careful reviewer has to guess. Letting that reviewer mark a case as uncertain would give them a way to serve the original goal. This is an example of a design question, not a finding about a particular team.
+
+## The first comparison
+
+**Does putting evidence beside an AI recommendation make it easier to check, or just easier to believe?** In the proposed study, both groups review the same kinds of fictional cases. One sees the relevant passage immediately; the other can reveal the identical passage with one click. I would count both errors caught and correct recommendations sent back unnecessarily. Sending more cases back is not necessarily better judgment.
+
+The cases, allocation code, and synthetic analysis checks are in place. No participants have taken part. The comparison concerns decisions under a given rule; it cannot tell us how a team should choose the rule, or whether someone is thinking independently.
 
 ## Start here
 
-| Material | What it provides |
-|---|---|
-| [Evidence-access design and reproducible checks](studies/organizational-coordination/evidence-access-pilot/README.md) | Proposed review-interface contrast, balanced fictional task allocation and synthetic analysis checks; no participant results |
-| [Current reading exploration](readings/README.md) | Bounded organizational source readings and open questions; no original field data or established invariant mechanism |
-| [Organizational coordination starting point](studies/organizational-coordination/README.md) | One published-study workflow, evidence boundaries and a proposed observation template; no original process data |
-| [Youth feasibility materials October 19](studies/youth-advice-workflow/README.md) | A separate proposed 15–17 study protocol, 22 fictional task drafts, scoring boundaries and a proposed workflow; no participants |
-| [Research status and contributions](RESEARCH_STATUS.md) | Completed work, assumptions, proposals, and the role of AI assistance |
-| [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
-| [October 8 human-support response pathway](studies/organizational-feedback/pathways/govuk-human-handoff-2026-10-08/README.md) | One existing issue followed through public records; purpose, approval and outcome evidence kept separate, with unresolved links |
-| [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
-| [Latest research progress in plain Chinese](docs/progress-2026-11-07.zh-CN.md) | This reading update, its limits and the next evidence question |
-| [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |
-| [Simulation methods and results](simulations/override_identification_v2/README.md) | Model specification, code, uncertainty checks, and synthetic results |
-| [Methods verification, September 2026](simulations/override_identification_v2/VERIFICATION_2026-09-14.md) | Checks performed, a numerical correction, and remaining limitations |
-| [Research program](RESEARCH_PROGRAM.md) | Current organizational exploration and preserved earlier branches |
-| [Operational study draft](studies/ai-advice-timing/DRAFT_PROTOCOL.md) | Three workflows, common assessments, outcomes, and analysis decisions |
-| [Illustrative task examples](studies/ai-advice-timing/TASK_EXAMPLES.md) | Fictional evidence-review cases for discussing task suitability |
-| [Youth study proposal](preserving-independent-judgment-in-youth-ai-use.md) | A separate application that requires appropriate research partners |
-| [Focused literature review](ai-advice-timing-and-human-learning.md) | Earlier reading on advice timing and learning; not a systematic review |
+1. [Research questions](RESEARCH_PROGRAM.md) — how the organizational, measurement, and learning questions fit together.
+2. [Research status and contributions](RESEARCH_STATUS.md) — what is complete, what is proposed, and where AI tools helped.
+3. [Evidence-access pilot](studies/organizational-coordination/evidence-access-pilot/README.md) — the two interfaces, fictional cases, and reproducible checks.
 
-## What the simulation establishes
+## Other ways to explore the work
 
-Under the stated model, improving AI accuracy and declining human review can
-produce exactly the same expected override path. The equality is constructed
-algebraically. Repeated simulations then examine estimation error after adding
-an accuracy audit and a calibrated process measure.
+- **Measurement.** The [model walkthrough, in English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) shows why the same rate of human overrides can arise from more accurate AI or less human checking. This is a mathematical example under stated assumptions.
+- **Organizations.** The [reading notes](readings/README.md) follow how work passes between people. One [public review record](readings/review-to-implementation-2026-11-07.md) links a request to a reply and a change in a released artifact. It does not show whether the change helped users. The [public-document pilot](studies/organizational-feedback/README.md) traces other reported issues and responses.
+- **Learning.** A [separate three-group proposal](studies/ai-advice-timing/DRAFT_PROTOCOL.md) asks whether seeing AI advice before or after forming an initial judgment affects later performance without AI. The [youth design](studies/youth-advice-workflow/README.md) is a further proposal. Neither study has participant results.
+- **How the ideas developed.** The [research log](research-log.md) records changes in thinking. The [early index proposal](identification-strategy.md) is preserved as a historical design. It is not a validated measure of responsibility.
 
-That does not show that people in real organizations are disengaging. The
-additional measurements help only under assumptions about reviewer behavior,
-sampling, and calibration. Opening a record, disagreeing with AI, or recording
-an initial answer is not itself proof of careful judgment.
-
-The proposed learning studies ask a different question. The existing adult
-operational draft compares **Initial Judgment First**, **AI Advice First**, and
-**No AI** with common assessments. The separate youth feasibility version uses
-6 baseline and 12 practice items, 8 delayed unaided items and 4 later challenge
-items. No-AI remains unaided in that challenge, so it is not a common-current-
-interface comparison of all three arms. Neither workflow is assumed to be
-better. There are no recruited participants or registered or completed study.
-
-The earlier organizational pilot asks what published records establish about the route
-from an issue to a response. Public reporting is selective; entries are not
-independent cases, missing links are not absent practices, and no causal effect
-or organizational accountability score is estimated. The
-[measurement clarification](studies/organizational-feedback/MEASUREMENT_NOTES.md)
-also explains which early assumptions have been revised.
-
-## Research context
-
-My background is in development economics and public policy. A recurring
-earlier interest was how people's environments shape opportunities to learn and
-develop. Field research, institutional questions, and AI-assisted work led me
-to explore different parts of that problem; this was not a single plan fixed
-from the beginning.
-
-State Coordination is a separate, ongoing line of work on constructing
-source-based coordination measures from Chinese policy texts. It is not a
-validated theory, and it should not be conflated with my Korean economic
-research experience. Neither project validates the other.
-
-## Earlier exploratory writing
-
-The [research log](research-log.md), [philosophical essay](the-gap-that-cant-close.md),
-and earlier framework and identification notes preserve the development of the
-ideas. They include conceptual claims and proposed methods that have not been
-empirically established. The current [status note](RESEARCH_STATUS.md) governs
-how the work should be described today. In particular, this repository does
-not establish a new theory of responsibility, an uncited gap between whole
-literatures, or a completed organizational causal study.
-
-## Contributions and collaboration
-
-The problem selection and research motivation are mine. AI tools contributed
-substantially to the design, Python implementation, debugging, and writing. I
-am still learning the technical details; automated checks do not substitute
-for independent methodological review. See the [contribution statement](RESEARCH_STATUS.md#contributions-and-review).
-
-I welcome discussion of measurement validity, feasible learning tasks, and
-research partnerships. The current materials are research tools and working
-proposals.
+My background is in development economics and public policy. The questions and research motivation are mine; AI tools contributed substantially to design, code, and writing. I welcome independent methods review and feedback from people who review AI-drafted work: does the proposed task resemble a decision you actually face?

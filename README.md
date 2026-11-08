@@ -8,9 +8,10 @@ technologies change. Organizations are the present primary setting; a final
 research question and claims about stable mechanisms remain open. Earlier
 educational concerns and study designs are preserved.
 
-The latest [reading note](readings/coordination-work-context-2026-10-25.md)
-examines a published work-handoff episode and the limits of treating information
-delivery as sufficient for coordination. Existing learning-study designs,
+The latest [reading note](readings/review-to-implementation-2026-11-07.md)
+links a public review request, a reply, a specific artifact change and release
+documentation. It separates implementation evidence from user outcomes and
+checking a rule from choosing that rule. Existing learning-study designs,
 public-document coding and synthetic measurement work remain distinct branches.
 There are no recruited participants, private organizational records or original
 field-study results.
@@ -32,7 +33,7 @@ explains this motivation without treating it as an established result.
 | [What counts as good when an organization uses AI](docs/purpose-judgment-and-accountability.md) | A philosophical reflection on purposes, measures, and revising judgment through experience |
 | [October 8 human-support response pathway](studies/organizational-feedback/pathways/govuk-human-handoff-2026-10-08/README.md) | One existing issue followed through public records; purpose, approval and outcome evidence kept separate, with unresolved links |
 | [October 1 organizational evidence pilot](studies/organizational-feedback/README.md) | Five source-linked entries from two public-sector programs; implementation, plans, and unknowns kept separate |
-| [Latest research progress in plain Chinese](docs/progress-2026-10-25.zh-CN.md) | This reading update, its limits and the next evidence question |
+| [Latest research progress in plain Chinese](docs/progress-2026-11-07.zh-CN.md) | This reading update, its limits and the next evidence question |
 | [Plain-language model walkthrough, English and Chinese](simulations/override_identification_v2/PLAIN_LANGUAGE_GUIDE.md) | The equation, a worked example, and what each measurement can establish |
 | [Simulation methods and results](simulations/override_identification_v2/README.md) | Model specification, code, uncertainty checks, and synthetic results |
 | [Methods verification, September 2026](simulations/override_identification_v2/VERIFICATION_2026-09-14.md) | Checks performed, a numerical correction, and remaining limitations |

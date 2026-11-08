@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-07",
+  "sources": [
+    {
+      "id": "PANDAS-PUBLIC-REVIEW-50939-50972",
+      "type": "Public project process records, not a peer-reviewed organizational study or original field data",
+      "issue_url": "https://github.com/pandas-dev/pandas/issues/50972",
+      "pull_request_url": "https://github.com/pandas-dev/pandas/pull/50939",
+      "retrieved_scope": "Issue body,2issuecomments,5timelineevents; PR body/merge metadata,15conversationcomments,21reviewobjects,19inlinecomments,7changed-filepatches. Each API collection returned fewer than100items on its first page; no later-page completeness assumed beyond those returned records.",
+      "bounded_reading_focus": [
+        "Risk/opt-in proposal and competing default suggestion",
+        "Inline review request1102875041 and acknowledgment1102879352",
+        "Positive reviews at commit5582882 followed by integration requests",
+        "Merge metadata and stated release-candidate priority",
+        "Changed error-message order and release-note entry"
+      ],
+      "pinned_artifact": {
+        "commit": "d1095bcd5a43528e195e2d587e6a8691d5ed005f",
+        "url": "https://github.com/pandas-dev/pandas/blob/d1095bcd5a43528e195e2d587e6a8691d5ed005f/pandas/_libs/tslibs/strptime.pyx#L516-L525",
+        "read_scope": "Error-message block lines516–525; full701-line file retrieved but not fully reviewed or executed"
+      },
+      "release_document": {
+        "url": "https://pandas.pydata.org/docs/whatsnew/v2.0.0.html",
+        "version": "2.0.0",
+        "scope": "Historical enhancement entry linked to GH50972, and consistent-format section; hosted inside current documentation, not claimed as an archived2023page snapshot"
+      },
+      "release_metadata_url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.0",
+      "not_obtained": [
+        "Private meetings/chats",
+        "Project-wide decision-right rules",
+        "A complete per-commit causal account",
+        "End-user acceptance or outcome data",
+        "Independent performance replication or CI verification"
+      ],
+      "review": {
+        "researcher_understanding": "pending",
+        "independent_source_review": "pending",
+        "methodological_review": "pending"
+      }
+    }
+  ],
+  "assistance": "AI-assisted selection, public-source retrieval, coding, interpretation, writing and structural checking. Not independent human approval."
+}

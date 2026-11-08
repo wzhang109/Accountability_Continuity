@@ -1,0 +1,33 @@
+{
+  "prepared_date": "2026-10-27",
+  "publication_status": "Preparation and publication are recorded separately",
+  "reading_actor": "AI assistant; researcher reading not established",
+  "sources": [
+    {
+      "id": "carlile2002",
+      "author": "Paul R. Carlile",
+      "year": 2002,
+      "title": "A Pragmatic View of Knowledge and Boundaries: Boundary Objects in New Product Development",
+      "journal": "Organization Science",
+      "volume": 13,
+      "issue": 4,
+      "printed_pages": "442–455",
+      "doi": "10.1287/orsc.13.4.442.2953",
+      "publisher_url": "https://pubsonline.informs.org/doi/10.1287/orsc.13.4.442.2953",
+      "read_copy_url": "https://people.bu.edu/carlile/docs/Pragmatic%20View%20of%20Knowledge%20%28Carlile%29.pdf",
+      "copy_type": "Published journal article on author's Boston University webpage",
+      "pdf_pages": 14,
+      "locator_rule": "Printed page=one-basedPDFpage+441",
+      "reading_scope": "Introductory vignette443; selected background445–446; methods446–447; episode and nearby interpretation449–451; selected discussion452. Not a complete article/reference audit.",
+      "method_context": "Single-site ethnography June1994–May1995;106 cross-functional events reported, not106 independent cases or this project's observations.",
+      "episode_record": "drawing-and-redesign-episode-2026-10-27.json",
+      "evidence_type": "Author's published ethnographic account; no raw-data access or replication",
+      "page_evidence_method": "PDF text with page markers; attempted screenshots unavailable, no pixel-level visual verification claimed",
+      "researcher_understanding": "pending",
+      "independent_source_review": "pending",
+      "methodological_review": "pending"
+    }
+  ],
+  "comparison_scope": "No controlled cross-study comparison, independent human recoding, measured AI effect or invariant organizational law",
+  "strict_countercase_status": "not_established"
+}

@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-03",
+  "source_id": "KOTLARSKY-IT-ONLINEFIRST-2019",
+  "locator_convention": "Internalpagesoftheauthor-uploadedonline-firsttext",
+  "records": [
+    {
+      "id": "C1",
+      "kind": "Retrospectiveinterviewevent",
+      "locator": {
+        "internal_pages": [
+          7
+        ],
+        "section": "Table3, Civit emergency example",
+        "speaker_role": "Productgroupmanager"
+      },
+      "reported_sequence": [
+        {
+          "step": "C1a",
+          "action": "Onecoolingunitfails; replacement remainspending",
+          "reported_constraints": [
+            "Expiredservicecontract",
+            "Tenderprocess",
+            "Lowprioritywhilecapacityremains"
+          ],
+          "permission_or_approved_request": "unknown"
+        },
+        {
+          "step": "C1b",
+          "action": "Furtherfailuretriggerscrisis; urgentrepairtransport/activityreported",
+          "independently_verified_outcome": "unknown"
+        }
+      ],
+      "claim_limit": "Not proof of approved-but-stalled work, isolated procurement effect, actual repair success or complete shared understanding."
+    },
+    {
+      "id": "M1",
+      "kind": "Retrospectiveinterviewevent",
+      "locator": {
+        "internal_pages": [
+          13
+        ],
+        "section": "Episode1, informalnetworkpreparationexample",
+        "speaker_role": "HeadofKnowledgePool"
+      },
+      "reported_sequence": [
+        {
+          "step": "M1a",
+          "relative_time": "Monday",
+          "action": "Informalalertofpossibleassignmentreceived",
+          "formal_assignment": "Notyetreported",
+          "standing_permission": "unknown"
+        },
+        {
+          "step": "M1b",
+          "relative_time": "Beforeformalassignment",
+          "action": "Preparationreported",
+          "preparation_scope_cost_and_reversibility": "unknown",
+          "permission_to_prepare": "unknown"
+        },
+        {
+          "step": "M1c",
+          "relative_time": "Thursday",
+          "action": "Formalassignmentreported",
+          "scope_of_authority_granted": "unknown"
+        },
+        {
+          "step": "M1d",
+          "relative_time": "Followingweekend",
+          "action": "Equipmentdispatchreported",
+          "receipt_and_operational_success": "unknown"
+        }
+      ],
+      "counterfactual_attribution": {
+        "made_by": "Interviewparticipant",
+        "content": "Earlypreparationwasneededtotimelydispatch",
+        "evidence_class": "Participantassessment, notestimatedcausaleffect"
+      },
+      "claim_limit": "Noformalassignmentyetdoesnotmeannoauthorization. Militarypreparationcontextisnotordinaryoffice-worksuccess, despiteplacementinEpisode1."
+    }
+  ],
+  "routine_context_only": {
+    "locator": {
+      "internal_pages": [
+        7,
+        12,
+        13
+      ],
+      "section": "Table3standardPCreplacement; Episode1roles/procedures/functionalmailboxes"
+    },
+    "evidence_class": "Reportedgeneralworkflowandpractice, notdocumentedcompletionofonespecificticket"
+  },
+  "comparison_to_october29": "Revises observation granularity: distinguish information, preparation, resource commitment/assignment, dispatch and receipt; do not force all action after a single approval.",
+  "proposed_fields": [
+    "Actionstageandscope",
+    "Permissionbasisforeachaction,includingstandingpermission",
+    "Documentedversusreportedstage/timing",
+    "Outcomeevidenceandcounterfactualattribution"
+  ],
+  "proposed_fields_are_validated_measures": false,
+  "strict_countercase_status": "not_established",
+  "routine_authorized_request_with_verified_completion": "not_established",
+  "original_empirical_data": false,
+  "causal_AI_effect": "not_established",
+  "researcher_understanding": "pending",
+  "independent_human_review": "pending",
+  "methodological_review": "pending"
+}

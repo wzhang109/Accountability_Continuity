@@ -7,6 +7,73 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## November 8, 2026 — Publication of cumulative reading updates
+
+Published the October 27, October 29, November 3, November 5 and November 7
+reading updates after explicit authorization. Current public evidence-access
+design, allocation and synthetic-analysis files are retained unchanged. Dated
+preparation entries record the state at the time of preparation. Publication
+does not establish researcher understanding, independent source or methods
+review, original field data or end-user benefits.
+
+## November 7, 2026 — A request, a reply and a changed artifact
+
+Read a bounded public pandas development record and linked a specific review
+request to an acknowledgment and compatible merged artifact. Official release
+records support the broader feature's publication, not end-user benefit.
+The case separates fixed-rule checking from negotiation of a rule and acceptable
+risk. Current public allocation and synthetic-analysis files are retained
+unchanged; their presence is not independent methods approval. No original
+field data, AI effect or complete causal countercase is claimed. AI assisted
+retrieval, interpretation, writing and structural checks; researcher understanding
+and independent source/method review remain pending. Prepared November 7;
+published November 8 with the earlier pending reading updates.
+
+## November 5, 2026 — Record status and relevant outcomes
+
+Read bounded indexed primary-source sections of an MIT software-support draft.
+Added a coded source example, source-attributed distinctions and departures,
+six proposed observation fields, and four explicitly fictional coding checks.
+The next actor's action and the outcome need evidence beyond a record ending.
+Direct access/final-version checking and a verified routine-work outcome case
+remain missing. No original data, validated measure or AI effect is claimed.
+AI assisted retrieval, interpretation, writing and structural checks; researcher
+understanding and independent source/method review remain pending. Prepared only. A concurrent public evidence-access
+draft and matched case pair were read and retained without edits; their
+publication is not an action of this local preparation.
+
+## November 3, 2026 — Preparation is not the same as execution
+
+Read selected methods and IT-service accounts in an author-uploaded online-first
+text. Indexed a reported replacement delay and preparation before assignment,
+keeping interview attribution separate from verified outcomes. The next record
+should identify permission for each action rather than impose one approval
+stage on all work. A routine countercase remains unresolved. No original data,
+validated measure, AI effect or change to earlier protocols is claimed.
+Researcher and independent source/method review are pending. AI assisted
+retrieval, interpretation, writing and checks; publication remains separate.
+
+## October 29, 2026 — Obtaining evidence and authorizing action
+
+Added one bounded public-investigation episode, separating contemporary records
+reproduced in the source, retrospective reconstruction and proposed explanations.
+The next question includes who may acquire needed evidence and authorize action;
+stated resource concerns are not measured costs. Misunderstanding, priorities
+and expertise remain alternative or interacting explanations. No strict
+counterexample, routine-work generalization, AI effect or original field data
+is established. Human source/method review remains pending; AI assisted reading,
+writing and checks. Preparation is separate from publication.
+
+## October 27, 2026 — Testing the boundary of a process comparison
+
+Added a bounded source reading and page-located episode index. Classified the
+new material as a process contrast rather than a completed counterexample.
+Separated proposed observation fields from source facts and unknown outcomes.
+Researcher understanding and independent source/method review remain pending.
+AI assisted extraction, interpretation, writing and file checks; no original
+field data, AI effect or legacy protocol changes. Publication is recorded
+separately from preparation.
+
 ## October 25, 2026 — A bounded work-handoff reading
 
 Continued the current organizational direction through one published-source

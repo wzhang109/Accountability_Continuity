@@ -1,6 +1,6 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated October 25, 2026**
+**Wenwen (Celine) Zhang · Updated November 7, 2026**
 
 The current step is to investigate recurring problems of organizing through
 concrete work processes. Organizations are the primary setting for this
@@ -9,8 +9,11 @@ not been established. Educational interests remain open, and individual growth
 is not a required outcome of this organizational line.
 
 The [reading folder](readings/README.md) separates source observations,
-interpretations and questions. The latest unit adds an episode index with
-unknown fields and a comparison still to be sought. Existing branches below
+interpretations and questions. The latest unit links a public review request,
+reply and resulting artifact while leaving end-user outcomes unknown. It also
+distinguishes applying a supplied rule from choosing the rule and acceptable
+risk. This is a bounded source case, not a causal mechanism or validated measure.
+Action-specific permission and downstream rework remain questions. Existing branches below
 retain their original scope; they do not determine every new question.
 
 ## Purpose and evaluation
@@ -31,6 +34,12 @@ begins with one published experimental workflow and the process evidence it
 does not establish. It proposes observation fields, not a finding about lasting
 organizational patterns. Earlier human-learning questions remain documented
 without determining the next question selected through reading.
+
+The separately published [evidence-access comparison](studies/organizational-coordination/evidence-access-pilot/README.md)
+proposes visible versus one-click evidence and a fictional matched pair.
+It remains a design draft. Its single-reviewer decisions do not establish
+downstream task uptake or rework; the present outcome-observation proposal
+does not supply those missing data or alter that draft.
 
 ## Existing measurement and learning questions
 

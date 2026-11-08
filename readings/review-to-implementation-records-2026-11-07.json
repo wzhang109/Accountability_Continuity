@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-07",
+  "source_id": "PANDAS-PUBLIC-REVIEW-50939-50972",
+  "unit": "One bounded public development discussion and a specific review-request-to-artifact link",
+  "record_order_warning": "The PR was already open before issue50972. Do not narrate the issue as the origin of the PR or use body text edited later as a contemporaneous creation record.",
+  "observations": [
+    {
+      "id": "P1",
+      "date_utc": "2023-01-25T19:12:33Z",
+      "url": "https://github.com/pandas-dev/pandas/issues/50972",
+      "evidence": "Issue proposes optional mixed-format parsing while acknowledging ambiguity risk; the referenced community call itself was not obtained.",
+      "class": "Stated proposal/reason, not decision effect"
+    },
+    {
+      "id": "P2",
+      "date_utc": "2023-02-01T19:50:46Z",
+      "url": "https://github.com/pandas-dev/pandas/pull/50939#discussion_r1093665868",
+      "related_reply": "https://github.com/pandas-dev/pandas/pull/50939#discussion_r1093692396",
+      "evidence": "A reviewer asks about making mixed parsing the default; the reply argues for opt-in using an ambiguous-date example.",
+      "class": "Visible alternative and reason; not agreement by all or verified global/cultural generalization"
+    },
+    {
+      "id": "P3",
+      "date_utc": "2023-02-10T15:06:39Z",
+      "url": "https://github.com/pandas-dev/pandas/pull/50939#discussion_r1102875041",
+      "reply_url": "https://github.com/pandas-dev/pandas/pull/50939#discussion_r1102879352",
+      "evidence": "Reviewer asks to recommend an explicit format first in the error message; author acknowledges the point.",
+      "class": "Specific request and visible uptake; acknowledgment alone is not implementation"
+    },
+    {
+      "id": "P4",
+      "date_utc": "2023-02-14T10:44:26Z",
+      "url": "https://github.com/pandas-dev/pandas/blob/d1095bcd5a43528e195e2d587e6a8691d5ed005f/pandas/_libs/tslibs/strptime.pyx#L516-L525",
+      "evidence": "At the pinned merge commit the error message lists a specific format before ISO8601 and mixed alternatives.",
+      "class": "Artifact-state confirmation consistent with the request; exclusive causal attribution and full implementation review not established"
+    },
+    {
+      "id": "P5",
+      "date_utc": "2023-02-09T22:55:45Z",
+      "url": "https://github.com/pandas-dev/pandas/pull/50939#issuecomment-1424947816",
+      "reply_url": "https://github.com/pandas-dev/pandas/pull/50939#issuecomment-1425440470",
+      "later_url": "https://github.com/pandas-dev/pandas/pull/50939#issuecomment-1428723666",
+      "evidence": "After positive review, conversation still requests integration/conflict work; a reply reports conflict resolution and a later comment requests another sync.",
+      "class": "Reported integration constraint. Not proof that every approval was final or that this explains all elapsed time"
+    },
+    {
+      "id": "P6",
+      "date_utc": "2023-02-14T10:44:26Z",
+      "url": "https://github.com/pandas-dev/pandas/pull/50939#issuecomment-1429510909",
+      "evidence": "Comment states a release-candidate scheduling reason for merging; API independently records merged=true and the merge time/commit.",
+      "class": "Stated priority plus recorded merge; does not prove the release-candidate schedule improved"
+    },
+    {
+      "id": "P7",
+      "date_utc": "2023-04-03T13:01:27Z",
+      "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.0",
+      "documentation_url": "https://pandas.pydata.org/docs/whatsnew/v2.0.0.html",
+      "evidence": "Public2.0.0release metadata and official historical enhancement entry document the mixed-format option linked to issue50972.",
+      "class": "Release-level evidence for the option, not an independent user outcome"
+    }
+  ],
+  "linkage": {
+    "specific_request": "P3",
+    "visible_reply": "P3.reply_url",
+    "compatible_implemented_artifact": "P4",
+    "release_level_for_feature": "P7",
+    "qualification": "Release entry documents the broader option, not the detailed error-message order or its measured benefits."
+  },
+  "interpretations_for_review": [
+    "A concrete request can be checked against reply and artifact instead of inferring completion from a closed label.",
+    "The visible discussion includes choices about acceptable default behavior and risk, not only recovery of a fixed fact.",
+    "Positive review, integration readiness and release priority are distinct recorded considerations; their independent causal effects are not identified."
+  ],
+  "comparison_to_current_pilot": {
+    "fixed_rule_check": "The evidence-access design can ask whether a reviewer correctly applies a supplied rule.",
+    "choosing_the_rule": "This public record also contains disagreement about what the default rule should be. That is outside a correctness score tied to one pre-specified fictional policy.",
+    "downstream_rework": "Recipient use, burden and rework remain unobserved here. Existing synthetic analysis does not fill that gap.",
+    "design_change_made": false
+  },
+  "request_reply_artifact_link": "source_documented",
+  "strict_approved_but_stalled_countercase": "not_established",
+  "independent_end_user_outcome": "not_established",
+  "causal_AI_effect": "not_established",
+  "benchmark_policy": "Participant timing illustration not independently reproduced and not used to claim coordination or performance effects.",
+  "new_original_field_data": false,
+  "researcher_understanding": "pending",
+  "independent_source_review": "pending",
+  "methodological_review": "pending"
+}

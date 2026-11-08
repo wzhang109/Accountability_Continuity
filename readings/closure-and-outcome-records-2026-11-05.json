@@ -1,0 +1,116 @@
+{
+  "date": "2026-11-05",
+  "source_id": "PENTLAND-RUETER-MIT-CCS177-DRAFT",
+  "source_access_class": "indexed_primary_text_only",
+  "source_records": [
+    {
+      "id": "DBI-S1",
+      "locator": "Figure 5: raw-data row",
+      "kind": "Author-displayed coded sample call, not a raw ticket obtained by this project",
+      "displayed_sequence": [
+        "O",
+        "W",
+        "W",
+        "US",
+        "PS",
+        "C",
+        "E"
+      ],
+      "known": "The displayed coding includes work, responsibility moves to user and back, and recorded closure plus explanation.",
+      "unknown": [
+        "Original ticket identifier",
+        "Elapsed time and waiting intervals",
+        "Contents of explanation",
+        "Specific requested user action",
+        "Explicit acceptance of that action",
+        "Technical fix and customer-confirmed outcome",
+        "Authority for each move"
+      ],
+      "claim_limit": "A coded return or close is not independent evidence of a successful repair. Do not reconstruct missing conversations."
+    },
+    {
+      "id": "DBI-G1",
+      "locator": "Figure 2; Figure 4 and accompanying closing discussion",
+      "kind": "Coding definitions and authors' interpretation, not a new project finding",
+      "distinction": "C, I and D represent different record endings; the grammar groups them within a done constituent. R still awaits customer confirmation.",
+      "claim_limit": "This is a representation of this support process, not a universal success definition or proof that deferral is poor performance."
+    },
+    {
+      "id": "DBI-G2",
+      "locator": "Testing the grammar: exceptional patterns",
+      "kind": "Aggregate departures reported in the draft",
+      "reported_counts": {
+        "closed_then_reopened": 7,
+        "never_officially_closed_deferred_or_inactivated_despite_apparent_cessation": 13
+      },
+      "denominator_for_recalculated_rates": "not reconstructed in this bounded reading",
+      "attribution_limit": "No ticket-level matching, rate calculation or causal attribution. Customer-data waiting is an author-reported account, not established for every case."
+    }
+  ],
+  "project_inference": "Track record status, expected next action and outcome evidence separately. Neither a neat action sequence nor an administrative ending alone answers whether relevant work succeeded.",
+  "candidate_question_not_adopted_by_researcher": "When a task is handed to another role for information or testing, who takes up the next action, what allows work to return or stop, and how is the outcome established?",
+  "proposed_fields": [
+    {
+      "field": "problem_and_action",
+      "purpose": "Link the same problem and a specific action; do not count every message as a new problem."
+    },
+    {
+      "field": "recorded_state_and_time",
+      "purpose": "Keep source status and available timestamps; missing time remains unknown."
+    },
+    {
+      "field": "next_actor_and_acceptance",
+      "purpose": "Separate a named responsibility in the record from evidence that the next actor accepted or performed it."
+    },
+    {
+      "field": "return_or_stop_condition",
+      "purpose": "Record the information, test or decision required for the next transition."
+    },
+    {
+      "field": "permission_and_constraint",
+      "purpose": "Keep authority, missing information, technical feasibility and priority distinct when evidence permits."
+    },
+    {
+      "field": "outcome_basis_and_cutoff",
+      "purpose": "Record what was verified, by whom, for which purpose and through what observation window; retain unknowns and later reopening."
+    }
+  ],
+  "fictional_checks": [
+    {
+      "id": "F1",
+      "fictional": true,
+      "recorded_state": "closed",
+      "scenario": "User confirms that the supplied repair works for the originally reported task.",
+      "permitted_coding": "Confirmed result for the stated task and observation window, not permanent reliability."
+    },
+    {
+      "id": "F2",
+      "fictional": true,
+      "recorded_state": "closed",
+      "scenario": "A one-time fault cannot be reproduced and no customer test is available.",
+      "permitted_coding": "Administrative closure; technical resolution unknown. Closure may be reasonable."
+    },
+    {
+      "id": "F3",
+      "fictional": true,
+      "recorded_state": "open",
+      "scenario": "A repair has been sent; a specified customer test is still pending at cutoff.",
+      "permitted_coding": "Awaiting test at cutoff; neither failure nor confirmed repair."
+    },
+    {
+      "id": "F4",
+      "fictional": true,
+      "recorded_state": "closed_then_reopened",
+      "scenario": "A test initially passed but the same symptom returned in the stated follow-up window.",
+      "permitted_coding": "Initial confirmation and later recurrence, kept as two dated observations."
+    }
+  ],
+  "fields_are_validated_measures": false,
+  "new_empirical_data": false,
+  "strict_authorized_but_stalled_countercase": "not_established",
+  "routine_request_with_independently_verified_outcome": "not_established",
+  "AI_effect": "not_established",
+  "researcher_understanding": "pending",
+  "independent_source_review": "pending",
+  "methodological_review": "pending"
+}

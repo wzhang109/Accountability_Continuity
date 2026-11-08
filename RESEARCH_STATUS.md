@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Prepared update October 25, 2026 · Wenwen (Celine) Zhang**
+**Research update November 7, 2026 · Published November 8, 2026 · Wenwen (Celine) Zhang**
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays
@@ -14,7 +14,7 @@ or research-log entries.
 | Estimation and sensitivity simulations | Python, tests, configuration, CSV summaries, and figures | Synthetic data with specified truth and selected parameter values |
 | Literature and conceptual work | Reading notes, an exploratory framework, and proposals | Not a systematic review, proof of novelty, or validated theory |
 | Advice-timing study design | Three-arm operational draft and fictional task examples | No participants, ethics approval, registration, pilot, or empirical results |
-| Organizational coordination source reading | A published experimental workflow and bounded observational readings; source versions, episode locators and unknown process links | AI-assisted source work, not original fieldwork, replication or evidence of reduced total coordination burden; human review pending |
+| Organizational coordination source reading | A published experimental workflow, bounded observational readings and an investigation episode; source versions, locators and unknown process links | AI-assisted source work, not original fieldwork, replication or evidence of reduced total coordination burden; human review pending |
 | Organizational public-document pilot | Five source-linked entries from two programs, a codebook, selection log, and reproducible file checks | Exploratory AI-assisted coding of first-party publications; no independent coding, private process records, causal effect, or AC score |
 | Reflection on purposes and measures | A dated philosophical note connecting values, participation, consequences, and revisable judgment | A research motivation; no universal metric, new empirical result, or demonstrated claim about human or AI consciousness |
 
@@ -28,10 +28,18 @@ of that concern.
 
 Organizations are the current primary setting for exploring recurring problems
 of organizing. This is a provisional direction, not a final theory or a claim
-that coordination problems are invariant. The [October 25 reading](readings/coordination-work-context-2026-10-25.md)
-and [episode index](readings/work-handoff-example-2026-10-25.json) add a bounded
-published-source example and unreported process fields. An independent
-contrasting case remains to be located. The [October 23 reading](readings/novice-risk-work-2026-10-23.md)
+that coordination problems are invariant. The [November 7 public-record reading](readings/review-to-implementation-2026-11-07.md)
+links a specific review request, reply and compatible merged artifact, with
+release evidence for the broader feature. End-user outcomes and causal
+explanations remain unknown. Applying a supplied rule and choosing a rule's
+purpose are kept distinct; the existing evidence-access design is unchanged.
+The [October 27 reading](readings/drawing-and-redesign-2026-10-27.md)
+and [episode index](readings/drawing-and-redesign-episode-2026-10-27.json) add
+a process contrast, not a clean counterexample to the comparison proposed
+in the [October 25 reading](readings/coordination-work-context-2026-10-25.md).
+A document-only sufficiency case or understood-but-unresolved conflict remains
+to be established; availability, feasibility and authorization are proposed
+observation fields, not a validated scale. The [October 23 reading](readings/novice-risk-work-2026-10-23.md)
 and earlier education work are preserved.
 
 This is AI-assisted source work; researcher understanding, independent source
@@ -226,3 +234,56 @@ author interpretations and this project's questions are distinguished; waiting,
 rework, downstream approval and development are not inferred from output quality.
 Researcher and independent human review remain pending. AI assisted retrieval,
 extraction, interpretation and writing; structural checks are not source validation.
+
+## October 29 evidence-acquisition reading
+
+Added a page-located public investigation episode and separate evidence layers.
+Requests, approval conditions, reported resource concerns and actions are
+distinguished; no complete shared understanding or causal mechanism is inferred.
+This exceptional retrospective case is not routine-work evidence or original
+field data. AI assisted retrieval, interpretation and writing; researcher,
+independent source and methodological review remain pending.
+
+## November 3 preparation and assignment reading
+
+Added two bounded interview records from an author-uploaded IT-service study.
+Preparation, formal assignment, reported dispatch and verified receipt are
+distinct. Specific permission and final outcomes remain unknown where the
+source does not report them. A routine authorized-request comparison is still
+missing. AI assisted source work and writing; researcher, independent source
+and methodological review remain pending. No original field data were added.
+
+## November 5 record status and outcome proposal
+
+Added bounded indexed-primary-text reading of an MIT technical-support draft,
+three source records, six proposed observation fields and four fictional
+coding checks. Record endings, expected next actions and outcome evidence are
+kept separate. Direct source access and comparison to the final journal text
+remain unresolved; no original ticket or verified routine-outcome case was
+obtained. The fields are not validated and the question is not final. AI
+assisted the work; researcher understanding and independent source/method
+review remain pending. Earlier protocols and synthetic materials are unchanged.
+
+## Separate public design observed on November 5
+
+During preparation, main gained an evidence-access design draft and a matched
+fictional case pair. Both were read in full and retained without edits in the
+updated baseline. They propose a reviewer comparison and blind explanation
+scoring; they are not registered, implemented or validated results. This local
+reading package does not claim credit for publishing them or infer researcher
+adoption from their presence on main.
+
+## November 7 linked public development record
+
+Added seven bounded source records linking a review request, visible reply,
+pinned artifact and release-level evidence. This narrows the implementation
+evidence gap without establishing user outcomes, a complete approved-but-stalled
+case or a general causal mechanism. Current public allocation/analysis files
+were preserved from the updated baseline; retrieving their contents and checking
+blob identity is not a full software or methodological review. No original
+field data or AI effect was added. AI assisted source reading, interpretation,
+writing and structural checks; researcher and independent source/method review
+remain pending. The cumulative October 27, October 29, November 3, November 5
+and November 7 reading updates were published on November 8, 2026. Earlier
+preparation entries below and above retain their dated status; publication is
+not independent source or methodological approval.

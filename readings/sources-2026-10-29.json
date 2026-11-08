@@ -1,0 +1,33 @@
+{
+  "prepared_date": "2026-10-29",
+  "publication_status": "Preparation and publication are recorded separately",
+  "reading_actor": "AI assistant; researcher reading not established",
+  "sources": [
+    {
+      "id": "caib2003v1",
+      "corporate_author": "Columbia Accident Investigation Board",
+      "title": "Report, Volume I",
+      "edition": "August 2003 report; NASA-hosted 248-page PDF",
+      "year": 2003,
+      "publisher": "Columbia Accident Investigation Board; NASA distribution",
+      "metadata_url": "https://ntrs.nasa.gov/citations/20030066167",
+      "read_copy_url": "https://www.nasa.gov/wp-content/uploads/static/history/columbia/reports/CAIBreportv1.pdf",
+      "metadata_date_qualification": "NTRS gives August1 publication date; PDF identifies August2003. No exact release day inferred here.",
+      "reading_scope": "Selected Chapter6.3 paragraphs and reproduced records on printed150–154, summary166–167 and selected discussion/findings168–171; metadata and cover. Not the full report, all testimony, all imagery requests or engineering findings.",
+      "locator_rule": "Printed page=one-based PDF page; zero-based PDF index=printed page-1 in the inspected range",
+      "evidence_type": "Retrospective official accident-investigation reconstruction with reproduced contemporary e-mails/logs and Board interpretation; not new participant data or our independent investigation",
+      "episode_record": "imagery-request-episode-2026-10-29.json",
+      "page_evidence_method": "PDF text/page markers; screenshot request returned metadata only, no pixel-level visual review claimed",
+      "access_limits": [
+        "history2.nasa.gov copy403",
+        "NTRS high-resolution download too large for reader; NASA static copy used instead"
+      ],
+      "researcher_understanding": "pending",
+      "independent_source_review": "pending",
+      "methodological_review": "pending"
+    }
+  ],
+  "comparison_scope": "Exceptional safety investigation compared with earlier manufacturing readings to refine questions, not matched cases, a causal contrast or routine-work generalization",
+  "strict_countercase_status": "not_established",
+  "prior_unfinished_reviews": "Puranam full reading and earlier Novice risk source-version/corpus checks remain pending"
+}

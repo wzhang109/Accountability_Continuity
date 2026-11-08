@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-03",
+  "sources": [
+    {
+      "id": "KOTLARSKY-IT-ONLINEFIRST-2019",
+      "authors": [
+        "Julia Kotlarsky",
+        "Bart van den Hooff",
+        "Leonie Geerts"
+      ],
+      "title": "Under pressure: Understanding the dynamics of coordination in IT functions under business-as-usual and emergency conditions",
+      "doi": "10.1177/0268396219881461",
+      "publisher_url": "https://journals.sagepub.com/doi/10.1177/0268396219881461",
+      "publisher_metadata_read": "First onlineOctober29,2019; volume35issue2; publisher currently restricted to abstract/reference record",
+      "author_copy_url": "https://www.researchgate.net/publication/336894483_Under_pressure_Understanding_the_dynamics_of_coordination_in_IT_functions_under_business-as-usual_and_emergency_conditions",
+      "author_copy_provenance": "ResearchGate identifies author JuliaKotlarsky as uploader, February14,2020",
+      "version": "Online-first copy with internal pages1–29, exposed as HTML full text. BinaryPDFnotdownloaded; finaljournalpagination/contentidentity not verified.",
+      "read_scope": [
+        "Metadata and author-copy provenance",
+        "Selected research design/data collection/analysis passages, internalpp5–9",
+        "Table3, internalp7; context atpp6–8",
+        "SelectedEpisode1normal-condition discussion, internalpp10–14, especiallyp13"
+      ],
+      "not_read_or_verified": [
+        "Whole29-pagepaper",
+        "Fullappendices/rawtranscripts/documents/eventlogs",
+        "Fullauthorargument aboutemergency-performance differences",
+        "FinalpublisherPDForpageconversion",
+        "Pixel-levelpage/figureverification"
+      ],
+      "page_locator_rule": "Internalprintedpagemarkersvisibleintheauthor-uploadedHTMLtext; notPDFindex orfinaljournalpages",
+      "reported_method": "33interviews in two units of one government ITservice organization, plus observations/documents; specific selected quotations remain interview accounts, not direct observations established by this reading",
+      "review_status": {
+        "researcher_understanding": "pending",
+        "independent_source_review": "pending",
+        "methodological_review": "pending"
+      }
+    }
+  ],
+  "access_limits": [
+    {
+      "url": "https://research.vu.nl/files/126098567/Under_pressure_Understanding_the_dynamics_of_coordination_in_IT_functions_under_business_as_usual_and_emergency_conditions.pdf",
+      "result": "Direct403; indexedexcerptnotusedtosupplyfinalpageconversion"
+    },
+    {
+      "url": "https://research.vu.nl/en/publications/under-pressure-understanding-the-dynamics-of-coordination-in-it-func/",
+      "result": "Inaccessible"
+    },
+    {
+      "mechanism": "ResearchGateDownloadfulltextlink",
+      "result": "Cachemiss; author-copyHTMLreadinstead"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/0268396219881461",
+      "result": "Publishermetadata/abstractonly, notfullarticle"
+    }
+  ],
+  "screened_not_selected": [
+    {
+      "title": "Coordination in Fast-Response Organizations",
+      "url": "https://pubsonline.informs.org/doi/pdf/10.1287/mnsc.1060.0526",
+      "scope": "Publisher redirectedtoabstract; nofullcase read or used"
+    },
+    {
+      "title": "How a Cockpit Remembers Its Speeds",
+      "url": "https://pages.ucsd.edu/~c8johnson/COGS102B/Hutchins95.pdf",
+      "scope": "Title/introavailable; introduction explicitlypresentsstylizedprocedure, not extendedactualobservation; notusedascompletedroutineepisode"
+    }
+  ],
+  "assistance": "AI-assisted retrieval, selection, interpretation, writing and structural checks. No independent human/method approval implied."
+}

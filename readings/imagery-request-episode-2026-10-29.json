@@ -1,0 +1,81 @@
+{
+  "record_type": "Published investigation episode index; not original organizational data",
+  "source_id": "caib2003v1",
+  "episode_locator": "Chapter6.3, printed150–154 and166–167",
+  "unit": "Requests for additional on-orbit imagery and their cancellation, January21–22,2003; not the entire accident",
+  "roles": [
+    "Debris Assessment Team and engineering management",
+    "Mission Management Team chair and mission operations",
+    "NASA/Department of Defense liaisons and imaging-resource planners"
+  ],
+  "reported_steps": [
+    {
+      "id": "I1",
+      "printed_pages": [
+        151,
+        152
+      ],
+      "date": "2003-01-21",
+      "evidence_form": "Board narrative plus reproduced co-chair email",
+      "description": "Assessment team supported seeking additional imagery to reduce uncertainty and routed its request through engineering."
+    },
+    {
+      "id": "I2",
+      "printed_pages": [
+        150,
+        152
+      ],
+      "date": "2003-01-21 to2003-01-22",
+      "evidence_form": "Board narrative plus liaison email",
+      "description": "Contacts described as information gathering initiated resource planning; distinct requests must not be collapsed into a single approved workflow."
+    },
+    {
+      "id": "I3",
+      "printed_pages": [
+        153
+      ],
+      "date": "2003-01-22",
+      "evidence_form": "Reported cancellation plus Board's likely reconstruction",
+      "description": "Liaison cancelled the request. Board reconstructs management checking for an official requirement without asking the assessment team directly."
+    },
+    {
+      "id": "I4",
+      "printed_pages": [
+        153,
+        154
+      ],
+      "date": "2003-01-22",
+      "evidence_form": "Board narrative, obtained personal notes and log entry",
+      "description": "Schedule/resource and perceived utility concerns appear in the account; Board reports image-quality, difficulty and cost were not established with capability holders."
+    }
+  ],
+  "reported_outcome": "The imagery action was halted; the Board summary at166–167 records the requests and missed opportunities. No counterfactual safety outcome is estimated here.",
+  "timing_qualification": "The report says initiation and rescission occurred within90minutes; the intervening management sequence is explicitly described as likely, not a complete independently timed event log.",
+  "evidence_layers": {
+    "contemporaneous_records_reproduced": "Emails/logs reprinted inside the report, not separately authenticated raw files",
+    "investigation_reconstruction": "Board chronology and its likely-sequence qualification",
+    "board_interpretation": "Routing shaped how the request was treated; capability/cost knowledge was limited",
+    "this_project_inference": "Information acquisition can itself require sponsorship/authorization; recording an information gap does not diagnose a representation-only remedy"
+  },
+  "known_unknowns": [
+    "Complete receipt and shared understanding by every decision-maker",
+    "Actual available image resolution, costs and operational disruption for this request",
+    "Separate effects of route, priority, expertise, interpretation and authority",
+    "Whether a differently routed request would have been approved",
+    "Whether additional images would have changed mission decisions or the outcome"
+  ],
+  "comparison_classification": "Authority/requirement and evidence-acquisition contrast; not proof of complete common understanding without coordination",
+  "strict_countercase_status": "not_established",
+  "proposed_observation_fields": [
+    "What additional evidence is needed",
+    "Who requests it and through which route",
+    "Who can recognize a requirement or authorize acquisition",
+    "Stated reason versus checked feasibility/cost",
+    "What action occurred and what remains unknown"
+  ],
+  "proposed_fields_are_validated_measures": false,
+  "ai_intervention_in_source": false,
+  "researcher_understanding": "pending",
+  "independent_human_review": "pending",
+  "methodological_review": "pending"
+}

@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-05",
+  "sources": [
+    {
+      "id": "PENTLAND-RUETER-MIT-CCS177-DRAFT",
+      "authors": [
+        "Brian T. Pentland",
+        "Henry H. Rueter"
+      ],
+      "title": "A Grammatical Model of Organizational Routines in a Technical Service Organization",
+      "url": "https://ccs.mit.edu/papers/CCSWP177.html",
+      "version": "MIT CCS No.177 HTML draft, marked accepted for publication in Administrative Science Quarterly; catalog lists August 1994.",
+      "access_class": "Search-index-rendered primary-source text, NOT a successful direct page or PDF read.",
+      "access_date": "2026-11-05",
+      "direct_access": "MIT direct opens timed out. Other copies were not obtained. Source freshness and identity with the final journal text are unverified.",
+      "related_final_publication_identifier_only": "Organizational Routines as Grammars of Action, DOI 10.2307/2393300; no final-text comparison completed.",
+      "locators_read": [
+        "An Empirical Example: entry, contract check and assignment description",
+        "Data: Observational Data; Archival Data; Coding the archival data",
+        "Figure 2: code definitions, particularly C/I/D, R and US/PS",
+        "Constructing the Grammatical Model: Exploring the data; closing discussion; Figure 4",
+        "Figure 5: displayed sample call and rewriting",
+        "Testing the grammar: omitted return moves, reopened calls and calls with no recorded closing"
+      ],
+      "locator_rule": "Named HTML sections and figures; no invented final-journal page numbers.",
+      "not_read_or_obtained": [
+        "Complete final journal article",
+        "Raw call histories or original field notes",
+        "Full coding corpus",
+        "Page images",
+        "Independent source replication"
+      ],
+      "method_scope": "Draft reports participant observation and archival call-history coding at pseudonymous DBI. Published examples are not project-owned observations.",
+      "review": {
+        "researcher_understanding": "pending",
+        "independent_source_review": "pending",
+        "methodological_review": "pending"
+      }
+    }
+  ],
+  "assistance": "AI-assisted search, bounded reading, interpretation, proposal writing and structural checking; no independent human approval implied."
+}

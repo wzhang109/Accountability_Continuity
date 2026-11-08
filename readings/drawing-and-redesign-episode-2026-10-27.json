@@ -1,0 +1,23 @@
+{
+  "record_type": "Literature episode index; not original organizational data",
+  "source_id": "carlile2002",
+  "episode_locator": "Across-Boundary Vignette, printed449–451; PDF8–10(one-based)",
+  "roles": ["manufacturing engineer", "head design engineer", "production supervisor", "drafter"],
+  "reported_steps": [
+    {"id": "C1", "printed_pages": [449, 450], "observation": "Outdated drawing; proposal not accepted."},
+    {"id": "C2", "printed_pages": [450], "observation": "Updated drawing; four-subassembly proposal discussed; welding problem identified."},
+    {"id": "C3", "printed_pages": [450], "observation": "Snap-fit proposal two days later."},
+    {"id": "C4", "printed_pages": [450], "observation": "Redesign over following week, meetings and informal CAD conversations."}
+  ],
+  "timing_qualification": "Eight weeks is time remaining to a deadline, not waiting duration; do not sum relative intervals into an exact total.",
+  "author_interpretation_locator": "Printed450–452; kept separate from reported steps",
+  "unknowns": ["formal sign-off authority", "measured production performance", "total coordination cost", "separate causal contribution of drawing, discussion and design change"],
+  "comparison_classification": "Process contrast in another published account; not an isolated document-only sufficiency test or proof of understanding without agreement",
+  "strict_countercase_status": "not_established",
+  "proposed_observation_fields": ["version alignment", "cross-role requirements represented", "feasible alternative available", "who can authorize a change", "who bears resulting costs"],
+  "proposed_fields_are_validated_measures": false,
+  "ai_intervention_in_source": false,
+  "researcher_understanding": "pending",
+  "independent_human_review": "pending",
+  "methodological_review": "pending"
+}

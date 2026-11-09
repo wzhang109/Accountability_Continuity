@@ -23,6 +23,7 @@ import json
 import math
 import platform
 from dataclasses import asdict, dataclass
+from numbers import Integral, Real
 from pathlib import Path
 from typing import Iterable
 
@@ -54,6 +55,36 @@ class StudyConfig:
     sample_sizes: tuple[int, ...] = (250, 1000, 4000)
     audit_shares: tuple[float, ...] = (0.10, 0.25)
 
+    def __post_init__(self) -> None:
+        _validate_positive_integer(self.periods, "periods", minimum=3)
+        for name in (
+            "cases_per_period", "sweep_draws", "monte_carlo_replications"
+        ):
+            _validate_positive_integer(getattr(self, name), name)
+        _validate_positive_integer(self.master_seed, "master_seed", minimum=0)
+        for name in (
+            "detection", "false_alarm", "disengaged_override",
+            "proxy_sensitivity", "proxy_false_positive",
+        ):
+            _validate_probability(getattr(self, name), name)
+        _validate_probability(self.proxy_sample_share, "proxy_sample_share", positive=True)
+        if (
+            not isinstance(self.sweep_tolerance, Real)
+            or not np.isfinite(self.sweep_tolerance)
+            or self.sweep_tolerance < 0.0
+        ):
+            raise ValueError("sweep_tolerance must be finite and nonnegative")
+        if not self.sample_sizes or not self.audit_shares:
+            raise ValueError("sample_sizes and audit_shares must be nonempty")
+        for n in self.sample_sizes:
+            _validate_positive_integer(n, "sample_sizes entry")
+        for share in self.audit_shares:
+            _validate_probability(share, "audit_shares entry", positive=True)
+        if len(set(self.sample_sizes)) != len(self.sample_sizes):
+            raise ValueError("sample_sizes must not contain duplicate design cells")
+        if len(set(self.audit_shares)) != len(self.audit_shares):
+            raise ValueError("audit_shares must not contain duplicate design cells")
+
     @classmethod
     def from_json(cls, path: Path) -> "StudyConfig":
         raw = json.loads(path.read_text(encoding="utf-8"))
@@ -62,6 +93,35 @@ class StudyConfig:
         if "audit_shares" in raw:
             raw["audit_shares"] = tuple(raw["audit_shares"])
         return cls(**raw)
+
+
+def _validate_positive_integer(value: int, name: str, minimum: int = 1) -> None:
+    if isinstance(value, bool) or not isinstance(value, Integral) or value < minimum:
+        raise ValueError(f"{name} must be an integer >= {minimum}")
+
+
+def _validate_probability(value: float, name: str, positive: bool = False) -> None:
+    if (
+        isinstance(value, bool)
+        or not isinstance(value, Real)
+        or not np.isfinite(value)
+        or not (0.0 < value <= 1.0 if positive else 0.0 <= value <= 1.0)
+    ):
+        interval = "(0, 1]" if positive else "[0, 1]"
+        raise ValueError(f"{name} must be finite and in {interval}")
+
+
+def _validate_binomial_channel(
+    counts: np.ndarray, total: int, name: str
+) -> np.ndarray:
+    """Accept observed counts or fractional population expected-count fixtures."""
+    _validate_positive_integer(total, f"{name} total")
+    counts = np.asarray(counts, dtype=float)
+    if counts.ndim != 1 or counts.size == 0:
+        raise ValueError(f"{name} counts must be a nonempty one-dimensional array")
+    if not np.all(np.isfinite(counts) & (counts >= 0.0) & (counts <= total)):
+        raise ValueError(f"{name} counts must be finite and between 0 and their total")
+    return counts
 
 
 def linear_path(start: float, end: float, periods: int) -> np.ndarray:
@@ -197,6 +257,11 @@ def build_scenarios(config: StudyConfig) -> dict[str, pd.DataFrame]:
     p_b = np.full(config.periods, 0.60)
     d_b = np.full(config.periods, d0)
     e_b = engagement_from_rate(r_a, p_b, d_b, f, q)
+    if not np.all(np.isfinite(e_b) & (e_b >= 0.0) & (e_b <= 1.0)):
+        raise ValueError(
+            "Configured parameters do not admit the constructed exact-equivalent "
+            "engagement path in [0, 1]"
+        )
 
     s0 = np.full(config.periods, config.proxy_sensitivity)
     g0 = np.full(config.periods, config.proxy_false_positive)
@@ -431,6 +496,12 @@ def fit_audit_override(
     The fit assumes d, f, and q are known and constant. It is deliberately
     challenged by the detection-drift scenario.
     """
+    accuracy_counts = _validate_binomial_channel(accuracy_counts, n_audit, "accuracy")
+    override_counts = _validate_binomial_channel(
+        override_counts, n_operational, "override"
+    )
+    if len(accuracy_counts) != len(override_counts):
+        raise ValueError("accuracy and override channels must have the same periods")
     periods = len(accuracy_counts)
     design = _endpoint_design(periods)
 
@@ -531,6 +602,10 @@ def fit_audit_proxy(
     The estimator assumes the configured sensitivity and false-positive rate
     are known and constant. A separate sensitivity analysis violates this.
     """
+    accuracy_counts = _validate_binomial_channel(accuracy_counts, n_audit, "accuracy")
+    proxy_counts = _validate_binomial_channel(proxy_counts, n_proxy, "proxy")
+    if len(accuracy_counts) != len(proxy_counts):
+        raise ValueError("accuracy and proxy channels must have the same periods")
     periods = len(accuracy_counts)
     design = _endpoint_design(periods)
     proxy_gap = config.proxy_sensitivity - config.proxy_false_positive
@@ -594,6 +669,9 @@ def override_predictive_check(
     config: StudyConfig,
 ) -> tuple[float, float]:
     """Compare override data to a prediction built from independent channels."""
+    override_counts = _validate_binomial_channel(
+        override_counts, n_operational, "override"
+    )
     theta = np.asarray(fit["theta"], dtype=float)
     covariance = np.asarray(fit["covariance"], dtype=float)
     design = _endpoint_design(len(override_counts))
@@ -641,9 +719,15 @@ def simulate_aggregate_observations(
       * model correctness from an independently adjudicated audit sample;
       * a noisy process log for whether primary evidence was opened.
     """
+    _validate_positive_integer(cases_per_period, "cases_per_period")
+    _validate_probability(audit_share, "audit_share", positive=True)
     n = int(cases_per_period)
-    n_audit = max(20, int(round(n * audit_share)))
-    n_proxy = max(20, int(round(n * config.proxy_sample_share)))
+    n_audit = int(round(n * audit_share))
+    n_proxy = int(round(n * config.proxy_sample_share))
+    if n_audit < 1 or n_proxy < 1:
+        raise ValueError(
+            "Configured audit and proxy shares must each round to at least one case"
+        )
     rate = scenario["expected_override_rate"].to_numpy()
     p = scenario["model_accuracy"].to_numpy()
     z_rate = scenario["expected_proxy_rate"].to_numpy()
@@ -936,7 +1020,7 @@ def proxy_calibration_sensitivity(config: StudyConfig) -> pd.DataFrame:
     for actual_sensitivity in (0.70, 0.90, 0.98):
         for actual_false_positive in (0.02, 0.10, 0.25):
             actual_gap = actual_sensitivity - actual_false_positive
-            identified = actual_gap > 0.0 and assumed_gap > 0.0
+            identified = actual_gap != 0.0 and assumed_gap != 0.0
             corrected_delta = (
                 actual_gap / assumed_gap * true_delta if identified else float("nan")
             )

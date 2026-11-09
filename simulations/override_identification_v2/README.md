@@ -6,6 +6,11 @@ instead of reporting misleading finite Wald uncertainty. See the
 [verification record](VERIFICATION_2026-09-14.md) and the expanded
 [English and Chinese walkthrough](PLAIN_LANGUAGE_GUIDE.md).
 
+**November 9, 2026 review:** see the [current audit](VERIFICATION_2026-11-09.md)
+for input validation, matched-sample comparisons, reproduction results, and the
+separate fictional-response software checks. The default probability model is
+unchanged.
+
 ## Research question
 
 Can a falling override rate distinguish improving model accuracy from weakening
@@ -101,6 +106,13 @@ proxy whose calibration would need independent validation.
 All main probability paths are linear so that the estimand below is exactly an
 endpoint change. Nonlinear paths require a different estimand or a richer trend
 model.
+
+Configuration probabilities must lie in [0, 1], counts must be positive
+integers, and the full study requires at least three periods. Audit and proxy
+sample counts are the configured shares times the operational count, rounded
+to the nearest integer; a zero-sized channel is rejected. Small samples are
+not silently increased to a minimum of 20. A custom configuration that makes
+the constructed engagement path infeasible is also rejected.
 
 ### Estimands
 
@@ -200,9 +212,16 @@ MPLCONFIGDIR=/tmp/accountability_mpl \
   python -m unittest discover -s tests -v
 ```
 
-Package requirements are recorded in `requirements.txt`; exact versions for a
+Package requirements are recorded in `requirements.txt`. For numerical
+comparison with the saved run, use Python 3.12 and the versions in
+`requirements-reproducible.txt` in an isolated environment. Exact versions for a
 run are written to `outputs/run_manifest.json`. The master seed, parameter
 ranges, sample sizes, and replication count are all in `config.json`.
+
+Core version pins do not fix every platform or numerical-library difference.
+The November 9 rerun completed but one CSV missed the original strict numerical
+tolerance by a few billionths. `verify_reproduction.py` records that difference
+and exits with status 1; it does not label a partial match as full reproduction.
 
 ## Outputs
 
@@ -218,6 +237,11 @@ Figures:
    small-sample boundary-hit rate
 5. `figure_5_sensitivity.png`: sensitivity to `d`, `f`, and `q`
 6. `figure_6_proxy_calibration.png`: bias under proxy-calibration error
+
+The proxy-calibration grid is an analytic, unconstrained moment-inversion
+calculation. Its bias is not the exact bias of the bounded likelihood estimator
+when inferred engagement levels would fall outside [0, 1]. A known reverse
+proxy (`s<g`) is invertible; zero separation (`s=g`) is the unidentified case.
 
 Checked-in machine-readable CSVs contain scenario paths, candidate paths,
 likelihood values, recovery summaries, trend-regime summaries, assumption

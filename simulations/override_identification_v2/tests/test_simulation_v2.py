@@ -14,6 +14,7 @@ from simulation_v2 import (
     monte_carlo,
     override_predictive_check,
     override_rate,
+    proxy_calibration_sensitivity,
     proxy_rate,
     sensitivity_grid,
     simulate_aggregate_observations,
@@ -24,6 +25,63 @@ from simulation_v2 import (
 class IdentificationTests(unittest.TestCase):
     def setUp(self):
         self.config = StudyConfig(monte_carlo_replications=5, sweep_draws=100)
+
+    def test_invalid_configurations_fail_before_simulation(self):
+        for changes in (
+            {"periods": 2}, {"cases_per_period": 0}, {"sample_sizes": ()},
+            {"sample_sizes": (250.5,)}, {"audit_shares": (0.0,)},
+            {"audit_shares": (1.1,)}, {"proxy_sample_share": 0.0},
+            {"detection": float("nan")}, {"false_alarm": -0.1},
+            {"sweep_tolerance": -0.01}, {"master_seed": -1},
+            {"sample_sizes": (250, 250)},
+        ):
+            with self.subTest(changes=changes), self.assertRaises(ValueError):
+                replace(self.config, **changes)
+
+    def test_infeasible_constructed_equivalence_fails_early(self):
+        config = replace(self.config, detection=0.05, false_alarm=0.75)
+        with self.assertRaisesRegex(ValueError, "exact-equivalent engagement path"):
+            build_scenarios(config)
+
+    def test_small_measurement_samples_follow_configured_shares(self):
+        scenario = build_scenarios(self.config)["stable_negative_control"]
+        obs = simulate_aggregate_observations(
+            scenario, self.config, 100, 0.05, np.random.default_rng(7)
+        )
+        self.assertEqual(obs["n_audit"], 5)
+        self.assertEqual(obs["n_proxy"], 25)
+        for n, share in ((0, 0.1), (250, 0.0), (1, 0.1)):
+            with self.subTest(n=n, share=share), self.assertRaises(ValueError):
+                simulate_aggregate_observations(
+                    scenario, self.config, n, share, np.random.default_rng(7)
+                )
+
+    def test_invalid_measurement_channels_do_not_produce_successful_fits(self):
+        valid = np.full(24, 700.0)
+        for invalid in (np.full(24, -1.0), np.full(24, 1001.0),
+                        np.full(24, np.nan), np.empty(0), np.ones((2, 12))):
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                fit_audit_proxy(invalid, 1000, valid, 1000, self.config)
+            with self.subTest(invalid=invalid), self.assertRaises(ValueError):
+                fit_audit_override(valid, 1000, invalid, 1000, self.config)
+        with self.assertRaisesRegex(ValueError, "same periods"):
+            fit_audit_proxy(valid, 1000, valid[:-1], 1000, self.config)
+        with self.assertRaises(ValueError):
+            fit_audit_override(valid, 0, valid, 1000, self.config)
+
+    def test_reverse_calibrated_proxy_is_still_invertible(self):
+        config = replace(self.config, proxy_sensitivity=0.1, proxy_false_positive=0.9)
+        scenario = build_scenarios(config)["exact_equivalent_disengagement"]
+        n = 100_000
+        fit = fit_audit_proxy(
+            scenario["model_accuracy"].to_numpy() * n, n,
+            scenario["expected_proxy_rate"].to_numpy() * n, n, config,
+        )
+        truth = scenario["engagement"].iloc[-1] - scenario["engagement"].iloc[0]
+        self.assertAlmostEqual(fit["delta_e"], truth, places=4)
+        sensitivity = proxy_calibration_sensitivity(config)
+        self.assertTrue(sensitivity["identified"].all())
+        self.assertTrue(np.isfinite(sensitivity["expected_corrected_delta_e"]).all())
 
     def test_uninformative_proxy_does_not_report_zero_uncertainty(self):
         config = replace(self.config, proxy_sensitivity=0.5, proxy_false_positive=0.5)

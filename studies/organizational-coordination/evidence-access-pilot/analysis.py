@@ -11,11 +11,15 @@ def summarize(design, responses):
     allocations = {r["slot_id"]: r["arm"] for r in design["allocation"]}
     if len(allocations) != len(design["allocation"]):
         raise ValueError("duplicate slot")
+    if any(arm not in ARMS for arm in allocations.values()):
+        raise ValueError("unknown arm")
     keys = {(k["slot_id"], k["item_id"]): k for k in design["answer_key"]}
     if len(keys) != len(design["answer_key"]):
         raise ValueError("duplicate answer key")
     if any(s not in allocations for s, _ in keys):
         raise ValueError("unallocated key")
+    if any(type(k["draft_valid"]) is not bool for k in keys.values()):
+        raise ValueError("draft_valid must be boolean")
     indexed = {}
     for r in responses:
         token = r["slot_id"], r["item_id"]
@@ -35,7 +39,7 @@ def summarize(design, responses):
             tokens = [t for t, k in keys.items() if t[0] == slot and k["draft_valid"] == valid]
             observed = []
             render_failed = 0
-            explanation_missing = 0
+            explanation_unscored = 0
             for token in tokens:
                 r = indexed.get(token)
                 if r is None:
@@ -43,7 +47,7 @@ def summarize(design, responses):
                 render_failed += not r["rendering_ok"]
                 if r["rendering_ok"] and r["decision"] is not None:
                     observed.append(r)
-                    explanation_missing += r["explanation_score"] is None
+                    explanation_unscored += r["explanation_score"] is None
             n, n_observed = len(tokens), len(observed)
             returns = sum(r["decision"] == "return" for r in observed)
             missing = n - n_observed
@@ -53,7 +57,7 @@ def summarize(design, responses):
                 "rate_observed": returns / n_observed if n_observed else None,
                 "lower_all_assigned": returns / n if n else None,
                 "upper_all_assigned": (returns + missing) / n if n else None,
-                "explanation_missing_with_observed_decision": explanation_missing,
+                "explanation_unscored_with_observed_decision": explanation_unscored,
             }
         reviewers.append(summary)
     arms = {}
@@ -75,7 +79,7 @@ def summarize(design, responses):
                 "observed": observed,
                 "missing_or_unusable": sum(c["missing_or_unusable"] for c in cells),
                 "render_failed": sum(c["render_failed"] for c in cells),
-                "explanation_missing_with_observed_decision": sum(c["explanation_missing_with_observed_decision"] for c in cells),
+                "explanation_unscored_with_observed_decision": sum(c["explanation_unscored_with_observed_decision"] for c in cells),
             }
     contrasts = {}
     for name in ("detection", "false_return"):

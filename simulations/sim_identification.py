@@ -25,6 +25,7 @@ Author: Wenwen (Celine) Zhang
 """
 
 import numpy as np
+from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -35,8 +36,8 @@ RNG = np.random.default_rng(20260818)
 # Generative model (one case)
 #
 #   1. The model proposes an answer. It is correct with probability p.
-#   2. The reviewer is "engaged" with probability e -- meaning they actually
-#      consult the primary evidence rather than the model's summary.
+#   2. Substantive review occurs with probability e. This is a specified latent
+#      state, not an observed click or a validated measure of thought.
 #   3. If engaged:
 #         - they override a wrong answer with probability d   (detection)
 #         - they override a correct answer with probability f (false alarm)
@@ -66,7 +67,7 @@ def override_rate(p, e):
 def override_precision(p, e):
     """P(the model was actually wrong | the reviewer overrode).
 
-    An override is 'right' when it corrects a genuine error.
+    This says nothing about whether the replacement answer is correct.
     """
     joint_wrong_and_override = e * D * (1 - p) + (1 - e) * Q * (1 - p)
     return joint_wrong_and_override / override_rate(p, e)
@@ -144,19 +145,19 @@ a.text(0.5, 0.9, "identical by construction", transform=a.transAxes,
        ha="center", fontsize=10, style="italic", color="#555")
 a.legend(fontsize=9, loc="lower left")
 
-# (2) model accuracy on a held-out gold standard
+# (2) specified model accuracy (known to the simulator)
 a = ax[0, 1]
 a.plot(t, p_A, color=CA, lw=2.5)
 a.plot(t, p_B, color=CB, lw=2.5, ls="--")
-a.set_title("2. Model accuracy on a held-out gold set", fontsize=11, fontweight="bold")
+a.set_title("2. Specified model accuracy", fontsize=11, fontweight="bold")
 a.set_ylabel("accuracy")
 a.set_ylim(0.5, 1.0)
 
-# (3) engagement — proxied by whether the reviewer opens the primary record
+# (3) specified substantive-review probability, not a record-opening measure
 a = ax[1, 0]
 a.plot(t, e_A, color=CA, lw=2.5)
 a.plot(t, e_B, color=CB, lw=2.5, ls="--")
-a.set_title("3. Reviewer engagement (opens primary evidence)", fontsize=11, fontweight="bold")
+a.set_title("3. Specified substantive-review probability", fontsize=11, fontweight="bold")
 a.set_ylabel("share of cases")
 a.set_xlabel("period")
 a.set_ylim(0, 1)
@@ -167,7 +168,7 @@ a.plot(t, sim_prec_A, "o", ms=4, color=CA, alpha=0.55)
 a.plot(t, sim_prec_B, "s", ms=4, color=CB, alpha=0.55)
 a.plot(t, prec_A, color=CA, lw=2.5)
 a.plot(t, prec_B, color=CB, lw=2.5, ls="--")
-a.set_title("4. Override precision — were the overrides right?", fontsize=11, fontweight="bold")
+a.set_title("4. Original AI error among overridden answers", fontsize=11, fontweight="bold")
 a.set_ylabel("P(model was wrong | overridden)")
 a.set_xlabel("period")
 
@@ -181,8 +182,9 @@ fig.text(0.5, 0.005,
          "Dots are simulated (n=4,000 cases/period); lines are analytic. "
          "Illustrative parameters, not calibrated to any deployment.",
          ha="center", fontsize=8.5, color="#666")
-fig.savefig("identification_problem.png", dpi=160)
-print("wrote identification_problem.png")
+output_path = Path(__file__).resolve().with_name("identification_problem.png")
+fig.savefig(output_path, dpi=160)
+print(f"wrote {output_path}")
 
 # ----------------------------------------------------------------------------
 # Console summary
@@ -201,10 +203,10 @@ print("=" * 66)
 print("""
 Reading of panel 4 (note the direction -- it is not the obvious one):
 
-  Override precision falls FURTHER in World A, the world where oversight is
-  working. As the model improves, a growing share of the remaining overrides are
-  the reviewer being wrong rather than the model. In World B the model is still
-  bad, so the overrides that survive keep catching real errors.
+  Under these selected parameters, fewer of the overrides in World A concern
+  an original AI error as the model improves. This is a change in the mix of
+  cases being overridden, not a measure of replacement-answer correctness.
+  The simulation does not generate replacement answers or final decision quality.
 
   So low override precision is not by itself a warning sign. It has to be read
   against model accuracy. This is a second reason not to read any single review

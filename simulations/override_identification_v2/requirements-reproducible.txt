@@ -1,0 +1,6 @@
+# Numerical environment used for the saved September 14 study (Python 3.12).
+# requirements.txt remains the broader dependency list for exploration.
+matplotlib==3.9.2
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1

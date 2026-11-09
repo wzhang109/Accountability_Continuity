@@ -8,12 +8,12 @@ import random
 
 ARMS = ("visible", "one_click")
 FAMILIES = (
-    ("file_release", "Release a file only if independent review is complete and outstanding discrepancies are two or fewer.", "Independent review complete; outstanding discrepancies: {value}.", 2, 3, "at_most", 2),
-    ("training_access", "Grant access only if training is complete and the assessment score is at least 80.", "Training complete; assessment score: {value}.", 80, 79, "at_least", 80),
-    ("invoice_route", "Route an invoice for payment only if supplier approval is complete and the invoice amount is no more than 500 fictional units.", "Supplier approval complete; invoice amount: {value} fictional units.", 500, 501, "at_most", 500),
-    ("equipment_dispatch", "Dispatch equipment only if inspection is complete and the battery charge is at least 60 percent.", "Inspection complete; battery charge: {value} percent.", 60, 59, "at_least", 60),
-    ("archive_publish", "Publish an archive entry only if consent is recorded and there are zero unresolved redactions.", "Consent recorded; unresolved redactions: {value}.", 0, 1, "at_most", 0),
-    ("stock_transfer", "Transfer a stock batch only if its seal check is complete and at least 10 units remain after transfer.", "Seal check complete; remaining units after transfer: {value}.", 10, 9, "at_least", 10),
+    ("file_release", "If independent review is complete and outstanding discrepancies are two or fewer, release the file. Otherwise, hold.", "Independent review complete; outstanding discrepancies: {value}.", 2, 3, "at_most", 2),
+    ("training_access", "If training is complete and the assessment score is at least 80, grant access. Otherwise, hold.", "Training complete; assessment score: {value}.", 80, 79, "at_least", 80),
+    ("invoice_route", "If supplier approval is complete and the invoice amount is no more than 500 fictional units, route the invoice for payment. Otherwise, hold.", "Supplier approval complete; invoice amount: {value} fictional units.", 500, 501, "at_most", 500),
+    ("equipment_dispatch", "If inspection is complete and the battery charge is at least 60 percent, dispatch the equipment. Otherwise, hold.", "Inspection complete; battery charge: {value} percent.", 60, 59, "at_least", 60),
+    ("archive_publish", "If consent is recorded and there are zero unresolved redactions, publish the archive entry. Otherwise, hold.", "Consent recorded; unresolved redactions: {value}.", 0, 1, "at_most", 0),
+    ("stock_transfer", "If the seal check is complete and at least 10 units remain after transfer, transfer the stock batch. Otherwise, hold.", "Seal check complete; remaining units after transfer: {value}.", 10, 9, "at_least", 10),
 )
 
 
@@ -39,7 +39,9 @@ def build(seed=20261106):
             for position in range(6):
                 i = base[(position + rotation) % 6]
                 f = FAMILIES[i]
-                valid = (i + rotation + block) % 2 == 0
+                # A three-family window keeps validity balanced without making
+                # every underlying record in a slot share one disposition.
+                valid = (i + rotation + 3 * block) % 6 < 3
                 recommended = "proceed" if (i + block) % 2 == 0 else "hold"
                 should_proceed = (recommended == "proceed") == valid
                 value = f[3] if should_proceed else f[4]
@@ -67,23 +69,35 @@ def check(design):
     assert len(set(task_ids)) == len(task_ids) == 144 and set(task_ids) == set(key_ids)
     by_key = {(k["slot_id"], k["item_id"]): k for k in design["answer_key"]}
     families, positions, per_slot = Counter(), Counter(), Counter()
+    recommendation_cells = Counter()
+    family_by_name = {f[0]: f for f in FAMILIES}
     for t in design["tasks"]:
         assert "draft_valid" not in t and "correct_action" not in t and "family" not in t
         k = by_key[t["slot_id"], t["item_id"]]
+        f = family_by_name[k["family"]]
+        assert t["recommendation"] == k["recommended_disposition"]
+        assert k["draft_valid"] == ((t["recommendation"] == "proceed") == eligible(f, k["value"]))
+        assert k["correct_action"] == ("pass" if k["draft_valid"] else "return")
         arm = allocations[t["slot_id"]]["arm"]
         families[arm, k["family"], k["draft_valid"]] += 1
+        recommendation_cells[arm, k["family"], k["recommended_disposition"], k["draft_valid"]] += 1
         positions[arm, t["position"], k["draft_valid"]] += 1
         per_slot[t["slot_id"], k["draft_valid"]] += 1
     assert all(families[a, f[0], v] == 6 for a in ARMS for f in FAMILIES for v in (False, True))
     assert all(positions[a, p, v] == 6 for a in ARMS for p in range(1, 7) for v in (False, True))
     assert all(per_slot[s, v] == 3 for s in allocations for v in (False, True))
+    assert all(recommendation_cells[a, f[0], r, v] == 3
+               for a in ARMS for f in FAMILIES for r in ("proceed", "hold") for v in (False, True))
     for s in allocations:
         rows = [k for k in design["answer_key"] if k["slot_id"] == s]
         assert len({k["family"] for k in rows}) == 6  # never both pair variants
         assert Counter(k["recommended_disposition"] for k in rows) == {"proceed": 3, "hold": 3}
+        assert {eligible(family_by_name[k["family"]], k["value"]) for k in rows} == {False, True}
     return {"kind": "FICTIONAL_DESIGN_CHECK", "seed": design["seed"],
             "slots": 24, "tasks": 144, "slots_per_arm": 12,
             "per_arm_family_validity_cell": 6, "per_arm_position_validity_cell": 6,
+            "per_arm_family_recommendation_validity_cell": 3,
+            "underlying_dispositions_per_slot": 2,
             "valid_and_invalid_per_slot": [3, 3], "checks": "passed"}
 
 

@@ -71,6 +71,21 @@ with sample size for both constrained estimators. At a 10% audit share:
 * the independent override predictive check rejects 5.4% of correctly
   specified replications overall.
 
+The matched comparisons below use the same four correctly specified scenarios
+and a 10% accuracy-audit share. Each number is the arithmetic mean of the four
+scenario-specific RMSEs for the estimated engagement change; it is not an
+accuracy rate or an effect measured in people.
+
+| Cases per period | Audit plus override | Audit plus calibrated proxy |
+|---:|---:|---:|
+| 250 | 0.14349 | 0.04677 |
+| 1,000 | 0.07884 | 0.02330 |
+| 4,000 | 0.03947 | 0.01193 |
+
+The exact values come from `outputs/recovery_summary.csv`. Compare methods
+within a row. Comparing 0.14349 with 0.01193 changes both the method and the
+sample size, so that difference cannot be attributed to the proxy alone.
+
 The proxy result is a best-case benchmark because its sensitivity and
 false-positive rate are treated as known and stable.
 

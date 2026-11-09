@@ -24,6 +24,15 @@ In each interface there are 12 slots. Each family × validity cell and each
 position × validity cell has six presentations per interface. Whole-session
 interface assignments are shuffled within complete blocks; order uses cyclic
 rotations of a shuffled family list. Each slot sees just one variant of a family.
+The November 9 correction also crosses recommendation direction with validity:
+each family × recommendation × validity cell has three presentations per arm.
+Every slot now has both eligible and ineligible underlying records. Within each
+arm, six slots have two eligible records and six have four, for 36 of each
+disposition overall. The former formula accidentally made the underlying
+disposition constant within a slot. All six rules now explicitly require the
+specified action when their conditions hold and require holding otherwise;
+this makes incorrect hold recommendations scoreable from the displayed rule.
+
 The same seed reproduces the manifest. A different seed changes ordering and
 slot assignment, not the rule content.
 

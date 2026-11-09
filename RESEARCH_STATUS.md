@@ -1,6 +1,10 @@
 # Research status and contributions
 
-**Research update November 7, 2026 · Published November 8, 2026 · Wenwen (Celine) Zhang**
+**Research update November 9, 2026 · Wenwen (Celine) Zhang**
+
+The [November 9 simulation audit](simulations/override_identification_v2/VERIFICATION_2026-11-09.md)
+records implementation corrections and reproduction checks. It adds no human
+results or evidence that either interface improves review.
 
 This note distinguishes work present in the repository from assumptions and
 future studies. It takes precedence over stronger wording in earlier essays

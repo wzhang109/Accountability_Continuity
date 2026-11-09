@@ -7,6 +7,18 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## November 9, 2026 — Auditing the simulations and fictional checks
+
+Reviewed the probability model and its sampling and estimation code separately
+from the evidence-access pilot's preset-response tests. Added input guards,
+corrected the assignment's constant underlying disposition and necessary-only
+rule wording, and separated an absent explanation score from absent text.
+The [audit record](simulations/override_identification_v2/VERIFICATION_2026-11-09.md)
+gives the verification results and matched-sample RMSE comparisons. Historical
+model assumptions and the current participant-study proposal remain distinct;
+no participants or original organizational outcomes were added. AI assisted
+the review, corrections, tests and documentation.
+
 ## November 8, 2026 — Clarifying the research starting point
 
 The philosophical question about human value remains the starting point.

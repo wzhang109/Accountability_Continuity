@@ -31,8 +31,10 @@ to the assignment key. A known rendering failure is flagged and its decision
 is unusable, not evidence of reviewer failure. An omitted row has unknown
 rendering status; it is not automatically counted as a rendering failure.
 
-Explanation missingness is reported separately among usable decisions. It does
-not change decision credit or become an explanation score of zero. The fixture
+Explanation score availability is reported separately among usable decisions
+as `explanation_unscored_with_observed_decision`. An absent score does not
+establish that explanation text is missing: it may not yet have been scored.
+It does not change decision credit or become a score of zero. The fixture
 leaves all explanations unscored; the program does not judge free text, establish
 comprehension, or infer that an unscored explanation means a reviewer did not check.
 
@@ -70,10 +72,13 @@ not confidence intervals, model estimates or evidence about real participants.
 
 ## Verification and remaining decisions
 
-Six test methods passed: 100 assignment seeds and the original 2/3 boundary;
+Eleven test methods passed after the November 9 correction: 100 assignment seeds and the original 2/3 boundary;
 hand-calculated reviewer means, pooled diagnostics and bounds; omitted rows;
 all-missing reviewers and rendering failures; always-pass/always-return behavior;
 and rejection of duplicates, unassigned items and invalid decision labels.
+The added checks cover independent recommendation/disposition validity,
+two-way rule wording, all rule boundaries, unknown arms, nonboolean answer-key
+validity, and scoring explanations independently from decision credit.
 
 Before a real study, specify a primary estimand and missingness policy,
 withdrawal/consent handling, renderer diagnostics, blind explanation scoring,

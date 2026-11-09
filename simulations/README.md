@@ -27,6 +27,11 @@ Start with the
 then read the [results note](override_identification_v2/RESULTS.md) and full
 [design documentation](override_identification_v2/README.md).
 
+The [November 9 audit](override_identification_v2/VERIFICATION_2026-11-09.md)
+explains what is assumed, generated and checked, with matched-sample numerical
+comparisons and runnable verification commands. It also distinguishes this
+statistical simulation from the evidence-access pilot's preset-response tests.
+
 ## Initial demonstration
 
 `sim_identification.py` is retained as the historical first version. It

@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-11",
+  "primary_sources": [
+    {
+      "id": "CF-DETAIL",
+      "url": "https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/",
+      "title": "Details of the Cloudflare outage on July 2, 2019",
+      "publication_date": "2019-07-12",
+      "author": "John Graham-Cumming",
+      "read_scope": "Metadata; events; What happened; selected deployment/test paragraphs; What went wrong; What happened since last Tuesday. No regex appendix validation, image data extraction or customer logs.",
+      "locators": "web extraction lines838–845,885–941,956–961,973–1007",
+      "source_type": "Retrospective participant/team account, not independent evaluation",
+      "paraphrase_only": true
+    },
+    {
+      "id": "CF-BRIEF",
+      "url": "https://blog.cloudflare.com/cloudflare-outage/",
+      "title": "Cloudflare outage caused by bad software deploy (updated)",
+      "publication_date": "2019-07-02",
+      "author": "John Graham-Cumming",
+      "version_read": "Currently served article with Update at2009UTC; no archived immutable2019capture",
+      "read_scope": "Displayed body and update; web extraction lines832–864",
+      "source_type": "Earlier same-author company account; not independent corroboration",
+      "paraphrase_only": true
+    }
+  ],
+  "researcher_understanding": "pending",
+  "independent_human_review": "pending",
+  "reading_actor": "AI assistant; researcher reading not established",
+  "limits": [
+    "Company accounts are not independent corroboration.",
+    "Only selected prose sections were inspected; no raw operational logs, technical replication, videos or image-derived measurements.",
+    "The currently served articles are not immutable archived2019 captures.",
+    "No later implementation or recurrence follow-up was established."
+  ]
+}

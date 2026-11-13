@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-09",
+  "case": "PEP677 public non-adoption decision",
+  "record_type": "Bounded project record, not original field data, a representative study or an AI intervention",
+  "source_records": [
+    {
+      "id": "C1",
+      "source": "PEP677-HISTORICAL-DRAFT",
+      "locator": "Header/Abstract, lines1–25",
+      "observation": "The January21 draft proposes shorter callable-type syntax with existing typing functionality.",
+      "evidence_level": "Author proposal; usability benefit not independently established"
+    },
+    {
+      "id": "C2",
+      "source": "PEP677-HISTORICAL-DRAFT",
+      "locator": "Reference Implementation/Open Issues, lines1150–1193",
+      "observation": "Authors report parser/AST work and tests; runtime behavior is unfinished and diagnostics need work.",
+      "evidence_level": "Pre-decision partial-readiness report, not a verified complete implementation"
+    },
+    {
+      "id": "C3",
+      "source": "PEP677-DECISION",
+      "locator": "Opening acknowledgment",
+      "observation": "The council explicitly acknowledges clarity before declining the proposal.",
+      "evidence_level": "Stated understanding, not comprehension measured for every participant"
+    },
+    {
+      "id": "C4",
+      "source": "PEP677-DECISION",
+      "locator": "Reasons1 and recommendation",
+      "observation": "The notice considers burdens beyond the immediate typing use case, including tooling.",
+      "evidence_level": "Stated decision criterion, not measured costs"
+    },
+    {
+      "id": "C5",
+      "source": "PEP677-DECISION",
+      "locator": "Reasons2–4",
+      "observation": "Existing capability and future language-design commitments enter the stated tradeoff.",
+      "evidence_level": "Public rationale; relative causal weight and private deliberation unknown"
+    },
+    {
+      "id": "C6",
+      "source": "PEP677-CURRENT-STATUS",
+      "related_source": "PEP677-DECISION",
+      "locator": "Status and Resolution metadata",
+      "observation": "The official page records Rejected and links the February10 decision notice.",
+      "evidence_level": "Documented non-adoption decision, not a stalled approved implementation or measured user benefit"
+    }
+  ],
+  "claim_boundaries": {
+    "explicit_non_adoption_after_acknowledged_clarity": "source_documented",
+    "all_participants_understood": "not_established",
+    "fully_ready_approved_but_blocked_counterexample": "not_established; historical source explicitly reports incomplete runtime work",
+    "decision_was_good_for_users": "not_established",
+    "costs_or_time_saved_measured": false,
+    "causal_AI_effect": "not_established",
+    "independent_human_review": "pending",
+    "existing_protocol_changed": false
+  },
+  "comparison": {
+    "prior_case": "review-to-implementation-records-2026-11-07.json",
+    "unit_mismatch": "A pandas error-message edit and a language-syntax proposal differ in scale, stakes and readiness; they are not a matched causal pair.",
+    "research_distinction": "Keep access to a proposal, claimed understanding, readiness, adoption criterion, disposition and outcome evidence separate. Refusal is not automatically a failed handoff.",
+    "measurement_status": "Candidate distinctions for researcher review, not a validated scale or adopted new design"
+  },
+  "original_participant_data_added": false,
+  "researcher_understanding": "pending",
+  "methodological_review": "pending"
+}

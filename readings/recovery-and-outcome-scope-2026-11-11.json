@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-11",
+  "case": "Cloudflare July2,2019 deployment and incident response",
+  "unit": "A routine deployment followed by an exceptional incident; not a typical-day sample or AI intervention",
+  "evidence_type": "Two same-author company accounts, not independent replication",
+  "records": [
+    {
+      "id": "R1",
+      "source": "CF-DETAIL",
+      "locator": "CI tests paragraphs, extracted956–961",
+      "source_observation": "Functional checks passed; excessive CPU use was not tested.",
+      "limit": "Does not establish that a stronger test would prevent every failure."
+    },
+    {
+      "id": "R2",
+      "source": "CF-DETAIL",
+      "locator": "What happened, extracted916–918",
+      "source_observation": "Control-panel access failed; the team used a bypass.",
+      "limit": "Technical access is not the same variable as formal authority. Exclusive approval rights are unknown."
+    },
+    {
+      "id": "R3",
+      "source": "CF-DETAIL",
+      "related_source": "CF-BRIEF",
+      "locator": "Detail916–921; brief861–862",
+      "source_observation": "Reported proposal, execution, traffic recovery and WAF re-enablement are separate events.",
+      "reported_events_UTC": {
+        "proposal": "2019-07-02T14:02:00Z",
+        "execution": "2019-07-02T14:07:00Z",
+        "traffic_CPU_recovery": "2019-07-02T14:09:00Z",
+        "WAF_reenabled": "2019-07-02T14:52:00Z"
+      },
+      "limit": "Minute-resolution self-report; no independent logs or latency attribution."
+    },
+    {
+      "id": "R4",
+      "source": "CF-DETAIL",
+      "locator": "What happened, extracted918–921",
+      "source_observation": "Other protections continued while WAF functionality was restored.",
+      "limit": "Recovery has a scope; actual security losses and customer welfare were not measured here."
+    },
+    {
+      "id": "R5",
+      "source": "CF-DETAIL",
+      "locator": "Follow-up, extracted994–1001",
+      "source_observation": "WAF releases halted; CPU protection marked done; staged rollout remained an action.",
+      "limit": "Status is as reported July12; no later completion or recurrence audit."
+    }
+  ],
+  "candidate_observation_fields": [
+    {
+      "field": "action_and_stage",
+      "question": "What was proposed, decided, executed or reversed?",
+      "avoid": "A single resolved flag"
+    },
+    {
+      "field": "time_and_precision",
+      "question": "What time, timezone, precision and source version supports this stage?",
+      "avoid": "Combining a decision timestamp and a recovery timestamp"
+    },
+    {
+      "field": "authority_and_access",
+      "question": "Who may authorize this action, and can someone actually use the required tool?",
+      "avoid": "Inferring permission from access, title or presence"
+    },
+    {
+      "field": "outcome_scope",
+      "question": "Which service, people, function or goal recovered, and which remained unmet?",
+      "avoid": "Treating one operational proxy as all-purpose success"
+    },
+    {
+      "field": "burden_and_followup",
+      "question": "Who bears the interim cost, and what later evidence confirms a planned change?",
+      "avoid": "Equating an announced fix with verified lasting improvement"
+    }
+  ],
+  "interpretation": "These are candidate recording distinctions for researcher review, not a new adopted instrument. Rollback may be a deliberate action without settling the value of its tradeoff.",
+  "claim_boundaries": {
+    "original_participant_data": false,
+    "causal_AI_effect": "not established",
+    "ordinary_routine_countercase": "not established: this is an exceptional incident",
+    "formal_exclusive_decision_rights": "unknown",
+    "customer_security_or_welfare_effects": "unknown",
+    "long_term_improvement": "not established",
+    "all_participants_understood": "not established",
+    "independent_human_review": "pending",
+    "protocol_changed": false
+  },
+  "relationship_to_prior_work": "November9 separated non-adoption from missing receipt; this unit separates execution from multiple outcome scopes. The evidence-access pilot remains decisions under a supplied rule."
+}

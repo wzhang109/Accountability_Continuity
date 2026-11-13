@@ -1,6 +1,6 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated November 8, 2026**
+**Wenwen (Celine) Zhang · Updated November 13, 2026**
 
 ## From human value to a research question
 
@@ -16,11 +16,18 @@ responsible actually question or change the decision? The studies below address
 different parts of this problem. None establishes a universal mechanism.
 
 The [reading folder](readings/README.md) separates source observations,
-interpretations and questions. The latest unit links a public review request,
-reply and resulting artifact while leaving end-user outcomes unknown. It also
-distinguishes applying a supplied rule from choosing the rule and acceptable
-risk. This is a bounded source case, not a causal mechanism or validated measure.
-Action-specific permission and downstream rework remain questions. Existing branches below
+interpretations and questions. The [non-adoption contrast](readings/non-adoption-and-criteria-2026-11-09.md)
+adds a recorded refusal and a historical readiness check to the earlier request-to-artifact
+trace. It separates an adoption decision from receipt, claimed understanding,
+implementation readiness and relevant outcomes. These are bounded source cases,
+not a matched causal comparison, validated measure or new study design.
+The [November 11 reading](readings/recovery-and-outcome-scope-2026-11-11.md)
+adds candidate records for action stage, time precision, authority versus tool
+access, and the scope of an outcome. These are observation questions for review,
+not a new adopted instrument. The [November 13 editor case](readings/position-and-shortcut-2026-11-13.md)
+adds a check on these distinctions: accuracy, access to the command, and an existing
+shortcut were checked separately. A shared issue status cannot stand in for these
+results. Action-specific permission and downstream rework remain questions. Existing branches below
 retain their original scope; they do not determine every new question.
 
 ## Purpose and evaluation

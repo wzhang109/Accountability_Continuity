@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-09",
+  "sources": [
+    {
+      "id": "PEP677-HISTORICAL-DRAFT",
+      "url": "https://github.com/python/peps/blob/113e4907014a8b201d2367aea9644498eb577b04/pep-0677.rst",
+      "version": {
+        "commit": "113e4907014a8b201d2367aea9644498eb577b04",
+        "date_utc": "2022-01-21T11:03:51Z",
+        "path": "pep-0677.rst",
+        "status_in_file": "Draft",
+        "sha256": "be044a8ae5805a1c1f6ed1efe0252a75eaa1a5109fbfc724a08c3f8f678075a6"
+      },
+      "read_scope": "Header/Abstract lines1–25; Reference Implementation/Open Issues lines1150–1193. Full1253-line file retrieved, not full technical/grammar reading.",
+      "license": "PEP copyright section declares public domain or CC0-1.0, whichever more permissive.",
+      "evidence_type": "Pre-decision author document, not independent implementation validation"
+    },
+    {
+      "id": "PEP677-DECISION",
+      "url": "https://mail.python.org/archives/list/python-dev@python.org/message/NHCLHCU2XCWTBGF732WESMN42YYVKOXB/",
+      "date_displayed": "2022-02-10",
+      "date_limit": "Archive date used without asserting the displayed time is UTC.",
+      "read_scope": "Complete displayed rejection message: opening acknowledgment, numbered reasons1–4, recommendation and council signature. Not full deliberations or responses.",
+      "evidence_type": "Decision-makers public statement; reasons/understanding self-reported, not independent measurements"
+    },
+    {
+      "id": "PEP677-CURRENT-STATUS",
+      "url": "https://peps.python.org/pep-0677/",
+      "checked_date": "2026-11-09",
+      "read_scope": "Metadata/status/resolution and Reference Implementation/Open Issues. Current rendered page, not a frozen2022copy.",
+      "evidence_type": "Official proposal status record"
+    }
+  ],
+  "not_reviewed": [
+    "Prototype code execution or full technical correctness",
+    "All mailing-list or private deliberation",
+    "Individual comprehension, measured tooling/cognitive costs or user outcomes",
+    "Full distribution of governance rights across the project"
+  ],
+  "assistance": "AI-assisted retrieval, version matching, extraction, interpretation, writing and file checks; researcher understanding and independent source/method review pending."
+}

@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-13",
+  "unit": "One VS Code change and linked regression, not a representative sample",
+  "sources": [
+    {
+      "id": "POSITION",
+      "url": "https://github.com/microsoft/vscode/issues/278855",
+      "kind": "Public feature report, 16 issue comments and 71 timeline entries, read via connected GitHub API",
+      "locator": "Issue body; Dec5 workaround discussion; Jan5 closure, Jan7 reopening and second closure; Jan8 scoped test; Jan13 feedback. Current editable records, not immutable archived capture."
+    },
+    {
+      "id": "SCM",
+      "url": "https://github.com/microsoft/vscode/issues/286825",
+      "kind": "Linked public regression report and four comments",
+      "locator": "Jan9 report; workaround comment; closure via #286879; Jan15 user report naming 1.108.1."
+    },
+    {
+      "id": "PR-282152",
+      "url": "https://github.com/microsoft/vscode/pull/282152",
+      "kind": "PR metadata and relevant changed-file patch",
+      "merge_commit": "85b48837f8b6380981cfb24370c41c95c54b41b2",
+      "merged_at_utc": "2026-01-05T19:36:29Z",
+      "locator": "New command, default shortcut, accessibility help"
+    },
+    {
+      "id": "PR-286412",
+      "url": "https://github.com/microsoft/vscode/pull/286412",
+      "kind": "PR metadata and relevant changed-file patch",
+      "merge_commit": "8268e617ba3c04eb7a50f9c508ed44ee37a8b8b0",
+      "merged_at_utc": "2026-01-07T19:01:04Z",
+      "locator": "Tab-aware visible column; no shortcut edit"
+    },
+    {
+      "id": "PR-286586",
+      "url": "https://github.com/microsoft/vscode/pull/286586",
+      "kind": "PR metadata and relevant changed-file patch",
+      "merge_commit": "8823d930ccd94e49d0ffd3f3f6fad57f53e66674",
+      "merged_at_utc": "2026-01-08T19:09:05Z",
+      "locator": "Windows alternate shortcut; editor text focus; PR author reports Windows/NVDA and macOS/VoiceOver testing"
+    },
+    {
+      "id": "PR-286831",
+      "url": "https://github.com/microsoft/vscode/pull/286831",
+      "kind": "PR metadata and relevant changed-file patch",
+      "merge_commit": "8a6ad6ea60f4a471630e102218f45d127318c4ce",
+      "merged_at_utc": "2026-01-10T03:10:31Z",
+      "locator": "Separate default shortcut and accessibility-mode condition"
+    },
+    {
+      "id": "PR-286879",
+      "url": "https://github.com/microsoft/vscode/pull/286879",
+      "kind": "PR metadata and relevant changed-file patch",
+      "merge_commit": "ae6d709afba41369d0b1cd34058192c3f073224e",
+      "merged_at_utc": "2026-01-12T22:33:03Z",
+      "locator": "Backport of shortcut change into release/1.108"
+    },
+    {
+      "id": "TAG-108-ACCESS",
+      "url": "https://github.com/microsoft/vscode/blob/585eba7c0c34fd6b30faac7c62a42050bfbc0086/src/vs/workbench/contrib/codeEditor/browser/accessibility/accessibility.ts#L56-L92",
+      "kind": "1.108.1 tag resolved to immutable commit; source, not binary test",
+      "commit": "585eba7c0c34fd6b30faac7c62a42050bfbc0086",
+      "locator": "Lines 56–92, focused editor, keybinding conditions and visible column"
+    },
+    {
+      "id": "TAG-108-SCM",
+      "url": "https://github.com/microsoft/vscode/blob/585eba7c0c34fd6b30faac7c62a42050bfbc0086/src/vs/workbench/contrib/scm/browser/scm.contribution.ts#L129-L136",
+      "kind": "Source-control declaration at same 1.108.1 commit",
+      "commit": "585eba7c0c34fd6b30faac7c62a42050bfbc0086",
+      "locator": "Lines 129–136, platform-specific source-control shortcut"
+    },
+    {
+      "id": "TAG-109-ACCESS",
+      "url": "https://github.com/microsoft/vscode/blob/bdd88df003631aaa0bcbe057cb0a940b80a476fa/src/vs/workbench/contrib/codeEditor/browser/accessibility/accessibility.ts#L56-L92",
+      "kind": "1.109.0 tag resolved to immutable commit; source, not binary test",
+      "commit": "bdd88df003631aaa0bcbe057cb0a940b80a476fa",
+      "locator": "Lines 56–92, same observed command conditions and column calculation"
+    },
+    {
+      "id": "RELEASE-109",
+      "url": "https://code.visualstudio.com/updates/v1_109#_announce-cursor-position-command",
+      "kind": "Official release description, current served page",
+      "locator": "Release date February 4, 2026; Accessibility improvements > Announce cursor position command."
+    }
+  ],
+  "reading_actor": "AI assistant; researcher reading and understanding not established",
+  "search_scope": "Bounded search of public accessibility issue histories in VS Code, JupyterLab and RStudio; direct RStudio #19378 was unreadable and not used. Selected VS Code because request, changed code, separate verification and cross-task regression are locatable.",
+  "not_read_or_run": [
+    "Attached videos and screenshots, actual editor binaries, private team communications, user telemetry",
+    "No software accessibility audit or reconstruction of internal decision rights"
+  ],
+  "independent_human_review": "pending"
+}

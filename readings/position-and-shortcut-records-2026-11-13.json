@@ -1,0 +1,165 @@
+{
+  "date": "2026-11-13",
+  "unit": "Single routine editor-task change, two linked issue histories",
+  "records": [
+    {
+      "id": "V1",
+      "at": "2025-11-21T20:03:19Z",
+      "stage": "request",
+      "purpose": "Find and communicate the current editor location",
+      "evidence": [
+        {
+          "source": "POSITION",
+          "url": "https://github.com/microsoft/vscode/issues/278855"
+        },
+        {
+          "source": "POSITION",
+          "url": "https://github.com/microsoft/vscode/issues/278855#issuecomment-3583893303"
+        }
+      ],
+      "observation": "A feature request describes indirect ways to obtain line and column. A commenter describes needing the position when switching to an external coding assistant.",
+      "limit": "Reported use, not an observed end-to-end task or a measure of agent impact."
+    },
+    {
+      "id": "V2",
+      "at": "2026-01-05T19:36:29Z",
+      "stage": "merged implementation",
+      "purpose": "Direct position announcement",
+      "evidence": [
+        {
+          "source": "PR-282152",
+          "url": "https://github.com/microsoft/vscode/pull/282152/files"
+        }
+      ],
+      "observation": "Merged changes introduce the position announcement and add it to help. The action binds Ctrl/Cmd+Shift+G and reads the raw column.",
+      "limit": "A code change and an issue closure do not establish accurate speech, reliable access or use."
+    },
+    {
+      "id": "V3",
+      "at": "2026-01-07T10:26:21Z",
+      "stage": "verification failure",
+      "purpose": "Accurate position and keyboard access",
+      "evidence": [
+        {
+          "source": "POSITION",
+          "url": "https://github.com/microsoft/vscode/issues/278855#issuecomment-3718226905"
+        },
+        {
+          "source": "POSITION",
+          "url": "https://github.com/microsoft/vscode/issues/278855#issuecomment-3720197269"
+        }
+      ],
+      "observation": "A collaborator reports an incorrect visible column around tabs through the command palette and a Windows shortcut failure. A second collaborator reports not reproducing the shortcut failure on Windows. The timeline records reopening.",
+      "limit": "Two different checks and differing reports; the exact environment and cause of the divergent shortcut behavior are not established."
+    },
+    {
+      "id": "V4",
+      "at": "2026-01-08T09:00:44Z",
+      "stage": "scoped verification after second merge",
+      "purpose": "Correct visible column, separately from invocation",
+      "evidence": [
+        {
+          "source": "PR-286412",
+          "url": "https://github.com/microsoft/vscode/pull/286412/files"
+        },
+        {
+          "source": "POSITION",
+          "url": "https://github.com/microsoft/vscode/issues/278855#issuecomment-3722883129"
+        }
+      ],
+      "observation": "The January 7 patch corrects visible-column calculation without changing the keybinding. On January 8 a collaborator confirms the column correction and still reports failure of the old shortcut on two Windows machines. The issue was labeled verified.",
+      "limit": "The positive check concerns the column, with shortcut failure separately reported. It does not cover other configurations or all purposes."
+    },
+    {
+      "id": "V5",
+      "at": "2026-01-08T19:09:05Z",
+      "stage": "targeted invocation repair",
+      "purpose": "Invoke the command from the focused editor",
+      "evidence": [
+        {
+          "source": "PR-286586",
+          "url": "https://github.com/microsoft/vscode/pull/286586/files"
+        }
+      ],
+      "observation": "The merged patch adds Alt on Windows and a text-focus condition. The PR author reports testing Windows/NVDA and macOS/VoiceOver.",
+      "limit": "Team test report, not an independent accessibility review; no evidence every configuration worked."
+    },
+    {
+      "id": "V6",
+      "at": "2026-01-09T20:32:18Z",
+      "stage": "regression reported in another task",
+      "purpose": "Keep existing access to source control",
+      "evidence": [
+        {
+          "source": "SCM",
+          "url": "https://github.com/microsoft/vscode/issues/286825"
+        },
+        {
+          "source": "SCM",
+          "url": "https://github.com/microsoft/vscode/issues/286825#issuecomment-3730747621"
+        },
+        {
+          "source": "PR-286831",
+          "url": "https://github.com/microsoft/vscode/pull/286831/files"
+        }
+      ],
+      "observation": "A linked issue attributes the shortcut conflict to the original change. One commenter suggests deleting the new binding. The subsequent default uses a separate key combination and requires accessibility mode and editor text focus.",
+      "limit": "The workaround shows reported adjustment work, not time cost, frequency or the affected population. No private priority-setting or exclusive decision rights are observable."
+    },
+    {
+      "id": "V7",
+      "at": "2026-01-12T22:33:03Z",
+      "stage": "backport and version-specific artifact",
+      "purpose": "Keep both actions available by distinct routes",
+      "evidence": [
+        {
+          "source": "PR-286879",
+          "url": "https://github.com/microsoft/vscode/pull/286879"
+        },
+        {
+          "source": "TAG-108-ACCESS",
+          "url": "https://github.com/microsoft/vscode/blob/585eba7c0c34fd6b30faac7c62a42050bfbc0086/src/vs/workbench/contrib/codeEditor/browser/accessibility/accessibility.ts#L56-L92"
+        },
+        {
+          "source": "TAG-108-SCM",
+          "url": "https://github.com/microsoft/vscode/blob/585eba7c0c34fd6b30faac7c62a42050bfbc0086/src/vs/workbench/contrib/scm/browser/scm.contribution.ts#L129-L136"
+        },
+        {
+          "source": "TAG-109-ACCESS",
+          "url": "https://github.com/microsoft/vscode/blob/bdd88df003631aaa0bcbe057cb0a940b80a476fa/src/vs/workbench/contrib/codeEditor/browser/accessibility/accessibility.ts#L56-L92"
+        },
+        {
+          "source": "RELEASE-109",
+          "url": "https://code.visualstudio.com/updates/v1_109#_announce-cursor-position-command"
+        }
+      ],
+      "observation": "The change was backported. At the 1.108.1 source tag the position command and the platform-specific source-control route have distinct keybindings. The 1.109.0 command source and February release note also show the new position shortcut.",
+      "limit": "Tags and release notes document distribution-related artifacts, not what any installation or end user experienced."
+    },
+    {
+      "id": "V8",
+      "at": "2026-01-15T09:02:37Z",
+      "stage": "user-reported version check",
+      "purpose": "Source-control shortcut in the regression thread",
+      "evidence": [
+        {
+          "source": "SCM",
+          "url": "https://github.com/microsoft/vscode/issues/286825#issuecomment-3753650812"
+        }
+      ],
+      "observation": "A commenter reports a satisfactory check on 1.108.1 in the source-control regression thread.",
+      "limit": "No environment or procedure supplied. Code coexistence and this report do not establish successful cursor announcements for this user, or stable gains across users."
+    }
+  ],
+  "proposed_record": "Record each purpose separately with affected task, invocation route, build, environment, evidence type, observed result, and remaining burden or unknown. Permit positive and negative observations under the same issue status.",
+  "narrow_inference": "An issue marked verified cannot be treated as evidence that all paths or affected purposes worked: V4 records success for visible column and residual failure for keyboard invocation; V6–V8 track a distinct source-control task. This is a bounded logical counterexample to the broad reading of a label, not an estimated causal effect.",
+  "unknowns": [
+    "Full authority and selection process",
+    "Runtime behavior for all OS, keymaps and screen readers",
+    "Quantitative rework and user distribution",
+    "Durable outcome or net improvement",
+    "Causal role of AI"
+  ],
+  "no_protocol_or_code_change": true,
+  "independent_human_review": "pending"
+}

@@ -5,6 +5,15 @@ Organizations are the current primary setting; mechanisms and their transfer
 across contexts remain questions. These notes do not designate a completed
 study, erase earlier education interests or rename existing branches.
 
+- [November 13: what a verified issue establishes](position-and-shortcut-2026-11-13.md)
+- [November 13 task-specific evidence records](position-and-shortcut-records-2026-11-13.json)
+- [November 13 sources and reading scope](sources-2026-11-13.json)
+- [November 11: execution, restoration and outcome scope](recovery-and-outcome-scope-2026-11-11.md)
+- [November 11 records and candidate observation questions](recovery-and-outcome-scope-2026-11-11.json)
+- [November 11 source versions and reading scope](sources-2026-11-11.json)
+- [November 9: a clear proposal and a decision not to adopt](non-adoption-and-criteria-2026-11-09.md)
+- [November 9 records and comparison limits](non-adoption-records-2026-11-09.json)
+- [November 9 source versions and reading scope](sources-2026-11-09.json)
 - [November 7: a review request, an implemented change and a rule choice](review-to-implementation-2026-11-07.md)
 - [November 7 linked records and claim limits](review-to-implementation-records-2026-11-07.json)
 - [November 7 primary-source scope](sources-2026-11-07.json)

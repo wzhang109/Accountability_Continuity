@@ -7,6 +7,27 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## November 13, 2026 — Recording what was verified
+
+Added a bounded public reading of a VS Code accessibility change and its linked
+shortcut regression. The record distinguishes corrected output, access through
+a particular route, and continued access to a different task. Merged patches,
+versioned source, and a limited user report support different claims. No editor
+retest, original data, AI effect, simulation run or protocol change. AI assisted
+source work and writing; researcher understanding and independent source/method
+review are pending. Published November 13 with the November 9 and 11 readings.
+
+## November 11, 2026 — Separating action from scoped outcomes
+
+Added a bounded company-incident reading, five source records and candidate
+observation questions. Decision, execution, tool access, scoped restoration and
+follow-up status remain separate; no general success score or new protocol is
+adopted. The source is an exceptional incident, not an ordinary-day countercase
+or independent causal evidence. The existing simulation audit and November 9
+reading are preserved. AI assisted source work, reconciliation and
+writing; researcher understanding and independent review remain pending.
+Originally prepared November 11; published November 13.
+
 ## November 9, 2026 — Auditing the simulations and fictional checks
 
 Reviewed the probability model and its sampling and estimation code separately
@@ -18,6 +39,17 @@ gives the verification results and matched-sample RMSE comparisons. Historical
 model assumptions and the current participant-study proposal remain distinct;
 no participants or original organizational outcomes were added. AI assisted
 the review, corrections, tests and documentation.
+
+## November 9, 2026 — A documented decision not to adopt
+
+Added a bounded PEP 677 reading, a pinned pre-decision draft and six source
+records. The case separates recorded non-adoption from missing receipt or
+unverified understanding, while retaining partial-readiness and outcome limits.
+It is a process contrast, not a matched causal counterexample or an AI effect.
+Current human-value motivation, philosophical documents and existing protocols
+remain in place. AI assisted version checking, source work and writing;
+researcher understanding and independent source/method review remain pending.
+Originally prepared November 9; published November 13.
 
 ## November 8, 2026 — Clarifying the research starting point
 

@@ -1,6 +1,10 @@
 # Research status and contributions
 
-**Research update November 9, 2026 · Wenwen (Celine) Zhang**
+**Research update November 13, 2026 · Wenwen (Celine) Zhang**
+
+The November 9, 11 and 13 reading updates were published together on November 13. The
+simulation audit below was already present on remote main at the baseline read;
+its reported runs were not repeated in this documentation-only unit.
 
 The [November 9 simulation audit](simulations/override_identification_v2/VERIFICATION_2026-11-09.md)
 records implementation corrections and reproduction checks. It adds no human
@@ -33,7 +37,10 @@ of that concern.
 
 Organizations are the current primary setting for exploring recurring problems
 of organizing. This is a provisional direction, not a final theory or a claim
-that coordination problems are invariant. The [November 7 public-record reading](readings/review-to-implementation-2026-11-07.md)
+that coordination problems are invariant. The [November 9 non-adoption reading](readings/non-adoption-and-criteria-2026-11-09.md)
+adds a dated decision and a pinned pre-decision draft. It distinguishes explicit
+refusal from missing uptake without claiming universal understanding, complete
+readiness or beneficial outcomes. The [November 7 public-record reading](readings/review-to-implementation-2026-11-07.md)
 links a specific review request, reply and compatible merged artifact, with
 release evidence for the broader feature. End-user outcomes and causal
 explanations remain unknown. Applying a supplied rule and choosing a rule's
@@ -292,3 +299,37 @@ remain pending. The cumulative October 27, October 29, November 3, November 5
 and November 7 reading updates were published on November 8, 2026. Earlier
 preparation entries below and above retain their dated status; publication is
 not independent source or methodological approval.
+
+## November 9 non-adoption contrast prepared for review
+
+Added six source records for PEP 677, including a pinned January 21, 2022 draft
+and an official decision notice. Claimed understanding, partial prototype
+readiness, adoption criteria and recorded disposition are separated. The
+stricter fully-ready-but-blocked comparison remains unestablished. This is not
+a causal comparison with pandas, original field data or an AI effect. Current
+human-value framing, philosophy notes, early public log history and all study
+code are retained. The remote deletion already present in the baseline is not
+reintroduced. AI assisted source/version work, interpretation and writing;
+researcher understanding and independent source/method review remain pending.
+Originally prepared for review on November 9; published in the November 13 update.
+
+## November 11 scoped-outcome reading prepared for review
+
+Added five located records and candidate observation questions separating action
+stage, technical access, scoped outcomes and follow-up status. The sources are
+two same-author company accounts of an exceptional incident; no independent
+operational logs, ordinary-day countercase, participant data or causal AI effect.
+The new remote simulation audit and all study/simulation files are retained
+byte for byte. The November 13 publication also includes the November 9 reading. AI assisted
+source work and writing; researcher understanding and independent source/method
+review remain pending.
+
+## November 13 verification-scope reading prepared for review
+
+Eight located records link a routine VS Code change to distinct checks of column
+accuracy, invocation, and a source-control shortcut. The record includes both
+a positive and a negative check under one issue status, a release-branch backport, tagged
+source and a limited user report. It does not establish a runtime result for all
+users, net improvement, decision rights or any AI effect. Existing study and
+simulation files were preserved byte for byte. AI assisted reading and writing;
+researcher understanding and independent source/method review remain pending.

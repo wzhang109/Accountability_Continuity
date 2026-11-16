@@ -20,6 +20,8 @@ Imagine a team building a dataset. Its goal is to produce reliable classificatio
 
 The cases, allocation code, and synthetic analysis checks are in place. No participants have taken part. The comparison concerns decisions under a given rule; it cannot tell us how a team should choose the rule, or whether someone is thinking independently.
 
+I’ve also written about [when an extra review step might help, and what a review tool could look like](docs/positive-friction-and-product-directions.md). That’s a separate idea from the first comparison.
+
 ## Start here
 
 1. [Research questions](RESEARCH_PROGRAM.md) — how the organizational, measurement, and learning questions fit together.

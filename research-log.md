@@ -7,6 +7,26 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## November 17, 2026 — When the clock starts
+
+Read two original emergency intake studies and rechecked the public Wikipedia
+filing-to-closure definition. The Boston observer made an earlier interval
+visible, with routes that bypassed it. The UK study helps distinguish
+patient-visible activity, unknown waits and total journey time. The candidate
+work fields distinguish entry, acceptance, elapsed time and active effort.
+AI assisted extraction, interpretation and drafting. Researcher reading and
+independent source and methods review are pending.
+
+## November 15, 2026 — Permission and work in Wikipedia patrol
+
+Read dated policy and deployment records, a tool update, a survey and a
+log-analysis summary for one routine workflow. The record distinguishes rule
+setting, grants, exceptions, access to related edits, reported effort and elapsed
+case time. It proposes evidence to collect about the role doing the work, the
+stage where work happens, and active time. Source extraction, interpretation and
+drafting received AI assistance. Researcher reading and independent review are
+pending.
+
 ## November 13, 2026 — Recording what was verified
 
 Added a bounded public reading of a VS Code accessibility change and its linked

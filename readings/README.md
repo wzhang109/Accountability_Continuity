@@ -5,6 +5,12 @@ Organizations are the current primary setting; mechanisms and their transfer
 across contexts remain questions. These notes do not designate a completed
 study, erase earlier education interests or rename existing branches.
 
+- [November 17: waiting before the first recorded step](before-the-clock-starts-2026-11-17.md)
+- [November 17 timing evidence and candidate fields](before-the-clock-starts-records-2026-11-17.json)
+- [November 17 sources and reading scope](sources-2026-11-17.json)
+- [November 15: IP access and everyday patrol work](ip-access-and-patrol-work-2026-11-15.md)
+- [November 15 role, task and outcome evidence](ip-access-and-patrol-work-records-2026-11-15.json)
+- [November 15 sources and reading scope](sources-2026-11-15.json)
 - [November 13: what a verified issue establishes](position-and-shortcut-2026-11-13.md)
 - [November 13 task-specific evidence records](position-and-shortcut-records-2026-11-13.json)
 - [November 13 sources and reading scope](sources-2026-11-13.json)

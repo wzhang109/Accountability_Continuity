@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-17",
+  "scope": "Bounded primary-source reading on role handoffs and measurement windows. Public aggregate evidence only.",
+  "sources": [
+    {
+      "id": "HOUSTON",
+      "citation": "Houston C, Sanchez LD, Fischer C, Volz K, Wolfe R. Waiting for Triage: Unmeasured Time in Patient Flow. West J Emerg Med. 2015;16(1):39–42. Online December 8, 2014.",
+      "doi": "10.5811/westjem.2014.11.22824",
+      "url": "https://escholarship.org/uc/item/4gj1g690",
+      "alternate_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4307723/",
+      "version_and_scope": "Journal record, institutional copy text and PMC full text. Checked Methods, Results, Discussion and Limitations, notably p. 40.",
+      "evidence_type": "Original single-site observational report written by the site researchers.",
+      "access_limit": "No encounter-level data, timestamp semantics within formal triage, actor work intervals or access logs verified. Report gives inconsistent lower bound for wait range and different threshold phrasing; range and threshold-specific proportions omitted."
+    },
+    {
+      "id": "SWANCUTT",
+      "citation": "Swancutt D, Joel-Edgar S, Allen M, et al. Not all waits are equal: an exploratory investigation of emergency care patient pathways. BMC Health Serv Res. 2017;17:436.",
+      "doi": "10.1186/s12913-017-2349-2",
+      "url": "https://link.springer.com/article/10.1186/s12913-017-2349-2",
+      "version_and_scope": "Published June 24, 2017. Publisher text, Methods (Data collection and Analysis), Results (Differences between sites and Reasons for waits), and Discussion (Summary of main findings).",
+      "evidence_type": "Original multicentre observational study, with separate patient/public discussion workshop.",
+      "access_limit": "Daytime weekday convenience sample, four UK hospital sites and specified presentations. Activity is patient-facing or visible to the patient. No staff work logs or causal comparison of site designs reanalysed."
+    },
+    {
+      "id": "WIKIMEDIA",
+      "citation": "Wikimedia Foundation public analysis task T415103.",
+      "url": "https://phabricator.wikimedia.org/T415103",
+      "version_and_scope": "Public original team analysis ticket. Rechecked February 6, 2026 team comment on case durations and earlier description of opening, closure and repeat opening.",
+      "evidence_type": "First-party public report on operational records.",
+      "access_limit": "The analysis reports aggregate filing-to-closure intervals. This reading did not access restricted records or observe individual pre-filing work."
+    }
+  ],
+  "review_status": "AI-assisted reading. Researcher understanding, independent human source check and methods review pending."
+}

@@ -1,6 +1,6 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated November 13, 2026**
+**Wenwen (Celine) Zhang · Updated November 15, 2026**
 
 ## From human value to a research question
 
@@ -29,6 +29,11 @@ adds a check on these distinctions: accuracy, access to the command, and an exis
 shortcut were checked separately. A shared issue status cannot stand in for these
 results. Action-specific permission and downstream rework remain questions. Existing branches below
 retain their original scope; they do not determine every new question.
+
+The [English Wikipedia patrol case](readings/ip-access-and-patrol-work-2026-11-15.md)
+adds role and permission at the time of work to the proposed observations. It asks
+who defines eligibility, who can make an exception, and who does the investigation.
+Elapsed case time and time actively spent on the task require separate evidence.
 
 ## Purpose and evaluation
 

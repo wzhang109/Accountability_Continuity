@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Research update November 13, 2026 · Wenwen (Celine) Zhang**
+**Research update November 17, 2026 · Wenwen (Celine) Zhang**
 
 The November 9, 11 and 13 reading updates were published together on November 13. The
 simulation audit below was already present on remote main at the baseline read;
@@ -53,6 +53,19 @@ A document-only sufficiency case or understood-but-unresolved conflict remains
 to be established; availability, feasibility and authorization are proposed
 observation fields, not a validated scale. The [October 23 reading](readings/novice-risk-work-2026-10-23.md)
 and earlier education work are preserved.
+
+The [November 15 patrol reading](readings/ip-access-and-patrol-work-2026-11-15.md)
+follows the Foundation rule, English Wikipedia deployment and local access,
+and compares reported effort with filing and closure evidence. The proposed
+observations add role-based permission and separate elapsed time from active
+effort. Case-level responsibility and the change in total labor remain open.
+
+The [November 17 timing reading](readings/before-the-clock-starts-2026-11-17.md)
+uses published emergency care observations to test which events can be seen
+before formal intake. In a proposed work record, queue entry, actual
+acceptance and decision are separate events. Elapsed time and active work by
+role require separate evidence. The Wikipedia case-duration analysis covers
+filing to closure.
 
 This is AI-assisted source work; researcher understanding, independent source
 review and methodological judgment remain pending. It adds no original data,

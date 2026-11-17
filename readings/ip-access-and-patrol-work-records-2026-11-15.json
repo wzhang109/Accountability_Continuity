@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-15",
+  "case": "English Wikipedia temporary accounts and the routine task of investigating potentially abusive edits",
+  "unit_of_reading": "One workflow and linked public decisions, implementation and follow-up. Survey outcomes and log outcomes refer to different observational units.",
+  "records": [
+    {
+      "id": "DECIDE",
+      "task": "Eligibility and exception",
+      "roles": "Foundation Trust & Safety Product team sets the proposed baseline enforcement. Stewards may grant qualifying exceptions.",
+      "scope": "2025-05 decision record",
+      "sources": [
+        "WMF-DECISION",
+        "WMF-POLICY"
+      ],
+      "support": "The recorded rule keeps an exception path. Repeated overrides were named as a possible reason to reconsider the rule.",
+      "unknown": "Whether exceptions accumulated or later changed the policy."
+    },
+    {
+      "id": "EXECUTE",
+      "task": "Deploy thresholds and temporary accounts",
+      "roles": "Engineering and operations implement configuration. A team tester reports localhost checks of the threshold change.",
+      "scope": "May 22 and 31, 2025. English Wikipedia deployment November 4, 2025 UTC.",
+      "sources": [
+        "THRESHOLD-BACKPORT",
+        "ENWIKI-DEPLOY"
+      ],
+      "support": "Threshold backport and site-specific feature deployment have different dated operations records.",
+      "unknown": "First live use, and whether all variants of the permissions path worked for all roles."
+    },
+    {
+      "id": "GRANT",
+      "task": "Authorize an eligible non-admin",
+      "roles": "Applicant submits the request and opts in after a grant. A local administrator assesses demonstrated need and suitability. A steward is the route for exceptions to Foundation minimums.",
+      "scope": "Later Foundation and local policy snapshots",
+      "sources": [
+        "WMF-POLICY",
+        "ENWIKI-PROCEDURE"
+      ],
+      "support": "Policy gives a formal access path and distinguishes discretion over local need from the power to waive a minimum.",
+      "unknown": "An individual grant, refusal, transfer, wait, or frequency. The policy snapshots postdate feature deployment."
+    },
+    {
+      "id": "INVESTIGATE",
+      "task": "Look up related edits",
+      "roles": "An eligible user can invoke the February view from contributions. A shared IP can connect records across temporary accounts.",
+      "scope": "February 2026 product update",
+      "sources": [
+        "PATROL-TOOLS",
+        "WMF-POLICY"
+      ],
+      "support": "The team describes a restricted route for grouping edit history. The IP association supplies a clue.",
+      "unknown": "Whether the same individual used the accounts, whether conduct was abusive, and effects on work or error."
+    },
+    {
+      "id": "REPORT-WORK",
+      "task": "Describe the experience of investigating",
+      "roles": "Volunteer respondents in the Foundation’s two English Wikipedia recruitment pools.",
+      "scope": "April 2026 post-deployment survey",
+      "sources": [
+        "PATROL-SURVEY"
+      ],
+      "support": "Open-text accounts describe both extra tracing and improvements in finding connections. Tool use and effort were self-reported. The page 6 totals conflict, and the report documents self-report error on an unavailable route.",
+      "unknown": "Total labor, representative prevalence, actual tool usage, and change from a measured baseline."
+    },
+    {
+      "id": "OBSERVE-QUEUE",
+      "task": "Measure visible report and closure events",
+      "roles": "Foundation research team analyzes filing and case closure and tracks volume in another monitoring venue.",
+      "scope": "February 6, 2026 public project summary",
+      "sources": [
+        "PATROL-LOGS"
+      ],
+      "support": "The summary reports no defensible attribution of case duration to rollout and no increased report rate in the other venue based on its analysis.",
+      "unknown": "Pre-filing work, time actively handling a case, wait by role, and causal effects."
+    }
+  ],
+  "proposed_observation": {
+    "status": "proposed for discussion; independent source and method review pending",
+    "context": [
+      "specific task",
+      "entry point",
+      "deployment and policy revision",
+      "project environment",
+      "actor's permitted access at the time"
+    ],
+    "handoff": [
+      "role with access",
+      "role that can grant or override",
+      "role actually acting",
+      "action or decision",
+      "stage and when the clock starts"
+    ],
+    "outcomes": [
+      "elapsed waiting",
+      "active work",
+      "work before filing",
+      "resolved or unresolved status with scope",
+      "privacy and error outcomes where observed"
+    ],
+    "observational_limit": "No actual IP address, contributor identifier or private case is included. Nonpublic reveal logs were not inspected."
+  }
+}

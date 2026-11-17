@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-15",
+  "unit": "English Wikipedia temporary-account rollout, role-dependent evidence access and patrol work",
+  "sources": [
+    {
+      "id": "WMF-DECISION",
+      "url": "https://www.mediawiki.org/w/index.php?oldid=7646119",
+      "kind": "Foundation technical decision",
+      "locator": "Decision and Considerations",
+      "event_date": "2025-05-21",
+      "limit": "Stated enforcement and exception choice. Repeated override burden is a hypothetical reason to revisit the policy."
+    },
+    {
+      "id": "THRESHOLD-BACKPORT",
+      "url": "https://phabricator.wikimedia.org/T393615",
+      "kind": "Engineering issue, operations log and team QA report",
+      "locator": "Gerrit 1148827, operations finish May 22 at 07:32:45 UTC, localhost QA May 31",
+      "event_date": "2025-05-22/2025-05-31",
+      "limit": "Supports scheduled rollout and scoped QA, with no case-level use audit."
+    },
+    {
+      "id": "ENWIKI-DEPLOY",
+      "url": "https://phabricator.wikimedia.org/T409079",
+      "kind": "Engineering issue and operations log",
+      "locator": "Gerrit 1200083, completion Nov 4 at 08:14:44 UTC, closure Nov 5 at 15:02:10 UTC",
+      "event_date": "2025-11-04/2025-11-05",
+      "limit": "Supports production configuration deployment, not the timestamp of first live use."
+    },
+    {
+      "id": "WMF-POLICY",
+      "url": "https://foundation.wikimedia.org/w/index.php?oldid=568135",
+      "kind": "Foundation policy",
+      "locator": "Purpose, use and disclosure, local access, exceptions, Notes 1–2",
+      "event_date": "2026-04-01 revision",
+      "limit": "Subsequent policy snapshot. Review is bounded to access rules and scope."
+    },
+    {
+      "id": "ENWIKI-PROCEDURE",
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1380433483",
+      "kind": "Local English Wikipedia procedural policy",
+      "locator": "Introduction and Criteria for granting",
+      "event_date": "2026-10-15 revision",
+      "limit": "The later revision describes local discretion. Does not establish deployment-day text or individual grant outcomes."
+    },
+    {
+      "id": "PATROL-TOOLS",
+      "url": "https://www.mediawiki.org/w/index.php?oldid=8567311#February_2026:_Improvements_to_the_patroller_tooling",
+      "kind": "Foundation product team update",
+      "locator": "February 2026 section, Special:Contributions related-account view",
+      "event_date": "2026-02 section, 2026-08-19 revision",
+      "limit": "Team report of the feature and its rationale. No independent test or adoption rate."
+    },
+    {
+      "id": "PATROL-SURVEY",
+      "url": "https://commons.wikimedia.org/wiki/File:(Public_release)_WE_4.8.3_Post-TA_enwiki_patroller_sentiments_-_Findings.pdf",
+      "kind": "Foundation published survey report, project-team research",
+      "locator": "PDF pp. 2–6, 13, 17–24 and 26, one-based page numbers",
+      "event_date": "Fielded 2026-04-14 to 2026-04-23, released on Commons 2026-06-01",
+      "limit": "Public PDF text accessed through the original-file link. Finder gives a 26-page document. File page reports SHA-1 dc1569c17782240794a464df311c0a378fdc5fc7. Direct download failed and bytes were not independently hashed. No baseline survey. Page 6 totals disagree internally, and page 13 notes reports of using a feature unavailable at fielding."
+    },
+    {
+      "id": "PATROL-LOGS",
+      "url": "https://phabricator.wikimedia.org/T415103",
+      "kind": "Foundation team’s reported analysis of administrative logs",
+      "locator": "Description and comments on January 29, February 6 and February 23, 2026",
+      "event_date": "2026-02-06 public summary",
+      "limit": "Reports filing-to-closure time at Sockpuppet Investigations and volume at Administrator Intervention against Vandalism. The fuller deck was marked for WMF use. No raw-log reproduction or private-deck access."
+    }
+  ],
+  "other_access": [
+    {
+      "url": "https://en.wikipedia.org/w/index.php?oldid=1383453176",
+      "scope": "Public request instructions read. No individual decision was used."
+    },
+    {
+      "url": "https://phabricator.wikimedia.org/T425468",
+      "scope": "Index excerpt only. Direct read timed out. No underlying time-to-revert numbers used."
+    },
+    {
+      "url": "https://phabricator.wikimedia.org/T414966",
+      "scope": "Direct read failed. February feature evidence is attributed to the official team update."
+    }
+  ],
+  "contribution": "AI assisted source location, extraction, interpretation, drafting and structural checks. Researcher reading and independent human source/method checking remain pending."
+}

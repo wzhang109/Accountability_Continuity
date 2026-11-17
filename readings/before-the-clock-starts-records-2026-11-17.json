@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-17",
+  "records": [
+    {
+      "id": "B01",
+      "source_id": "HOUSTON",
+      "locator": "Methods, p. 40",
+      "evidence_type": "reported_workflow",
+      "observed_or_reported": "When triage stations were occupied, an entrance observer entered arrival and presenting complaint in a pre-triage dashboard record. Formal triage time was recorded in the ordinary way.",
+      "roles": ["entrance observer", "receiving triage function"],
+      "unknown": "Viewing or acceptance by a particular recipient, decision authority, and active time in either role."
+    },
+    {
+      "id": "B02",
+      "source_id": "HOUSTON",
+      "locator": "Methods, p. 40",
+      "evidence_type": "reported_workflow_exception",
+      "observed_or_reported": "EMS radio calls went to a bed where physician and nursing staff received the patient. Other arrivals typically went directly to triage when available. The study treats direct routes as arrival and triage at the same time.",
+      "roles": ["EMS", "physician", "nursing staff", "receiving triage function"],
+      "unknown": "Route-specific active time and fine timing below the study's recorded resolution."
+    },
+    {
+      "id": "B03",
+      "source_id": "HOUSTON",
+      "locator": "Results and Limitations, p. 40",
+      "evidence_type": "published_aggregate",
+      "observed_or_reported": "Single Boston site, study period November 2012 to October 2013. Interval is time from captured arrival to ordinary triage timestamp for visits that waited.",
+      "visits_total": 50576,
+      "visits_waiting": 7795,
+      "waiting_share_reported_pct": 15.4,
+      "conditional_median_minutes": 11,
+      "conditional_iqr_minutes": [5, 19],
+      "unknown": "Staff effort, causal factors, patient outcomes, and whether the timing carries across sites."
+    },
+    {
+      "id": "B04",
+      "source_id": "SWANCUTT",
+      "locator": "Methods: Data collection and Analysis; Results",
+      "evidence_type": "published_observation_protocol",
+      "observed_or_reported": "For 108 selected patients, minute-by-minute records distinguish patient-visible activity, waiting with known reasons and waiting with reasons unknown to the patient.",
+      "unknown": "Any concurrent work beyond the patient's view or total effort by role."
+    },
+    {
+      "id": "B05",
+      "source_id": "SWANCUTT",
+      "locator": "Results: Differences between sites; Discussion: Summary of main findings",
+      "evidence_type": "published_descriptive_contrast",
+      "observed_or_reported": "Hospital C had the greatest initial wait in this comparison and the authors report a shorter average total journey at the single-entry site.",
+      "unknown": "Whether site design caused either result, and whether patients with different pathways would show the same timing."
+    },
+    {
+      "id": "B06",
+      "source_id": "WIKIMEDIA",
+      "locator": "T415103, February 6, 2026, Case durations",
+      "evidence_type": "first_party_aggregate",
+      "observed_or_reported": "The team used first filing to a recorded closure for the public case-duration analysis. The task records complications from repeated openings or closures.",
+      "unknown": "Before-filing onset and effort, recipient acceptance, and active time or waiting within the interval."
+    }
+  ],
+  "candidate_observation_fields": [
+    {"field": "first_notice", "definition": "First observable detection event and its source. Unknown if no record supports onset."},
+    {"field": "queue_entry", "definition": "Time and role when the matter becomes available to a receiving work queue. Use a separate direct route when no queue applies."},
+    {"field": "recipient_acceptance", "definition": "Explicit time and role of acceptance, when observable. Visibility or access alone does not establish acceptance."},
+    {"field": "decision_or_disposition", "definition": "Time, authority and action or outcome evidence, including justified closure without formal filing where documented."},
+    {"field": "active_effort_by_role", "definition": "Observed or independently timed work intervals with a stated collection method. Record overlapping actors separately and report unknown where work is unobserved."},
+    {"field": "elapsed_by_stage", "definition": "Time between named endpoints, with precision and missingness. Elapsed apparent waiting can contain active work performed elsewhere."}
+  ],
+  "limits": "The cross-setting comparison tests how records expose stages. These are candidate fields, not a validated instrument. No individual records or clinical recommendations."
+}

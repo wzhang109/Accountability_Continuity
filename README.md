@@ -4,11 +4,11 @@
 
 ## Why I started
 
-I began thinking about AI and human capability while studying economics at the University of San Francisco. I was cautiously optimistic about what people might do with AI and surprised by how quickly its capabilities changed. I kept coming back to the person doing the work. **Under what conditions does working with AI help someone develop their own judgment?**
+As AI takes on more tasks we once thought only people could do, **what does it mean to be human, and what do we value about being human?** For me, human flourishing includes having room to think, to learn, and to decide what matters to us. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) explore why those things matter even when a machine can do a task well.
 
-At the University of Chicago, I checked AI-generated industry codes against official definitions. To decide whether a code fit, I had to compare a firm’s product description with what the category actually covered. Working through that distinction gave me something to look for in the next case. If an assistant supplies the code, what helps the reviewer both assess it today and learn to recognize a similar case tomorrow?
+When I was studying economics at the University of San Francisco, I was cautiously optimistic about what AI might help people do. I hadn’t expected its capabilities to change so quickly. Over time, I found myself thinking about a student who finishes an assignment faster with AI. The time saved is real. If the purpose of the assignment was to learn how to solve the next problem, though, I’d also want to know what the student had a chance to work out for themselves.
 
-That question is part of a broader interest in what people value about doing something themselves, even when a machine can do it well. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) trace that interest.
+At the University of Chicago, I encountered a version of that question in my own work. I checked AI-generated industry codes against official definitions. To decide whether a code fit, I had to compare what a firm actually made with what the category covered. Working through a close call helped me see what to look for in the next case. That experience gave my research a starting point. **Under what conditions does working with AI help people develop their own judgment?**
 
 ## Where I am looking now
 

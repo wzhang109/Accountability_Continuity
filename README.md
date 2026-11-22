@@ -4,9 +4,13 @@
 
 ## Why I started
 
-As AI takes on more tasks we once thought only people could do, **what does it mean to be human, and what do we value about being human?** For me, human flourishing includes having room to think, to learn, and to decide what matters to us. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) explore why those things matter even when a machine can do a task well.
+As AI takes on more tasks we once thought only people could do, **what does it mean to be human, and what do we value about being human?**
 
-When I was studying economics at the University of San Francisco, I was cautiously optimistic about what AI might help people do. I hadn’t expected its capabilities to change so quickly. Over time, I found myself thinking about a student who finishes an assignment faster with AI. The time saved is real. If the purpose of the assignment was to learn how to solve the next problem, though, I’d also want to know what the student had a chance to work out for themselves.
+When I was studying economics at the University of San Francisco, I was cautiously optimistic about what AI might help people do. I hadn’t expected its capabilities to change so quickly. I can understand both the curiosity and the fear in debates about AI replacing people or even threatening human survival. I take AI safety and governance seriously, including the question of who gets to decide what we entrust to these systems. My own starting point is a hope. Working with AI could give people more room to reflect, learn, and connect with one another. I want to understand when that actually happens.
+
+I care about empathy because of what it means to the person on the receiving end. AI might help me find the words to reach out to a friend. What matters to my friend may be that I listen to the answer, let it change my understanding, and check in again tomorrow. Even if a system can draft a thoughtful message, there is still value in my learning to be more attentive. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) explore this broader interest in human flourishing.
+
+Learning raises a similar question. A student might use AI to discover a second way to solve a problem. Beyond finishing the assignment faster, can they explain why that approach works and recognize when to use it again?
 
 At the University of Chicago, I encountered a version of that question in my own work. I checked AI-generated industry codes against official definitions. To decide whether a code fit, I had to compare what a firm actually made with what the category covered. Working through a close call helped me see what to look for in the next case. That experience gave my research a starting point. **Under what conditions does working with AI help people develop their own judgment?**
 

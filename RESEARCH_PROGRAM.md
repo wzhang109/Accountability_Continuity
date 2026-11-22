@@ -1,6 +1,6 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated November 15, 2026**
+**Wenwen (Celine) Zhang · Updated November 21, 2026**
 
 ## From human value to a research question
 
@@ -34,6 +34,14 @@ The [English Wikipedia patrol case](readings/ip-access-and-patrol-work-2026-11-1
 adds role and permission at the time of work to the proposed observations. It asks
 who defines eligibility, who can make an exception, and who does the investigation.
 Elapsed case time and time actively spent on the task require separate evidence.
+
+## What would count as helping someone develop judgment?
+
+An AI assistant might bring an option to mind that a reviewer would have overlooked. Its first suggestion might also narrow what the reviewer thinks to look for. A reviewer could check every fact behind a proposed industry code and still miss a better-fitting category. I would like to ask reviewers which alternatives they considered and which detail made a difference. That would tell us more about the reasons they can articulate than a final approval alone. It would still leave open what they considered but never mentioned.
+
+The [evidence-access pilot](studies/organizational-coordination/evidence-access-pilot/README.md) addresses a narrower question. The same source passage could help someone spot a contradiction or make a recommendation look as though it has already been checked. I would compare errors caught, sound recommendations returned, and the reasons reviewers give. Both interfaces supply a recommendation, so a study of which alternatives people generate for themselves would need a separate comparison.
+
+I also care about what people carry into the next decision. The [advice-timing study](studies/ai-advice-timing/DRAFT_PROTOCOL.md) would give participants new cases to judge without AI about a week later. In a workplace, learning may also depend on who hears about a correction. With a partner team, I would like to follow a case from the first sign-off through any later revision. Who noticed the problem, who could act on it, and did the explanation reach the person likely to face the next case?
 
 ## Purpose and evaluation
 

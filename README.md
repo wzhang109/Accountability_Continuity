@@ -4,9 +4,11 @@
 
 ## Why I started
 
-As AI takes on more tasks we once thought only people could do, **what does it mean to be human, and what do we value about being human?** This question led me to study human flourishing: what kinds of environments give people room to think, learn, and decide what matters to them?
+I began thinking about AI and human capability while studying economics at the University of San Francisco. I was cautiously optimistic about what people might do with AI and surprised by how quickly its capabilities changed. I kept coming back to the person doing the work. **Under what conditions does working with AI help someone develop their own judgment?**
 
-Consider a student who finishes an assignment faster with AI. The time saved may be real. Whether the student learned to solve the next problem is a different question. Which outcome matters depends on why we gave the assignment in the first place. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) explain where this question came from. It still guides the project.
+At the University of Chicago, I checked AI-generated industry codes against official definitions. To decide whether a code fit, I had to compare a firm’s product description with what the category actually covered. Working through that distinction gave me something to look for in the next case. If an assistant supplies the code, what helps the reviewer both assess it today and learn to recognize a similar case tomorrow?
+
+That question is part of a broader interest in what people value about doing something themselves, even when a machine can do it well. My [early philosophical essay](the-gap-that-cant-close.md) and [reflection on purpose and judgment](docs/purpose-judgment-and-accountability.md) trace that interest.
 
 ## Where I am looking now
 
@@ -22,6 +24,10 @@ The cases, allocation code, and synthetic analysis checks are in place. No parti
 
 I’ve also written about [when an extra review step might help, and what a review tool could look like](docs/positive-friction-and-product-directions.md). That’s a separate idea from the first comparison.
 
+## From proposal to pilot
+
+On November 15, 2026, Foresight Institute invited me to pitch *Easier to Check or Easier to Believe? Putting Evidence Beside AI Recommendations* at its Vision Weekend Idea Grant Competition. I’m exploring small grants and fellowships to run the pilot. I’d also like to hear from people who review AI-drafted work. When you flag a mistake, who can change the decision? If a colleague catches something you missed, how do you find out?
+
 ## Start here
 
 1. [Research questions](RESEARCH_PROGRAM.md) — how the organizational, measurement, and learning questions fit together.
@@ -36,4 +42,4 @@ I’ve also written about [when an extra review step might help, and what a revi
 - **Learning.** A [separate three-group proposal](studies/ai-advice-timing/DRAFT_PROTOCOL.md) asks whether seeing AI advice before or after forming an initial judgment affects later performance without AI. The [youth design](studies/youth-advice-workflow/README.md) is a further proposal. Neither study has participant results.
 - **How the ideas developed.** The [research log](research-log.md) records changes in thinking. The [early index proposal](identification-strategy.md) is preserved as a historical design. It is not a validated measure of responsibility.
 
-My background is in development economics and public policy. The questions and research motivation are mine; AI tools contributed substantially to design, code, and writing. I welcome independent methods review and feedback from people who review AI-drafted work: does the proposed task resemble a decision you actually face?
+My background is in development economics and public policy. The questions and research motivation are mine; AI tools contributed substantially to design, code, and writing. I welcome feedback on whether the proposed comparisons can answer the questions they pose.

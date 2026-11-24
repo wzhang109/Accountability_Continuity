@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-19",
+  "issue": "https://github.com/pandas-dev/pandas/issues/56700",
+  "timeline": "https://api.github.com/repos/pandas-dev/pandas/issues/56700/timeline?per_page=100",
+  "pr": "https://github.com/pandas-dev/pandas/pull/57175",
+  "approval": "https://github.com/pandas-dev/pandas/pull/57175#pullrequestreview-1854486976",
+  "collections_scope": {
+    "issue_comments": 2,
+    "timeline": 10,
+    "reviews": 1,
+    "changed_files": 3,
+    "commits": 1,
+    "per_page": 100,
+    "private_or_broader_completeness_claimed": false
+  },
+  "selection": {
+    "query": "repo:pandas-dev/pandas is:issue is:closed label:Bug created:2024-01-01..2024-01-31 comments:2..5",
+    "prior_results": 48,
+    "first_page_candidates": 5,
+    "limit": "Convenience selection, not representative or a new search on recovery."
+  },
+  "artifact_checks": [
+    {
+      "path": "pandas/core/interchange/buffer.py",
+      "commit": "dc16177936d6f3cacf54a5c54f87062d4d112c3b",
+      "git_blob_sha": "5c97fc17d70705ebb31897e48a0997160f271f15",
+      "bytes": 2126,
+      "read_scope": "Constructor lines18–41",
+      "executed": false
+    },
+    {
+      "path": "pandas/tests/interchange/test_impl.py",
+      "commit": "dc16177936d6f3cacf54a5c54f87062d4d112c3b",
+      "git_blob_sha": "76f80c20fa217fedc8aa0b00d0758c07736311e3",
+      "bytes": 12718,
+      "read_scope": "Final test_empty_dataframe, lines397–405",
+      "executed": false
+    }
+  ],
+  "not_performed": [
+    "external tests",
+    "CI audit",
+    "released-package check",
+    "user-outcome evaluation"
+  ],
+  "source_mutability": "Current issue/PR text can change; code pinned to merge commit. Recovery readback agrees on relevant actors/times.",
+  "assistance": "AI-assisted; researcher and independent review pending."
+}

@@ -1,6 +1,6 @@
 # Research status and contributions
 
-**Research update November 17, 2026 · Wenwen (Celine) Zhang**
+**Research update November 24, 2026 · Wenwen (Celine) Zhang**
 
 The November 9, 11 and 13 reading updates were published together on November 13. The
 simulation audit below was already present on remote main at the baseline read;
@@ -66,6 +66,22 @@ before formal intake. In a proposed work record, queue entry, actual
 acceptance and decision are separate events. Elapsed time and active work by
 role require separate evidence. The Wikipedia case-duration analysis covers
 filing to closure.
+
+The [November19pandas trace](readings/notice-assignment-and-implementation-2026-11-19.md)
+adds nine source-linked events and six elapsed intervals. Pinned source/test bytes
+match PRidentities, without running external tests, auditing CI or establishing
+release/user outcomes. The [November22workflow reading](readings/workflow-norms-and-accepted-work-2026-11-22.md)
+adds six norm-to-episode comparisons and historical version checks. Assignment
+remains distinct from the accepted next action; label transitions cannot prove
+every applicable check occurred. Newer public motivation and judgment-development
+text are preserved, without adding participants, funding or partners.
+
+The [November 24 source audit](readings/decision-revision-and-later-learning-2026-11-24.md)
+adds 12 located observations and six claim checks for an existing citation.
+It narrows the literature wording, distinguishes same-session post-test from
+retention, and records unresolved age and denominator questions. One youth
+source-summary row is corrected; all protocols, tasks and runnable code remain
+byte-for-byte unchanged. No participant data or statistical replication added.
 
 This is AI-assisted source work; researcher understanding, independent source
 review and methodological judgment remain pending. It adds no original data,

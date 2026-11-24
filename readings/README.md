@@ -5,6 +5,15 @@ Organizations are the current primary setting; mechanisms and their transfer
 across contexts remain questions. These notes do not designate a completed
 study, erase earlier education interests or rename existing branches.
 
+- [November 24: revising a decision and learning for the next case](decision-revision-and-later-learning-2026-11-24.md)
+- [November 24 located observations and six claim checks](decision-and-learning-records-2026-11-24.json)
+- [November 24 source and version scope](sources-2026-11-24.json)
+- [November22: written workflow and accepted work](workflow-norms-and-accepted-work-2026-11-22.md)
+- [November22six comparisons](workflow-norm-records-2026-11-22.json)
+- [November22source versions](sources-2026-11-22.json)
+- [November19: report, self-assignment and patch](notice-assignment-and-implementation-2026-11-19.md)
+- [November19events and intervals](notice-assignment-records-2026-11-19.json)
+- [November19source scope](sources-2026-11-19.json)
 - [November 17: waiting before the first recorded step](before-the-clock-starts-2026-11-17.md)
 - [November 17 timing evidence and candidate fields](before-the-clock-starts-records-2026-11-17.json)
 - [November 17 sources and reading scope](sources-2026-11-17.json)

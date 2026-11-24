@@ -1,0 +1,164 @@
+{
+  "date": "2026-11-24",
+  "source_id": "GM2022",
+  "doi": "10.1145/3490099.3511138",
+  "page_convention": "PDF physical page, one-based, not journal page",
+  "records": [
+    {
+      "id": "GM01",
+      "locator": "PDF pp.3,5; §3.1",
+      "observation": "Meals; two supplied options; eight concepts and 24 intermixed questions.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM02",
+      "locator": "PDF pp.3,5; §3.1, Figure1",
+      "observation": "Each concept has pre-test, intervention and subsequent unaided post-test.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM03",
+      "locator": "PDF pp.5-6; §3.1,3.4",
+      "observation": "Within-person condition assignment; AI is simulated and always correct.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM04",
+      "locator": "PDF pp.5,8; §3.1,5.1",
+      "observation": "AI trials lack correctness feedback; non-AI baselines differ in feedback content.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM05",
+      "locator": "PDF p.7; §4.1",
+      "observation": "Update records an initial choice, then permits revision after advice.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM06",
+      "locator": "PDF p.7; §4.3.2",
+      "observation": "Update learning versus minimal feedback: Z=0.71, nonsignificant; r=0.04.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM07",
+      "locator": "PDF p.8; §5.3.2",
+      "observation": "Explanation-only learning exceeds minimal feedback; not significantly different from explanation-feedback.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM08",
+      "locator": "PDF pp.10-11; §6",
+      "observation": "Long-term learning unmeasured; deeper cognitive engagement is an interpretation.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM09",
+      "locator": "PDF p.11; §6",
+      "observation": "Provided binary alternatives do not establish self-generated alternatives.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM10",
+      "locator": "PDF p.6 Table1; arXivv1 Table1",
+      "observation": "Reported age ranges include minors; not an adult-only sample.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM11",
+      "locator": "PDF p.2 Introduction, p.6 Table1, p.8 §5.3.1; arXivv1 same sections",
+      "observation": "Replication counts conflict: 300 in introduction/source row; 270 in n row/results.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    },
+    {
+      "id": "GM12",
+      "locator": "PDF pp.6-8; §3.4,4.2,5.2",
+      "observation": "Learning uses normalized post/pre change; recommendation designs occur in separate experiments.",
+      "kind": "author_report",
+      "human_source_review": "pending"
+    }
+  ],
+  "claim_checks": [
+    {
+      "id": "C01",
+      "question": "Did the person change the present choice?",
+      "records": [
+        "GM05"
+      ],
+      "usable_evidence": "Initial and final answers",
+      "does_not_establish": "Reason for revision or later reuse of a correction"
+    },
+    {
+      "id": "C02",
+      "question": "Did an additional case improve without assistance?",
+      "records": [
+        "GM02",
+        "GM06",
+        "GM07",
+        "GM08"
+      ],
+      "usable_evidence": "Subsequent same-session answer",
+      "does_not_establish": "Week-later retention, transfer to a different activity or workplace learning"
+    },
+    {
+      "id": "C03",
+      "question": "Were alternatives generated or only selected?",
+      "records": [
+        "GM01",
+        "GM09"
+      ],
+      "usable_evidence": "Choice between supplied alternatives",
+      "does_not_establish": "Independent discovery of an omitted option"
+    },
+    {
+      "id": "C04",
+      "question": "Were reasons observed?",
+      "records": [
+        "GM08"
+      ],
+      "usable_evidence": "No participant reasoning trace established by these methods",
+      "does_not_establish": "Complete cognition or mediation by deeper engagement"
+    },
+    {
+      "id": "C05",
+      "question": "Is this a clean timing comparison?",
+      "records": [
+        "GM03",
+        "GM04",
+        "GM12"
+      ],
+      "usable_evidence": "Separate within-person experiments with two baselines each",
+      "does_not_establish": "Direct randomization between AI-first, Update and explanation-only; isolated timing or feedback effect"
+    },
+    {
+      "id": "C06",
+      "question": "Which population and version support the claim?",
+      "records": [
+        "GM10",
+        "GM11"
+      ],
+      "usable_evidence": "Source reports with discrepancy retained",
+      "does_not_establish": "Youth-specific benefit or a reconciled replication denominator"
+    }
+  ],
+  "pending": [
+    "Researcher comprehension and independent human source review",
+    "Confirm final publisher version and replication sample denominator before numerical synthesis",
+    "Verify participant ages/procedures before age-specific interpretation",
+    "Seek a study directly recording participant-generated alternatives or reason traces"
+  ],
+  "original_participant_data_added": false,
+  "statistical_reanalysis_performed": false,
+  "protocol_changed": false
+}

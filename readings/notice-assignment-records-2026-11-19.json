@@ -1,0 +1,180 @@
+{
+  "date": "2026-11-19",
+  "case": "pandas56700→57175",
+  "type": "AI-assisted public-source extraction, not original field data",
+  "events": [
+    {
+      "id": "N1",
+      "event": "first_visible_issue",
+      "time_utc": "2024-01-02T20:58:40Z",
+      "actor": "stinodego",
+      "source": "https://github.com/pandas-dev/pandas/issues/56700",
+      "supports": "Public report with example",
+      "does_not_establish": "First-ever discovery; independent reproduction; pre-filing effort"
+    },
+    {
+      "id": "N2",
+      "event": "explicit_routing",
+      "time_utc": "2024-01-02T21:00:24Z",
+      "actor": "stinodego",
+      "source": "https://github.com/pandas-dev/pandas/issues/56700#issuecomment-1874555494",
+      "supports": "Reporter tags a participant",
+      "does_not_establish": "Delivery/read receipt or independently established expertise"
+    },
+    {
+      "id": "N3",
+      "event": "self_assignment",
+      "time_utc": "2024-01-02T21:22:00Z",
+      "actor": "MarcoGorelli",
+      "source": "https://api.github.com/repos/pandas-dev/pandas/issues/56700/timeline?per_page=100",
+      "supports": "Actor assigns issue to himself",
+      "does_not_establish": "Active-work start or end-to-end responsibility",
+      "event_id": 11373944737
+    },
+    {
+      "id": "N4",
+      "event": "acknowledgment_will_inspect",
+      "time_utc": "2024-01-02T21:22:07Z",
+      "actor": "MarcoGorelli",
+      "source": "https://github.com/pandas-dev/pandas/issues/56700#issuecomment-1874583395",
+      "supports": "Explicit intention to inspect",
+      "does_not_establish": "Promise to fix; completed inspection; work start"
+    },
+    {
+      "id": "N5",
+      "event": "triage_label_removed",
+      "time_utc": "2024-01-02T22:04:02Z",
+      "actor": "MarcoGorelli",
+      "source": "https://api.github.com/repos/pandas-dev/pandas/issues/56700/timeline?per_page=100",
+      "supports": "Needs Triage removed after assignment/reply",
+      "does_not_establish": "Every applicable triage check performed",
+      "event_id": 11374188937
+    },
+    {
+      "id": "N6",
+      "event": "commit_metadata",
+      "time_utc": "2024-01-31T13:03:53Z",
+      "actor": "MarcoGorelli",
+      "source": "https://github.com/pandas-dev/pandas/commit/a833e6a045da649c85da162c6bde0508c789caf6",
+      "supports": "Artifact Git timestamps precede PR entry",
+      "does_not_establish": "Independently timed work session",
+      "committer_time_utc": "2024-01-31T13:05:17Z"
+    },
+    {
+      "id": "N7",
+      "event": "pr_opened",
+      "time_utc": "2024-01-31T14:31:00Z",
+      "actor": "MarcoGorelli",
+      "source": "https://github.com/pandas-dev/pandas/pull/57175",
+      "supports": "Public patch proposal linked to issue56700",
+      "does_not_establish": "First creation of patch"
+    },
+    {
+      "id": "N8",
+      "event": "approval",
+      "time_utc": "2024-01-31T18:05:07Z",
+      "actor": "mroeschke",
+      "source": "https://github.com/pandas-dev/pandas/pull/57175#pullrequestreview-1854486976",
+      "supports": "Approval at named head commit",
+      "does_not_establish": "Integration; CI success; independently measured correctness",
+      "commit": "a833e6a045da649c85da162c6bde0508c789caf6"
+    },
+    {
+      "id": "N9",
+      "event": "merge_and_closure",
+      "time_utc": "2024-01-31T18:05:14Z",
+      "actor": "mroeschke",
+      "source": "https://github.com/pandas-dev/pandas/pull/57175",
+      "supports": "Integration followed by issue closure",
+      "does_not_establish": "Release uptake, user benefit or total labor",
+      "issue_closed_at": "2024-01-31T18:05:15Z",
+      "artifact_commit": "dc16177936d6f3cacf54a5c54f87062d4d112c3b"
+    }
+  ],
+  "intervals": [
+    {
+      "id": "report_to_self_assignment",
+      "start_utc": "2024-01-02T20:58:40Z",
+      "end_utc": "2024-01-02T21:22:00Z",
+      "elapsed_seconds": 1400,
+      "elapsed_display": "0:23:20",
+      "interpretation": "Named-record elapsed difference only; not active labor, pure waiting, SLA compliance or causal effect."
+    },
+    {
+      "id": "report_to_acknowledgment",
+      "start_utc": "2024-01-02T20:58:40Z",
+      "end_utc": "2024-01-02T21:22:07Z",
+      "elapsed_seconds": 1407,
+      "elapsed_display": "0:23:27",
+      "interpretation": "Named-record elapsed difference only; not active labor, pure waiting, SLA compliance or causal effect."
+    },
+    {
+      "id": "acknowledgment_to_pr_open",
+      "start_utc": "2024-01-02T21:22:07Z",
+      "end_utc": "2024-01-31T14:31:00Z",
+      "elapsed_seconds": 2480933,
+      "elapsed_display": "28 days, 17:08:53",
+      "interpretation": "Named-record elapsed difference only; not active labor, pure waiting, SLA compliance or causal effect."
+    },
+    {
+      "id": "pr_open_to_approval",
+      "start_utc": "2024-01-31T14:31:00Z",
+      "end_utc": "2024-01-31T18:05:07Z",
+      "elapsed_seconds": 12847,
+      "elapsed_display": "3:34:07",
+      "interpretation": "Named-record elapsed difference only; not active labor, pure waiting, SLA compliance or causal effect."
+    },
+    {
+      "id": "pr_open_to_merge",
+      "start_utc": "2024-01-31T14:31:00Z",
+      "end_utc": "2024-01-31T18:05:14Z",
+      "elapsed_seconds": 12854,
+      "elapsed_display": "3:34:14",
+      "interpretation": "Named-record elapsed difference only; not active labor, pure waiting, SLA compliance or causal effect."
+    },
+    {
+      "id": "report_to_issue_close",
+      "start_utc": "2024-01-02T20:58:40Z",
+      "end_utc": "2024-01-31T18:05:15Z",
+      "elapsed_seconds": 2495195,
+      "elapsed_display": "28 days, 21:06:35",
+      "interpretation": "Named-record elapsed difference only, not active labor or user benefit."
+    }
+  ],
+  "artifact_checks": [
+    {
+      "path": "pandas/core/interchange/buffer.py",
+      "commit": "dc16177936d6f3cacf54a5c54f87062d4d112c3b",
+      "git_blob_sha": "5c97fc17d70705ebb31897e48a0997160f271f15",
+      "bytes": 2126,
+      "read_scope": "Constructor lines18–41",
+      "executed": false
+    },
+    {
+      "path": "pandas/tests/interchange/test_impl.py",
+      "commit": "dc16177936d6f3cacf54a5c54f87062d4d112c3b",
+      "git_blob_sha": "76f80c20fa217fedc8aa0b00d0758c07736311e3",
+      "bytes": 12718,
+      "read_scope": "Final test_empty_dataframe, lines397–405",
+      "executed": false
+    }
+  ],
+  "authority_scope": {
+    "triage_actor": "Observed self-assignment/label actions; MEMBER alone does not establish all rights.",
+    "integrator": "Approval and merged_by metadata support this integration only.",
+    "responsibility_acceptance": "Keep assignment and will-inspect statement separate; all problem responsibility not established."
+  },
+  "route_without_formal_filing": "Not observed; convenience selection excluded unfiled work, so not absent or zero.",
+  "proposed_observation_fields": [
+    "earliest notice with scope",
+    "routing/assignment/exact acknowledgment",
+    "artifact/approval/integration",
+    "active work and alternative routes when evidenced"
+  ],
+  "reviews": {
+    "researcher_understanding": "pending",
+    "independent_source_review": "pending",
+    "methodological_review": "pending"
+  },
+  "recovery_note": "Restored from prior witnessed research record and source readback on2026-11-23; original ZIP unavailable. Reconstructed text is not asserted byte-identical."
+}

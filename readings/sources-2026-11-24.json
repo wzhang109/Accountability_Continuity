@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-24",
+  "unit": "Existing citation: decision revision versus later independent performance",
+  "sources": [
+    {
+      "id": "GM2022",
+      "title": "Do People Engage Cognitively with AI? Impact of AI Assistance on Incidental Learning",
+      "authors": [
+        "Krzysztof Z. Gajos",
+        "Lena Mamykina"
+      ],
+      "year": 2022,
+      "venue": "IUI 2022",
+      "doi": "10.1145/3490099.3511138",
+      "url": "https://kgajos.seas.harvard.edu/papers/gajos2022people.pdf",
+      "additional_author_url": "https://www.eecs.harvard.edu/~kgajos/papers/2022/gajos2022people.pdf",
+      "pages": 13,
+      "scope": "Primary extracted text: task, Figure1 caption, procedures, Table1, analyses, Experiments1-3 and limitations. Not a full audit of all cited literature.",
+      "locators": "PDF pp.3-11; §§3.1-6; physical page numbering",
+      "local_pdf_saved": false,
+      "local_download_result": "Execution-host DNS lookup failed; no PDF bytes or checksum claimed. Web primary text was accessible.",
+      "visual_limit": "Screenshot calls returned image markers without inspectable pixels; no visual table/layout review claimed. Figure content grounded in extracted text/captions only.",
+      "accessed_date": "2026-11-24",
+      "author_report_not_independent_replication": true
+    },
+    {
+      "id": "GM2022v1",
+      "url": "https://arxiv.org/html/2202.05402v1",
+      "abstract_url": "https://arxiv.org/abs/2202.05402",
+      "version": "v1, submitted February11,2022",
+      "scope": "HTML Table1 and §§1,5.3.1 cross-check for age and conflicting replication counts; supports a discrepancy record, not independent evidence.",
+      "publisher_final_bytes_compared": false
+    }
+  ],
+  "prior_citation": "Already in ai-advice-timing-and-human-learning.md and youth SOURCES.md. New contribution is located measurement/claim audit and wording corrections, not novelty.",
+  "review": {
+    "source_extraction": "AI-assisted",
+    "interpretation": "AI-assisted",
+    "researcher_understanding": "pending",
+    "independent_human_check": "pending",
+    "statistical_reproduction": "not performed"
+  },
+  "no_raw_data_or_private_material": true
+}

@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-22",
+  "type": "First-party normative documents, not empirical reports",
+  "sources": [
+    {
+      "id": "D1",
+      "url": "https://github.com/pandas-dev/pandas/blob/db11e25d2b1175fdf85d963a88ff5a1d4bdb6fd8/doc/source/development/contributing.rst",
+      "version_commit": "db11e25d2b1175fdf85d963a88ff5a1d4bdb6fd8",
+      "git_blob_sha": "78d22c768b86581f8928c5c5fd1aaa31d2048ca6",
+      "reading_scope": "Assignment/reassignment lines28–56, PR submission/update221–261, successfulPRadvice329–342; commands not executed.",
+      "earlier_commit": "4e0630cce89222385b44003d6077c39107a3dd35",
+      "earlier_committer_date": "2023-08-29T10:54:56Z",
+      "earlier_git_blob_sha": "82af8122a6bbdd57b53a4b6e3208f9d05110a854"
+    },
+    {
+      "id": "D2",
+      "url": "https://github.com/pandas-dev/pandas/blob/db11e25d2b1175fdf85d963a88ff5a1d4bdb6fd8/doc/source/development/maintaining.rst",
+      "version_commit": "db11e25d2b1175fdf85d963a88ff5a1d4bdb6fd8",
+      "git_blob_sha": "c7803d8401e4e33ef5ce7cd9a4600df9ba8dbd30",
+      "reading_scope": "Roles/tasks/triage13–128, closing/review173–203, old-issue purpose237–255. Release procedures not performed.",
+      "earlier_commit": "8dd497a73af933c88c666ea65e5e53d9522ffbcd",
+      "earlier_committer_date": "2023-11-29T17:43:03Z"
+    }
+  ],
+  "prior_path_history_until_utc": "2024-01-02T20:58:40Z",
+  "version_comparison": {
+    "assignment_passage_identical": true,
+    "maintenance_entire_text_identical": true,
+    "contributing_other_difference": "One typo correction in bug-report instructions."
+  },
+  "limits": "Written norms do not establish reader awareness, uninterrupted enforcement, compliance or individual historical permissions.",
+  "source_readback_during_recovery": "2026-11-23; this is artifact restoration, not new substantive research completion.",
+  "assistance": "AI-assisted; researcher understanding and independent human/method review pending."
+}

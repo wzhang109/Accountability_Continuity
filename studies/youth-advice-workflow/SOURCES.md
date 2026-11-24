@@ -8,7 +8,7 @@ They do not establish the outcome of this proposed adolescent workflow.
 | Primary source | Verified connection and limits |
 |---|---|
 | [Bastani et al 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12232635/) | High-school mathematics study separates assisted practice and unaided exam performance, with different tutor designs. It supports separate outcomes; it does not show this script-based sequence helps. Its same-session assessment is different from the proposed one-week assessment. |
-| [Gajos and Mamykina 2022](https://arxiv.org/abs/2202.05402) | In adult nutrition tasks, improved assisted decisions did not automatically produce learning. Their judgment-before-recommendation condition did not itself establish learning gains. This cautions against assuming that recording a first answer is sufficient. |
+| [Gajos and Mamykina 2022](https://arxiv.org/abs/2202.05402) | In online nutrition tasks, improved assisted decisions did not automatically produce a learning advantage over the minimal-feedback baseline. Their judgment-before-recommendation condition did not itself establish learning gains. This cautions against assuming that recording a first answer is sufficient. |
 | [Buçinca et al 2021](https://www.eecs.harvard.edu/~kgajos/papers/2021/bucinca2021trust.shtml) | Cognitive forcing reduced overreliance in the studied decision task but introduced usability and motivation trade-offs. Its result is not adolescent delayed learning evidence; burden belongs in this pilot. |
 | [Shen and Tamkin 2026](https://www.anthropic.com/research/AI-assistance-coding-skills) | Coding study distinguishes task performance from comprehension. Associations between interaction styles and learning are not randomized style effects, and short follow-up cannot establish lasting skill formation. Adult coding is different from school-record reasoning. |
 | [Yan 2026](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1936522/full) | Published September 28. The adult preservice-teacher study is a close three-arm sequence precedent, including commitment and review procedures. Full Methods section 3.1 was directly read October 14; sequence alone is not claimed as new. |
@@ -98,3 +98,11 @@ systematic or exhaustive literature update.
 Y15/Y16 are original development examples with supplied rules. Separate
 compatible-completion checks establish their proposed logical keys under
 those rules; they do not supply human or psychometric validation.
+
+### November 24 source-scope correction
+
+The [located audit](../../readings/decision-revision-and-later-learning-2026-11-24.md)
+supersedes the earlier adult-only label for Gajos and Mamykina: reported ages
+include minors, with age procedures and inconsistent replication counts still
+pending review. This is not youth-specific effectiveness evidence. No youth
+protocol, allocation, task content or answer key is changed.

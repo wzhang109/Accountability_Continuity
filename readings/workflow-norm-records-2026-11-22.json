@@ -1,0 +1,130 @@
+{
+  "date": "2026-11-22",
+  "case": "pandas56700→57175",
+  "records": [
+    {
+      "id": "W1",
+      "question": "Assignment as a coordination signal",
+      "documented_norm": {
+        "source": "D1",
+        "lines": [
+          39,
+          48
+        ],
+        "paraphrase": "Assigning helps avoid duplicated work; unassign if unable to continue. Assigned issues may no longer receive work; ask the assignee before taking over, allowing at least a week of inactivity."
+      },
+      "prior_events": [
+        "N3",
+        "N4",
+        "N7"
+      ],
+      "interpretation_and_limit": "Self-assignment and willingness to inspect do not establish continuous effort, a promise to fix or automatic seven-day expiry."
+    },
+    {
+      "id": "W2",
+      "question": "Scope of maintainer obligation",
+      "documented_norm": {
+        "source": "D2",
+        "lines": [
+          25,
+          37
+        ],
+        "paraphrase": "The guide describes largely voluntary work and says the task list is not a set of expectations."
+      },
+      "prior_events": [
+        "N4"
+      ],
+      "interpretation_and_limit": "No deadline stated in the two visible comments; no employment arrangement or comprehensive obligation inferred."
+    },
+    {
+      "id": "W3",
+      "question": "Triage status versus verification evidence",
+      "documented_norm": {
+        "source": "D2",
+        "lines": [
+          47,
+          49,
+          81,
+          98,
+          120,
+          128
+        ],
+        "paraphrase": "Applicable triage steps should precede label removal; confirming reproduction on main should receive a comment."
+      },
+      "prior_events": [
+        "N4",
+        "N5"
+      ],
+      "interpretation_and_limit": "The label was removed, but neither issue comment records reproduction. Check performance is unknown; absence of that detail does not prove omission or violation."
+    },
+    {
+      "id": "W4",
+      "question": "Review participation and integration rights",
+      "documented_norm": {
+        "source": "D2",
+        "lines": [
+          16,
+          21,
+          188,
+          203
+        ],
+        "paraphrase": "Anyone can review; merging ready PRs is reserved to core-team members in the guide."
+      },
+      "prior_events": [
+        "N8",
+        "N9"
+      ],
+      "interpretation_and_limit": "Approval and actual merge are distinct. Observed merge supports capacity for that action, without a full historical permissions roster."
+    },
+    {
+      "id": "W5",
+      "question": "Artifact presence and recommended checks",
+      "documented_norm": {
+        "source": "D2",
+        "lines": [
+          194,
+          203
+        ],
+        "paraphrase": "Review guidance includes relevant regression-test references and release notes for user-facing changes."
+      },
+      "prior_events": [
+        "N7",
+        "N9"
+      ],
+      "interpretation_and_limit": "The artifacts are present; passing all checks, running CI, a distributed release and user benefit remain unverified."
+    },
+    {
+      "id": "W6",
+      "question": "Documented and observed return routes",
+      "documented_norm": {
+        "source": "D1",
+        "lines": [
+          44,
+          48
+        ],
+        "paraphrase": "Guidance provides for relinquishing assignment and asking about a takeover."
+      },
+      "prior_events": [
+        "N1",
+        "N3",
+        "N9"
+      ],
+      "interpretation_and_limit": "No unassignment in the ten returned timeline entries. A possible route is not an observed route; no-filing and declined routes remain unknown."
+    }
+  ],
+  "prior_event_index": "notice-assignment-records-2026-11-19.json",
+  "decision": {
+    "accepted_action": "stated intention to inspect",
+    "upgrade_to_fix_obligation": false,
+    "continuous_active_work": "unknown",
+    "all_responsibility_absent": "not established"
+  },
+  "instrument_adopted": false,
+  "original_data_added": false,
+  "AI_effect_estimated": false,
+  "review": {
+    "researcher_understanding": "pending",
+    "independent_source_check": "pending",
+    "methods": "pending"
+  }
+}

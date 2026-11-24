@@ -1,6 +1,6 @@
 # Working research questions
 
-**Wenwen (Celine) Zhang · Updated November 21, 2026**
+**Wenwen (Celine) Zhang · Updated November 24, 2026**
 
 ## From human value to a research question
 
@@ -35,6 +35,13 @@ adds role and permission at the time of work to the proposed observations. It as
 who defines eligibility, who can make an exception, and who does the investigation.
 Elapsed case time and time actively spent on the task require separate evidence.
 
+The [November19public trace](readings/notice-assignment-and-implementation-2026-11-19.md)
+keeps report, assignment, intention to inspect, artifact, approval and integration
+separate. Its intervals leave active work and unfiled routes unknown. The
+[historical workflow comparison](readings/workflow-norms-and-accepted-work-2026-11-22.md)
+adds the written norms. A stated rule, an exact commitment and recorded action
+require distinct evidence; none alone establishes reasoning quality or learning.
+
 ## What would count as helping someone develop judgment?
 
 An AI assistant might bring an option to mind that a reviewer would have overlooked. Its first suggestion might also narrow what the reviewer thinks to look for. A reviewer could check every fact behind a proposed industry code and still miss a better-fitting category. I would like to ask reviewers which alternatives they considered and which detail made a difference. That would tell us more about the reasons they can articulate than a final approval alone. It would still leave open what they considered but never mentioned.
@@ -42,6 +49,11 @@ An AI assistant might bring an option to mind that a reviewer would have overloo
 The [evidence-access pilot](studies/organizational-coordination/evidence-access-pilot/README.md) addresses a narrower question. The same source passage could help someone spot a contradiction or make a recommendation look as though it has already been checked. I would compare errors caught, sound recommendations returned, and the reasons reviewers give. Both interfaces supply a recommendation, so a study of which alternatives people generate for themselves would need a separate comparison.
 
 I also care about what people carry into the next decision. The [advice-timing study](studies/ai-advice-timing/DRAFT_PROTOCOL.md) would give participants new cases to judge without AI about a week later. In a workplace, learning may also depend on who hears about a correction. With a partner team, I would like to follow a case from the first sign-off through any later revision. Who noticed the problem, who could act on it, and did the explanation reach the person likely to face the next case?
+
+The [November 24 audit](readings/decision-revision-and-later-learning-2026-11-24.md)
+asks what evidence could distinguish revising this answer from learning for the
+next case, and selecting supplied alternatives from generating alternatives.
+These remain measurement questions, not an adopted new protocol or outcome.
 
 ## Purpose and evaluation
 

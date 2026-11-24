@@ -7,6 +7,23 @@ for present descriptions. There are no participant or private organizational
 data; an initial public-document coding pilot has now been added. Design,
 implementation, coding, and writing received substantial AI assistance.
 
+## November 22, 2026 — Written norms and accepted work
+
+Compared historical contribution and maintenance guidance with the same pandas
+episode. Six comparisons keep written norms, exact commitment and observed action
+separate. A missing reproduction comment leaves a gap rather than proving omitted
+work or noncompliance. Review participation and integration rights differ. Preserved
+newer remote motivation and judgment-development text. AI assisted source work and
+writing; researcher understanding and independent source/method review are pending.
+
+## November 19, 2026 — Assignment, acknowledgment and patch entry
+
+Traced one report through assignment, intention to inspect, later patch, approval
+and merge. Recorded nine events and six elapsed intervals; active labor and unfiled
+routes remain unknown. Pinned source/test bytes match PRidentities, without external
+execution, CI audit or user-outcome claims. No original field data or AI effect.
+AI assisted source work and writing; researcher and independent review are pending.
+
 ## November 17, 2026 — When the clock starts
 
 Read two original emergency intake studies and rechecked the public Wikipedia
@@ -464,3 +481,17 @@ assistance. October 10 preparation uses the verified October 8 main commit;
 publication is tracked separately. Next bounded unit: review these six items with
 the researcher, then develop one balanced practice-family set rather than expand
 the entire study without reviewing burden.
+
+
+## 2026-11-24 - Existing citation audited against the next-case question
+
+Read primary methods/results/discussion for Gajos and Mamykina (2022). Added
+[located records and claim checks](readings/decision-and-learning-records-2026-11-24.json)
+and a [bounded interpretation](readings/decision-revision-and-later-learning-2026-11-24.md).
+Revised the literature summary and one source-population label; retained source
+count discrepancies as pending. No participant reasoning trace, long-term
+organizational learning result, new dataset or protocol change is claimed.
+AI assisted reading, interpretation and writing. Human understanding, source
+checking and method review are pending. Prepared locally, not uploaded by this
+work unit; the separate preparation record preserves the unpublished Nov19/22
+materials and their reconstruction provenance.

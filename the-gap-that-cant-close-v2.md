@@ -2,8 +2,6 @@
 
 *On taste, machines, and what's left for us to become*
 
-> **Revised November 27, 2026.** I've clarified what a human preference rating carries forward and added a code-review example about fine-tuning, verifiable rewards, and self-critique. The example asks what better performance can tell us about who lives with the consequences of a mistake. [Read the original essay](the-gap-that-cant-close.md).
-
 Ask anyone who works with AI long enough and they'll eventually say something like this: it has no taste. Not that it produces bad output. Often it produces very good output. Still, there's a sense that something is missing, and people reach for the word "taste" because it's the closest word we have.
 
 I want to take that claim seriously enough to test it, because I think it survives, but not for the reason most people assume.
@@ -60,7 +58,7 @@ This is the distinction the whole argument has been circling: there may be a beh
 
 The behavioral gap is about output, about how well a judgment fits the case in front of it. There's real commercial and scientific value in narrowing it, and I expect people will keep doing so for a long time.
 
-A team can fine-tune a model on its own code reviews, use reinforcement learning to reward patches that pass its tests, or have the model critique and revise its first patch at inference time.[^methods] All three can narrow the behavioral gap. When a patch passes every test and still wakes the on-call engineer at two in the morning, I wonder who inside the model, if anyone, carries that night into the next review.
+A team can fine-tune a model on its own code reviews, use reinforcement learning to reward patches that pass its tests, or have the model critique and revise its first patch at inference time. All three can narrow the behavioral gap. When a patch passes every test and still wakes the on-call engineer at two in the morning, I wonder who inside the model, if anyone, carries that night into the next review.
 
 The existential gap is about whether there's a continuous someone on the inside, bearing what happens and being changed by it. I don't think this gap shrinks the way the first one does, because it isn't clear it's a gap in the ordinary sense at all, something with more and less. It may be closer to a binary: either someone is home, or no one is. If that's right, "getting closer to closing it" might be a category error, the same way making a photograph more detailed never turns it into the person it depicts, no matter how much detail you add.
 
@@ -73,5 +71,3 @@ For most of the industrial and post-industrial era, a large part of what it mean
 If a large share of that behavioral competence can now be handled by something that was never a self to begin with, that doesn't diminish us. It removes a certain pressure to perform a role we were never actually suited for in the first place, the role of the unfeeling, infinitely consistent instrument. What's left, once that pressure lifts, isn't nothing. It's a fairly specific, recognizable list: being changed by a cost you actually bore, not just knowing you were wrong. An unprompted pull toward the truth someone would rather you didn't find, what an older tradition calls 求真, seeking truth for its own sake rather than because you were asked to look. Care that isn't pointed at an assigned goal. Judgment that costs the one making it something real.
 
 None of this is a claim about what AI can produce. A good enough system can already generate outputs that resemble all four. The claim is narrower, and I think more durable: what may separate a person from a tool was never about what either one does. It's about whether someone is actually there, living through the weight of it. And right now, there's no way to check. Not yes. Not no. Just a gap, still open, that might be the most interesting thing left to study. Not because we'll ever close it, but because trying to understand it is one of the few things only we can do.
-
-[^methods]: For worked examples, see [Tinker's tutorial on reinforcement learning with verifiable rewards](https://tinker-docs.thinkingmachines.ai/tutorials/basics/first-rl/) and [Self-Refine, on critique and revision at inference time](https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html).
